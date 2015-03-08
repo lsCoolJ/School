@@ -1,0 +1,381 @@
+﻿11.10 What happens if we changed the second to last line of the program in Figure 11.3 from printf(“%d\n”, counter); to
+        a) printf(“%c\n”, counter + ‘A’);
+The program will add 65 to the input number and then print out the ASCII representations of all the numbers until it prints out A.
+        b) printf(%d\n%d\n”, counter, startPoint + counter);
+The program will output startPoint and double startPoint and then each loop will decrement the two numbers being output until the counter is zero, at which point it will display 0 and startPoint.
+        c) printf(“%x\n”, counter);
+The program will prompt the user for an input number and then count down to zero from that number in hexadecimal format.
+
+
+12.6 For the following code, state the values that are printed out by each printf statement. The statements are executed in the order A,B,C,D.
+int t;
+{
+        int t = 2;
+        printf(“%d\n”, t); /*A*/
+        {
+                printf(“%d\n”, t); /*B*/
+                t = 3;
+        }
+        printf(“%d\n”, t); /*C*/
+}
+{
+        printf(“%d\n”, t); /*D*/
+}
+
+
+        A: 2
+        B: 2
+        C: 3
+        C: 3
+
+
+12.10 Write a program that reads an integer from the keyboard and displays a 1 if it is divisible by 3 or a 0 otherwise.
+        #include <stdio.h>
+        #define THREE 3.0
+        #define ONE 1.0
+        #define ZERO 0.0
+        
+        int main()
+        {
+                int numtbd; /*number to be divided*/
+                int modNum; /*modded number*/
+
+
+                printf(“=====Divisible by 3?=====”);
+                printf(“Enter a positive integer: “);
+                scanf(“%d”, &numtbd);
+
+
+                modNum = numtbd%THREE;
+
+
+                if(modNum == 0) {
+                        printf(“%d\n”, ONE);
+                        printf(“%d is divisible by three”, numtbd);
+                }
+                else {
+                        printf(“%d\n”, ZERO);
+                        printf(“%d is not divisible by three”, numtbd);
+                }
+        }
+
+
+12.11 Explain the differences between the following C statements:
+        a) j = i++;
+                Sets j equal to i and then increments i.
+        b) j = ++i;
+                Increments i and then sets j equal to incremented i.
+        c) j = i + 1;
+                Sets j equal to i + 1.
+d) i += 1;
+        Increments i by one.
+e) j = i += 1;
+        Increments i and then sets j equal to the incremented i.
+f) Which statements modify the value of i?
+        Statements a,b,d,e modify i.
+Which statements modify the value of j?
+        Statements abce modify j.
+If i = 1 and j = 0 initially, what will the values of i and j be after each statement is run separately?
+        I) i = 1 j = 0
+           i = 2 j = 1
+        II) i = 1 j = 0
+            i = 2 j = 2
+        III) i = 1 j = 0
+             i = 2 j = 2
+        IV) i = 1 j = 0
+             i = 2 j = 0
+        V) i = 1 j = 0
+             i = 2 j = 2
+12.18 Modify the example program in Figure 11.3 so that it prompts the user to type a character and then prints every character from that character down to the characer ! in the order they appear in the ASCII table.
+        #include <stdio.h>
+        #define STOP 33
+        
+        int main()
+        {
+                int counter;
+                int startPoint;
+
+
+                printf(“=====Countdown Program=====”);
+                printf(“Enter a character”);
+                scanf(“%d”, &startPoint);
+                
+                for(counter = startPoint; counter >= STOP; counter--)
+                        printf(“%c\n”, counter);
+        }
+
+
+13.1 Recreate the LC-3 compiler’s symbol table when it compiles the calculator program listed in Figure 13.24.
+
+
+
+
+Identifier
+	Type
+	Location (as an offset)
+	Scope
+	Other info...
+	operand1
+	int
+	0
+	main
+	...
+	operand2
+	int
+	-1
+	main
+	...
+	result
+	int
+	-2
+	main
+	…
+	operation
+	char
+	-3
+	main
+	…
+	
+
+
+
+13.10 Convert the program in Figure 13.4 into one that uses a switch statement instead of if-else.
+        #include <stdio.h>
+        
+        int main()
+        {
+                int month;
+
+
+                printf(“Enter the number of the month: “);
+                scanf(“%d”, &month);
+
+
+                switch(month) {
+                        case 1:
+case 3:
+case 5:
+case 7:
+case 8:
+case 10:
+case 12: 
+                                printf(“The month has 31 days\n”);
+                                break;
+                        case 2:
+                                printf(“The month has either 28 or 29 days\n”);
+                                break;
+                        case 4:
+                        case 6:
+                        case 9:
+                        case 11:
+                                printf(“The month has 30 days\n”);
+                                break;
+                        default:
+                                printf(“That month doesn’t exist”);
+                }
+        }
+
+
+13.14 Write a C program that accepts as input a single integer k, and then writes a pattern consisting of a single 1 on the first line, two 2s on the second line, three 3s on the third line and so forth, until it writes k occurrences of k on the last line.
+        
+#include <stdio.h>
+        #define STOP 0
+        
+        int main()
+        {
+                int k;
+                int stepCounter;
+                int depthCounter;
+                int forwardK = 0;
+                
+                printf(“=====Number Staircase=====\n”)
+                printf(“Enter a positive integer: “);
+                scanf(“%d”, &k);
+
+
+                for (stepCounter = k; stepCounter > STOP; stepCounter--) {
+                        forwardK++;
+                        for(depthCounter = forwardK; depthCounter > STOP; depthCounter--) {
+                                printf(“%d”, forwardK);
+                        }
+                        printf(“\n”);
+                }
+        }
+
+
+14.14 Write a function that returns a 1 if the first integer input parameter is evenly divisible by the second. Using this function, write a program to find the smallest number that is evenly divisible by all integers less than 10.
+        Function:
+        int numberMod(int numOne, int numTwo) {
+                numDIv = numOne%numTwo;
+                if(numDiv == 0)
+                        return 1;
+                else
+                        return 0;
+        }
+
+
+        Program:
+        #include <stdio.h>
+        
+        int main()
+        {
+                int currentNum;
+                int rightNum;
+                int divisorNum;
+                int totalMod;
+                int numDiv;
+                
+                printf(“Smallest number evenly divisible by integers 1-9 inclusive”);
+
+
+                for(currentNum = 0; rightNum == 0; currentNum++) {
+                        totalMod = 0;
+                        for(divisorNum = 2; divisorNum < 10; divisorNum++) {
+                                rightNum += numberMod(currentNum%divisorNum);
+                        }
+                        if(rightNum == 8) {
+                                printf(“%d\n”, currentNum);
+                        }
+                        rightNum = 0;
+                }
+        }
+        int numberMod(int numOne, int numTwo) {
+                numDIv = numOne%numTwo;
+                if(numDiv == 0)
+                        return 1;
+                else
+                        return 0;
+        }
+
+
+16.4 Create a string function that takes two input strings, stringA and stringB, and returns a 0 if both strings are the same, a 1 if stringA appears before stringB in the sorted order of a dictionary, or a 2 if stringB appears before stringA.
+        Function:
+        #include <string.h>
+        int stringFunct(char[] strOne, char[] strTwo) {
+                int resultNum = 0;
+                for(i = 0; !(strOne[i] == ‘\0’ && strTwo[i] == ‘\0’); i++) {
+                        strOne[i] = toupper(&strOne[i]);
+                        strTwo[i] = toupper(&strTwo[i]);
+
+
+                        if(strOne[i] == strTwo[i]) {
+                        }
+                        else if(strOne[i] < strTwo[i]) {
+                                resultNum = 1;
+                                break;
+                        }
+                        else if(strOne[i] > strTwo[i]) {
+                                resultNum = 2;
+                                break;
+                        }
+                }
+        return resultNum;
+        }
+                         
+16.6 Translate the following C function into LC-3 assembly language
+int main()
+{
+int a[5], i;
+
+
+i = 4;
+while (i >= 0) {
+        a[i] = i;
+        i--;
+}
+}
+
+
+.ORIG x3000 ;start program at line x3000
+AND R0, R0, #0 ;clear R0
+AND R1, R1, #0 ;clear R1
+AND R2, R2, #0 ;clear R2
+LEA R0, ARRAY ;Load the address of the block write into R0
+LD R1, COUNTER ;Load R1 with the number 4
+LOOP STR R2, R0, #0 ;Store the number in R2 into the memory location in R0
+ADD R0, R0, #1 ;increment the address of the block write
+ADD R2, R2, #1 ;increment the contents of R2 by one
+ADD R1, R1, #-1 ;decrement R1 by one
+BRzp LOOP ;if the previous add is zero or positive, loop back to LOOP
+HALT ;halt the program
+.END ;end the program
+ARRAY .BLKW 5 ;block write containing 5 memory locations
+COUNTER .FILL #4 ;memory location containing the number 4
+
+
+19.2 The following are a few lines of a C program:
+struct node {
+int count;
+struct node *next;
+};
+
+
+main()
+{
+int data = 0;
+struct node *getdata;
+
+
+getdata = getdata->next;
+}
+Write, in LC-3 assembly language, the instructions that are generated by the compiler for the line getdata = getdata->next.
+
+
+        
+
+
+Separate excercise: Convert your solution to 13.14 into LC-3 assembly language (similar to 16.6 You should not just write an equivalent program, but instead translate each C statement into appropriate assembly utilizing variable memory, the frame pointer, etc. You may use the GETC and OUT traps in place of scanf and printf. You may also assume that the input integer will be between one and nine.
+
+
+        .ORIG x3000 ;start the program at line x3000
+        AND R0, R0, #0 ;clear R0
+        AND R1, R1, #0 ;clear R1 (k)
+        AND R2, R2, #0 ;clear R2 (stepCounter);
+        AND R3, R3, #0 ;clear R3 (depthCounter);
+        AND R4, R4, #0 ;clear R4 (forwardK);
+        LEA R0, BSTRING ;Load R0 with the address of BSTRING
+        PUTS ;outputs BSTRING to the console
+        LEA R0, INSTRING ;Load R0 with the address of INSTRING
+        PUTS ;ouputs INSTRING to the console
+        GETC ;takes a character from input and stores it in R0
+        ADD R1, R0, #0 ;Loads what is in R0 into R1 (k)
+        ADD R2, R0, #0 ;Loads what is in R0 into R1 (stepCounter)
+LOOP ADD R4, R4, #1 ;Increment R4 by one. (forwardK)
+        ADD R3, R4, #0 ;Load what is in R4 into R3 (depthCounter)
+        ADD R0, R3, #0 ;Load what is in R3 into R0
+LOOP 2 OUT ;print out what is in R0
+        ADD R3, R3, #-1 ;decrement depthCounter by one
+        BRp LOOP2
+        LD R0, NLINE ;Loads R0 with carriage return ASCII char
+        OUT ;prints out a carriage return
+        ADD R2, R2, #-1 ;decrement the stepCounter by 1
+        BRp LOOP ;if stepCounter is positive, loop back to LOOP
+        HALT ;Halts the program
+        .END ;ends the program
+        BSTRING .STRINGZ “=====Number Staircase=====”
+        INSTRING .STRINGZ “Enter a positive integer: “
+        NLINE .FILL #13
+        
+#include <stdio.h>
+        #define STOP 0
+        
+        int main()
+        {
+                int k;
+                int stepCounter;
+                int depthCounter;
+                int forwardK = 0;
+                
+                printf(“=====Number Staircase=====\n”)
+                printf(“Enter a positive integer: “);
+                scanf(“%d”, &k);
+
+
+                for (stepCounter = k; stepCounter > STOP; stepCounter--) {
+                        forwardK++;
+                        for(depthCounter = forwardK; counter > STOP; counter--) {
+                                printf(“%d”, forwardK);
+                        }
+                        printf(“\n”);
+                }
+        }

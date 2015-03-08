@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;coregui.progpracticum.AbsArt&apos; to &apos;Omicron&apos;&#x0D;&#x0A;- Original project: &apos;benf94-assign5&apos;&#x0D;&#x0A;- Original element: &apos;coregui.progpracticum.AbsArt&apos;&#x0D;&#x0A;- Renamed element: &apos;coregui.progpracticum.Omicron&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AbsArt&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;coregui.progpracticum{AbsArt.java[AbsArt" matchStrategy="1" name="Omicron" qualified="false" references="true" similarDeclarations="false" stamp="1382994266385" textual="false" version="1.0"/>
+</session>

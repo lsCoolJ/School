@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1386557253996" analysisTimestamp="1386557252028" release="">
+  <Project projectName="benf94-assign6">
+    <Jar>H:\workspace-305\benf94-assign6\bin</Jar>
+    <AuxClasspathEntry>H:\workspace-305\benf94-assign6\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\benf94-assign6\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 8 Dec 2013 18:47:32 -0800" total_classes="4" referenced_classes="43" total_bugs="0" total_size="256" num_packages="1" vm_version="23.25-b01" cpu_seconds="1.68" clock_seconds="1.97" peak_mbytes="218.11" alloc_mbytes="494.94" gc_seconds="0.07">
+    <PackageStats package="six.progpracticum" total_bugs="0" total_types="4" total_size="256">
+      <ClassStats class="six.progpracticum.MyActionListener" sourceFile="MyActionListener.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="six.progpracticum.PizzaParlor" sourceFile="PizzaParlor.java" interface="false" size="189" bugs="0"/>
+      <ClassStats class="six.progpracticum.PizzaParlor$1" sourceFile="PizzaParlor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="six.progpracticum.PizzaParlor$2" sourceFile="PizzaParlor.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1330" invocations="749" avgMicrosecondsPerInvocation="1776" maxMicrosecondsPerInvocation="24328" standardDeviationMircosecondsPerInvocation="1359"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="179" invocations="748" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="9435" standardDeviationMircosecondsPerInvocation="543"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1386557253996" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

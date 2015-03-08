@@ -1,0 +1,27 @@
+module DragRace( KEY, SW, CLOCK_50, HEX7, HEX6, HEX5, HEX4, HEX3, HEX2, HEX1, HEX0 );
+  input [0:0] KEY;  // reset
+  input [1:0] SW;   // SB and PSB
+  input CLOCK_50; // system clock
+  
+  output [0:6] HEX7, HEX6, HEX5, HEX4, HEX3, HEX2, HEX1, HEX0;
+  
+  wire Rst = KEY[0]; // reset
+  wire PSB = SW[0];  // Pre-staging beam
+  wire SB = SW[1];   // staging beam
+  wire Clock = CLOCK_50; // system clock
+  wire PSL, SL, A1, A2, A3, GRN, RED;
+  
+  DragSM S1(Rst, PSB, SB, Clock, PSL, SL, A1, A2, A3, GRN, RED);
+
+  // the lights
+  Lights H0(RED, HEX0);
+  Lights H1(RED, HEX1);
+  Lights H2(GRN, HEX2);
+  Lights H3(A3, HEX3);
+  Lights H4(A2, HEX4);
+  Lights H5(A1, HEX5);
+  Lights H6(SL, HEX6);
+  Lights H7(PSL, HEX7);
+  
+ endmodule
+ 

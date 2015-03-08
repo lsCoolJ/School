@@ -1,0 +1,28 @@
+TCES 330
+Some ModelSim Commands you can run from the command line
+
+R. Gutmann
+4/24/2014
+
+Start in a directory will *all* of the necessary Verilog files.
+Then run the following commands (as necessary):
+
+
+To make the work library:
+vlib work
+
+To compile all the Verilog files in this directory:
+vlog *.v
+
+To run a ModelSim simulation:
+vsim -c -do "run 1000ns; quit" testPart2
+or
+vsim -c -do "run -all; quit" testPart2
+
+Refer to the pdf file called ModelSimCommandLine (on Moodle) for more 
+possibilities including graphing your output (requires you install GTKWave).
+
+Refer to the pdf file called ModelSimCommands (on Moodle) for a huge list
+of commands you can run from the command line.
+
+

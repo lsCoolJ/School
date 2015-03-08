@@ -1,0 +1,15 @@
+Assignment name: Assignment 6
+TCSS 305B: Programming Practicum, Autumn 2013
+
+Name: Benjamin Foster
+UWNetID: benf94
+Subversion Revision Number: 18
+
+Assignment Overview:
+
+This assignment was given to us in order for us to practice using GUI components, layouts, and implementing event handling interfaces.
+
+
+Technical Impression:
+
+I really enjoyed this assignment. In the past, I had never before used layouts to put a GUI together. I always set all of the coordinates manually. I also never before made a single ActionListener class to handle all of the action events before. It was nice to be able to have everything be handled in one class and one method rather than having 20+ ActionListeners for each button, each handling a different thing. I really like GUI programming though, and I am excited to start using MouseListeners and ChangeListeners and other things like Sliders and text panels. One of the things that frustrated me most about this assignment (and pretty much every other assignment) was dealing with Checkstyle errors. In previous assignments, I was easily able to fix the "magic number" errors however, in this assignment when I fixed them the same way that I have in the past, then I still got the same error. Also, I got frustrated when checkstyle told me that I couldn't throw an exception even though it is really how you're supposed to write the code (at least it is how I've been taught). Also, whenever something shows up even more than once in the entire file, a checkstyle error comes up. I feel as though it would be much better if we could have things like strings show up at least twice or maybe even three times before the checkstyle errors started appearing.

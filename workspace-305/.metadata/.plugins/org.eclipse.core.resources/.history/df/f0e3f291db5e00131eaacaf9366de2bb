@@ -1,0 +1,105 @@
+/**
+ * Ben Foster. Final project Autumn 2013
+ */
+package epidemic.progpracticum.model;
+
+import java.awt.Point;
+
+/**
+ * @author benf94
+ *
+ */
+public class Human extends AbstractEntity {
+
+    /**
+     * 
+     */
+    private Point myLocation;
+    
+    /**
+     * 
+     */
+    private final int myTen = 10;
+    
+    private final int myThousand = 1010;
+    
+    private final int fiveHunnerd = 510;
+
+    /**
+     * @param aSpecies
+     * @param aSick
+     * @param aDayNum
+     * @param aLocation
+     */
+    public Human(char aSpecies, boolean aSick, int aDayNum, Point aLocation) {
+        super(aSpecies, aSick, aDayNum, aLocation);
+        myLocation = aLocation;
+    }
+
+    @Override
+    public Point move() {
+        final int aCaseNumber = SimParams.GENERATOR.nextInt(9);
+        Point newLocation;
+        final int thisX = myLocation.x;
+        final int thisY = myLocation.y;
+        int yMove;
+        int xMove;
+        switch(aCaseNumber) {
+            case 1:
+                xMove = myTen;
+                yMove = 0;
+                break;
+            case 2:
+                xMove = myTen;
+                yMove = myTen;
+                break;
+            case 3:
+                xMove = 0;
+                yMove = myTen;
+                break;
+            case 4:
+                xMove = -myTen;
+                yMove = myTen;
+                break;
+            case 5:
+                xMove = -myTen;
+                yMove = 0;
+                break;
+            case 6:
+                xMove = -myTen;
+                yMove = -myTen;
+                break;
+            case 7:
+                xMove = 0;
+                yMove = -myTen;
+                break;
+            case 8:
+                xMove = myTen;
+                yMove = -myTen;
+                break;
+            default:
+                xMove = 0;
+                yMove = 0;
+                break;
+        }
+        newLocation = new Point(thisX + xMove, thisY + yMove);
+        if (newLocation.x == myThousand) {
+            newLocation.setLocation(newLocation.x - myThousand, newLocation.y);
+        }
+        
+        if (newLocation.x == -myTen) {
+            newLocation.setLocation(newLocation.x + myThousand, newLocation.y);
+        }
+
+        if (newLocation.y == fiveHunnerd) {
+            newLocation.setLocation(newLocation.x, newLocation.y - fiveHunnerd);
+        }
+        
+        if (newLocation.y == -myTen) {
+            newLocation.setLocation(newLocation.x, newLocation.y + fiveHunnerd);
+        }
+        myLocation = newLocation;
+        return newLocation;
+    }
+
+}

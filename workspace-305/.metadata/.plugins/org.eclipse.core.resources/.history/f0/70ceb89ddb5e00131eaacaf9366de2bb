@@ -1,0 +1,144 @@
+/**
+ * Ben Foster. Final project Autumn 2013
+ */
+package epidemic.progpracticum.model;
+
+import java.awt.Point;
+
+/** The Human class creates a Human.
+ * @author benf94
+ * @version 12/6/2013
+ */
+public class Human extends AbstractEntity {
+
+    /**
+     * The location of the human.
+     */
+    private Point myLocation;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myTen = 10;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myThousand = 1010;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int fiveHunnerd = 510;
+    
+    /**
+     * 
+     */
+    private final int numThree = 3;
+    
+    /**
+     * 
+     */
+    private final int numFour = 4;
+    
+    /**
+     * 
+     */
+    private final int numFive = 5;
+    
+    /**
+     * 
+     */
+    private final int numSix = 6;
+    
+    /**
+     * 
+     */
+    private final int numSeven = 7;
+    
+    /**
+     * 
+     */
+    private final int numEight = 8;
+
+    /**
+     * Parameterized constructor that sets object's state to parameters passed.
+     * @param aSpecies is a character denoting the species
+     * @param aSick is a boolean value denoting whether the object is sick or not
+     * @param aDayNum >= 0, the number of days the object has been sick
+     * @param aLocation is the location of the object in the world, 0 <= x < world width, 
+     *                  0 <= y < world height
+     * @custom.post object's state set to parameters passed
+     */
+    public Human(char aSpecies, boolean aSick, int aDayNum, Point aLocation) {
+        super(aSpecies, aSick, aDayNum, aLocation);
+        myLocation = aLocation;
+    }
+
+    @Override
+    public Point move() {
+        final int caseNumber = SimParams.GENERATOR.nextInt(9);
+        Point newLocation;
+        final int thisX = myLocation.x;
+        final int thisY = myLocation.y;
+        int yMove;
+        int xMove;
+        switch(caseNumber) {
+            case 1:
+                xMove = myTen;
+                yMove = 0;
+                break;
+            case 2:
+                xMove = myTen;
+                yMove = myTen;
+                break;
+            case numThree:
+                xMove = 0;
+                yMove = myTen;
+                break;
+            case numFour:
+                xMove = -myTen;
+                yMove = myTen;
+                break;
+            case numFive:
+                xMove = -myTen;
+                yMove = 0;
+                break;
+            case numSix:
+                xMove = -myTen;
+                yMove = -myTen;
+                break;
+            case numSeven:
+                xMove = 0;
+                yMove = -myTen;
+                break;
+            case numEight:
+                xMove = myTen;
+                yMove = -myTen;
+                break;
+            default:
+                xMove = 0;
+                yMove = 0;
+                break;
+        }
+        newLocation = new Point(thisX + xMove, thisY + yMove);
+        if (newLocation.x == myThousand) {
+            newLocation.setLocation(newLocation.x - myThousand, newLocation.y);
+        }
+        
+        if (newLocation.x == -myTen) {
+            newLocation.setLocation(newLocation.x + myThousand, newLocation.y);
+        }
+
+        if (newLocation.y == fiveHunnerd) {
+            newLocation.setLocation(newLocation.x, newLocation.y - fiveHunnerd);
+        }
+        
+        if (newLocation.y == -myTen) {
+            newLocation.setLocation(newLocation.x, newLocation.y + fiveHunnerd);
+        }
+        myLocation = newLocation;
+        return newLocation;
+    }
+
+}

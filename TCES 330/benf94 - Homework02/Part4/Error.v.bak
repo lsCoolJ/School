@@ -1,0 +1,7 @@
+module Error(A, B, Err);
+	input [3:0] A, B;
+	output Err;
+	
+	assign Err = (A < 9) | (B < 9);
+	
+endmodule

@@ -1,0 +1,138 @@
+package epidemic.progpracticum.model;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+import epidemic.progpracticum.view.WorldPanel;
+
+public class MyButtonListener implements ActionListener {
+
+    /**
+     * 
+     */
+    private WorldPanel myWorldPanel;
+
+    /**
+     * 
+     */
+    private JLabel myPeepNum;
+
+    /**
+     * 
+     */
+    private JLabel myBirdNum;
+
+    /**
+     * 
+     */
+    private JLabel myInfectNum;
+
+    /**
+     * 
+     */
+    private JTextField myPeepInfect;
+
+    /**
+     * 
+     */
+    private JTextField myPeepHealthy;
+
+    /**
+     * 
+     */
+    private JTextField myBirdInfect;
+
+    /**
+     * 
+     */
+    private JTextField myBirdHealthy;
+
+    /**
+     * 
+     */
+    private JTextField myDayCounter;
+
+    /**
+     * 
+     */
+    private SimWorld mySimWorld;
+    
+    /**
+     * 
+     */
+    private final int myHunnerd = 100;
+
+
+    /**
+     * @param aWorldPanel
+     * @param aPeepNum
+     * @param aBirdNum
+     * @param anInfectNum
+     * @param aPeepInfect
+     * @param aPeepHealthy
+     * @param aBirdInfect
+     * @param aBirdHealthy
+     * @param aDayCounter
+     */
+    public MyButtonListener(final WorldPanel aWorldPanel, final JLabel aPeepNum,
+                            final JLabel aBirdNum, final JLabel anInfectNum,
+                            final JTextField aPeepInfect, final JTextField aPeepHealthy,
+                            final JTextField aBirdInfect, final JTextField aBirdHealthy,
+                            final JTextField aDayCounter) {
+        super();
+        myWorldPanel = aWorldPanel;
+        myPeepNum = aPeepNum;
+        myBirdNum = aBirdNum;
+        myInfectNum = anInfectNum;
+        myPeepInfect = aPeepInfect;
+        myPeepHealthy = aPeepHealthy;
+        myBirdInfect = aBirdInfect;
+        myBirdHealthy = aBirdHealthy;
+        myDayCounter = aDayCounter;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent anE) { 
+        final String sourceName = anE.getActionCommand();
+
+        if ("Start".equals(sourceName)) {
+            mySimWorld.startTimer();
+        }
+
+        if ("Stop".equals(sourceName)) {
+            mySimWorld.stopTimer();
+        }
+
+        if ("Step".equals(sourceName)) {
+            mySimWorld.stepTimer();
+        }
+
+        if ("Reset".equals(sourceName)) {
+            mySimWorld.clearLists();
+
+            myPeepInfect.setText("0");
+            myPeepHealthy.setText("0");
+            myBirdInfect.setText("0");
+            myBirdHealthy.setText("0");
+            myDayCounter.setText("0");
+        }
+
+        if ("Generate World".equals(sourceName)) {
+            final int thisPeepNum = Integer.parseInt(myPeepNum.getText());
+            final int thisBirdNum = Integer.parseInt(myBirdNum.getText());
+            final double thisInfectNum = Double.parseDouble(myInfectNum.getText());
+
+            final int trueInfectNum = (int) Math.round((thisInfectNum / myHunnerd)
+                                                       * thisBirdNum);
+            final int trueBirdNum = thisBirdNum - trueInfectNum;
+
+            mySimWorld = new SimWorld(myWorldPanel, thisPeepNum, trueBirdNum, trueInfectNum,
+                                      myPeepInfect, myPeepHealthy, myBirdInfect, myBirdHealthy,
+                                      myDayCounter);
+        }
+    }
+}

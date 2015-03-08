@@ -1,0 +1,3 @@
+module CircuitA(SW, M);
+	input [3:0] SW;
+	output [3:]

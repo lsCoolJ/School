@@ -1,0 +1,30 @@
+// TCES 330, Spring 2009
+// Implements a register file
+// Size: four 32-bit registers
+
+module RegisterFile(Clk, Reset, W_data, W_addr, W_en, R_addr, R_en, R_data);
+  input Clk;           // system clock
+  input Reset;         // reset signal
+  input [15:0] W_data; // data to write
+  input [3:0] W_addr;  // address
+  input W_en;          // write enable
+  input [3:0] Ra_addr, Rb_addr;  // read address
+  input Ra_en, Rb_en;          // read enable
+  output [15:0] Ra_data, Rb_data;// output data
+  
+  wire [3:0] W_d, R_d;
+  
+  // write decoder
+  DecoderN #(.N(2)) WriteDecoder( W_addr, W_en, W_d );
+  
+  // read decoder
+  DecoderN #(.N(2)) ReadDecoder( R_addr, R_en, Ra_d, Rb_d);
+  
+  // registers with output enable
+  // reference: module RegisterOEN( Clk, Rst, Ld, I, Oe, Qz );
+  RegisterOEN #(.N(32)) Reg0( Clk, Reset, W_d[0], W_data, R_d[0], R_data );
+  RegisterOEN #(.N(32)) Reg1( Clk, Reset, W_d[1], W_data, R_d[1], R_data );
+  RegisterOEN #(.N(32)) Reg2( Clk, Reset, W_d[2], W_data, R_d[2], R_data );
+  RegisterOEN #(.N(32)) Reg3( Clk, Reset, W_d[3], W_data, R_d[3], R_data );
+  
+endmodule

@@ -1,0 +1,160 @@
+package eight.progpracticum;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.Action;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.KeyStroke;
+
+/** This class makes the Menu Bar for the frame.
+ * @author benf94
+ * @version 11/28/2013
+ */
+@SuppressWarnings("serial")
+public class MenuBar extends JMenuBar {
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private static final int NUM_THREE = 3;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */ 
+    private static final int NUM_FOUR = 4;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private static final int NUM_FIVE = 5;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private static final int NUM_SIX = 6;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private static final int NUM_SEVEN = 7;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private static final int NUM_EIGHT = 8;
+    
+    /**
+     * Used to shorten code line.
+     */
+    private static final String ABOUT = "Ben's NotePad Knock-off Program!\nVersion: 1.0\n\n"
+            + "Use the format menu to change the Font"
+            + "\nand whether the text is word wrapped or not.";
+    
+    /**
+     * Used to shorten code line.
+     */
+    private static final String HOW = "How to use this program.";
+    
+    /**
+     * Used to shorten code line.
+     */
+    private static final int INFOM = JOptionPane.INFORMATION_MESSAGE;
+    
+    /**
+     * The file menu displayed in the menu bar.
+     */
+    private JMenu myFileMenu;
+    
+    /**
+     * The format menu displayed in the menu bar.
+     */
+    private JMenu myFormatMenu;
+    
+    /**
+     * The help menu displayed in the menu bar.
+     */
+    private JMenu myHelpMenu;
+    
+    /**
+     * The frame that everything is on.
+     */
+    private JFrame myFrame;
+    
+    /** This method makes the menu bar to be displayed on the frame.
+     * @param anAction is the array of actions from the NotePadGUI class.
+     * @param aFrame is the frame which everything is on.
+     */
+    public MenuBar(final Action[] anAction, final JFrame aFrame) {
+        super();
+        
+        myFrame = aFrame;
+        
+        myFileMenu = new JMenu("File");
+        myFormatMenu = new JMenu("Format");
+        myHelpMenu = new JMenu("Help");
+        
+        myFileMenu.setMnemonic('F');
+        myFormatMenu.setMnemonic('O');
+        myHelpMenu.setMnemonic('H');
+        
+        setUp(anAction);
+    }
+    
+    /** This method sets up the individual menus and menu items on the menu bar.
+     * @param anAction is the array of actions from the NotePadGUI class.
+     */
+    private void setUp(Action[] anAction) {
+        add(myFileMenu);
+        final JMenuItem newItem = new JMenuItem(anAction[0]);
+        newItem.setAccelerator(KeyStroke.getKeyStroke("ctrl N"));
+        
+        final JMenuItem open = new JMenuItem(anAction[1]);
+        open.setAccelerator(KeyStroke.getKeyStroke("ctrl O"));
+        
+        final JMenuItem save = new JMenuItem(anAction[2]);
+        save.setAccelerator(KeyStroke.getKeyStroke("ctrl S"));
+        
+        final JMenuItem print = new JMenuItem(anAction[NUM_THREE]);
+        print.setAccelerator(KeyStroke.getKeyStroke("ctrl P"));
+        
+        final JMenuItem exit = new JMenuItem(anAction[NUM_FOUR]);
+        exit.setAccelerator(KeyStroke.getKeyStroke("ctrl X"));
+        
+        myFileMenu.add(newItem);
+        myFileMenu.add(open);
+        myFileMenu.add(save);
+        myFileMenu.add(print);
+        myFileMenu.addSeparator();
+        myFileMenu.add(exit);
+        
+        add(myFormatMenu);
+        final JCheckBox wordWrap = new JCheckBox(anAction[NUM_FIVE]);
+        wordWrap.setMnemonic('W');
+        
+        final JMenuItem fontType = new JMenuItem(anAction[NUM_SIX]);
+        
+        final JMenuItem fontSize = new JMenuItem(anAction[NUM_SEVEN]);
+        
+        final JMenuItem fontStyle = new JMenuItem(anAction[NUM_EIGHT]);
+        
+        myFormatMenu.add(wordWrap);
+        myFormatMenu.addSeparator();
+        myFormatMenu.add(fontType);
+        myFormatMenu.add(fontSize);
+        myFormatMenu.add(fontStyle);
+        
+        add(myHelpMenu);
+        final JMenuItem about = new JMenuItem("About");
+        about.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent anE) {
+                JOptionPane.showMessageDialog(myFrame, ABOUT, HOW, INFOM);
+            }
+        });
+        myHelpMenu.add(about);
+    }
+}

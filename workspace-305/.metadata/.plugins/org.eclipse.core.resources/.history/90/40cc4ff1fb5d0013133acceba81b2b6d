@@ -1,0 +1,65 @@
+package epidemic.progpracticum.model;
+
+import java.awt.Point;
+
+public class Human extends AbstractEntity {
+
+    private Point myLocation;
+
+    public Human(char aSpecies, boolean aSick, int aDayNum, Point aLocation) {
+        super(aSpecies, aSick, aDayNum, aLocation);
+        myLocation = aLocation;
+    }
+
+    @Override
+    public void move(final int aCaseNumber) {
+        int thisX = myLocation.x;
+        int thisY = myLocation.y;
+        int yMove;
+        int xMove;
+        switch(aCaseNumber) {
+            case 1:
+                yMove = 0;
+                xMove = 0;
+                break;
+            case 2:
+                xMove = 10;
+                yMove = 0;
+                break;
+            case 3:
+                xMove = 10;
+                yMove = 10;
+                break;
+            case 4:
+                xMove = 0;
+                yMove = 10;
+                break;
+            case 5:
+                xMove = -10;
+                yMove = 10;
+                break;
+            case 6:
+                xMove = -10;
+                yMove = 0;
+                break;
+            case 7:
+                xMove = -10;
+                yMove = -10;
+                break;
+            case 8:
+                xMove = 0;
+                yMove = -10;
+                break;
+            case 9:
+                xMove = 10;
+                yMove = -10;
+                break;
+            default:
+                xMove = 0;
+                yMove = 0;
+                break;
+        }
+        myLocation = new Point(thisX + xMove, thisY + yMove);
+    }
+
+}

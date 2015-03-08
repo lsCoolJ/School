@@ -1,0 +1,7 @@
+Number,class,Species,Gender,Age,Height,Weight,Call,Name,Address,Owner
+1,MAMMAL,Human,FEMALE,3.1,23.3,30.1,language,,,
+2,MAMMAL,Human,MALE,4.1,33.3,42.1,language,,,
+3,MAMMAL,Dog,FEMALE,9.9,13.5,62.3,woof-woof,Raven,some address,Monika Sobolewska
+4,MAMMAL,Cat,MALE,6.5,9.0,12.8,meow-meow,Kitty,some other address,Joanna Petz
+5,MAMMAL,Human,MALE,19.0,170.0,80.0,language,,,
+6,MAMMAL,Cat,FEMALE,16.5,10.1,9.4,purr-purr,Princess,address,Ben Foster

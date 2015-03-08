@@ -1,0 +1,28 @@
+module Part1(KEY, SW, LEDG, LEDR, HEX0, HEX1, HEX4, HEX5, HEX6, HEX7);
+	input [0:0] KEY;
+	input [17:0] SW;
+	output [17:0] LEDR;
+	output [0:0] LEDG;
+	output [0:6] HEX0, HEX1, HEX4, HEX5, HEX6, HEX7;
+	
+	wire [7:0] indat = SW[7:0];
+	wire [4:0] address = SW[15:11];
+	wire wren = SW[17];
+	wire clock = KEY[0];
+	wire [7:0] Q;
+	
+	assign LEDG[0] = SW[17];
+	assign LEDR = SW;
+	
+	ramplpm RLPM(.address(address), .clock(clock), .data(indat), .wren(wren), .q(Q));
+	
+	Hex7Seg H0(Q[3:0], HEX0);
+	Hex7Seg H1(Q[7:4], HEX1);
+	
+	Hex7Seg H4(indat[3:0], HEX4);
+	Hex7Seg H5(indat[7:4], HEX5);
+	
+	Hex7Seg H6(address[3:0], HEX6);
+	Hex7SegAddress H7(address[4], HEX7);
+	
+endmodule

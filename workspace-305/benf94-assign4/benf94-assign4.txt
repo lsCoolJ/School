@@ -1,0 +1,14 @@
+Assignment name: Assignment 4
+TCSS 305B: Programming Practicum, Autumn 2013
+
+Name: Ben Foster
+UWNetID: benf94
+Subversion Revision Number: 13
+
+Assignment Overview:
+
+This assignment was given to us to help us practice using JUnit to test our classes in the future. The reading portion was given to us so that we could be more prepared when we learn about GUI-related classes.
+
+Technical Impression:
+
+It is my personal opinion that this assignment was helpful to me for when I want to test my classes in later programs that I write. I had thought before that the only way to test/debug classes was to use the debugger tool or to write countless amounts of system print lines in my code in order to really figure out what was going on. Now that I know about JUnit, I will be able to use it in later projects in order to test everything. The reading portion is basically a review on how to write GUI classes since I have taken programming classes before. I believe it will help for when we cover GUI classes in class since I will be able to understand it much better.

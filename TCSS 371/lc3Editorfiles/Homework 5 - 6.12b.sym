@@ -1,0 +1,12 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	COUNTER                 3023
+//	DONE                    30A5
+//	ENTER                   3021
+//	LF                      3024
+//	LOOP0                   3092
+//	LOOP1                   3094
+//	OUTPUT                  309D
+//	QUIT                    3022
+//	STRING                  302C
+//	WARNING                 3000

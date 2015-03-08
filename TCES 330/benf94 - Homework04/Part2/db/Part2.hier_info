@@ -1,0 +1,28 @@
+|Part2
+SW[0] => currState.OUTPUTSELECT
+SW[0] => currState.OUTPUTSELECT
+SW[0] => currState.OUTPUTSELECT
+SW[0] => currState.OUTPUTSELECT
+SW[0] => currState.OUTPUTSELECT
+SW[0] => currState.OUTPUTSELECT
+SW[0] => currState.OUTPUTSELECT
+SW[0] => currState.OUTPUTSELECT
+SW[0] => Z.OUTPUTSELECT
+SW[0] => currState.A.DATAIN
+SW[1] => Selector2.IN2
+SW[1] => nextState.G.DATAB
+SW[1] => nextState.H.DATAB
+SW[1] => Selector3.IN1
+SW[1] => Selector1.IN1
+SW[1] => Selector0.IN1
+SW[1] => nextState.C.DATAB
+SW[1] => nextState.D.DATAB
+KEY[0] => Z.CLK
+KEY[0] => currState~1.DATAIN
+LEDR[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= LEDR[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[0] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+

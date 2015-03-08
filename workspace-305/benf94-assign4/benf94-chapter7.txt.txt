@@ -1,0 +1,95 @@
+Chapter 7 Questions
+
+1. What do authors of the book refer to when they use the word "AWT"?
+	The authors of the book are referring to the class library called the Abstract Window Toolkit.
+
+
+2. What do authors of the book refer to when they use the word "Swing"?
+	The authors of the book are referring to the user interface library that Sun and Netscape created based upon the IFC (Internet Foundation Classes).
+
+
+3. What is a frame and what Swing class implements / draws it?
+	A fram is a top-level window. the JFrame class implements / draws it.
+
+
+4. What is the name of Swing library?
+	javax.swing
+
+
+5. What is the default size of a frame?
+	The default size of a frame is 0x0 pixels.
+
+
+6. What is the default behavior of a frame, if a user closes a window?
+	If a user closes a window, then the frame is hidden by default, but it is still running in the background since it was not terminated.
+
+
+7. Why the frames are not automatically displayed and what do you need to write to draw a frame?
+	Frames are not automatically displayed so that programmers can add components to the frame before showing it for the first time. In order to draw a frame or a component you must write frame.setVisible(true);
+
+
+8. What are ancestor classes of JFrame (list them in order from the most direct parent to the Object class) and why is it important to know this class hierarchy?
+	Frame, Window, Container, Component, Object. It is important to know this heirarchy in order to know where you need to look for the methods to customize and change your frame.
+
+
+
+9. Explain / comment each line of the following code 
+
+Toolkit kit = Toolkit.getDefaultToolkit();
+	Getting the toolkit method by calling the static getDefaultToolkit method of the Toolkit class
+
+Dimension screenSize = kit.getScreenSize();
+	Calling the getScreenSize method which returns the screen size as a Dimension object.
+
+int screenWidth = screenSize.width;
+	Setting the int screenWidth to the width of the screen.
+
+int screenHeight = screenSize.height;
+	Setting the int screenHeight to the height of the screen.
+
+setSize(screenWidth / 2, screenHeight / 2);
+	Sets the size of the frame to half the size of the screen.
+setLocationByPlatform(true);
+	Sets the location of the frame according to the platform being used.
+
+
+10. What is the purpose of add method? Why do we need to call it? e.g.
+JFrame frame = new JFrame("Some Demo");
+frame.add(new <SomeComponent>);
+	The purpose of the add method is to add components onto the frame. We need to use the add method because frames are designed to be containers for components. Normally, you draw onto a component which you then add to a frame.
+
+
+
+11. What do you need to do to draw on a component? 
+	We need to draw on a component because it is considered bad programming practice to draw directly onto a frame. Therefore, we draw on a component and then add it to a frame.
+
+
+
+12. What is the Graphics object?
+	A graphics object remembers a collection of settings for drawing images and text, such as the font yu set or the current color.
+
+
+
+13. Explain / comment each line of the following method
+
+public void paintComponent(Graphics g) {
+	method called paintComponent which takes in a Graphics object g.
+ 
+      Graphics2D g2 = (Graphics2D) g;
+	Sets the Graphics2D object g2 equal to g.
+
+      Rectangle2D rect = new Rectangle2D.Double(0, 0, 150, 150);
+	Creates a Rectangle2D object which is a Graphics2D object which starts at point (0,0) and goes to point (150,150).
+      g2.setPaint(Color.BLACK);
+	Sets the color of g2 to black.
+      g2.draw(rect);
+	Draws the rectangle in black
+      g2.setPaint(Color.RED);
+	Sets the current color of g2 to red.
+      g2.fill(rect);
+	Makes the interior of the rectangle red.
+}
+
+
+14. When is paintComponent called and should a programmer ever call this method?
+	the paintComponent is called automatically whenever a part of our application needs to be redrawn. A programmer should never call this method.

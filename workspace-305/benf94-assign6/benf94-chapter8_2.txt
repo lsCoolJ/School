@@ -1,0 +1,28 @@
+1. What is the purpose of Action interface?
+The Action Interface encapsulates commands and attaches them to multiple event sources.
+
+2. What does an Action object encapsulate?
+A description of the command (as a text string and an optional icon) and Parameters that are necessary to carry out the command.
+
+3. What interface does Action interface extend? What concrete class implements Action interface?
+The Action interface extends the ActionListener interface. The AbstractAction class implements the Action interface.
+
+4. What is the purpose of the putValue method? Looking at Listing 8.3, give an example of putValue that uses a predefined name and an example of a putValue method that uses a custom defined name, assuming you call the method in AbstractAction class definition.
+The putValue() method lets you store arbitrary name/value pairs in the action object.
+Example: putValue(Action.NAME, name);
+putValue(Action.SMALL_ICON, icon);
+
+5. What is the purpose of getValue method? Looking at Listing 8.3, give an example of getValue assuming you call the method in AbstractAction class definition (look at Listing 8.3).
+The getValue() method lets you retrieve arbitrary name/value pairs in the action object.
+Example: getValue("color");
+
+
+6. What happens when an action is added to a menu or toolbar button?  Looking at Listing 8.3, rewrite a line that creates the blueAction object and a line that assigns its contents to a JButton. 
+When an action is added to a mneu or a toolbar button, then you can cause that action to happen from the menu or the toolbar button that it is attached to. 
+Action blueAction = new ColorAction("Blue", new ImageIcon("blue-ball.gif"), Color.BLUE);
+buttonPanel.add(new JButton(blueAction));
+
+
+7. What is keyboard focus?
+keyboard focus is where buttons or other objects are highlighted in the GUI and then you can use keyboard commands in order to switch focus or cause actions to happen.
+

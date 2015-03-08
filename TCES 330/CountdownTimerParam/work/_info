@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\UWT\TCES330\Lectures\Lec13\CountdownTimerParam
+vCountdownTimer
+Z1 I=bnN?a4?>k9Y<jUR>NzbA3
+Z2 VDoGe8CZMdNMRI75Sik2Je1
+Z3 dE:\UWT\TCES330\Lectures\Lec13\CountdownTimerParam
+Z4 w1400111254
+Z5 8E:/UWT/TCES330/Lectures/Lec13/CountdownTimerParam/CountdownTimer.v
+Z6 FE:/UWT/TCES330/Lectures/Lec13/CountdownTimerParam/CountdownTimer.v
+L0 6
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@countdown@timer
+Z10 !s100 dncC1o=KK>nB3FdkXBB>]2
+Z11 !s108 1400111459.852000
+Z12 !s107 E:/UWT/TCES330/Lectures/Lec13/CountdownTimerParam/CountdownTimer.v|
+Z13 !s90 -reportprogress|300|-work|work|E:/UWT/TCES330/Lectures/Lec13/CountdownTimerParam/CountdownTimer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtestCountdownTimer
+!i10b 1
+!s100 XX2WTD]AInIOM5MR8PDbV3
+IM:GeW19Q0BJ;>IgYzScCc2
+Z14 V6On43IoEZ`bUNV96S:MO11
+R3
+w1400112050
+Z15 8E:/UWT/TCES330/Lectures/Lec13/CountdownTimerParam/testCountdownTimer.v
+Z16 FE:/UWT/TCES330/Lectures/Lec13/CountdownTimerParam/testCountdownTimer.v
+L0 9
+R7
+r1
+!s85 0
+31
+!s108 1400112053.787000
+!s107 E:/UWT/TCES330/Lectures/Lec13/CountdownTimerParam/testCountdownTimer.v|
+Z17 !s90 -reportprogress|300|-work|work|-O0|E:/UWT/TCES330/Lectures/Lec13/CountdownTimerParam/testCountdownTimer.v|
+!s101 -O0
+R8
+Z18 ntest@countdown@timer

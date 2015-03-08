@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1386557283028" analysisTimestamp="1386557281504" release="">
+  <Project projectName="benf94-orientation">
+    <Jar>H:\workspace-305\benf94-orientation\bin</Jar>
+    <AuxClasspathEntry>H:\workspace-305\benf94-orientation\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\benf94-orientation\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 8 Dec 2013 18:48:02 -0800" total_classes="2" referenced_classes="13" total_bugs="0" total_size="128" num_packages="1" vm_version="23.25-b01" cpu_seconds="1.23" clock_seconds="1.53" peak_mbytes="236.25" alloc_mbytes="494.94" gc_seconds="0.27">
+    <PackageStats package="orientation.practicum" total_bugs="0" total_types="2" total_size="128">
+      <ClassStats class="orientation.practicum.HomePet" sourceFile="HomePet.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="orientation.practicum.Vertebrate" sourceFile="Vertebrate.java" interface="false" size="65" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1204" invocations="343" avgMicrosecondsPerInvocation="3510" maxMicrosecondsPerInvocation="235435" standardDeviationMircosecondsPerInvocation="12722"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1386557283028" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

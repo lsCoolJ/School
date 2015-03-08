@@ -1,0 +1,15 @@
+Assignment name: Assignment 5 
+TCSS 305B: Programming Practicum, Autumn 2013
+
+Name: Ben Foster
+UWNetID: benf94
+Subversion Revision Number:
+
+Assignment Overview:
+
+This assignment was assigned to us in order to give us practice with drawing shapes and making basic GUIs
+
+
+Technical Impression:
+
+Completing this assignment was a simple task. Since I like GUI programming, then I already knew how to do a lot of what was asked of me in this assignment. I just had to recall what I learned in my previous Java class however, the programming style is slightly different so I had small trouble adjusting to this new way of creating GUI windows. I had to look up how to shear and rotate rectangles and also how to set the font differently so I could have my signature look like a signature rather than looking like it was generated on a computer. I also had to look up how to use gradient paints and it frustrated me that I couldn't set the background to a gradient and I had to instead fill a rectangle that was equal to the size of the frame. Also, since I did not want to spend hours trying to figure out what I wanted my abstract art to look like, I created a Random generator instead to create multiple random shapes with random sizes and random locations.

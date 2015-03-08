@@ -1,0 +1,66 @@
+package seven.progpracticum;
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import javax.swing.AbstractAction;
+import javax.swing.Action;
+import javax.swing.ImageIcon;
+
+/** This class handles the actions of the Tool bar and the Popup menu.
+ * @author benf94
+ * @version 11/20/2013
+ */
+@SuppressWarnings("serial")
+public class PanelColorAction extends AbstractAction {
+    
+    /**
+     * Used to get rid of checkstyle.
+     */
+    private static final String COLOR_STRING = "color";
+    
+    /**
+     * Used to get rid of checkstyle.
+     */
+    private static final String PANEL_STRING = "panel";
+    
+    /**
+     * @param anIcon is the icon associated with both the toolbar and the popup menu.
+     * @param aColor is the color passed in associated with the icon.
+     * @param aPanel is the panel on which we are drawing.
+     */
+    public PanelColorAction(final ImageIcon anIcon, final Color aColor,
+                            final PaintPanel aPanel) {
+        putValue(Action.SMALL_ICON, anIcon);
+        putValue(COLOR_STRING, aColor);
+        putValue(PANEL_STRING, aPanel);
+
+        final char mnemonic = anIcon.getDescription().toUpperCase().charAt(0);
+        putValue(Action.MNEMONIC_KEY, (int) mnemonic);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent anE) {
+        final Color c = (Color) getValue(COLOR_STRING);
+        final PaintPanel p = (PaintPanel) getValue(PANEL_STRING);
+        p.setBackground(c);
+
+        final String stringSource = anE.getSource().getClass().toString();
+        final String menuItemText = "class javax.swing.JMenuItem";
+        final String actionCommand = anE.getActionCommand();
+        if (stringSource.equals(menuItemText)) {
+            if ("Red".equals(actionCommand)) {
+                ToolBar.setMyRed();
+            }
+            if ("Blue".equals(actionCommand)) {
+                ToolBar.setMyBlue();
+            }
+            if ("Yellow".equals(actionCommand)) {
+                ToolBar.setMyYellow();
+            }
+            if ("White".equals(actionCommand)) {
+                ToolBar.setMyWhite();
+            }
+        }
+    }
+
+}

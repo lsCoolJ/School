@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="270" timestamp="1386391861532" analysisTimestamp="1386391856283" release="">
+  <Project projectName="StudentEpidemicProject">
+    <Jar>H:\workspace-305\StudentEpidemicProject\bin\epidemic\progpracticum\view\SimulationFrame$1.class</Jar>
+    <Jar>H:\workspace-305\StudentEpidemicProject\bin\epidemic\progpracticum\view\SimulationFrame$2.class</Jar>
+    <Jar>H:\workspace-305\StudentEpidemicProject\bin\epidemic\progpracticum\view\SimulationFrame$3.class</Jar>
+    <Jar>H:\workspace-305\StudentEpidemicProject\bin\epidemic\progpracticum\view\SimulationFrame$4.class</Jar>
+    <Jar>H:\workspace-305\StudentEpidemicProject\bin\epidemic\progpracticum\view\SimulationFrame.class</Jar>
+    <AuxClasspathEntry>H:\workspace-305\StudentEpidemicProject\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\StudentEpidemicProject\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="215">
+    <Class classname="epidemic.progpracticum.model.Bird">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Bird" name="myFiveHunnerd" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Bird" start="32" end="32" startBytecode="26" endBytecode="26" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="215">
+    <Class classname="epidemic.progpracticum.model.Bird">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Bird" name="myNumFive" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Bird" start="47" end="47" startBytecode="41" endBytecode="41" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="215">
+    <Class classname="epidemic.progpracticum.model.Bird">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Bird" name="myNumFour" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Bird" start="42" end="42" startBytecode="36" endBytecode="36" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="215">
+    <Class classname="epidemic.progpracticum.model.Bird">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Bird" name="myNumSeven" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Bird" start="57" end="57" startBytecode="53" endBytecode="53" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="215">
+    <Class classname="epidemic.progpracticum.model.Bird">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Bird" name="myNumSix" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Bird" start="52" end="52" startBytecode="47" endBytecode="47" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="215">
+    <Class classname="epidemic.progpracticum.model.Bird">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Bird" name="myNumThree" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Bird" start="37" end="37" startBytecode="31" endBytecode="31" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="215">
+    <Class classname="epidemic.progpracticum.model.Bird">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Bird" name="myTen" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Bird" start="22" end="22" startBytecode="12" endBytecode="12" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="215">
+    <Class classname="epidemic.progpracticum.model.Bird">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Bird" name="myThousand" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Bird" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Bird" start="27" end="27" startBytecode="19" endBytecode="19" sourcefile="Bird.java" sourcepath="epidemic/progpracticum/model/Bird.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="199" last="207" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="fiveHunnerd" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="32" end="32" startBytecode="26" endBytecode="26" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="208">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="myFiveHunnerd" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="32" end="32" startBytecode="26" endBytecode="26" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="205">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="myNumEight" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="62" end="62" startBytecode="59" endBytecode="59" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="202">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="myNumFive" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="47" end="47" startBytecode="41" endBytecode="41" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="201">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="myNumFour" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="42" end="42" startBytecode="36" endBytecode="36" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="204">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="myNumSeven" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="57" end="57" startBytecode="53" endBytecode="53" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="203">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="myNumSix" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="52" end="52" startBytecode="47" endBytecode="47" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="200">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="myNumThree" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="37" end="37" startBytecode="31" endBytecode="31" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="199">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="myTen" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="22" end="22" startBytecode="12" endBytecode="12" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="199">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="myThousand" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="27" end="27" startBytecode="19" endBytecode="19" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="200" last="204" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="numEight" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="62" end="62" startBytecode="59" endBytecode="59" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="200" last="201" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="numFive" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="47" end="47" startBytecode="41" endBytecode="41" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="200" last="200" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="numFour" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="42" end="42" startBytecode="36" endBytecode="36" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="200" last="203" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="numSeven" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="57" end="57" startBytecode="53" endBytecode="53" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="200" last="202" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.Human">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.Human" name="numSix" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.Human" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.Human" start="52" end="52" startBytecode="47" endBytecode="47" sourcefile="Human.java" sourcepath="epidemic/progpracticum/model/Human.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_INT_CAST_TO_FLOAT_PASSED_TO_ROUND" priority="2" abbrev="ICAST" category="CORRECTNESS" first="49" last="50" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.model.MyButtonListener" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="43" end="77" startBytecode="0" endBytecode="401" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Method>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="68" end="68" startBytecode="123" endBytecode="123" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" abbrev="NP" category="CORRECTNESS" first="5" last="45" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.model.MyButtonListener" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="32" end="51" startBytecode="0" endBytecode="184" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Method>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myStep" signature="Ljavax/swing/JButton;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="36" end="36" startBytecode="26" endBytecode="26" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" abbrev="NP" category="CORRECTNESS" first="5" last="45" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.model.MyButtonListener" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="32" end="51" startBytecode="0" endBytecode="184" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Method>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myStep" signature="Ljavax/swing/JButton;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="40" end="40" startBytecode="43" endBytecode="43" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" abbrev="NP" category="CORRECTNESS" first="5" last="45" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.model.MyButtonListener" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="32" end="51" startBytecode="0" endBytecode="184" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Method>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myStep" signature="Ljavax/swing/JButton;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="49" end="49" startBytecode="67" endBytecode="67" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="122" last="123" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="HUNNERD" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="67" end="67" startBytecode="7" endBytecode="7" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="133" last="133" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="hunnerd" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="67" end="67" startBytecode="7" endBytecode="7" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="134">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myHunnerd" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="83" end="83" startBytecode="7" endBytecode="7" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="235">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myZeroHealthyString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="88" end="88" startBytecode="13" endBytecode="13" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="235">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myZeroInfectedString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="93" end="93" startBytecode="19" endBytecode="19" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="136" last="234" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myZeroString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="76" end="76" startBytecode="13" endBytecode="13" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="5" last="121" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="height" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="40" end="40" startBytecode="33" endBytecode="33" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="109" last="109" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myBirdHealthy" signature="Ljavax/swing/JTextField;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="55" end="55" startBytecode="78" endBytecode="78" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="109" last="109" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myBirdInfect" signature="Ljavax/swing/JTextField;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="54" end="54" startBytecode="72" endBytecode="72" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="109" last="109" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myBirdNum" signature="Ljavax/swing/JLabel;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="50" end="50" startBytecode="48" endBytecode="48" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="109" last="109" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myDayCounter" signature="Ljavax/swing/JTextField;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="56" end="56" startBytecode="84" endBytecode="84" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="71" last="73" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myGenerate" signature="Ljavax/swing/JButton;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="41" end="41" startBytecode="43" endBytecode="43" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="109" last="109" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myInfectNum" signature="Ljavax/swing/JLabel;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="51" end="51" startBytecode="54" endBytecode="54" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="109" last="109" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myPeepHealthy" signature="Ljavax/swing/JTextField;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="53" end="53" startBytecode="66" endBytecode="66" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="109" last="109" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myPeepInfect" signature="Ljavax/swing/JTextField;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="52" end="52" startBytecode="60" endBytecode="60" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="109" last="109" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myPeepNum" signature="Ljavax/swing/JLabel;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="49" end="49" startBytecode="43" endBytecode="43" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="46" last="59" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="mySimWorld" signature="Lepidemic/progpracticum/model/SimWorld;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="75" end="75" startBytecode="186" endBytecode="186" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="71" last="73" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myStep" signature="Ljavax/swing/JButton;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="40" end="40" startBytecode="38" endBytecode="38" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="109" last="109" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myWorldPanel" signature="Lepidemic/progpracticum/view/WorldPanel;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="48" end="48" startBytecode="38" endBytecode="38" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="5" last="121" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="width" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="38" end="38" startBytecode="22" endBytecode="22" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" first="5" last="45" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myBirdNum" signature="Ljavax/swing/JLabel;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="20" end="20" startBytecode="0" endBytecode="0" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" first="5" last="45" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myInfectNum" signature="Ljavax/swing/JLabel;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="21" end="21" startBytecode="0" endBytecode="0" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" first="5" last="45" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myPeepNum" signature="Ljavax/swing/JLabel;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="19" end="19" startBytecode="0" endBytecode="0" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" first="109" last="109" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="mySimWorld" signature="Lepidemic/progpracticum/model/SimWorld;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="32" end="32" startBytecode="0" endBytecode="0" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" abbrev="UwF" category="CORRECTNESS" first="5" last="45" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.MyButtonListener">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.MyButtonListener" name="myStep" signature="Ljavax/swing/JButton;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.MyButtonListener" start="36" end="36" startBytecode="22" endBytecode="22" sourcefile="MyButtonListener.java" sourcepath="epidemic/progpracticum/model/MyButtonListener.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="234">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.model.SimWorld" name="fileSave" signature="(Ljava/lang/String;Ljava/io/File;Ljavax/swing/JFileChooser;)V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="396" end="416" startBytecode="0" endBytecode="368" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="403" end="403" startBytecode="63" endBytecode="63" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" abbrev="NP" category="CORRECTNESS" first="15" last="15" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.model.SimWorld" name="&lt;init&gt;" signature="(Lepidemic/progpracticum/view/WorldPanel;III)V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="25" end="52" startBytecode="0" endBytecode="524" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Method>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myBirdList" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="47" end="47" startBytecode="210" endBytecode="210" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" abbrev="NP" category="CORRECTNESS" first="15" last="15" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.model.SimWorld" name="&lt;init&gt;" signature="(Lepidemic/progpracticum/view/WorldPanel;III)V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="25" end="52" startBytecode="0" endBytecode="524" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Method>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myHumanList" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="41" end="41" startBytecode="146" endBytecode="146" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" abbrev="NP" category="CORRECTNESS" first="15" last="15" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.model.SimWorld" name="&lt;init&gt;" signature="(Lepidemic/progpracticum/view/WorldPanel;III)V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="25" end="52" startBytecode="0" endBytecode="524" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Method>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myLocations" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="34" end="34" startBytecode="66" endBytecode="66" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" abbrev="NP" category="CORRECTNESS" first="15" last="15" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.model.SimWorld" name="&lt;init&gt;" signature="(Lepidemic/progpracticum/view/WorldPanel;III)V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="25" end="52" startBytecode="0" endBytecode="524" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Method>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myLocations" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="39" end="39" startBytecode="105" endBytecode="105" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" abbrev="NP" category="CORRECTNESS" first="15" last="15" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.model.SimWorld" name="&lt;init&gt;" signature="(Lepidemic/progpracticum/view/WorldPanel;III)V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="25" end="52" startBytecode="0" endBytecode="524" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Method>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myLocations" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="46" end="46" startBytecode="191" endBytecode="191" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="258">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myCSVString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="172" end="172" startBytecode="99" endBytecode="99" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="260">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myComma" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="189" end="189" startBytecode="117" endBytecode="117" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="190">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myHealthyString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="150" end="150" startBytecode="59" endBytecode="59" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="190">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myInfectedString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="155" end="155" startBytecode="65" endBytecode="65" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="247">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="mySaveMessage" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="160" end="160" startBytecode="71" endBytecode="71" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="259">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="mySaveStringOne" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="177" end="177" startBytecode="105" endBytecode="105" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="259">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="mySaveStringTwo" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="182" end="182" startBytecode="111" endBytecode="111" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="172">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myTen" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="145" end="145" startBytecode="53" endBytecode="53" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="174" last="185" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myTimerDelay" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="120" end="120" startBytecode="46" endBytecode="46" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="243" last="246" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="saveMessage" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="154" end="154" startBytecode="71" endBytecode="71" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="67" last="81" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myBirdHealthy" signature="Ljavax/swing/JTextField;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="55" end="55" startBytecode="84" endBytecode="84" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="67" last="81" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myBirdInfect" signature="Ljavax/swing/JTextField;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="54" end="54" startBytecode="78" endBytecode="78" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="67" last="76" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myDayCounter" signature="Ljavax/swing/JTextField;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="54" end="54" startBytecode="85" endBytecode="85" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="15" last="44" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myInfectNum" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="30" end="30" startBytecode="55" endBytecode="55" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="67" last="81" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myPeepHealthy" signature="Ljavax/swing/JTextField;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="53" end="53" startBytecode="72" endBytecode="72" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="67" last="81" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myPeepInfect" signature="Ljavax/swing/JTextField;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="52" end="52" startBytecode="66" endBytecode="66" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" first="52" last="53" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myTimerOne" signature="Ljava/util/Timer;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="29" end="29" startBytecode="0" endBytecode="0" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" abbrev="UwF" category="CORRECTNESS" first="15" last="15" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myBirdList" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="47" end="47" startBytecode="205" endBytecode="205" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" abbrev="UwF" category="CORRECTNESS" first="15" last="15" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myHumanList" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="41" end="41" startBytecode="141" endBytecode="141" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" abbrev="UwF" category="CORRECTNESS" first="15" last="15" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.model.SimWorld" name="myLocations" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld" start="34" end="34" startBytecode="52" endBytecode="52" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="233" last="233" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld$1">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld$1" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.model.SimWorld$1" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld$1" start="314" end="340" startBytecode="0" endBytecode="449" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="epidemic.progpracticum.model.SimWorld$1" start="328" end="328" startBytecode="115" endBytecode="115" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" abbrev="SIC" category="PERFORMANCE" first="52" last="55" removedByChange="true">
+    <Class classname="epidemic.progpracticum.model.SimWorld$MyTimerListener">
+      <SourceLine classname="epidemic.progpracticum.model.SimWorld$MyTimerListener" start="79" end="99" sourcefile="SimWorld.java" sourcepath="epidemic/progpracticum/model/SimWorld.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" first="36" last="37" removedByChange="true">
+    <Class classname="epidemic.progpracticum.view.SimulationFrame">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.view.SimulationFrame" name="setPanelEast" signature="()V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="276" end="337" startBytecode="0" endBytecode="248" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Method>
+    <LocalVariable name="maxSizeOne" register="6" pc="80" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="283" end="283" startBytecode="78" endBytecode="78" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="maxSizeOne"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" first="36" last="37" removedByChange="true">
+    <Class classname="epidemic.progpracticum.view.SimulationFrame">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.view.SimulationFrame" name="setPanelEast" signature="()V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="276" end="337" startBytecode="0" endBytecode="248" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Method>
+    <LocalVariable name="maxSizeTwo" register="7" pc="93" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="284" end="284" startBytecode="91" endBytecode="91" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="maxSizeTwo"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" first="143" last="143" removedByChange="true">
+    <Class classname="epidemic.progpracticum.view.SimulationFrame">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.view.SimulationFrame" name="setPanelNorth" signature="()V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="290" end="350" startBytecode="0" endBytecode="257" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Method>
+    <LocalVariable name="preferSizeTwo" register="4" pc="70" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="295" end="295" startBytecode="68" endBytecode="68" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="preferSizeTwo"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_TYPES" priority="1" abbrev="EC" category="CORRECTNESS" first="226" last="226" removedByChange="true">
+    <Class classname="epidemic.progpracticum.view.SimulationFrame">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.view.SimulationFrame" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="260" end="275" startBytecode="0" endBytecode="215" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Method>
+    <Type descriptor="Ljavax/swing/JTextField;" role="TYPE_FOUND">
+      <SourceLine classname="javax.swing.JTextField" start="172" end="928" sourcefile="JTextField.java" sourcepath="javax/swing/JTextField.java"/>
+    </Type>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.lang.String" start="108" end="3100" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <Field classname="epidemic.progpracticum.view.SimulationFrame" name="myBirdHealthy" signature="Ljavax/swing/JTextField;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Field>
+    <String value="Healthy: 0" role="STRING_CONSTANT"/>
+    <Method classname="java.lang.String" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.String" start="975" end="993" startBytecode="0" endBytecode="208" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="269" end="269" startBytecode="433" endBytecode="433" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_TYPES" priority="1" abbrev="EC" category="CORRECTNESS" first="226" last="226" removedByChange="true">
+    <Class classname="epidemic.progpracticum.view.SimulationFrame">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Class>
+    <Method classname="epidemic.progpracticum.view.SimulationFrame" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="260" end="275" startBytecode="0" endBytecode="215" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Method>
+    <Type descriptor="Ljavax/swing/JTextField;" role="TYPE_FOUND">
+      <SourceLine classname="javax.swing.JTextField" start="172" end="928" sourcefile="JTextField.java" sourcepath="javax/swing/JTextField.java"/>
+    </Type>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.lang.String" start="108" end="3100" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <Field classname="epidemic.progpracticum.view.SimulationFrame" name="myPeepHealthy" signature="Ljavax/swing/JTextField;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Field>
+    <String value="Healthy: 0" role="STRING_CONSTANT"/>
+    <Method classname="java.lang.String" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.String" start="975" end="993" startBytecode="0" endBytecode="208" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="269" end="269" startBytecode="421" endBytecode="421" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="139">
+    <Class classname="epidemic.progpracticum.view.SimulationFrame">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.view.SimulationFrame" name="myHawaiiFiveO" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="254" end="254" startBytecode="378" endBytecode="378" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="154">
+    <Class classname="epidemic.progpracticum.view.SimulationFrame">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.view.SimulationFrame" name="myHealthyString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="104" end="104" startBytecode="134" endBytecode="134" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="139">
+    <Class classname="epidemic.progpracticum.view.SimulationFrame">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.view.SimulationFrame" name="myHunnerd" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="249" end="249" startBytecode="373" endBytecode="373" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="154">
+    <Class classname="epidemic.progpracticum.view.SimulationFrame">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.view.SimulationFrame" name="myInfectedString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="109" end="109" startBytecode="140" endBytecode="140" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="157">
+    <Class classname="epidemic.progpracticum.view.SimulationFrame">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.view.SimulationFrame" name="myVingt" signature="I" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="259" end="259" startBytecode="384" endBytecode="384" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="147">
+    <Class classname="epidemic.progpracticum.view.SimulationFrame">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Class>
+    <Field classname="epidemic.progpracticum.view.SimulationFrame" name="myZero" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+    </Field>
+    <SourceLine classname="epidemic.progpracticum.view.SimulationFrame" start="99" end="99" startBytecode="128" endBytecode="128" sourcefile="SimulationFrame.java" sourcepath="epidemic/progpracticum/view/SimulationFrame.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 6 Dec 2013 20:50:57 -0800" total_classes="5" referenced_classes="285" total_bugs="35" total_size="284" num_packages="2" vm_version="23.25-b01" cpu_seconds="3.49" clock_seconds="5.27" peak_mbytes="272.60" alloc_mbytes="494.94" gc_seconds="0.17" priority_2="34" priority_1="1">
+    <PackageStats package="epidemic.progpracticum.view" total_bugs="6" total_types="5" total_size="284" priority_2="6">
+      <ClassStats class="epidemic.progpracticum.view.SimulationFrame" sourceFile="SimulationFrame.java" interface="false" size="238" bugs="6" priority_2="6"/>
+      <ClassStats class="epidemic.progpracticum.view.SimulationFrame$1" sourceFile="SimulationFrame.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="epidemic.progpracticum.view.SimulationFrame$2" sourceFile="SimulationFrame.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="epidemic.progpracticum.view.SimulationFrame$3" sourceFile="SimulationFrame.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="epidemic.progpracticum.view.SimulationFrame$4" sourceFile="SimulationFrame.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="3798" invocations="1394" avgMicrosecondsPerInvocation="2724" maxMicrosecondsPerInvocation="24787" standardDeviationMircosecondsPerInvocation="1949"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="394" invocations="1391" avgMicrosecondsPerInvocation="283" maxMicrosecondsPerInvocation="20470" standardDeviationMircosecondsPerInvocation="982"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1386205110337" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1386205110337" release="" codeSize="63" numClasses="4"/>
+    <AppVersion sequence="2" timestamp="1386205139732" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1386205353495" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1386205390591" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1386205688444" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1386205869962" release="" codeSize="31" numClasses="2"/>
+    <AppVersion sequence="7" timestamp="1386205972639" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1386206192428" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1386206257221" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1386206261237" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1386206326926" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1386206329836" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1386207013547" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1386207299892" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1386210563667" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1386210728895" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1386210881030" release="" codeSize="174" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1386210988378" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1386211361495" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1386211542561" release="" codeSize="27" numClasses="2"/>
+    <AppVersion sequence="21" timestamp="1386211569479" release="" codeSize="29" numClasses="2"/>
+    <AppVersion sequence="22" timestamp="1386211640294" release="" codeSize="29" numClasses="2"/>
+    <AppVersion sequence="23" timestamp="1386211900566" release="" codeSize="29" numClasses="2"/>
+    <AppVersion sequence="24" timestamp="1386211920937" release="" codeSize="29" numClasses="2"/>
+    <AppVersion sequence="25" timestamp="1386212095609" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1386212186802" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1386212275490" release="" codeSize="28" numClasses="2"/>
+    <AppVersion sequence="28" timestamp="1386212297050" release="" codeSize="27" numClasses="2"/>
+    <AppVersion sequence="29" timestamp="1386212336408" release="" codeSize="174" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1386212383579" release="" codeSize="173" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1386212470145" release="" codeSize="173" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1386212501001" release="" codeSize="173" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1386212516395" release="" codeSize="173" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1386212536561" release="" codeSize="173" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1386212581284" release="" codeSize="174" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1386212773858" release="" codeSize="176" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1386212817539" release="" codeSize="176" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1386212894379" release="" codeSize="180" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1386212913698" release="" codeSize="180" numClasses="1"/>
+    <AppVersion sequence="40" timestamp="1386212937332" release="" codeSize="180" numClasses="1"/>
+    <AppVersion sequence="41" timestamp="1386212966731" release="" codeSize="180" numClasses="1"/>
+    <AppVersion sequence="42" timestamp="1386213027146" release="" codeSize="180" numClasses="1"/>
+    <AppVersion sequence="43" timestamp="1386213068716" release="" codeSize="180" numClasses="1"/>
+    <AppVersion sequence="44" timestamp="1386213131393" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="45" timestamp="1386213525804" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="46" timestamp="1386213574407" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="47" timestamp="1386213618218" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="48" timestamp="1386213773385" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="49" timestamp="1386214168478" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="50" timestamp="1386214233418" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="51" timestamp="1386214319516" release="" codeSize="86" numClasses="2"/>
+    <AppVersion sequence="52" timestamp="1386279059465" release="" codeSize="45" numClasses="2"/>
+    <AppVersion sequence="53" timestamp="1386279114644" release="" codeSize="45" numClasses="2"/>
+    <AppVersion sequence="54" timestamp="1386281487341" release="" codeSize="61" numClasses="2"/>
+    <AppVersion sequence="55" timestamp="1386281497096" release="" codeSize="61" numClasses="2"/>
+    <AppVersion sequence="56" timestamp="1386281685866" release="" codeSize="66" numClasses="2"/>
+    <AppVersion sequence="57" timestamp="1386281750256" release="" codeSize="66" numClasses="2"/>
+    <AppVersion sequence="58" timestamp="1386282256358" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="59" timestamp="1386282851655" release="" codeSize="71" numClasses="2"/>
+    <AppVersion sequence="60" timestamp="1386283147649" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="61" timestamp="1386283188808" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="62" timestamp="1386283738233" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="63" timestamp="1386285120099" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="64" timestamp="1386285235187" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="65" timestamp="1386285592813" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="66" timestamp="1386285826358" release="" codeSize="183" numClasses="1"/>
+    <AppVersion sequence="67" timestamp="1386287904718" release="" codeSize="83" numClasses="2"/>
+    <AppVersion sequence="68" timestamp="1386288050008" release="" codeSize="57" numClasses="1"/>
+    <AppVersion sequence="69" timestamp="1386288662409" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="70" timestamp="1386289312901" release="" codeSize="59" numClasses="1"/>
+    <AppVersion sequence="71" timestamp="1386289325205" release="" codeSize="57" numClasses="1"/>
+    <AppVersion sequence="72" timestamp="1386289426142" release="" codeSize="240" numClasses="5"/>
+    <AppVersion sequence="73" timestamp="1386289506855" release="" codeSize="241" numClasses="5"/>
+    <AppVersion sequence="74" timestamp="1386290363940" release="" codeSize="57" numClasses="1"/>
+    <AppVersion sequence="75" timestamp="1386290411806" release="" codeSize="59" numClasses="1"/>
+    <AppVersion sequence="76" timestamp="1386290583251" release="" codeSize="59" numClasses="1"/>
+    <AppVersion sequence="77" timestamp="1386291128243" release="" codeSize="78" numClasses="2"/>
+    <AppVersion sequence="78" timestamp="1386291522773" release="" codeSize="55" numClasses="1"/>
+    <AppVersion sequence="79" timestamp="1386291600179" release="" codeSize="241" numClasses="5"/>
+    <AppVersion sequence="80" timestamp="1386292282043" release="" codeSize="250" numClasses="5"/>
+    <AppVersion sequence="81" timestamp="1386292947238" release="" codeSize="249" numClasses="5"/>
+    <AppVersion sequence="82" timestamp="1386294015130" release="" codeSize="107" numClasses="2"/>
+    <AppVersion sequence="83" timestamp="1386295209776" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="84" timestamp="1386295276933" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="85" timestamp="1386295295410" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="86" timestamp="1386295331060" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="87" timestamp="1386295453203" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="88" timestamp="1386295698288" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="89" timestamp="1386295721404" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="90" timestamp="1386295799423" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="91" timestamp="1386296035563" release="" codeSize="107" numClasses="2"/>
+    <AppVersion sequence="92" timestamp="1386296938611" release="" codeSize="250" numClasses="5"/>
+    <AppVersion sequence="93" timestamp="1386296985959" release="" codeSize="251" numClasses="5"/>
+    <AppVersion sequence="94" timestamp="1386297299368" release="" codeSize="251" numClasses="5"/>
+    <AppVersion sequence="95" timestamp="1386297349506" release="" codeSize="247" numClasses="5"/>
+    <AppVersion sequence="96" timestamp="1386297487431" release="" codeSize="246" numClasses="5"/>
+    <AppVersion sequence="97" timestamp="1386297673027" release="" codeSize="248" numClasses="5"/>
+    <AppVersion sequence="98" timestamp="1386297736693" release="" codeSize="247" numClasses="5"/>
+    <AppVersion sequence="99" timestamp="1386297778185" release="" codeSize="251" numClasses="5"/>
+    <AppVersion sequence="100" timestamp="1386297879419" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="101" timestamp="1386297918145" release="" codeSize="254" numClasses="5"/>
+    <AppVersion sequence="102" timestamp="1386297977212" release="" codeSize="108" numClasses="2"/>
+    <AppVersion sequence="103" timestamp="1386298008342" release="" codeSize="109" numClasses="2"/>
+    <AppVersion sequence="104" timestamp="1386298105336" release="" codeSize="107" numClasses="2"/>
+    <AppVersion sequence="105" timestamp="1386298132816" release="" codeSize="108" numClasses="2"/>
+    <AppVersion sequence="106" timestamp="1386298150866" release="" codeSize="108" numClasses="2"/>
+    <AppVersion sequence="107" timestamp="1386298189946" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="108" timestamp="1386298595904" release="" codeSize="110" numClasses="2"/>
+    <AppVersion sequence="109" timestamp="1386298663930" release="" codeSize="31" numClasses="1"/>
+    <AppVersion sequence="110" timestamp="1386298713192" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="111" timestamp="1386299618017" release="" codeSize="123" numClasses="2"/>
+    <AppVersion sequence="112" timestamp="1386299806443" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="113" timestamp="1386299839534" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="114" timestamp="1386299851497" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="115" timestamp="1386299880642" release="" codeSize="92" numClasses="2"/>
+    <AppVersion sequence="116" timestamp="1386361494087" release="" codeSize="27" numClasses="2"/>
+    <AppVersion sequence="117" timestamp="1386362820119" release="" codeSize="125" numClasses="2"/>
+    <AppVersion sequence="118" timestamp="1386362858094" release="" codeSize="127" numClasses="2"/>
+    <AppVersion sequence="119" timestamp="1386362908866" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="120" timestamp="1386363199943" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="121" timestamp="1386363238117" release="" codeSize="251" numClasses="5"/>
+    <AppVersion sequence="122" timestamp="1386363479823" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="123" timestamp="1386363496696" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="124" timestamp="1386363509197" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="125" timestamp="1386363657135" release="" codeSize="252" numClasses="5"/>
+    <AppVersion sequence="126" timestamp="1386363666378" release="" codeSize="252" numClasses="5"/>
+    <AppVersion sequence="127" timestamp="1386363678389" release="" codeSize="252" numClasses="5"/>
+    <AppVersion sequence="128" timestamp="1386363688445" release="" codeSize="252" numClasses="5"/>
+    <AppVersion sequence="129" timestamp="1386364060530" release="" codeSize="247" numClasses="5"/>
+    <AppVersion sequence="130" timestamp="1386364125260" release="" codeSize="255" numClasses="5"/>
+    <AppVersion sequence="131" timestamp="1386364192083" release="" codeSize="251" numClasses="5"/>
+    <AppVersion sequence="132" timestamp="1386364292339" release="" codeSize="251" numClasses="5"/>
+    <AppVersion sequence="133" timestamp="1386364549300" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="134" timestamp="1386364745070" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="135" timestamp="1386364777265" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="136" timestamp="1386364855692" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="137" timestamp="1386365227785" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="138" timestamp="1386365498344" release="" codeSize="251" numClasses="5"/>
+    <AppVersion sequence="139" timestamp="1386365710510" release="" codeSize="258" numClasses="5"/>
+    <AppVersion sequence="140" timestamp="1386365821965" release="" codeSize="258" numClasses="5"/>
+    <AppVersion sequence="141" timestamp="1386366264877" release="" codeSize="272" numClasses="5"/>
+    <AppVersion sequence="142" timestamp="1386366401905" release="" codeSize="272" numClasses="5"/>
+    <AppVersion sequence="143" timestamp="1386366433104" release="" codeSize="270" numClasses="5"/>
+    <AppVersion sequence="144" timestamp="1386366609337" release="" codeSize="265" numClasses="5"/>
+    <AppVersion sequence="145" timestamp="1386366649790" release="" codeSize="265" numClasses="5"/>
+    <AppVersion sequence="146" timestamp="1386366758174" release="" codeSize="265" numClasses="5"/>
+    <AppVersion sequence="147" timestamp="1386366788793" release="" codeSize="267" numClasses="5"/>
+    <AppVersion sequence="148" timestamp="1386366808566" release="" codeSize="267" numClasses="5"/>
+    <AppVersion sequence="149" timestamp="1386367228560" release="" codeSize="271" numClasses="5"/>
+    <AppVersion sequence="150" timestamp="1386367244193" release="" codeSize="271" numClasses="5"/>
+    <AppVersion sequence="151" timestamp="1386367250615" release="" codeSize="271" numClasses="5"/>
+    <AppVersion sequence="152" timestamp="1386367258179" release="" codeSize="271" numClasses="5"/>
+    <AppVersion sequence="153" timestamp="1386367271150" release="" codeSize="271" numClasses="5"/>
+    <AppVersion sequence="154" timestamp="1386367360702" release="" codeSize="275" numClasses="5"/>
+    <AppVersion sequence="155" timestamp="1386367429525" release="" codeSize="275" numClasses="5"/>
+    <AppVersion sequence="156" timestamp="1386367641943" release="" codeSize="275" numClasses="5"/>
+    <AppVersion sequence="157" timestamp="1386367735390" release="" codeSize="277" numClasses="5"/>
+    <AppVersion sequence="158" timestamp="1386367841674" release="" codeSize="277" numClasses="5"/>
+    <AppVersion sequence="159" timestamp="1386367916644" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="160" timestamp="1386368054446" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="161" timestamp="1386368280231" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="162" timestamp="1386368315660" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="163" timestamp="1386368339086" release="" codeSize="277" numClasses="5"/>
+    <AppVersion sequence="164" timestamp="1386369899537" release="" codeSize="278" numClasses="5"/>
+    <AppVersion sequence="165" timestamp="1386369914862" release="" codeSize="277" numClasses="5"/>
+    <AppVersion sequence="166" timestamp="1386370085980" release="" codeSize="277" numClasses="5"/>
+    <AppVersion sequence="167" timestamp="1386370092858" release="" codeSize="277" numClasses="5"/>
+    <AppVersion sequence="168" timestamp="1386370486846" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="169" timestamp="1386370503857" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="170" timestamp="1386370521290" release="" codeSize="127" numClasses="2"/>
+    <AppVersion sequence="171" timestamp="1386370695517" release="" codeSize="129" numClasses="2"/>
+    <AppVersion sequence="172" timestamp="1386370733018" release="" codeSize="131" numClasses="2"/>
+    <AppVersion sequence="173" timestamp="1386370760956" release="" codeSize="262" numClasses="4"/>
+    <AppVersion sequence="174" timestamp="1386375203591" release="" codeSize="133" numClasses="2"/>
+    <AppVersion sequence="175" timestamp="1386375211333" release="" codeSize="133" numClasses="2"/>
+    <AppVersion sequence="176" timestamp="1386375472632" release="" codeSize="133" numClasses="2"/>
+    <AppVersion sequence="177" timestamp="1386375544590" release="" codeSize="133" numClasses="2"/>
+    <AppVersion sequence="178" timestamp="1386375582418" release="" codeSize="133" numClasses="2"/>
+    <AppVersion sequence="179" timestamp="1386375660946" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="180" timestamp="1386375666298" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="181" timestamp="1386375731367" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="182" timestamp="1386375745231" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="183" timestamp="1386375753804" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="184" timestamp="1386375764125" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="185" timestamp="1386375777023" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="186" timestamp="1386376121011" release="" codeSize="131" numClasses="2"/>
+    <AppVersion sequence="187" timestamp="1386376204968" release="" codeSize="131" numClasses="2"/>
+    <AppVersion sequence="188" timestamp="1386376591939" release="" codeSize="138" numClasses="2"/>
+    <AppVersion sequence="189" timestamp="1386376842523" release="" codeSize="139" numClasses="2"/>
+    <AppVersion sequence="190" timestamp="1386377015511" release="" codeSize="143" numClasses="2"/>
+    <AppVersion sequence="191" timestamp="1386377031392" release="" codeSize="143" numClasses="2"/>
+    <AppVersion sequence="192" timestamp="1386377082250" release="" codeSize="143" numClasses="2"/>
+    <AppVersion sequence="193" timestamp="1386377121791" release="" codeSize="143" numClasses="2"/>
+    <AppVersion sequence="194" timestamp="1386377198906" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="195" timestamp="1386377345578" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="196" timestamp="1386377361588" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="197" timestamp="1386377369583" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="198" timestamp="1386377398093" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="199" timestamp="1386377714076" release="" codeSize="54" numClasses="1"/>
+    <AppVersion sequence="200" timestamp="1386378310900" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="201" timestamp="1386378317878" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="202" timestamp="1386378320984" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="203" timestamp="1386378326875" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="204" timestamp="1386378331306" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="205" timestamp="1386378341126" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="206" timestamp="1386378357594" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="207" timestamp="1386378365119" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="208" timestamp="1386378387451" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="209" timestamp="1386378568646" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="210" timestamp="1386379034822" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="211" timestamp="1386380176038" release="" codeSize="137" numClasses="2"/>
+    <AppVersion sequence="212" timestamp="1386380301469" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="213" timestamp="1386380378426" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="214" timestamp="1386380387216" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="215" timestamp="1386380405713" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="216" timestamp="1386380447001" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="217" timestamp="1386380462339" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="218" timestamp="1386380478458" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="219" timestamp="1386380490534" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="220" timestamp="1386380504602" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="221" timestamp="1386380518110" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="222" timestamp="1386380671435" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="223" timestamp="1386380691032" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="224" timestamp="1386380736782" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="225" timestamp="1386380756479" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="226" timestamp="1386380958585" release="" codeSize="281" numClasses="5"/>
+    <AppVersion sequence="227" timestamp="1386381029952" release="" codeSize="281" numClasses="5"/>
+    <AppVersion sequence="228" timestamp="1386381107831" release="" codeSize="281" numClasses="5"/>
+    <AppVersion sequence="229" timestamp="1386381180355" release="" codeSize="281" numClasses="5"/>
+    <AppVersion sequence="230" timestamp="1386381235890" release="" codeSize="283" numClasses="5"/>
+    <AppVersion sequence="231" timestamp="1386381290499" release="" codeSize="277" numClasses="5"/>
+    <AppVersion sequence="232" timestamp="1386382824394" release="" codeSize="285" numClasses="5"/>
+    <AppVersion sequence="233" timestamp="1386384522404" release="" codeSize="340" numClasses="6"/>
+    <AppVersion sequence="234" timestamp="1386388623378" release="" codeSize="171" numClasses="3"/>
+    <AppVersion sequence="235" timestamp="1386388759144" release="" codeSize="57" numClasses="1"/>
+    <AppVersion sequence="236" timestamp="1386389070166" release="" codeSize="173" numClasses="3"/>
+    <AppVersion sequence="237" timestamp="1386389598250" release="" codeSize="178" numClasses="3"/>
+    <AppVersion sequence="238" timestamp="1386389629377" release="" codeSize="178" numClasses="3"/>
+    <AppVersion sequence="239" timestamp="1386389798058" release="" codeSize="183" numClasses="3"/>
+    <AppVersion sequence="240" timestamp="1386390159104" release="" codeSize="184" numClasses="3"/>
+    <AppVersion sequence="241" timestamp="1386390346174" release="" codeSize="185" numClasses="3"/>
+    <AppVersion sequence="242" timestamp="1386390353603" release="" codeSize="185" numClasses="3"/>
+    <AppVersion sequence="243" timestamp="1386390531946" release="" codeSize="192" numClasses="3"/>
+    <AppVersion sequence="244" timestamp="1386390569270" release="" codeSize="191" numClasses="3"/>
+    <AppVersion sequence="245" timestamp="1386390581496" release="" codeSize="191" numClasses="3"/>
+    <AppVersion sequence="246" timestamp="1386390593583" release="" codeSize="191" numClasses="3"/>
+    <AppVersion sequence="247" timestamp="1386390608865" release="" codeSize="191" numClasses="3"/>
+    <AppVersion sequence="248" timestamp="1386390629907" release="" codeSize="192" numClasses="3"/>
+    <AppVersion sequence="249" timestamp="1386390640550" release="" codeSize="193" numClasses="3"/>
+    <AppVersion sequence="250" timestamp="1386390712232" release="" codeSize="189" numClasses="3"/>
+    <AppVersion sequence="251" timestamp="1386390727133" release="" codeSize="190" numClasses="3"/>
+    <AppVersion sequence="252" timestamp="1386390738242" release="" codeSize="192" numClasses="3"/>
+    <AppVersion sequence="253" timestamp="1386390837390" release="" codeSize="192" numClasses="3"/>
+    <AppVersion sequence="254" timestamp="1386390884630" release="" codeSize="192" numClasses="3"/>
+    <AppVersion sequence="255" timestamp="1386390890577" release="" codeSize="193" numClasses="3"/>
+    <AppVersion sequence="256" timestamp="1386390952826" release="" codeSize="193" numClasses="3"/>
+    <AppVersion sequence="257" timestamp="1386391001969" release="" codeSize="192" numClasses="3"/>
+    <AppVersion sequence="258" timestamp="1386391054528" release="" codeSize="193" numClasses="3"/>
+    <AppVersion sequence="259" timestamp="1386391174622" release="" codeSize="197" numClasses="3"/>
+    <AppVersion sequence="260" timestamp="1386391248359" release="" codeSize="199" numClasses="3"/>
+    <AppVersion sequence="261" timestamp="1386391250911" release="" codeSize="200" numClasses="3"/>
+    <AppVersion sequence="262" timestamp="1386391263577" release="" codeSize="200" numClasses="3"/>
+    <AppVersion sequence="263" timestamp="1386391298052" release="" codeSize="200" numClasses="3"/>
+    <AppVersion sequence="264" timestamp="1386391329824" release="" codeSize="200" numClasses="3"/>
+    <AppVersion sequence="265" timestamp="1386391395899" release="" codeSize="200" numClasses="3"/>
+    <AppVersion sequence="266" timestamp="1386391412523" release="" codeSize="200" numClasses="3"/>
+    <AppVersion sequence="267" timestamp="1386391660987" release="" codeSize="284" numClasses="5"/>
+    <AppVersion sequence="268" timestamp="1386391790935" release="" codeSize="19" numClasses="2"/>
+    <AppVersion sequence="269" timestamp="1386391844813" release="" codeSize="284" numClasses="5"/>
+  </History>
+</BugCollection>

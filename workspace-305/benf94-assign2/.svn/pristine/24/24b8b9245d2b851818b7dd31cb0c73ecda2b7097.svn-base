@@ -1,0 +1,6 @@
+V	MAMMAL	Human	FEMALE	3.1	23.30	30.1	language
+V	MAMMAL	Human	MALE	4.1	33.30	42.1	language
+H	MAMMAL	Dog	FEMALE	9.9	13.5	62.3	woof-woof	Raven	some address	Monika Sobolewska
+H	MAMMAL	Cat	MALE	6.5	9.0	12.8	meow-meow	Kitty	some other address	Joanna Petz
+V	MAMMAL	Human	MALE	19.0	170.0	80.0	language
+H	MAMMAL	Cat	FEMALE	16.5	10.1	9.4	purr-purr	Princess	address	Ben Foster

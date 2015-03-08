@@ -1,0 +1,14 @@
+Assignment name: Assignment 2 
+TCSS 305B: Programming Practicum, Autumn 2013
+
+Name: Ben Foster
+UWNetID: benf94
+Subversion Revision Number: 8
+
+Assignment Overview:
+
+This assignment was designed in order to help us get more familiar with javadocs and using checkstyle to help us write better code.
+
+Technical Impression:
+
+To complete this assignment, I had to read most of chapter 5 and also recall how to use Scanner and buffered Writer.  I also have never had any previous knowledge or interaction with checkstyle or javadocs and therefore had to figure out how they worked and what exactly was needed for me to use them successfully. At first, I had problems with figuring out exactly how to read the information in the file when there was that extra piece of information (the V or H) at the beginning of each line. I also momentarily had a problem with using delimiters to separate tabs rather than spaces. Eventually though, I decided to use both Scanner and StringTokenizer instead of one or the other so that I could take each individual line and then separate each line into tokens with the tab key as a delimiter so that tokens such as the address would still show up, even though they had multiple words separated by spaces.

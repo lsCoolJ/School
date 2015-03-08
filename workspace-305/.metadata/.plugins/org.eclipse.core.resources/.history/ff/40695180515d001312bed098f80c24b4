@@ -1,0 +1,43 @@
+package epidemic.progpracticum.view;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JPanel;
+
+import epidemic.progpracticum.model.Bird;
+import epidemic.progpracticum.model.Human;
+
+public class WorldPanel extends JPanel {
+    
+    private List<Human> myHumanList;
+    
+    private List<Bird> myBirdList;
+    
+    public WorldPanel() {
+        super();
+        setBackground(Color.white);
+        myHumanList = new ArrayList<Human>();
+        myBirdList = new ArrayList<Bird>();
+    }
+    
+    @Override
+    public void paintComponent(Graphics aGraphics) {
+        super.paintComponent(aGraphics);
+        final Graphics2D g2 = (Graphics2D) aGraphics;
+        
+        for (Human h : myHumanList) {
+            final Ellipse2D thisHuman = new Ellipse2D.Double(h.getMyLocation().x, h.getMyLocation().y, 10, 10);
+            g2.fill(thisHuman);
+        }
+        
+        for (Bird b : myBirdList) {
+            final Ellipse2D thisBird = new Ellipse2D.Double(b.getMyLocation().x, b.getMyLocation().y, 5, 5);
+            g2.fill(thisBird);
+        }
+    }
+}

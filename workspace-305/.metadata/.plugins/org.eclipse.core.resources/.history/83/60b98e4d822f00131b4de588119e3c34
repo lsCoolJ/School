@@ -1,0 +1,44 @@
+package one.progpracticum;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+
+/**
+ * @author benf94
+ */
+
+public class Runner {
+
+    private static String filePath = "/workspace-305/benf94-assign2/myresources/animalTesting.txt";
+    private static File file = new File(filePath);
+    
+    
+    public static void main(String[] args) throws IOException {
+        //ArrayList<String> list = new ArrayList<>();
+        ArrayList<Vertebrate> myList = new ArrayList<>();
+        Scanner s = new Scanner(file);
+       
+        while (s.hasNextLine()){
+            Vertebrate v = new Vertebrate();
+            myList.add(v);
+            //list.add(s.nextLine());
+        } s.close();
+        
+        for(Vertebrate myVert : myList){
+           System.out.println(myVert.toString());
+            
+            /*System.out.println(l);
+           StringTokenizer st = new StringTokenizer(l, "\t");
+           while (st.hasMoreElements()){
+               if ((st.nextElement()).equals("V")) System.out.println("working");
+           }*/
+        }
+    }
+
+}

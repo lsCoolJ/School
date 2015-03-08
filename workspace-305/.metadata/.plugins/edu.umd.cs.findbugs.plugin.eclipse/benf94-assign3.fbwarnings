@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1386557244345" analysisTimestamp="1386557242756" release="">
+  <Project projectName="benf94-assign3">
+    <Jar>H:\workspace-305\benf94-assign3\bin</Jar>
+    <AuxClasspathEntry>H:\workspace-305\benf94-assign3\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\benf94-assign3\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="1" abbrev="RV" category="CORRECTNESS" first="1">
+    <Class classname="three.progpracticum.BankAccount">
+      <SourceLine classname="three.progpracticum.BankAccount" sourcefile="BankAccount.java" sourcepath="three/progpracticum/BankAccount.java"/>
+    </Class>
+    <Method classname="three.progpracticum.BankAccount" name="&lt;init&gt;" signature="(Lthree/progpracticum/Person;Ljava/math/BigDecimal;)V" isStatic="false">
+      <SourceLine classname="three.progpracticum.BankAccount" start="28" end="36" startBytecode="0" endBytecode="151" sourcefile="BankAccount.java" sourcepath="three/progpracticum/BankAccount.java"/>
+    </Method>
+    <Method classname="java.math.BigDecimal" name="setScale" signature="(II)Ljava/math/BigDecimal;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.math.BigDecimal" start="2379" end="2406" startBytecode="0" endBytecode="377" sourcefile="BigDecimal.java" sourcepath="java/math/BigDecimal.java"/>
+    </Method>
+    <SourceLine classname="three.progpracticum.BankAccount" start="35" end="35" startBytecode="37" endBytecode="37" sourcefile="BankAccount.java" sourcepath="three/progpracticum/BankAccount.java"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" abbrev="HE" category="BAD_PRACTICE" first="1">
+    <Class classname="three.progpracticum.CheckingAccount">
+      <SourceLine classname="three.progpracticum.CheckingAccount" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+    </Class>
+    <Method classname="three.progpracticum.CheckingAccount" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="three.progpracticum.CheckingAccount" start="95" end="112" startBytecode="0" endBytecode="192" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="three.progpracticum.CheckingAccount">
+      <SourceLine classname="three.progpracticum.CheckingAccount" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+    </Class>
+    <Field classname="three.progpracticum.CheckingAccount" name="myMinDepoNumber" signature="D" isStatic="false">
+      <SourceLine classname="three.progpracticum.CheckingAccount" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+    </Field>
+    <SourceLine classname="three.progpracticum.CheckingAccount" start="18" end="18" startBytecode="16" endBytecode="16" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="three.progpracticum.CheckingAccount">
+      <SourceLine classname="three.progpracticum.CheckingAccount" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+    </Class>
+    <Method classname="three.progpracticum.CheckingAccount" name="&lt;init&gt;" signature="(Lthree/progpracticum/Person;Ljava/math/BigDecimal;)V" isStatic="false">
+      <SourceLine classname="three.progpracticum.CheckingAccount" start="37" end="40" startBytecode="0" endBytecode="180" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+    </Method>
+    <Field classname="three.progpracticum.CheckingAccount" name="myCounter" signature="J" isStatic="true">
+      <SourceLine classname="three.progpracticum.CheckingAccount" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+    </Field>
+    <SourceLine classname="three.progpracticum.CheckingAccount" start="38" end="38" startBytecode="45" endBytecode="45" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="three.progpracticum.CheckingAccount">
+      <SourceLine classname="three.progpracticum.CheckingAccount" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+    </Class>
+    <Field classname="three.progpracticum.CheckingAccount" name="myMinDepo" signature="Ljava/math/BigDecimal;" isStatic="false">
+      <SourceLine classname="three.progpracticum.CheckingAccount" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+    </Field>
+    <SourceLine classname="three.progpracticum.CheckingAccount" start="22" end="22" startBytecode="30" endBytecode="30" sourcefile="CheckingAccount.java" sourcepath="three/progpracticum/CheckingAccount.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_BIGDECIMAL_CONSTRUCTED_FROM_DOUBLE" priority="2" abbrev="DMI" category="CORRECTNESS" first="1">
+    <Class classname="three.progpracticum.SavingsAccount">
+      <SourceLine classname="three.progpracticum.SavingsAccount" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+    </Class>
+    <Method classname="three.progpracticum.SavingsAccount" name="&lt;init&gt;" signature="(Lthree/progpracticum/Person;Ljava/math/BigDecimal;)V" isStatic="false">
+      <SourceLine classname="three.progpracticum.SavingsAccount" start="33" end="37" startBytecode="0" endBytecode="177" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+    </Method>
+    <Method classname="java.math.BigDecimal" name="&lt;init&gt;" signature="(D)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.math.BigDecimal" start="806" end="850" startBytecode="0" endBytecode="445" sourcefile="BigDecimal.java" sourcepath="java/math/BigDecimal.java"/>
+    </Method>
+    <Method classname="java.math.BigDecimal" name="valueOf" signature="(D)Ljava/math/BigDecimal;" isStatic="true" role="METHOD_ALTERNATIVE_TARGET">
+      <SourceLine classname="java.math.BigDecimal" start="1069" end="1069" startBytecode="0" endBytecode="35" sourcefile="BigDecimal.java" sourcepath="java/math/BigDecimal.java"/>
+    </Method>
+    <String value="0.0215"/>
+    <String value="0.021499999999999998279154311831007362343370914459228515625"/>
+    <SourceLine classname="three.progpracticum.SavingsAccount" start="22" end="22" startBytecode="27" endBytecode="27" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_BIGDECIMAL_CONSTRUCTED_FROM_DOUBLE" priority="2" abbrev="DMI" category="CORRECTNESS" first="1">
+    <Class classname="three.progpracticum.SavingsAccount">
+      <SourceLine classname="three.progpracticum.SavingsAccount" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+    </Class>
+    <Method classname="three.progpracticum.SavingsAccount" name="&lt;init&gt;" signature="(Lthree/progpracticum/SavingsAccount;)V" isStatic="false">
+      <SourceLine classname="three.progpracticum.SavingsAccount" start="43" end="45" startBytecode="0" endBytecode="119" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+    </Method>
+    <Method classname="java.math.BigDecimal" name="&lt;init&gt;" signature="(D)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.math.BigDecimal" start="806" end="850" startBytecode="0" endBytecode="445" sourcefile="BigDecimal.java" sourcepath="java/math/BigDecimal.java"/>
+    </Method>
+    <Method classname="java.math.BigDecimal" name="valueOf" signature="(D)Ljava/math/BigDecimal;" isStatic="true" role="METHOD_ALTERNATIVE_TARGET">
+      <SourceLine classname="java.math.BigDecimal" start="1069" end="1069" startBytecode="0" endBytecode="35" sourcefile="BigDecimal.java" sourcepath="java/math/BigDecimal.java"/>
+    </Method>
+    <String value="0.0215"/>
+    <String value="0.021499999999999998279154311831007362343370914459228515625"/>
+    <SourceLine classname="three.progpracticum.SavingsAccount" start="22" end="22" startBytecode="33" endBytecode="33" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" abbrev="HE" category="BAD_PRACTICE" first="1">
+    <Class classname="three.progpracticum.SavingsAccount">
+      <SourceLine classname="three.progpracticum.SavingsAccount" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+    </Class>
+    <Method classname="three.progpracticum.SavingsAccount" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="three.progpracticum.SavingsAccount" start="97" end="114" startBytecode="0" endBytecode="192" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="three.progpracticum.SavingsAccount">
+      <SourceLine classname="three.progpracticum.SavingsAccount" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+    </Class>
+    <Field classname="three.progpracticum.SavingsAccount" name="myInterestNumber" signature="D" isStatic="false">
+      <SourceLine classname="three.progpracticum.SavingsAccount" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+    </Field>
+    <SourceLine classname="three.progpracticum.SavingsAccount" start="18" end="18" startBytecode="16" endBytecode="16" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="three.progpracticum.SavingsAccount">
+      <SourceLine classname="three.progpracticum.SavingsAccount" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+    </Class>
+    <Method classname="three.progpracticum.SavingsAccount" name="&lt;init&gt;" signature="(Lthree/progpracticum/Person;Ljava/math/BigDecimal;)V" isStatic="false">
+      <SourceLine classname="three.progpracticum.SavingsAccount" start="33" end="37" startBytecode="0" endBytecode="177" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+    </Method>
+    <Field classname="three.progpracticum.SavingsAccount" name="myCounter" signature="J" isStatic="true">
+      <SourceLine classname="three.progpracticum.SavingsAccount" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+    </Field>
+    <SourceLine classname="three.progpracticum.SavingsAccount" start="34" end="34" startBytecode="38" endBytecode="38" sourcefile="SavingsAccount.java" sourcepath="three/progpracticum/SavingsAccount.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 8 Dec 2013 18:47:23 -0800" total_classes="5" referenced_classes="21" total_bugs="10" total_size="318" num_packages="1" vm_version="23.25-b01" cpu_seconds="1.50" clock_seconds="1.60" peak_mbytes="216.68" alloc_mbytes="494.94" gc_seconds="0.24" priority_2="7" priority_1="3">
+    <PackageStats package="three.progpracticum" total_bugs="10" total_types="5" total_size="318" priority_2="7" priority_1="3">
+      <ClassStats class="three.progpracticum.BankAccount" sourceFile="BankAccount.java" interface="false" size="29" bugs="1" priority_1="1"/>
+      <ClassStats class="three.progpracticum.CheckingAccount" sourceFile="CheckingAccount.java" interface="false" size="70" bugs="4" priority_2="3" priority_1="1"/>
+      <ClassStats class="three.progpracticum.Person" sourceFile="Person.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="three.progpracticum.SavingsAccount" sourceFile="SavingsAccount.java" interface="false" size="69" bugs="5" priority_2="4" priority_1="1"/>
+      <ClassStats class="three.progpracticum.Tester" sourceFile="Tester.java" interface="false" size="67" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1074" invocations="357" avgMicrosecondsPerInvocation="3010" maxMicrosecondsPerInvocation="212531" standardDeviationMircosecondsPerInvocation="11233"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="106" invocations="2" avgMicrosecondsPerInvocation="53235" maxMicrosecondsPerInvocation="97742" standardDeviationMircosecondsPerInvocation="44507"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="95" invocations="354" avgMicrosecondsPerInvocation="271" maxMicrosecondsPerInvocation="13902" standardDeviationMircosecondsPerInvocation="818"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1386557244344" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

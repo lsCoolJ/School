@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1386557262902" analysisTimestamp="1386557257905" release="">
+  <Project projectName="benf94-assign7">
+    <Jar>H:\workspace-305\benf94-assign7\bin</Jar>
+    <AuxClasspathEntry>H:\workspace-305\benf94-assign7\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\benf94-assign7\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_EXIT" priority="2" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="seven.progpracticum.MenuBar$2">
+      <SourceLine classname="seven.progpracticum.MenuBar$2" sourcefile="MenuBar.java" sourcepath="seven/progpracticum/MenuBar.java"/>
+    </Class>
+    <Method classname="seven.progpracticum.MenuBar$2" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="seven.progpracticum.MenuBar$2" start="151" end="152" startBytecode="0" endBytecode="60" sourcefile="MenuBar.java" sourcepath="seven/progpracticum/MenuBar.java"/>
+    </Method>
+    <SourceLine classname="seven.progpracticum.MenuBar$2" start="151" end="151" startBytecode="1" endBytecode="1" sourcefile="MenuBar.java" sourcepath="seven/progpracticum/MenuBar.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="seven.progpracticum.PaintPanel">
+      <SourceLine classname="seven.progpracticum.PaintPanel" sourcefile="PaintPanel.java" sourcepath="seven/progpracticum/PaintPanel.java"/>
+    </Class>
+    <Method classname="seven.progpracticum.PaintPanel" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="seven.progpracticum.PaintPanel" start="98" end="106" startBytecode="0" endBytecode="206" sourcefile="PaintPanel.java" sourcepath="seven/progpracticum/PaintPanel.java"/>
+    </Method>
+    <Field classname="seven.progpracticum.PaintPanel" name="myDoodle" signature="Ljava/util/List;" isStatic="true">
+      <SourceLine classname="seven.progpracticum.PaintPanel" sourcefile="PaintPanel.java" sourcepath="seven/progpracticum/PaintPanel.java"/>
+    </Field>
+    <SourceLine classname="seven.progpracticum.PaintPanel" start="105" end="105" startBytecode="113" endBytecode="113" sourcefile="PaintPanel.java" sourcepath="seven/progpracticum/PaintPanel.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" abbrev="ST" category="STYLE" first="1">
+    <Class classname="seven.progpracticum.ToolBar">
+      <SourceLine classname="seven.progpracticum.ToolBar" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Class>
+    <Method classname="seven.progpracticum.ToolBar" name="&lt;init&gt;" signature="([Ljavax/swing/Action;)V" isStatic="false">
+      <SourceLine classname="seven.progpracticum.ToolBar" start="50" end="78" startBytecode="0" endBytecode="365" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Method>
+    <Field classname="seven.progpracticum.ToolBar" name="myBlue" signature="Ljavax/swing/JToggleButton;" isStatic="true">
+      <SourceLine classname="seven.progpracticum.ToolBar" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Field>
+    <SourceLine classname="seven.progpracticum.ToolBar" start="53" end="53" startBytecode="29" endBytecode="29" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" abbrev="ST" category="STYLE" first="1">
+    <Class classname="seven.progpracticum.ToolBar">
+      <SourceLine classname="seven.progpracticum.ToolBar" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Class>
+    <Method classname="seven.progpracticum.ToolBar" name="&lt;init&gt;" signature="([Ljavax/swing/Action;)V" isStatic="false">
+      <SourceLine classname="seven.progpracticum.ToolBar" start="50" end="78" startBytecode="0" endBytecode="365" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Method>
+    <Field classname="seven.progpracticum.ToolBar" name="myRed" signature="Ljavax/swing/JToggleButton;" isStatic="true">
+      <SourceLine classname="seven.progpracticum.ToolBar" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Field>
+    <SourceLine classname="seven.progpracticum.ToolBar" start="52" end="52" startBytecode="16" endBytecode="16" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" abbrev="ST" category="STYLE" first="1">
+    <Class classname="seven.progpracticum.ToolBar">
+      <SourceLine classname="seven.progpracticum.ToolBar" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Class>
+    <Method classname="seven.progpracticum.ToolBar" name="&lt;init&gt;" signature="([Ljavax/swing/Action;)V" isStatic="false">
+      <SourceLine classname="seven.progpracticum.ToolBar" start="50" end="78" startBytecode="0" endBytecode="365" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Method>
+    <Field classname="seven.progpracticum.ToolBar" name="myWhite" signature="Ljavax/swing/JToggleButton;" isStatic="true">
+      <SourceLine classname="seven.progpracticum.ToolBar" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Field>
+    <SourceLine classname="seven.progpracticum.ToolBar" start="55" end="55" startBytecode="55" endBytecode="55" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" abbrev="ST" category="STYLE" first="1">
+    <Class classname="seven.progpracticum.ToolBar">
+      <SourceLine classname="seven.progpracticum.ToolBar" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Class>
+    <Method classname="seven.progpracticum.ToolBar" name="&lt;init&gt;" signature="([Ljavax/swing/Action;)V" isStatic="false">
+      <SourceLine classname="seven.progpracticum.ToolBar" start="50" end="78" startBytecode="0" endBytecode="365" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Method>
+    <Field classname="seven.progpracticum.ToolBar" name="myYellow" signature="Ljavax/swing/JToggleButton;" isStatic="true">
+      <SourceLine classname="seven.progpracticum.ToolBar" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+    </Field>
+    <SourceLine classname="seven.progpracticum.ToolBar" start="54" end="54" startBytecode="42" endBytecode="42" sourcefile="ToolBar.java" sourcepath="seven/progpracticum/ToolBar.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 8 Dec 2013 18:47:38 -0800" total_classes="15" referenced_classes="370" total_bugs="6" total_size="431" num_packages="1" vm_version="23.25-b01" cpu_seconds="3.67" clock_seconds="5.00" peak_mbytes="227.23" alloc_mbytes="494.94" gc_seconds="0.35" priority_2="2" priority_1="4">
+    <PackageStats package="seven.progpracticum" total_bugs="6" total_types="15" total_size="431" priority_2="2" priority_1="4">
+      <ClassStats class="seven.progpracticum.Doodle" sourceFile="Doodle.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="seven.progpracticum.Doodle$1" sourceFile="Doodle.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="seven.progpracticum.DoodleGUI" sourceFile="DoodleGUI.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="seven.progpracticum.LineColorAction" sourceFile="LineColorAction.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="seven.progpracticum.MenuBar" sourceFile="MenuBar.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="seven.progpracticum.MenuBar$1" sourceFile="MenuBar.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="seven.progpracticum.MenuBar$2" sourceFile="MenuBar.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="seven.progpracticum.MenuBar$3" sourceFile="MenuBar.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="seven.progpracticum.MyPathObject" sourceFile="MyPathObject.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="seven.progpracticum.PaintPanel" sourceFile="PaintPanel.java" interface="false" size="69" bugs="1" priority_2="1"/>
+      <ClassStats class="seven.progpracticum.PaintPanel$MouseDoodleAdapter" sourceFile="PaintPanel.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="seven.progpracticum.PaintPanel$MyRadioAction" sourceFile="PaintPanel.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="seven.progpracticum.PanelColorAction" sourceFile="PanelColorAction.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="seven.progpracticum.PopupMenu" sourceFile="PopupMenu.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="seven.progpracticum.ToolBar" sourceFile="ToolBar.java" interface="false" size="35" bugs="4" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="3305" invocations="1542" avgMicrosecondsPerInvocation="2143" maxMicrosecondsPerInvocation="19582" standardDeviationMircosecondsPerInvocation="1629"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="561" invocations="1539" avgMicrosecondsPerInvocation="364" maxMicrosecondsPerInvocation="215806" standardDeviationMircosecondsPerInvocation="5543"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1386557262902" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

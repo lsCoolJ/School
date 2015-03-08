@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\School Stuff\TCES 330\benf94 - Homework03\Mux3w_5to1 Test
+vMux2_1
+Z1 I02[`9B7I[7IB^6LV^CFNQ3
+Z2 VOHbL3[_d8WPS^:PVG_KaT3
+Z3 dE:\School Stuff\TCES 330\benf94 - Homework03\Mux3w_5to1 Test
+Z4 w1398790780
+Z5 8E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux2_1.v
+Z6 FE:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux2_1.v
+L0 4
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@mux2_1
+Z10 !s100 oDVCR[UndQiRnMY15aFHh3
+Z11 !s108 1398792399.891000
+Z12 !s107 E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux2_1.v|
+Z13 !s90 -reportprogress|300|-work|work|E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux2_1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMux3w_5to1
+Z14 I>;@Q1NOkTd;k=EXhR1C1;0
+Z15 VjEJXl=392zOI24Z]ZXXI@0
+R3
+Z16 w1398790706
+Z17 8E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux3w_5to1.v
+Z18 FE:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux3w_5to1.v
+L0 4
+R7
+r1
+31
+R8
+Z19 n@mux3w_5to1
+Z20 !s100 P51[L^K2R6cMbaH8aMA1K2
+Z21 !s108 1398792400.370000
+Z22 !s107 E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux3w_5to1.v|
+Z23 !s90 -reportprogress|300|-work|work|E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux3w_5to1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMux5_1
+Z24 IWGJREH@_]aE0@TUSPE=401
+Z25 V;IOID=LnRKncJCOA:ZRmi1
+R3
+Z26 w1398790728
+Z27 8E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux5_1.v
+Z28 FE:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux5_1.v
+L0 4
+R7
+r1
+31
+R8
+Z29 n@mux5_1
+!i10b 1
+Z30 !s100 HToAWG3ki78n7IBQP2ZGY1
+!s85 0
+Z31 !s108 1398792400.855000
+Z32 !s107 E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux5_1.v|
+Z33 !s90 -reportprogress|300|-work|work|E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/Mux5_1.v|
+!s101 -O0
+vtestMux5
+!i10b 1
+!s100 H:nfeUa75Ca84g@Nin@RO1
+Iejjh6Igj[jo4cBC?Tz0EJ2
+VHgiXMXPlA4F>O_@ZFEEX00
+R3
+w1398790640
+8E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/testMux5.v
+FE:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/testMux5.v
+L0 7
+R7
+r1
+!s85 0
+31
+!s108 1398792401.309000
+!s107 E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/testMux5.v|
+!s90 -reportprogress|300|-work|work|E:/School Stuff/TCES 330/benf94 - Homework03/Mux3w_5to1 Test/testMux5.v|
+!s101 -O0
+R8
+ntest@mux5

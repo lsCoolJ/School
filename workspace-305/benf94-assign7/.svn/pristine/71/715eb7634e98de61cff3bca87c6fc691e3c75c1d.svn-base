@@ -1,0 +1,209 @@
+package seven.progpracticum;
+
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Point;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.geom.GeneralPath;
+import java.awt.geom.Line2D;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.Action;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+
+/** This class sets up the panel that everything is drawn on.
+ * @author benf94
+ * @version 11/20/2013
+ */
+@SuppressWarnings("serial")
+public class PaintPanel extends JPanel {
+
+    /**
+     * Toolkit used to get the screen size.
+     */
+    private static final Toolkit KIT = Toolkit.getDefaultToolkit();
+    
+    /**
+     * Size of the monitor being used.
+     */
+    private static final Dimension SCREEN_SIZE = KIT.getScreenSize();
+    
+    /**
+     * Width of the monitor being used.
+     */
+    private static final int SCREEN_WIDTH = SCREEN_SIZE.width / 2;
+    
+    /**
+     * Height of the monitor being used.
+     */
+    private static final int SCREEN_HEIGHT = SCREEN_SIZE.height / 2;
+    
+    /**
+     * Default size of the frame.
+     */
+    private static final Dimension DEFAULT_SIZE = new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT);
+    
+    /**
+     * Used to get rid of checkstyle.
+     */
+    private static final String STROKE_STRING = "stroke";
+    
+    /**
+     * The list of Objects that contain the path, color, and line-width of the path.
+     */
+    private static List<MyPathObject> myDoodle;
+
+    /**
+     * Stroke used to paint.
+     */
+    private BasicStroke myNewStroke = new BasicStroke(1);
+    
+    /**
+     * Color used to paint.
+     */
+    private Color myNewColor = new Color(0, 0, 0);
+    
+    /**
+     * Starting point of line.
+     */
+    private Point myFromPoint = new Point();
+    
+    /**
+     * Ending point of line.
+     */
+    private Point myToPoint = new Point();
+    
+    /**
+     * The mouse adapter used to draw.
+     */
+    private MouseDoodleAdapter myAdapter;
+    
+    /**
+     * The path of the current lines being drawn.
+     */
+    private GeneralPath myPath;
+    
+    /**
+     * This method constructs a PaintPanel object.
+     */
+    public PaintPanel() {
+        super();
+        setPreferredSize(DEFAULT_SIZE);
+        setBackground(Color.WHITE);
+        myAdapter = new MouseDoodleAdapter();
+        addMouseListener(myAdapter);
+        addMouseMotionListener(myAdapter);
+        myPath = new GeneralPath();
+        myDoodle = new ArrayList<MyPathObject>();
+    }
+
+    @Override
+    public void paintComponent(Graphics aGraphic) {
+        super.paintComponent(aGraphic);
+
+        final Graphics2D g2 = (Graphics2D) aGraphic;
+
+        if (myFromPoint != null) {
+            
+            for (MyPathObject s : myDoodle) {
+                g2.setStroke(s.getMyStroke());
+                g2.setColor(s.getMyColor());
+                g2.draw(s.getMyPath()); 
+            }
+            
+            g2.setStroke(myNewStroke);
+            g2.setColor(myNewColor);
+            g2.draw(myPath);
+        }
+    }
+
+    /**
+     * @param aStroke sets newStroke.
+     */
+    public void setNewStroke(BasicStroke aStroke) {
+        myNewStroke = aStroke;
+    }
+
+    /**
+     * @param aColor sets newColor.
+     */
+    public void setColor(Color aColor) {
+        myNewColor = aColor;
+    }
+    
+    /**
+     * Method used to clear the panel of everything.
+     */
+    public void clearPanel() {
+        setBackground(Color.WHITE);
+        myDoodle.clear();
+        repaint(); 
+    }
+
+    /** This inner class is the Mouse Adapter used to draw.
+     * @author benf94
+     * @version 11/20/2013
+     */
+    private class MouseDoodleAdapter extends MouseAdapter {
+        
+        @Override
+        public void mousePressed(MouseEvent anE) {
+            if (SwingUtilities.isLeftMouseButton(anE)) {
+                myFromPoint = anE.getPoint();
+                myToPoint = anE.getPoint();
+            }
+        }
+
+        @Override
+        public void mouseDragged(MouseEvent anE) {
+            if (SwingUtilities.isLeftMouseButton(anE)) {
+                myToPoint = anE.getPoint();
+                myPath.append(new Line2D.Double(myFromPoint, myToPoint), true);
+                myFromPoint.setLocation(myToPoint);
+
+                repaint();
+            }
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent anE) {
+            final MyPathObject copy = new MyPathObject();
+            copy.setMyPath((GeneralPath) myPath.clone());
+            copy.setMyStroke(myNewStroke);
+            copy.setMyColor(myNewColor);
+            myDoodle.add(copy);
+            myPath.reset();
+        }
+    }
+
+
+    /** This inner class is the Abstract Action that handles the Radio Button actions.
+     * @author benf94
+     * @version 11/20/2013
+     */
+    public class MyRadioAction extends AbstractAction {
+        /**
+         * @param aName is the name of the radio button.
+         * @param aStroke is the stroke associated with the radio button.
+         */
+        public MyRadioAction(final String aName, final BasicStroke aStroke) {
+            putValue(Action.NAME, aName);
+            putValue(STROKE_STRING, aStroke);
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent anE) {
+            final BasicStroke thisStroke = (BasicStroke) getValue(STROKE_STRING);
+            setNewStroke(thisStroke);
+        }
+    }
+
+}

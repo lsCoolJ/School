@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="C:\Users\benf94.INSTTECH\Desktop\USERNAME-orientation"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\benf94\Downloads\EpidemicProject.zip"/>
+			<item value="H:\assign0.zip"/>
+			<item value="H:\workspace-examples\assignment_8.zip"/>
+			<item value="C:\Users\benf94.INSTTECH\Downloads\assign0.zip"/>
+			<item value="C:\Users\benf94\Downloads\assign0.zip"/>
+		</list>
+	</section>
+</section>

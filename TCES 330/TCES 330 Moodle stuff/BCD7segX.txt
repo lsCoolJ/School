@@ -1,0 +1,42 @@
+// TCES Lab 2, Part 1
+// Spring 2011
+// R. Gutmann
+// This module implements a 7-segment BCD decoder (0 through 9)
+// 
+module BCD7seg( C, Display );
+  input      [3:0] C;        // input code
+  output reg [0:6] Display;  // seven-segment display output
+
+  
+  /*
+  *   0
+  *  ---
+  * |   |
+  *5|   |1
+  * | 6 |
+  *  ---
+  * |   |
+  *4|   |2
+  * |   |
+  *  ---
+  *   3
+  */
+  
+  // Note: a '0' turns the segment ON
+  // Note: Segment 6 is in the right most bit, below
+  always @ ( C )
+    case ( C )
+      4'h0: Display = 7'b0000001;
+      4'h1: Display = 7'b1001111;
+      4'h2: Display = 7'b...;
+      4'h3: Display = 7'b...;
+      4'h4: Display = 7'b...;
+      4'h5: Display = 7'b...;
+      4'h6: Display = 7'b..;
+      4'h7: Display = 7'b...;
+      4'h8: Display = 7'b...;
+      4'h9: Display = 7'b0000100;
+      default: Display = 7'b1111111;  // blank
+  endcase
+
+endmodule

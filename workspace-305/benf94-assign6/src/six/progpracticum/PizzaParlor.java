@@ -1,0 +1,336 @@
+package six.progpracticum;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.FlowLayout;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
+import javax.swing.BoxLayout;
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+import javax.swing.JToggleButton;
+
+/** Main class that creates the GUI.
+ * @author benf94
+ * @version 11/12/2013
+ */
+public final class PizzaParlor {
+
+    /**
+     * Used to get rid of stupid checkstyle.
+     */
+    private static final int NUM_FIVE = 5;
+
+    /**
+     * Used to get rid of stupid checkstyle.
+     */
+    private static final int NUM_FOUR = 4;
+
+    /**
+     * Used to get rid of stupid checkstyle.
+     */
+    private static final int NUM_TEN = 10;
+    
+    /**
+     * Used to get rid of stupid checkstyle.
+     */
+    private static final int TWO_FORTY = 240;
+    
+    /**
+     * Used to get rid of stupid checkstyle.
+     */
+    private static final int ONE_FORTY = 140;
+    
+    /**
+     * Used to get rid of stupid checkstyle.
+     */
+    private static final int FORTY = 40;
+
+    /**
+     * Total price textfield.
+     */
+    private static JTextField totalPriceField;
+
+    /**
+     * Total price number.
+     */
+    private static double myTotalPrice;
+
+    /**
+     * The Frame on which everything is placed.
+     */
+    private JFrame myFrame;
+    /**
+     * Icon for the frame.
+     */
+    private Image myWinIcon = Toolkit.getDefaultToolkit().getImage("myresources/pizza3.jpg");
+
+    /**
+     * Icon for the welcome message.
+     */
+    private ImageIcon myIcon = new ImageIcon("myresources/pizza2.jpg", "pizza");
+
+    /**
+     * The color Orange.
+     */
+    private Color myOrange = new Color(TWO_FORTY, ONE_FORTY, FORTY);
+
+    /**
+     * Create the application.
+     * @return 
+     */
+    private PizzaParlor() {
+        initialize();
+    }
+
+    /**
+     * Initialize the contents of the frame.
+     */
+    @SuppressWarnings("static-access")
+    private void initialize() {
+
+        final Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        final int height = (int) (screenSize.getHeight() / 2);
+        final int width = (int) (screenSize.getWidth() / 2);
+        final int winX = (int) (screenSize.getWidth() / NUM_FOUR);
+        final int winY = (int) (screenSize.getHeight() / NUM_FOUR);
+
+        myFrame = new JFrame();
+        myFrame.setResizable(false);
+        myFrame.setIconImage(myWinIcon);
+        myFrame.setTitle("Build your pizza!");
+        myFrame.setSize(width, height);
+        myFrame.setLocation(winX, winY);
+        myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        //PANELS!!!!
+        final JPanel panelNorth = new JPanel();
+        myFrame.getContentPane().add(panelNorth, BorderLayout.NORTH);
+        panelNorth.setLayout(new FlowLayout(FlowLayout.CENTER, NUM_FIVE, NUM_FIVE));
+        panelNorth.setBackground(myOrange);
+
+        final JPanel panelWest = new JPanel();
+        myFrame.getContentPane().add(panelWest, BorderLayout.WEST);
+        panelWest.setLayout(new BoxLayout(panelWest, BoxLayout.Y_AXIS));
+        panelWest.setBackground(myOrange);
+
+        final JPanel panelEast = new JPanel();
+        myFrame.getContentPane().add(panelEast, BorderLayout.EAST);
+        panelEast.setLayout(new BoxLayout(panelEast, BoxLayout.Y_AXIS));
+        panelEast.setBackground(myOrange);
+
+        final JPanel panelSouth = new JPanel();
+        myFrame.getContentPane().add(panelSouth, BorderLayout.SOUTH);
+        panelSouth.setBackground(myOrange);
+
+        final JPanel panelCenter = new JPanel();
+        myFrame.getContentPane().add(panelCenter, BorderLayout.CENTER);
+        panelCenter.setLayout(new BoxLayout(panelCenter, BoxLayout.Y_AXIS));
+        panelCenter.setBackground(myOrange);
+
+        final JLabel welcomeLabel = new JLabel(
+                "Welcome to Papa Ben's Little Round Domino Hut!");
+        welcomeLabel.setIcon(myIcon);
+        panelNorth.add(welcomeLabel);
+
+        //SIIIZZEEES!!!
+        final JLabel sizeLabel = new JLabel("Size:");
+        sizeLabel.setAlignmentX(panelWest.CENTER_ALIGNMENT);
+        panelWest.add(sizeLabel);
+
+        final String[] sizeStrings = {"Small(10\")", "Medium(12\")",
+                                      "Large(14\")", "X-Large(16\")"};
+
+        final MyActionListener actionListener = new MyActionListener();
+
+        final Dimension preferredSize = new Dimension(120, 20);
+        final Dimension maxSize = new Dimension(150, 20);
+
+        final JComboBox<String> sizeComboBox = new JComboBox<String>(sizeStrings);
+        sizeComboBox.setAlignmentX(panelWest.CENTER_ALIGNMENT);
+        sizeComboBox.setPreferredSize(preferredSize);
+        sizeComboBox.setMaximumSize(maxSize);
+        panelWest.add(sizeComboBox);
+        sizeComboBox.setSelectedIndex(0);
+        sizeComboBox.addActionListener(actionListener);
+
+        //CRusts!!!!!
+        final JLabel crustLabel = new JLabel("Crust:");
+        crustLabel.setAlignmentX(panelWest.CENTER_ALIGNMENT);
+        panelWest.add(crustLabel);
+
+        final JToggleButton thinTButton = new JToggleButton("Thin");
+        thinTButton.setAlignmentX(panelWest.CENTER_ALIGNMENT);
+        thinTButton.setPreferredSize(preferredSize);
+        thinTButton.setMaximumSize(maxSize);
+        panelWest.add(thinTButton);
+        thinTButton.addActionListener(actionListener);
+
+        final JToggleButton regularTButton = new JToggleButton("Regular");
+        regularTButton.setSelected(true);
+        regularTButton.setAlignmentX(panelWest.CENTER_ALIGNMENT);
+        regularTButton.setPreferredSize(preferredSize);
+        regularTButton.setMaximumSize(maxSize);
+        panelWest.add(regularTButton);
+        regularTButton.addActionListener(actionListener);
+
+        final JToggleButton dDishTButton = new JToggleButton("Deep Dish");
+        dDishTButton.setAlignmentX(panelWest.CENTER_ALIGNMENT);
+        dDishTButton.setPreferredSize(preferredSize);
+        dDishTButton.setMaximumSize(maxSize);
+        panelWest.add(dDishTButton);
+        dDishTButton.addActionListener(actionListener);
+
+        final JToggleButton stuffedTButton = new JToggleButton("Stuffed");
+        stuffedTButton.setAlignmentX(panelWest.CENTER_ALIGNMENT);
+        stuffedTButton.setPreferredSize(preferredSize);
+        stuffedTButton.setMaximumSize(maxSize);
+        panelWest.add(stuffedTButton);
+        stuffedTButton.addActionListener(actionListener);
+
+        final ButtonGroup tButtonGroup = new ButtonGroup();
+
+        tButtonGroup.add(thinTButton);
+        tButtonGroup.add(regularTButton);
+        tButtonGroup.add(dDishTButton);
+        tButtonGroup.add(stuffedTButton);
+
+        //Sauces!!!!!
+        final JLabel sauceLabel = new JLabel("Sauce:");
+        sauceLabel.setAlignmentX(panelEast.CENTER_ALIGNMENT);
+        panelEast.add(sauceLabel);
+
+        final JRadioButton tomatoRButton = new JRadioButton("Tomato");
+        tomatoRButton.setAlignmentX(panelEast.CENTER_ALIGNMENT);
+        tomatoRButton.setBackground(myOrange);
+        tomatoRButton.setSelected(true);
+        panelEast.add(tomatoRButton);
+
+        final JRadioButton bBQRButton = new JRadioButton("BBQ");
+        bBQRButton.setAlignmentX(panelEast.CENTER_ALIGNMENT);
+        bBQRButton.setBackground(myOrange);
+        panelEast.add(bBQRButton);
+
+        final JRadioButton whiteRButton = new JRadioButton("White");
+        whiteRButton.setAlignmentX(panelEast.CENTER_ALIGNMENT);
+        whiteRButton.setBackground(myOrange);
+        panelEast.add(whiteRButton);
+
+        final JRadioButton alfredoRButton = new JRadioButton("Alfredo");
+        alfredoRButton.setAlignmentX(panelEast.CENTER_ALIGNMENT);
+        alfredoRButton.setBackground(myOrange);
+        panelEast.add(alfredoRButton);
+
+        final ButtonGroup rButtonGroup = new ButtonGroup();
+
+        rButtonGroup.add(tomatoRButton);
+        rButtonGroup.add(bBQRButton);
+        rButtonGroup.add(whiteRButton);
+        rButtonGroup.add(alfredoRButton);
+
+        //TOPPING BUTTONS!!!!!
+        final JLabel toppingsLabel = new JLabel("Toppings:");
+        toppingsLabel.setAlignmentX(panelCenter.CENTER_ALIGNMENT);
+        toppingsLabel.setBackground(myOrange);
+        panelCenter.add(toppingsLabel);
+
+        final JCheckBox eCheeseCBox = new JCheckBox("Extra Cheese");
+        eCheeseCBox.setAlignmentX(panelCenter.CENTER_ALIGNMENT);
+        eCheeseCBox.setBackground(myOrange);
+        panelCenter.add(eCheeseCBox);
+        eCheeseCBox.addActionListener(actionListener);
+
+        final JCheckBox pepperoniCBox = new JCheckBox("Pepperoni");
+        pepperoniCBox.setAlignmentX(panelCenter.CENTER_ALIGNMENT);
+        pepperoniCBox.setBackground(myOrange);
+        panelCenter.add(pepperoniCBox);
+        pepperoniCBox.addActionListener(actionListener);
+
+        final JCheckBox sausageCBox = new JCheckBox("Sausage");
+        sausageCBox.setAlignmentX(panelCenter.CENTER_ALIGNMENT);
+        sausageCBox.setBackground(myOrange);
+        panelCenter.add(sausageCBox);
+        sausageCBox.addActionListener(actionListener);
+
+        final JCheckBox gPepperCBox = new JCheckBox("Green Peppers");
+        gPepperCBox.setAlignmentX(panelCenter.CENTER_ALIGNMENT);
+        gPepperCBox.setBackground(myOrange);
+        panelCenter.add(gPepperCBox);
+        gPepperCBox.addActionListener(actionListener);
+
+        final JCheckBox chickenCBox = new JCheckBox("Chicken");
+        chickenCBox.setAlignmentX(panelCenter.CENTER_ALIGNMENT);
+        chickenCBox.setBackground(myOrange);
+        panelCenter.add(chickenCBox);
+        chickenCBox.addActionListener(actionListener);
+
+        final JCheckBox bOliveCBox = new JCheckBox("Black Olives");
+        bOliveCBox.setAlignmentX(panelCenter.CENTER_ALIGNMENT);
+        bOliveCBox.setBackground(myOrange);
+        panelCenter.add(bOliveCBox);
+        bOliveCBox.addActionListener(actionListener);
+
+        final JCheckBox hamCBox = new JCheckBox("Ham");
+        hamCBox.setAlignmentX(panelCenter.CENTER_ALIGNMENT);
+        hamCBox.setBackground(myOrange);
+        panelCenter.add(hamCBox);
+        hamCBox.addActionListener(actionListener);
+
+        //PRIICEE!!!!
+        final JLabel lblPrice = new JLabel("Price: $");
+        panelSouth.add(lblPrice);
+
+        totalPriceField = new JTextField("5");
+        totalPriceField.setEditable(false);
+        panelSouth.add(totalPriceField);
+        totalPriceField.setColumns(NUM_TEN);
+
+        final JButton orderButton = new JButton("Order!!!!");
+        panelSouth.add(orderButton);
+        orderButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent anE) {
+                JOptionPane.showMessageDialog(myFrame, "Your pizza was ordered!!!!");
+            }
+        });
+    }
+
+    /**
+     * @param aTotalPrice is the total price.
+     */
+    public static void setMyTotalPrice(double aTotalPrice) {
+        final DecimalFormat df = new DecimalFormat("#.##");
+        myTotalPrice = aTotalPrice;
+        totalPriceField.setText(df.format(myTotalPrice));
+    }
+
+    /** Main Method creates the window.
+     * @param aRgs are the arguments for the main method.
+     */
+    public static void main(String[] aRgs) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    final PizzaParlor window = new PizzaParlor();
+                    window.myFrame.setVisible(true);
+                } catch (final Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+}
+

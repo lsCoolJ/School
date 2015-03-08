@@ -1,0 +1,81 @@
+Chapter 7 Questions
+
+1. What do authors of the book refer to when they use the word "AWT"?
+
+
+
+2. What do authors of the book refer to when they use the word "Swing"?
+
+
+
+3. What is a frame and what Swing class implements / draws it?
+
+
+
+4. What is the name of Swing library?
+
+
+
+5. What is the default size of a frame?
+
+
+
+6. What is the default behavior of a frame, if a user closes a window?
+
+
+
+7. Why the frames are not automatically displayed and what do you need to write to draw a frame?
+
+
+
+8. What are ancestor classes of JFrame (list them in order from the most direct parent to the Object class) and why is it important to know this class hierarchy?
+
+
+
+
+9. Explain / comment each line of the following code 
+
+Toolkit kit = Toolkit.getDefaultToolkit();
+Dimension screenSize = kit.getScreenSize();
+int screenWidth = screenSize.width;
+int screenHeight = screenSize.height;
+setSize(screenWidth / 2, screenHeight / 2);
+setLocationByPlatform(true);
+
+
+
+
+
+
+10. What is the purpose of add method? Why do we need to call it? e.g.
+JFrame frame = new JFrame("Some Demo");
+frame.add(new <SomeComponent>);
+
+
+
+
+11. What do you need to do to draw on a component? 
+
+
+
+
+12. What is the Graphics object?
+
+
+
+
+13. Explain / comment each line of the following method
+
+public void paintComponent(Graphics g) {
+ 
+      Graphics2D g2 = (Graphics2D) g;
+
+      Rectangle2D rect = new Rectangle2D.Double(0, 0, 150, 150);
+      g2.setPaint(Color.BLACK);
+      g2.draw(rect);
+      g2.setPaint(Color.RED);
+      g2.fill(rect);
+}
+
+
+14. When is paintComponent called and should a programmer ever call this method?

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1386557270911" analysisTimestamp="1386557265517" release="">
+  <Project projectName="benf94-assign8">
+    <Jar>H:\workspace-305\benf94-assign8\bin</Jar>
+    <AuxClasspathEntry>H:\workspace-305\benf94-assign8\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\benf94-assign8\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="eight.progpracticum.FileAction">
+      <SourceLine classname="eight.progpracticum.FileAction" sourcefile="FileAction.java" sourcepath="eight/progpracticum/FileAction.java"/>
+    </Class>
+    <Method classname="eight.progpracticum.FileAction" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="eight.progpracticum.FileAction" start="67" end="153" startBytecode="0" endBytecode="1128" sourcefile="FileAction.java" sourcepath="eight/progpracticum/FileAction.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="eight.progpracticum.FileAction" start="93" end="93" startBytecode="174" endBytecode="174" sourcefile="FileAction.java" sourcepath="eight/progpracticum/FileAction.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="eight.progpracticum.FileAction">
+      <SourceLine classname="eight.progpracticum.FileAction" sourcefile="FileAction.java" sourcepath="eight/progpracticum/FileAction.java"/>
+    </Class>
+    <Method classname="eight.progpracticum.FileAction" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="eight.progpracticum.FileAction" start="67" end="153" startBytecode="0" endBytecode="1128" sourcefile="FileAction.java" sourcepath="eight/progpracticum/FileAction.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="eight.progpracticum.FileAction" start="131" end="131" startBytecode="357" endBytecode="357" sourcefile="FileAction.java" sourcepath="eight/progpracticum/FileAction.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="eight.progpracticum.FileAction">
+      <SourceLine classname="eight.progpracticum.FileAction" sourcefile="FileAction.java" sourcepath="eight/progpracticum/FileAction.java"/>
+    </Class>
+    <Method classname="eight.progpracticum.FileAction" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="eight.progpracticum.FileAction" start="67" end="153" startBytecode="0" endBytecode="1128" sourcefile="FileAction.java" sourcepath="eight/progpracticum/FileAction.java"/>
+    </Method>
+    <SourceLine classname="eight.progpracticum.FileAction" start="151" end="151" startBytecode="436" endBytecode="436" sourcefile="FileAction.java" sourcepath="eight/progpracticum/FileAction.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="eight.progpracticum.FormatAction">
+      <SourceLine classname="eight.progpracticum.FormatAction" sourcefile="FormatAction.java" sourcepath="eight/progpracticum/FormatAction.java"/>
+    </Class>
+    <Method classname="eight.progpracticum.FormatAction" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="eight.progpracticum.FormatAction" start="91" end="175" startBytecode="0" endBytecode="184" sourcefile="FormatAction.java" sourcepath="eight/progpracticum/FormatAction.java"/>
+    </Method>
+    <LocalVariable name="currentStyle" register="7" pc="327" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="eight.progpracticum.FormatAction" start="157" end="157" startBytecode="325" endBytecode="325" sourcefile="FormatAction.java" sourcepath="eight/progpracticum/FormatAction.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="currentStyle"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.COPY_VALUE" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 8 Dec 2013 18:47:46 -0800" total_classes="7" referenced_classes="300" total_bugs="4" total_size="290" num_packages="1" vm_version="23.25-b01" cpu_seconds="3.82" clock_seconds="5.40" peak_mbytes="235.24" alloc_mbytes="494.94" gc_seconds="0.42" priority_2="2" priority_1="2">
+    <PackageStats package="eight.progpracticum" total_bugs="4" total_types="7" total_size="290" priority_2="2" priority_1="2">
+      <ClassStats class="eight.progpracticum.FileAction" sourceFile="FileAction.java" interface="false" size="70" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="eight.progpracticum.FormatAction" sourceFile="FormatAction.java" interface="false" size="86" bugs="1" priority_2="1"/>
+      <ClassStats class="eight.progpracticum.MenuBar" sourceFile="MenuBar.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="eight.progpracticum.MenuBar$1" sourceFile="MenuBar.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="eight.progpracticum.NotePad" sourceFile="NotePad.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="eight.progpracticum.NotePad$1" sourceFile="NotePad.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="eight.progpracticum.NotePadGUI" sourceFile="NotePadGUI.java" interface="false" size="51" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="3764" invocations="1481" avgMicrosecondsPerInvocation="2541" maxMicrosecondsPerInvocation="25101" standardDeviationMircosecondsPerInvocation="1887"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="647" invocations="1478" avgMicrosecondsPerInvocation="438" maxMicrosecondsPerInvocation="268487" standardDeviationMircosecondsPerInvocation="7035"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1386557270911" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

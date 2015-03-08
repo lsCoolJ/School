@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/run/media/ghg/ERIC/Lab_A/part1
+vCountNG
+Z1 IadEa>8a_lG<BUjVaLPlzM0
+Z2 VP<R;9fFIz_am4ABL<^WdC2
+Z3 d/run/media/ghg/ERIC/Lab_A/part1
+Z4 w1398809414
+Z5 8/run/media/ghg/ERIC/Lab_A/part1/CountNG.v
+Z6 F/run/media/ghg/ERIC/Lab_A/part1/CountNG.v
+L0 6
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@count@n@g
+Z10 !s100 :Of[hGCMSDT]VGW8<@A=>3
+Z11 !s108 1399327486.620207
+Z12 !s107 /run/media/ghg/ERIC/Lab_A/part1/CountNG.v|
+Z13 !s90 -reportprogress|300|-work|work|/run/media/ghg/ERIC/Lab_A/part1/CountNG.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtestCountNG
+!i10b 1
+Z14 !s100 zgPXf2Pn6[8MK?UJcal]F0
+Z15 IEXmJiOYO_Z21FAZ59gYb=0
+Z16 V]I5ih1H2>;OlP?c:z75@W2
+R3
+Z17 w1399329941
+Z18 8/run/media/ghg/ERIC/Lab_A/part1/testCountNG.v
+Z19 F/run/media/ghg/ERIC/Lab_A/part1/testCountNG.v
+L0 8
+R7
+r1
+!s85 0
+31
+!s108 1399332622.707304
+!s107 /run/media/ghg/ERIC/Lab_A/part1/testCountNG.v|
+Z20 !s90 -reportprogress|300|-work|work|-O0|/run/media/ghg/ERIC/Lab_A/part1/testCountNG.v|
+!s101 -O0
+R8
+Z21 ntest@count@n@g
+vTFFx
+Z22 Ihlj]3mBW6TKf@4hm5ZgTc0
+Z23 Vi0IQ[>lioKZBAFHJ;A9ff0
+R3
+Z24 w1399330267
+Z25 8/run/media/ghg/ERIC/Lab_A/part1/TFFx.v
+Z26 F/run/media/ghg/ERIC/Lab_A/part1/TFFx.v
+L0 7
+R7
+r1
+31
+R8
+Z27 n@t@f@fx
+Z28 !s100 _TMVL^ZLNdJ=i^KcGBNzd2
+Z29 !s108 1399330296.780803
+Z30 !s107 /run/media/ghg/ERIC/Lab_A/part1/TFFx.v|
+Z31 !s90 -reportprogress|300|-work|work|-O0|/run/media/ghg/ERIC/Lab_A/part1/TFFx.v|
+!i10b 1
+!s85 0
+!s101 -O0

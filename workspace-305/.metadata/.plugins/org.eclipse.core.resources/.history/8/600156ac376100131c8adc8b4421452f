@@ -1,0 +1,149 @@
+/**
+ * Ben Foster. Final project Autumn 2013
+ */
+package epidemic.progpracticum.model;
+
+import java.awt.Point;
+
+/** The Human class creates a Human.
+ * @author benf94
+ * @version 12/6/2013
+ */
+public class Human extends AbstractEntity {
+
+    /**
+     * The location of the human.
+     */
+    private Point myLocation;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myTen = SimParams.HUMAN_DIM;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myThousand = 1010;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myFiveHunnerd = 510;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myNumThree = 3;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myNumFour = 4;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myNumFive = 5;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myNumSix = 6;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myNumSeven = 7;
+    
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myNumEight = 8;
+
+    /**
+     * Parameterized constructor that sets object's state to parameters passed.
+     * @param aSpecies is a character denoting the species
+     * @param aSick is a boolean value denoting whether the object is sick or not
+     * @param aDayNum >= 0, the number of days the object has been sick
+     * @param aLocation is the location of the object in the world, 0 <= x < world width, 
+     *                  0 <= y < world height
+     * @custom.post object's state set to parameters passed
+     */
+    public Human(final char aSpecies, final boolean aSick,
+                 final int aDayNum, final Point aLocation) {
+        super(aSpecies, aSick, aDayNum, aLocation);
+        myLocation = aLocation;
+    }
+    
+    /**
+     * Abstract method - moves object's location in the world 
+     *                  according to object's species movement rules.
+     */
+    @Override
+    public void move() {
+        final int caseNumber = SimParams.GENERATOR.nextInt(9);
+        Point newLocation;
+        int thisX = myLocation.x;
+        int thisY = myLocation.y;
+        //int yMove;
+        //int thisX;
+        switch(caseNumber) {
+            case 1:
+                thisX += myTen;
+                thisY += 0;
+                break;
+            case 2:
+                thisX += myTen;
+                thisY += myTen;
+                break;
+            case myNumThree:
+                thisX += 0;
+                thisY += myTen;
+                break;
+            case myNumFour:
+                thisX += -myTen;
+                thisY += myTen;
+                break;
+            case myNumFive:
+                thisX += -myTen;
+                thisY += 0;
+                break;
+            case myNumSix:
+                thisX += -myTen;
+                thisY += -myTen;
+                break;
+            case myNumSeven:
+                thisX += 0;
+                thisY += -myTen;
+                break;
+            case myNumEight:
+                thisX += myTen;
+                thisY += -myTen;
+                break;
+            default:
+                thisX += 0;
+                thisY += 0;
+                break;
+        }
+        newLocation = new Point(thisX, thisY);
+        if (newLocation.x > myThousand) {
+            newLocation.setLocation(newLocation.x - myThousand, newLocation.y);
+        }
+        
+        if (newLocation.x < -myTen) {
+            newLocation.setLocation(newLocation.x + myThousand, newLocation.y);
+        }
+
+        if (newLocation.y > myFiveHunnerd) {
+            newLocation.setLocation(newLocation.x, newLocation.y - myFiveHunnerd);
+        }
+        
+        if (newLocation.y < -myTen) {
+            newLocation.setLocation(newLocation.x, newLocation.y + myFiveHunnerd);
+        }
+        myLocation = newLocation;
+       //return newLocation;
+    }
+
+}

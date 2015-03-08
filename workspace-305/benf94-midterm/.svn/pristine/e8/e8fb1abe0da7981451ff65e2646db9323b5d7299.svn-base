@@ -1,0 +1,20 @@
+ 
+
+
+(NOTE: remember to name this file username-projectname.txt where username is your UWNetID and project name is the name of the current project. Check the assignment description for a more specific explanation for each project. Also remember that the filename should be all lower case since all UWNetIDs are lower case and all project names are lower case.)
+
+Assignment name: Midterm 
+TCSS 305B: Programming Practicum, Autumn 2013
+
+Name: Ben Foster
+UWNetID: benf94
+Subversion Revision Number: 
+
+Assignment Overview:
+
+This midterm project was designed in order to allow us to show that we do in fact know how to use everything we learned in class so far by writing the code for several classes that utilize the tools and skills that were learned.
+
+
+Technical Impression:
+
+Completing this assignment was no easy task. I spent well over 30 hours on writing the code alone. However, that was partly my own fault. At first I had wanted to write this code using ArrayLists instead of maps however, I kept running into bugs and I kept getting stuck on how to fix them. Eventually, I broke down and used TreeMaps instead, which made the project much easier to finish. In the beginning I was afraid that my Runner class was going to be my longest class and that I had to make a JUnit test class for it. In which case I didn't know how I would do that but once I learned that we could ignore it, then I realized that my longest class would end up being the Vertebrate class, which was extremely easy to make a JUnit class for. At first I was confused on what the difference was between an overall high-level activity diagram, a low-level activity diagram and just a class diagram. Overall, I felt like this midterm project was an excellent assignment since we had to use something from each assignment we've done so far and I am looking forward to the next project we get.

@@ -1,0 +1,9 @@
+package one.progpracticum;
+
+/**
+ * @author benf94
+ *@version 1.0
+ */
+public enum VertClass {
+    FISH, REPTILE, AMPHIBIAN, MAMMAL, BIRD, NONE
+};

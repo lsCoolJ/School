@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;genMessage&apos; in &apos;epidemic.progpracticum.view.SimulationFrame&apos; to &apos;myGenMessage&apos;&#x0D;&#x0A;- Original project: &apos;benf94-final&apos;&#x0D;&#x0A;- Original element: &apos;epidemic.progpracticum.view.SimulationFrame.genMessage&apos;&#x0D;&#x0A;- Renamed element: &apos;epidemic.progpracticum.view.SimulationFrame.myGenMessage&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;genMessage&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;epidemic.progpracticum.view{SimulationFrame.java[SimulationFrame^genMessage" name="myGenMessage" references="true" setter="false" stamp="1386570384977" textual="false" version="1.0"/>
+</session>

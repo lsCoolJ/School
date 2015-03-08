@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1386557249008" analysisTimestamp="1386557247910" release="">
+  <Project projectName="benf94-assign4">
+    <Jar>H:\workspace-305\benf94-assign4\bin</Jar>
+    <AuxClasspathEntry>H:\workspace-305\benf94-assign4\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\benf94-assign4\src</SrcDir>
+    <SrcDir>H:\workspace-305\benf94-assign4\test</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 8 Dec 2013 18:47:27 -0800" total_classes="2" referenced_classes="18" total_bugs="0" total_size="147" num_packages="1" vm_version="23.25-b01" cpu_seconds="1.03" clock_seconds="1.10" peak_mbytes="217.66" alloc_mbytes="494.94" gc_seconds="0.04">
+    <PackageStats package="four.progpracticum" total_bugs="0" total_types="2" total_size="147">
+      <ClassStats class="four.progpracticum.Rectangle" sourceFile="Rectangle.java" interface="false" size="55" bugs="0"/>
+      <ClassStats class="four.progpracticum.RectangleTest" sourceFile="RectangleTest.java" interface="false" size="92" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="763" invocations="354" avgMicrosecondsPerInvocation="2155" maxMicrosecondsPerInvocation="12912" standardDeviationMircosecondsPerInvocation="1579"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="99" invocations="353" avgMicrosecondsPerInvocation="282" maxMicrosecondsPerInvocation="16416" standardDeviationMircosecondsPerInvocation="941"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1386557249008" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

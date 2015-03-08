@@ -1,0 +1,5 @@
+package epidemic.progpracticum.model;
+
+public class Human {
+
+}

@@ -1,0 +1,1261 @@
+TimeQuest Timing Analyzer report for part4
+Mon May  5 21:47:24 2014
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. SDC File List
+  5. Clocks
+  6. Slow Model Fmax Summary
+  7. Slow Model Setup Summary
+  8. Slow Model Hold Summary
+  9. Slow Model Recovery Summary
+ 10. Slow Model Removal Summary
+ 11. Slow Model Minimum Pulse Width Summary
+ 12. Slow Model Setup: 'system_clock'
+ 13. Slow Model Hold: 'system_clock'
+ 14. Slow Model Recovery: 'system_clock'
+ 15. Slow Model Removal: 'system_clock'
+ 16. Slow Model Minimum Pulse Width: 'system_clock'
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Fast Model Setup Summary
+ 20. Fast Model Hold Summary
+ 21. Fast Model Recovery Summary
+ 22. Fast Model Removal Summary
+ 23. Fast Model Minimum Pulse Width Summary
+ 24. Fast Model Setup: 'system_clock'
+ 25. Fast Model Hold: 'system_clock'
+ 26. Fast Model Recovery: 'system_clock'
+ 27. Fast Model Removal: 'system_clock'
+ 28. Fast Model Minimum Pulse Width: 'system_clock'
+ 29. Clock to Output Times
+ 30. Minimum Clock to Output Times
+ 31. Multicorner Timing Analysis Summary
+ 32. Clock to Output Times
+ 33. Minimum Clock to Output Times
+ 34. Setup Transfers
+ 35. Hold Transfers
+ 36. Recovery Transfers
+ 37. Removal Transfers
+ 38. Report TCCS
+ 39. Report RSKM
+ 40. Unconstrained Paths
+ 41. TimeQuest Timing Analyzer Messages
+ 42. TimeQuest Timing Analyzer Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; part4                                                             ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------+
+; SDC File List                                     ;
++---------------+--------+--------------------------+
+; SDC File Path ; Status ; Read at                  ;
++---------------+--------+--------------------------+
+; part4.sdc     ; OK     ; Mon May  5 21:47:24 2014 ;
++---------------+--------+--------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                 ;
++--------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name   ; Type ; Period ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++--------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; system_clock ; Base ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 } ;
++--------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
++----------------------------------------------------+
+; Slow Model Fmax Summary                            ;
++------------+-----------------+--------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name   ; Note ;
++------------+-----------------+--------------+------+
+; 293.77 MHz ; 293.77 MHz      ; system_clock ;      ;
++------------+-----------------+--------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------------+
+; Slow Model Setup Summary              ;
++--------------+--------+---------------+
+; Clock        ; Slack  ; End Point TNS ;
++--------------+--------+---------------+
+; system_clock ; 16.596 ; 0.000         ;
++--------------+--------+---------------+
+
+
++--------------------------------------+
+; Slow Model Hold Summary              ;
++--------------+-------+---------------+
+; Clock        ; Slack ; End Point TNS ;
++--------------+-------+---------------+
+; system_clock ; 0.391 ; 0.000         ;
++--------------+-------+---------------+
+
+
++---------------------------------------+
+; Slow Model Recovery Summary           ;
++--------------+--------+---------------+
+; Clock        ; Slack  ; End Point TNS ;
++--------------+--------+---------------+
+; system_clock ; 18.319 ; 0.000         ;
++--------------+--------+---------------+
+
+
++--------------------------------------+
+; Slow Model Removal Summary           ;
++--------------+-------+---------------+
+; Clock        ; Slack ; End Point TNS ;
++--------------+-------+---------------+
+; system_clock ; 1.031 ; 0.000         ;
++--------------+-------+---------------+
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++--------------+-------+-----------------+
+; Clock        ; Slack ; End Point TNS   ;
++--------------+-------+-----------------+
+; system_clock ; 9.000 ; 0.000           ;
++--------------+-------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'system_clock'                                                                                                                                                                                        ;
++--------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; Slack  ; From Node                                                          ; To Node                                                            ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; 16.596 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.445      ;
+; 16.667 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.374      ;
+; 16.706 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.335      ;
+; 16.737 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.304      ;
+; 16.738 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.303      ;
+; 16.777 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.264      ;
+; 16.808 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.233      ;
+; 16.808 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.233      ;
+; 16.809 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.232      ;
+; 16.848 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.193      ;
+; 16.879 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.162      ;
+; 16.879 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.162      ;
+; 16.880 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.161      ;
+; 16.915 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.126      ;
+; 16.919 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.122      ;
+; 16.950 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.091      ;
+; 16.950 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.091      ;
+; 16.986 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.055      ;
+; 16.990 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.051      ;
+; 17.001 ; Q[0]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 3.035      ;
+; 17.004 ; Q[0]                                                               ; Q[2]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 3.032      ;
+; 17.004 ; Q[0]                                                               ; Q[1]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 3.032      ;
+; 17.021 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.020      ;
+; 17.021 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.020      ;
+; 17.032 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.009      ;
+; 17.039 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 3.002      ;
+; 17.057 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.984      ;
+; 17.092 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.949      ;
+; 17.103 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.938      ;
+; 17.110 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.931      ;
+; 17.128 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.913      ;
+; 17.131 ; Q[2]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 2.905      ;
+; 17.134 ; Q[2]                                                               ; Q[2]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 2.902      ;
+; 17.134 ; Q[2]                                                               ; Q[1]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 2.902      ;
+; 17.143 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.898      ;
+; 17.149 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.892      ;
+; 17.174 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.867      ;
+; 17.178 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.863      ;
+; 17.180 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.861      ;
+; 17.181 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.860      ;
+; 17.199 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.842      ;
+; 17.214 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.827      ;
+; 17.220 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.821      ;
+; 17.245 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.796      ;
+; 17.249 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.792      ;
+; 17.251 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.790      ;
+; 17.251 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.790      ;
+; 17.252 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.789      ;
+; 17.284 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.757      ;
+; 17.285 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.756      ;
+; 17.291 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.750      ;
+; 17.294 ; Q[1]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 2.742      ;
+; 17.297 ; Q[1]                                                               ; Q[2]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 2.739      ;
+; 17.297 ; Q[1]                                                               ; Q[1]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 2.739      ;
+; 17.316 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.725      ;
+; 17.319 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.722      ;
+; 17.320 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.721      ;
+; 17.322 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.719      ;
+; 17.322 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.719      ;
+; 17.323 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.718      ;
+; 17.355 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.686      ;
+; 17.356 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.685      ;
+; 17.358 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.683      ;
+; 17.362 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.679      ;
+; 17.390 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.651      ;
+; 17.391 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.650      ;
+; 17.393 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.648      ;
+; 17.393 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.648      ;
+; 17.394 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.647      ;
+; 17.425 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.616      ;
+; 17.426 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.615      ;
+; 17.427 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.614      ;
+; 17.429 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.612      ;
+; 17.433 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.608      ;
+; 17.461 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.580      ;
+; 17.462 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.579      ;
+; 17.464 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.577      ;
+; 17.464 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.577      ;
+; 17.465 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.576      ;
+; 17.475 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.566      ;
+; 17.481 ; Equal0~5_OTERM71                                                   ; Q[0]                                                               ; system_clock ; system_clock ; 20.000       ; 0.013      ; 2.568      ;
+; 17.481 ; Equal0~5_OTERM71                                                   ; Q[2]                                                               ; system_clock ; system_clock ; 20.000       ; 0.013      ; 2.568      ;
+; 17.481 ; Equal0~5_OTERM71                                                   ; Q[3]                                                               ; system_clock ; system_clock ; 20.000       ; 0.013      ; 2.568      ;
+; 17.481 ; Equal0~5_OTERM71                                                   ; Q[1]                                                               ; system_clock ; system_clock ; 20.000       ; 0.013      ; 2.568      ;
+; 17.496 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.545      ;
+; 17.496 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.545      ;
+; 17.497 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.544      ;
+; 17.500 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.541      ;
+; 17.504 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.537      ;
+; 17.532 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.509      ;
+; 17.535 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.506      ;
+; 17.535 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.506      ;
+; 17.536 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.505      ;
+; 17.546 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.495      ;
+; 17.546 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.495      ;
+; 17.567 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.474      ;
+; 17.567 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.474      ;
+; 17.568 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.473      ;
+; 17.571 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.470      ;
+; 17.575 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 20.000       ; 0.005      ; 2.466      ;
++--------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'system_clock'                                                                                                                                                                                        ;
++-------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; Slack ; From Node                                                          ; To Node                                                            ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; 0.391 ; Q[0]                                                               ; Q[0]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Q[2]                                                               ; Q[2]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Q[3]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; Q[1]                                                               ; Q[1]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.657      ;
+; 0.539 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.805      ;
+; 0.581 ; Q[0]                                                               ; Q[1]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.847      ;
+; 0.671 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.937      ;
+; 0.708 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; Equal0~7_OTERM67                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 0.975      ;
+; 0.710 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 0.977      ;
+; 0.771 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.037      ;
+; 0.795 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.061      ;
+; 0.802 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.068      ;
+; 0.802 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.068      ;
+; 0.808 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.074      ;
+; 0.809 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.075      ;
+; 0.810 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.076      ;
+; 0.810 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.076      ;
+; 0.811 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.077      ;
+; 0.813 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.079      ;
+; 0.814 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.080      ;
+; 0.814 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.080      ;
+; 0.814 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.080      ;
+; 0.814 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.080      ;
+; 0.815 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.081      ;
+; 0.839 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.105      ;
+; 0.839 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.105      ;
+; 0.839 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; Equal0~7_OTERM67                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 1.106      ;
+; 0.841 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.107      ;
+; 0.842 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.108      ;
+; 0.845 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.111      ;
+; 0.845 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.111      ;
+; 0.845 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.111      ;
+; 0.846 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.112      ;
+; 0.846 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.112      ;
+; 0.847 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.113      ;
+; 0.847 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.113      ;
+; 0.847 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.113      ;
+; 0.913 ; Equal0~6_OTERM73                                                   ; ACLR                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.179      ;
+; 0.944 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; Equal0~4_OTERM65                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.210      ;
+; 0.977 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 1.244      ;
+; 0.990 ; Q[1]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.256      ;
+; 0.994 ; Q[1]                                                               ; Q[2]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.260      ;
+; 1.012 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 1.279      ;
+; 1.065 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 1.332      ;
+; 1.147 ; Equal0~7_OTERM67                                                   ; ACLR                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.413      ;
+; 1.177 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; Equal0~4_OTERM65                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.443      ;
+; 1.178 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.444      ;
+; 1.185 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.451      ;
+; 1.191 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.457      ;
+; 1.192 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.458      ;
+; 1.193 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.459      ;
+; 1.193 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.459      ;
+; 1.194 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.460      ;
+; 1.196 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.462      ;
+; 1.197 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.463      ;
+; 1.197 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.463      ;
+; 1.197 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.463      ;
+; 1.224 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.490      ;
+; 1.225 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.491      ;
+; 1.225 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.491      ;
+; 1.227 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.493      ;
+; 1.228 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.494      ;
+; 1.228 ; Q[2]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.494      ;
+; 1.231 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.497      ;
+; 1.231 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.497      ;
+; 1.231 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.497      ;
+; 1.232 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.498      ;
+; 1.232 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.498      ;
+; 1.232 ; Equal0~4_OTERM65                                                   ; ACLR                                                               ; system_clock ; system_clock ; 0.000        ; 0.001      ; 1.499      ;
+; 1.233 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.499      ;
+; 1.249 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.515      ;
+; 1.256 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.522      ;
+; 1.262 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.528      ;
+; 1.263 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.529      ;
+; 1.264 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.530      ;
+; 1.265 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.531      ;
+; 1.267 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.533      ;
+; 1.268 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.534      ;
+; 1.268 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.534      ;
+; 1.277 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.543      ;
+; 1.282 ; Q[0]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.548      ;
+; 1.284 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; system_clock ; system_clock ; 0.000        ; 0.005      ; 1.555      ;
+; 1.287 ; Q[0]                                                               ; Q[2]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.553      ;
+; 1.290 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.556      ;
+; 1.295 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.561      ;
+; 1.296 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.562      ;
+; 1.298 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.564      ;
+; 1.299 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.565      ;
+; 1.302 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.568      ;
+; 1.302 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.568      ;
+; 1.302 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.568      ;
+; 1.303 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.569      ;
+; 1.303 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.569      ;
+; 1.320 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.586      ;
+; 1.327 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.593      ;
+; 1.333 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.599      ;
+; 1.334 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; system_clock ; system_clock ; 0.000        ; 0.005      ; 1.605      ;
+; 1.334 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.600      ;
+; 1.336 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.602      ;
+; 1.338 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.604      ;
++-------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'system_clock'                                                                                                                            ;
++--------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                                                            ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.319 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.721      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; Equal0~4_OTERM65                                                   ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.551 ; ACLR      ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 20.000       ; -0.001     ; 1.484      ;
+; 18.739 ; ACLR      ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 20.000       ; 0.000      ; 1.297      ;
+; 18.739 ; ACLR      ; Equal0~7_OTERM67                                                   ; system_clock ; system_clock ; 20.000       ; 0.000      ; 1.297      ;
++--------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'system_clock'                                                                                                                            ;
++-------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; Slack ; From Node ; To Node                                                            ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; 1.031 ; ACLR      ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.297      ;
+; 1.031 ; ACLR      ; Equal0~7_OTERM67                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 1.297      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; Equal0~4_OTERM65                                                   ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.219 ; ACLR      ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 0.000        ; -0.001     ; 1.484      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
+; 1.451 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 0.000        ; 0.004      ; 1.721      ;
++-------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'system_clock'                                                                                                             ;
++--------+--------------+----------------+------------------+--------------+------------+--------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock        ; Clock Edge ; Target                                                             ;
++--------+--------------+----------------+------------------+--------------+------------+--------------------------------------------------------------------+
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; ACLR                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; ACLR                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~4_OTERM65                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~4_OTERM65                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~5_OTERM71                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~5_OTERM71                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~6_OTERM73                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~6_OTERM73                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~7_OTERM67                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~7_OTERM67                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Q[0]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[0]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Q[1]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[1]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Q[2]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[2]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Q[3]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[3]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; ACLR|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; ACLR|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; CLOCK_50|combout                                                   ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; CLOCK_50|combout                                                   ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; CLOCK_50~clkctrl|inclk[0]                                          ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; CLOCK_50~clkctrl|inclk[0]                                          ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; CLOCK_50~clkctrl|outclk                                            ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; CLOCK_50~clkctrl|outclk                                            ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~4_NEW_REG64|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~4_NEW_REG64|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~5_NEW_REG70|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~5_NEW_REG70|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~6_NEW_REG72|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~6_NEW_REG72|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~7_NEW_REG66|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~7_NEW_REG66|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Q[0]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[0]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Q[1]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[1]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Q[2]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[2]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Q[3]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[3]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita0_NEW_REG58|clk                 ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita0_NEW_REG58|clk                 ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita10_NEW_REG38|clk                ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita10_NEW_REG38|clk                ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita11_NEW_REG36|clk                ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita11_NEW_REG36|clk                ;
++--------+--------------+----------------+------------------+--------------+------------+--------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; system_clock ; 7.619 ; 7.619 ; Rise       ; system_clock    ;
+;  HEX0[0]  ; system_clock ; 7.619 ; 7.619 ; Rise       ; system_clock    ;
+;  HEX0[1]  ; system_clock ; 7.591 ; 7.591 ; Rise       ; system_clock    ;
+;  HEX0[2]  ; system_clock ; 7.617 ; 7.617 ; Rise       ; system_clock    ;
+;  HEX0[3]  ; system_clock ; 7.376 ; 7.376 ; Rise       ; system_clock    ;
+;  HEX0[4]  ; system_clock ; 7.370 ; 7.370 ; Rise       ; system_clock    ;
+;  HEX0[5]  ; system_clock ; 7.183 ; 7.183 ; Rise       ; system_clock    ;
+;  HEX0[6]  ; system_clock ; 7.192 ; 7.192 ; Rise       ; system_clock    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; system_clock ; 6.862 ; 6.862 ; Rise       ; system_clock    ;
+;  HEX0[0]  ; system_clock ; 7.307 ; 7.307 ; Rise       ; system_clock    ;
+;  HEX0[1]  ; system_clock ; 7.274 ; 7.274 ; Rise       ; system_clock    ;
+;  HEX0[2]  ; system_clock ; 7.304 ; 7.304 ; Rise       ; system_clock    ;
+;  HEX0[3]  ; system_clock ; 7.059 ; 7.059 ; Rise       ; system_clock    ;
+;  HEX0[4]  ; system_clock ; 7.062 ; 7.062 ; Rise       ; system_clock    ;
+;  HEX0[5]  ; system_clock ; 6.866 ; 6.866 ; Rise       ; system_clock    ;
+;  HEX0[6]  ; system_clock ; 6.862 ; 6.862 ; Rise       ; system_clock    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------+
+; Fast Model Setup Summary              ;
++--------------+--------+---------------+
+; Clock        ; Slack  ; End Point TNS ;
++--------------+--------+---------------+
+; system_clock ; 18.363 ; 0.000         ;
++--------------+--------+---------------+
+
+
++--------------------------------------+
+; Fast Model Hold Summary              ;
++--------------+-------+---------------+
+; Clock        ; Slack ; End Point TNS ;
++--------------+-------+---------------+
+; system_clock ; 0.215 ; 0.000         ;
++--------------+-------+---------------+
+
+
++---------------------------------------+
+; Fast Model Recovery Summary           ;
++--------------+--------+---------------+
+; Clock        ; Slack  ; End Point TNS ;
++--------------+--------+---------------+
+; system_clock ; 19.114 ; 0.000         ;
++--------------+--------+---------------+
+
+
++--------------------------------------+
+; Fast Model Removal Summary           ;
++--------------+-------+---------------+
+; Clock        ; Slack ; End Point TNS ;
++--------------+-------+---------------+
+; system_clock ; 0.581 ; 0.000         ;
++--------------+-------+---------------+
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++--------------+-------+-----------------+
+; Clock        ; Slack ; End Point TNS   ;
++--------------+-------+-----------------+
+; system_clock ; 9.000 ; 0.000           ;
++--------------+-------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'system_clock'                                                                                                                                                                                        ;
++--------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; Slack  ; From Node                                                          ; To Node                                                            ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; 18.363 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.673      ;
+; 18.398 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.638      ;
+; 18.413 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.623      ;
+; 18.432 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.604      ;
+; 18.433 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.603      ;
+; 18.448 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.588      ;
+; 18.467 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.569      ;
+; 18.467 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.569      ;
+; 18.468 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.568      ;
+; 18.483 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.553      ;
+; 18.502 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.534      ;
+; 18.502 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.534      ;
+; 18.503 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.533      ;
+; 18.518 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.518      ;
+; 18.522 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.514      ;
+; 18.537 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.499      ;
+; 18.537 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.499      ;
+; 18.553 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.483      ;
+; 18.557 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.479      ;
+; 18.572 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.464      ;
+; 18.572 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.464      ;
+; 18.592 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.444      ;
+; 18.593 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.443      ;
+; 18.597 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.439      ;
+; 18.607 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.429      ;
+; 18.627 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.409      ;
+; 18.628 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.408      ;
+; 18.632 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.404      ;
+; 18.642 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.394      ;
+; 18.647 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.389      ;
+; 18.662 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.374      ;
+; 18.663 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.373      ;
+; 18.663 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.373      ;
+; 18.666 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.370      ;
+; 18.667 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.369      ;
+; 18.677 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.359      ;
+; 18.682 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.354      ;
+; 18.684 ; Q[0]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 1.348      ;
+; 18.687 ; Q[0]                                                               ; Q[2]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 1.345      ;
+; 18.687 ; Q[0]                                                               ; Q[1]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 1.345      ;
+; 18.698 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.338      ;
+; 18.698 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.338      ;
+; 18.701 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.335      ;
+; 18.701 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.335      ;
+; 18.702 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.334      ;
+; 18.711 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.325      ;
+; 18.712 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.324      ;
+; 18.717 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.319      ;
+; 18.732 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.304      ;
+; 18.733 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.303      ;
+; 18.733 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.303      ;
+; 18.736 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.300      ;
+; 18.736 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.300      ;
+; 18.737 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.299      ;
+; 18.746 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.290      ;
+; 18.746 ; Q[2]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 1.286      ;
+; 18.747 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.289      ;
+; 18.749 ; Q[2]                                                               ; Q[2]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 1.283      ;
+; 18.749 ; Q[2]                                                               ; Q[1]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 1.283      ;
+; 18.752 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.284      ;
+; 18.756 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.280      ;
+; 18.767 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.269      ;
+; 18.768 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.268      ;
+; 18.771 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.265      ;
+; 18.771 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.265      ;
+; 18.772 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.264      ;
+; 18.780 ; Equal0~5_OTERM71                                                   ; Q[0]                                                               ; system_clock ; system_clock ; 20.000       ; 0.011      ; 1.263      ;
+; 18.780 ; Equal0~5_OTERM71                                                   ; Q[2]                                                               ; system_clock ; system_clock ; 20.000       ; 0.011      ; 1.263      ;
+; 18.780 ; Equal0~5_OTERM71                                                   ; Q[3]                                                               ; system_clock ; system_clock ; 20.000       ; 0.011      ; 1.263      ;
+; 18.780 ; Equal0~5_OTERM71                                                   ; Q[1]                                                               ; system_clock ; system_clock ; 20.000       ; 0.011      ; 1.263      ;
+; 18.780 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.256      ;
+; 18.781 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.255      ;
+; 18.782 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.254      ;
+; 18.787 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.249      ;
+; 18.791 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.245      ;
+; 18.802 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.234      ;
+; 18.803 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.233      ;
+; 18.806 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.230      ;
+; 18.806 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.230      ;
+; 18.807 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.229      ;
+; 18.815 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.221      ;
+; 18.815 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.221      ;
+; 18.816 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.220      ;
+; 18.822 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.214      ;
+; 18.823 ; Q[1]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 1.209      ;
+; 18.826 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.210      ;
+; 18.826 ; Q[1]                                                               ; Q[2]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 1.206      ;
+; 18.826 ; Q[1]                                                               ; Q[1]                                                               ; system_clock ; system_clock ; 20.000       ; 0.000      ; 1.206      ;
+; 18.827 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.209      ;
+; 18.832 ; Equal0~4_OTERM65                                                   ; Q[0]                                                               ; system_clock ; system_clock ; 20.000       ; 0.011      ; 1.211      ;
+; 18.832 ; Equal0~4_OTERM65                                                   ; Q[2]                                                               ; system_clock ; system_clock ; 20.000       ; 0.011      ; 1.211      ;
+; 18.832 ; Equal0~4_OTERM65                                                   ; Q[3]                                                               ; system_clock ; system_clock ; 20.000       ; 0.011      ; 1.211      ;
+; 18.832 ; Equal0~4_OTERM65                                                   ; Q[1]                                                               ; system_clock ; system_clock ; 20.000       ; 0.011      ; 1.211      ;
+; 18.837 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.199      ;
+; 18.841 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.195      ;
+; 18.841 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.195      ;
+; 18.842 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.194      ;
+; 18.850 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.186      ;
+; 18.850 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.186      ;
+; 18.851 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.004      ; 1.185      ;
++--------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'system_clock'                                                                                                                                                                                        ;
++-------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; Slack ; From Node                                                          ; To Node                                                            ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; 0.215 ; Q[0]                                                               ; Q[0]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Q[2]                                                               ; Q[2]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Q[3]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Q[1]                                                               ; Q[1]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.367      ;
+; 0.252 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.404      ;
+; 0.272 ; Q[0]                                                               ; Q[1]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.424      ;
+; 0.305 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.457      ;
+; 0.321 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; Equal0~7_OTERM67                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 0.474      ;
+; 0.324 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 0.477      ;
+; 0.355 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.507      ;
+; 0.358 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.510      ;
+; 0.358 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.510      ;
+; 0.363 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.515      ;
+; 0.364 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.516      ;
+; 0.365 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.517      ;
+; 0.367 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.519      ;
+; 0.368 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.520      ;
+; 0.372 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.524      ;
+; 0.374 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; Equal0~7_OTERM67                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 0.527      ;
+; 0.375 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.527      ;
+; 0.375 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.527      ;
+; 0.375 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.527      ;
+; 0.376 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.528      ;
+; 0.377 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.529      ;
+; 0.378 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.530      ;
+; 0.379 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.531      ;
+; 0.379 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.531      ;
+; 0.388 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.540      ;
+; 0.400 ; Equal0~6_OTERM73                                                   ; ACLR                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.552      ;
+; 0.421 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; Equal0~4_OTERM65                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.573      ;
+; 0.434 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 0.587      ;
+; 0.446 ; Q[1]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.598      ;
+; 0.449 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 0.602      ;
+; 0.450 ; Q[1]                                                               ; Q[2]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.602      ;
+; 0.490 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 0.000        ; 0.001      ; 0.643      ;
+; 0.493 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.645      ;
+; 0.496 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.648      ;
+; 0.501 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.653      ;
+; 0.502 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.654      ;
+; 0.503 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.655      ;
+; 0.503 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.655      ;
+; 0.503 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.655      ;
+; 0.505 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.657      ;
+; 0.505 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.657      ;
+; 0.505 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.657      ;
+; 0.505 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.657      ;
+; 0.511 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.663      ;
+; 0.512 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.664      ;
+; 0.512 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.664      ;
+; 0.515 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.667      ;
+; 0.515 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.667      ;
+; 0.516 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.668      ;
+; 0.517 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.669      ;
+; 0.518 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.670      ;
+; 0.519 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.671      ;
+; 0.524 ; Equal0~7_OTERM67                                                   ; ACLR                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.676      ;
+; 0.528 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.680      ;
+; 0.531 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.683      ;
+; 0.536 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.688      ;
+; 0.537 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.689      ;
+; 0.538 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.690      ;
+; 0.538 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.690      ;
+; 0.540 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.692      ;
+; 0.540 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.692      ;
+; 0.540 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.692      ;
+; 0.544 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; Equal0~4_OTERM65                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.696      ;
+; 0.546 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 0.702      ;
+; 0.546 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.698      ;
+; 0.547 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.699      ;
+; 0.550 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.702      ;
+; 0.550 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.702      ;
+; 0.551 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.703      ;
+; 0.551 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.703      ;
+; 0.552 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.704      ;
+; 0.553 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.705      ;
+; 0.553 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.705      ;
+; 0.553 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.705      ;
+; 0.561 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.713      ;
+; 0.563 ; Equal0~4_OTERM65                                                   ; ACLR                                                               ; system_clock ; system_clock ; 0.000        ; 0.001      ; 0.716      ;
+; 0.563 ; Q[2]                                                               ; Q[3]                                                               ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.715      ;
+; 0.563 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.715      ;
+; 0.566 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.718      ;
+; 0.571 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.723      ;
+; 0.572 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.724      ;
+; 0.573 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.725      ;
+; 0.575 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.727      ;
+; 0.575 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.727      ;
+; 0.575 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.727      ;
+; 0.581 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 0.000        ; 0.004      ; 0.737      ;
++-------+--------------------------------------------------------------------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'system_clock'                                                                                                                            ;
++--------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                                                            ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.114 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 20.000       ; 0.003      ; 0.921      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; Equal0~4_OTERM65                                                   ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.214 ; ACLR      ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 20.000       ; -0.001     ; 0.817      ;
+; 19.299 ; ACLR      ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 20.000       ; 0.000      ; 0.733      ;
+; 19.299 ; ACLR      ; Equal0~7_OTERM67                                                   ; system_clock ; system_clock ; 20.000       ; 0.000      ; 0.733      ;
++--------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'system_clock'                                                                                                                            ;
++-------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; Slack ; From Node ; To Node                                                            ; Launch Clock ; Latch Clock  ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+; 0.581 ; ACLR      ; Equal0~6_OTERM73                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.733      ;
+; 0.581 ; ACLR      ; Equal0~7_OTERM67                                                   ; system_clock ; system_clock ; 0.000        ; 0.000      ; 0.733      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; Equal0~4_OTERM65                                                   ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.666 ; ACLR      ; Equal0~5_OTERM71                                                   ; system_clock ; system_clock ; 0.000        ; -0.001     ; 0.817      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
+; 0.766 ; ACLR      ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ; system_clock ; system_clock ; 0.000        ; 0.003      ; 0.921      ;
++-------+-----------+--------------------------------------------------------------------+--------------+--------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'system_clock'                                                                                                             ;
++--------+--------------+----------------+------------------+--------------+------------+--------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock        ; Clock Edge ; Target                                                             ;
++--------+--------------+----------------+------------------+--------------+------------+--------------------------------------------------------------------+
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; ACLR                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; ACLR                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~4_OTERM65                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~4_OTERM65                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~5_OTERM71                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~5_OTERM71                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~6_OTERM73                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~6_OTERM73                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~7_OTERM67                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~7_OTERM67                                                   ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Q[0]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[0]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Q[1]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[1]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Q[2]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[2]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; Q[3]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[3]                                                               ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita0_OTERM59  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita10_OTERM39 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita11_OTERM37 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita12_OTERM35 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita13_OTERM33 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita14_OTERM31 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita15_OTERM29 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita16_OTERM27 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita17_OTERM25 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita18_OTERM23 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita19_OTERM21 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita1_OTERM57  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita20_OTERM19 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita21_OTERM17 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita22_OTERM15 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita23_OTERM13 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita24_OTERM11 ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita25_OTERM9  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita2_OTERM55  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita3_OTERM53  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita4_OTERM51  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita5_OTERM49  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita6_OTERM47  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita7_OTERM45  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita8_OTERM43  ;
+; 9.000  ; 10.000       ; 1.000          ; High Pulse Width ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ;
+; 9.000  ; 10.000       ; 1.000          ; Low Pulse Width  ; system_clock ; Rise       ; lpm_counter:U1|cntr_vcg:auto_generated|counter_comb_bita9_OTERM41  ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; ACLR|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; ACLR|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; CLOCK_50|combout                                                   ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; CLOCK_50|combout                                                   ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; CLOCK_50~clkctrl|inclk[0]                                          ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; CLOCK_50~clkctrl|inclk[0]                                          ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; CLOCK_50~clkctrl|outclk                                            ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; CLOCK_50~clkctrl|outclk                                            ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~4_NEW_REG64|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~4_NEW_REG64|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~5_NEW_REG70|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~5_NEW_REG70|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~6_NEW_REG72|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~6_NEW_REG72|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Equal0~7_NEW_REG66|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Equal0~7_NEW_REG66|clk                                             ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Q[0]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[0]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Q[1]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[1]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Q[2]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[2]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; Q[3]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; Q[3]|clk                                                           ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita0_NEW_REG58|clk                 ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita0_NEW_REG58|clk                 ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita10_NEW_REG38|clk                ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita10_NEW_REG38|clk                ;
+; 10.000 ; 10.000       ; 0.000          ; High Pulse Width ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita11_NEW_REG36|clk                ;
+; 10.000 ; 10.000       ; 0.000          ; Low Pulse Width  ; system_clock ; Rise       ; U1|auto_generated|counter_comb_bita11_NEW_REG36|clk                ;
++--------+--------------+----------------+------------------+--------------+------------+--------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; system_clock ; 4.238 ; 4.238 ; Rise       ; system_clock    ;
+;  HEX0[0]  ; system_clock ; 4.238 ; 4.238 ; Rise       ; system_clock    ;
+;  HEX0[1]  ; system_clock ; 4.210 ; 4.210 ; Rise       ; system_clock    ;
+;  HEX0[2]  ; system_clock ; 4.227 ; 4.227 ; Rise       ; system_clock    ;
+;  HEX0[3]  ; system_clock ; 4.123 ; 4.123 ; Rise       ; system_clock    ;
+;  HEX0[4]  ; system_clock ; 4.119 ; 4.119 ; Rise       ; system_clock    ;
+;  HEX0[5]  ; system_clock ; 4.032 ; 4.032 ; Rise       ; system_clock    ;
+;  HEX0[6]  ; system_clock ; 4.038 ; 4.038 ; Rise       ; system_clock    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; system_clock ; 3.896 ; 3.896 ; Rise       ; system_clock    ;
+;  HEX0[0]  ; system_clock ; 4.108 ; 4.108 ; Rise       ; system_clock    ;
+;  HEX0[1]  ; system_clock ; 4.075 ; 4.075 ; Rise       ; system_clock    ;
+;  HEX0[2]  ; system_clock ; 4.100 ; 4.100 ; Rise       ; system_clock    ;
+;  HEX0[3]  ; system_clock ; 3.989 ; 3.989 ; Rise       ; system_clock    ;
+;  HEX0[4]  ; system_clock ; 3.994 ; 3.994 ; Rise       ; system_clock    ;
+;  HEX0[5]  ; system_clock ; 3.900 ; 3.900 ; Rise       ; system_clock    ;
+;  HEX0[6]  ; system_clock ; 3.896 ; 3.896 ; Rise       ; system_clock    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++------------------+--------+-------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack ; 16.596 ; 0.215 ; 18.319   ; 0.581   ; 9.000               ;
+;  system_clock    ; 16.596 ; 0.215 ; 18.319   ; 0.581   ; 9.000               ;
+; Design-wide TNS  ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  system_clock    ; 0.000  ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
++------------------+--------+-------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; system_clock ; 7.619 ; 7.619 ; Rise       ; system_clock    ;
+;  HEX0[0]  ; system_clock ; 7.619 ; 7.619 ; Rise       ; system_clock    ;
+;  HEX0[1]  ; system_clock ; 7.591 ; 7.591 ; Rise       ; system_clock    ;
+;  HEX0[2]  ; system_clock ; 7.617 ; 7.617 ; Rise       ; system_clock    ;
+;  HEX0[3]  ; system_clock ; 7.376 ; 7.376 ; Rise       ; system_clock    ;
+;  HEX0[4]  ; system_clock ; 7.370 ; 7.370 ; Rise       ; system_clock    ;
+;  HEX0[5]  ; system_clock ; 7.183 ; 7.183 ; Rise       ; system_clock    ;
+;  HEX0[6]  ; system_clock ; 7.192 ; 7.192 ; Rise       ; system_clock    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+--------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port   ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+--------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; system_clock ; 3.896 ; 3.896 ; Rise       ; system_clock    ;
+;  HEX0[0]  ; system_clock ; 4.108 ; 4.108 ; Rise       ; system_clock    ;
+;  HEX0[1]  ; system_clock ; 4.075 ; 4.075 ; Rise       ; system_clock    ;
+;  HEX0[2]  ; system_clock ; 4.100 ; 4.100 ; Rise       ; system_clock    ;
+;  HEX0[3]  ; system_clock ; 3.989 ; 3.989 ; Rise       ; system_clock    ;
+;  HEX0[4]  ; system_clock ; 3.994 ; 3.994 ; Rise       ; system_clock    ;
+;  HEX0[5]  ; system_clock ; 3.900 ; 3.900 ; Rise       ; system_clock    ;
+;  HEX0[6]  ; system_clock ; 3.896 ; 3.896 ; Rise       ; system_clock    ;
++-----------+--------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Transfers                                                         ;
++--------------+--------------+----------+----------+----------+----------+
+; From Clock   ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------+--------------+----------+----------+----------+----------+
+; system_clock ; system_clock ; 448      ; 0        ; 0        ; 0        ;
++--------------+--------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------+
+; Hold Transfers                                                          ;
++--------------+--------------+----------+----------+----------+----------+
+; From Clock   ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------+--------------+----------+----------+----------+----------+
+; system_clock ; system_clock ; 448      ; 0        ; 0        ; 0        ;
++--------------+--------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------+
+; Recovery Transfers                                                      ;
++--------------+--------------+----------+----------+----------+----------+
+; From Clock   ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------+--------------+----------+----------+----------+----------+
+; system_clock ; system_clock ; 30       ; 0        ; 0        ; 0        ;
++--------------+--------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------+
+; Removal Transfers                                                       ;
++--------------+--------------+----------+----------+----------+----------+
+; From Clock   ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------+--------------+----------+----------+----------+----------+
+; system_clock ; system_clock ; 30       ; 0        ; 0        ; 0        ;
++--------------+--------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 28    ; 28   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon May  5 21:47:23 2014
+Info: Command: quartus_sta part4 -c part4
+Info: qsta_default_script.tcl version: #1
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'part4.sdc'
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 16.596
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    16.596         0.000 system_clock 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 system_clock 
+Info (332146): Worst-case recovery slack is 18.319
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    18.319         0.000 system_clock 
+Info (332146): Worst-case removal slack is 1.031
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     1.031         0.000 system_clock 
+Info (332146): Worst-case minimum pulse width slack is 9.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     9.000         0.000 system_clock 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 18.363
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    18.363         0.000 system_clock 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 system_clock 
+Info (332146): Worst-case recovery slack is 19.114
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    19.114         0.000 system_clock 
+Info (332146): Worst-case removal slack is 0.581
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.581         0.000 system_clock 
+Info (332146): Worst-case minimum pulse width slack is 9.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     9.000         0.000 system_clock 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info (144001): Generated suppressed messages file /home/ghg/Lab_A/part4/output_files/part4.sta.smsg
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 301 megabytes
+    Info: Processing ended: Mon May  5 21:47:24 2014
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-----------------------------------------------+
+; TimeQuest Timing Analyzer Suppressed Messages ;
++-----------------------------------------------+
+The suppressed messages can be found in /home/ghg/Lab_A/part4/output_files/part4.sta.smsg.
+
+

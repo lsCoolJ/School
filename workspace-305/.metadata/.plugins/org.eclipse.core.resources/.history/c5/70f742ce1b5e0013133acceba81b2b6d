@@ -1,0 +1,62 @@
+package epidemic.progpracticum.model;
+
+import java.awt.Point;
+
+public class Bird extends AbstractEntity {
+    
+    private Point myLocation;
+
+    public Bird(char aSpecies, boolean aSick, int aDayNum, Point aLocation) {
+        super(aSpecies, aSick, aDayNum, aLocation);
+        myLocation = aLocation;
+    }
+
+    @Override
+    public Point move() {
+        int birdMovement = SimParams.GENERATOR.nextInt(3);
+        int aCaseNumber = SimParams.GENERATOR.nextInt(8) * birdMovement;
+        Point newLocation;
+        int thisX = myLocation.x;
+        int thisY = myLocation.y;
+        int yMove;
+        int xMove;
+        switch(aCaseNumber) {
+            case 1:
+                xMove = 10;
+                yMove = 0;
+                break;
+            case 2:
+                xMove = 10;
+                yMove = -10;
+                break;
+            case 3:
+                xMove = 0;
+                yMove = 10;
+                break;
+            case 4:
+                xMove = -10;
+                yMove = 10;
+                break;
+            case 5:
+                xMove = -10;
+                yMove = 0;
+                break;
+            case 6:
+                xMove = -10;
+                yMove = -10;
+                break;
+            case 7:
+                xMove = 0;
+                yMove = -10;
+                break;
+            default:
+                xMove = 10;
+                yMove = 10;
+                break;
+        }
+        newLocation = new Point(thisX + xMove, thisY + yMove);
+        myLocation = newLocation;
+        return newLocation;
+    }
+
+}

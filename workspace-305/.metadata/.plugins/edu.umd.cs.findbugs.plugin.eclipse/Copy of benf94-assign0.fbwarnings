@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1382378259423" analysisTimestamp="1382378259035" release="">
+  <Project projectName="Copy of benf94-assign0">
+    <Jar>H:\workspace-305\Copy of benf94-assign0\bin</Jar>
+    <AuxClasspathEntry>H:\workspace-305\Copy of benf94-assign0\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\Copy of benf94-assign0\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 21 Oct 2013 10:57:39 -0700" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" vm_version="23.25-b01" cpu_seconds="0.36" clock_seconds="0.39" peak_mbytes="179.53" alloc_mbytes="494.94" gc_seconds="0.02">
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="232" invocations="153" avgMicrosecondsPerInvocation="1516" maxMicrosecondsPerInvocation="2412" standardDeviationMircosecondsPerInvocation="165"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="61" invocations="2" avgMicrosecondsPerInvocation="30974" maxMicrosecondsPerInvocation="56104" standardDeviationMircosecondsPerInvocation="25130"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1382378259422" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

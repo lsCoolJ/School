@@ -1,0 +1,16 @@
+Assignment name: Assignment 1 
+TCSS 305B: Programming Practicum, Autumn 2013
+
+Name: Benajmin Foster
+UWNetID: benf94
+Subversion Revision Number:
+
+Assignment Overview:
+
+This assignment is largely a review of how to set up separate classes, use constructors, and use methods in java. This assignment is also the first time
+we are using SVN to submit our assignm ents and, therefore is an introduction to SVN.
+
+
+Technical Impression:
+
+The last java-based programming class that I have taken was a little over a year ago. This being the case, I really had to review quite a few of the basics in order to complete the assignment effectively. I had to read chapter 3 and 4 of the textbook that was assigned. This assignment was particularly helpful to me since it reminded me what basic knowledge is needed to complete simple java programs. This assignment was interesting to me because it showed me how much I had forgotten in between this and the last java class that I took. However, I can only assume that the following assignments in this class are going to get much tougher. Personally, this assignment wasn't all that difficult to understand and accomplish and only became frustrating when having to deal with simple errors that are usually easily fixed. Despite most of this assignment being review, it is quite a new experience using SVN to submit my assignment. I have never used SVN before and look forward to learning more about it and, eventually, mastering its uses. I am currently having difficulties with the revision number as you will notice since this executive summary does not have a revision number. When I submitted my assignment using SVN, there was no revision number and so I figured I would have to update my assignment in order for the revision number to show up. After updating, the revision number did not show up and so I decided to just leave it be for now.

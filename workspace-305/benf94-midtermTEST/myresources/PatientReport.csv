@@ -1,0 +1,21 @@
+Period:,2010-10-10,2013-10-12
+Number of visits during this period:,20
+ID,Class,Species,Gender,Age,Height,Weight,Call,Name,Address,Owner,Total:
+1000,MAMMAL,dog,FEMALE,9.9,13.5,62.3,woof-woof,Raven,some address,Monika Sobolewska,545.99
+1001,MAMMAL,cat,MALE,6.5,9.0,12.8,meow-meow,Kitty,some other address,Joanna Petz,73.0
+1004,BIRD,parakeet,FEMALE,13.53,12.98,15.64,language,Elli  ,address,Annie Tash  ,556.5
+1008,AMPHIBIAN,eastern newt,MALE,3.9,5.05,15.34,language,Jamal  ,address,Fe Delara  ,518.98
+1013,BIRD,parrot,FEMALE,5.87,10.52,5.21,language,Calvin  ,address,Rebbecca Tessmaan  ,586.49
+1016,BIRD,parakeet,MALE,6.71,15.82,2.47,language,Chere  ,address,Davina Holmquist  ,494.98
+1097,FISH,betta,FEMALE,16.4,12.83,9.17,language,Tarra  ,address,Rosamaria Service  ,115.0
+1098,AMPHIBIAN,cane toad,MALE,4.02,4.2,12.84,language,Marcie  ,address,Kenna Brazee  ,185.5
+1102,MAMMAL,dog,FEMALE,16.68,6.23,8.74,language,Lien  ,address,Desirae Wamsley  ,25.0
+1107,BIRD,parakeet,MALE,16.51,3.06,8.51,language,Orpha  ,address,Divina Davids  ,275.35
+1111,BIRD,parrot,FEMALE,5.75,15.43,7.28,language,Qiana  ,address,Gloria Lowrance  ,469.98
+1114,FISH,betta,MALE,14.62,10.62,4.67,language,Azzie  ,address,Scotty Kalis  ,43.989999999999995
+1181,BIRD,lovebirds,FEMALE,6.91,7.73,13.86,language,Summer  ,address,Breann Vassel  ,75.0
+1183,BIRD,canary,MALE,10.75,1.29,17.16,language,Janine  ,address,Dena Chamness  ,15.0
+1186,BIRD,parrot,FEMALE,5.59,4.48,10.44,language,Bok  ,address,Frank Cash  ,18.99
+1189,MAMMAL,rabbit,MALE,13.09,19.16,2.74,language,Hayden  ,address,Alphonse Erion  ,50.0
+1192,BIRD,parrot,FEMALE,16.81,12.93,9.55,language,Tarra  ,address,Madge Wenz  ,110.5
+Total:,,,,,,,,,,,4160.25

@@ -1,0 +1,14 @@
+Assignment name: Assignment 8
+TCSS 305B: Programming Practicum, Autumn 2013
+
+Name: Ben Foster
+UWNetID: benf94
+Subversion Revision Number: 23
+
+Assignment Overview:
+
+This program was given to us in order to allow us to gain practice using GUI dialog boxes as well as different containers besides JPanel.
+
+Technical Impression:
+
+I enjoyed this assignment. I really like being able to recreate the programs that are already used on windows. It makes me feel as though I know enough about programming in order to actually write more complicated "official" programs that I could use for things other than in-class assignments. It was a lot nicer knowing that I could ignore some of the checkstyle errors about magic numbers and string appearance this time around. One of the main things that I struggled with in this assignment was the font changing aspect. Originally, I had planned to make a separate frame and have two or three JSpinners that had all the font type, style, and size options on them. However, I decided that it would be easier to write the code using three separate dialog boxes that each changed a specific aspect of the Font.

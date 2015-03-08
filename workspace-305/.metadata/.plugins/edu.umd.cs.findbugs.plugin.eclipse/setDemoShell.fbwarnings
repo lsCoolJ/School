@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1386557287355" analysisTimestamp="1386557286034" release="">
+  <Project projectName="setDemoShell">
+    <Jar>H:\workspace-305\setDemoShell\bin</Jar>
+    <AuxClasspathEntry>H:\workspace-305\setDemoShell\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\setDemoShell\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="setdemo.progpracticum.Driver">
+      <SourceLine classname="setdemo.progpracticum.Driver" sourcefile="Driver.java" sourcepath="setdemo/progpracticum/Driver.java"/>
+    </Class>
+    <Method classname="setdemo.progpracticum.Driver" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="setdemo.progpracticum.Driver" start="34" end="96" startBytecode="0" endBytecode="568" sourcefile="Driver.java" sourcepath="setdemo/progpracticum/Driver.java"/>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter" start="184" end="186" startBytecode="0" endBytecode="55" sourcefile="PrintWriter.java" sourcepath="java/io/PrintWriter.java"/>
+    </Method>
+    <SourceLine classname="setdemo.progpracticum.Driver" start="72" end="72" startBytecode="208" endBytecode="208" sourcefile="Driver.java" sourcepath="setdemo/progpracticum/Driver.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 8 Dec 2013 18:48:06 -0800" total_classes="1" referenced_classes="21" total_bugs="1" total_size="34" num_packages="1" vm_version="23.25-b01" cpu_seconds="1.15" clock_seconds="1.32" peak_mbytes="238.22" alloc_mbytes="494.94" gc_seconds="0.04" priority_1="1">
+    <PackageStats package="setdemo.progpracticum" total_bugs="1" total_types="1" total_size="34" priority_1="1">
+      <ClassStats class="setdemo.progpracticum.Driver" sourceFile="Driver.java" interface="false" size="34" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1027" invocations="381" avgMicrosecondsPerInvocation="2697" maxMicrosecondsPerInvocation="13911" standardDeviationMircosecondsPerInvocation="2000"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1386557287355" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,54 @@
+|MidtermPractice
+KEY[1] => Clock.IN1
+SW[0] => W0.IN1
+SW[1] => Reset.IN1
+LEDR[0] <= W0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= Reset.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Hex7Seg:H0.port1
+HEX0[5] <= Hex7Seg:H0.port1
+HEX0[4] <= Hex7Seg:H0.port1
+HEX0[3] <= Hex7Seg:H0.port1
+HEX0[2] <= Hex7Seg:H0.port1
+HEX0[1] <= Hex7Seg:H0.port1
+HEX0[0] <= Hex7Seg:H0.port1
+
+
+|MidtermPractice|Mod5FSM:M1
+Clock => currState~1.DATAIN
+Reset => currState.OUTPUTSELECT
+Reset => currState.OUTPUTSELECT
+Reset => currState.OUTPUTSELECT
+Reset => currState.OUTPUTSELECT
+Reset => currState.OUTPUTSELECT
+W0 => Selector4.IN3
+W0 => Selector0.IN3
+W0 => Selector1.IN3
+W0 => Selector2.IN3
+W0 => Selector3.IN3
+W0 => Selector0.IN1
+W0 => Selector1.IN1
+W0 => Selector2.IN1
+W0 => Selector3.IN1
+W0 => Selector4.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MidtermPractice|Hex7Seg:H0
+SW[0] => Decoder0.IN2
+SW[0] => Decoder1.IN1
+SW[1] => Decoder0.IN1
+SW[1] => Decoder2.IN1
+SW[2] => Decoder0.IN0
+SW[2] => Decoder1.IN0
+SW[2] => Decoder2.IN0
+HEX0[6] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

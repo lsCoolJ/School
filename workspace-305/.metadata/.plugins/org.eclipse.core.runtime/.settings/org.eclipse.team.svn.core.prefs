@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+externalMigrateFromAuthorizationDatabase/isMigrated=true
+migrateFromAuthorizationDatabase/isMigrated=true
+repositories/10a36164fa2900131bb396cf35534ba8=10a36164fa2900131bb396cf35534ba8;svn+ssh\://repos.insttech.washington.edu/home/INSTTECH/<your-username>/svn/css305ba13;svn+ssh\://repos.insttech.washington.edu/home/INSTTECH/<your-username>/svn/css305ba13;branches;tags;trunk;true;;;;false;;;0
+repositories/a04672acfa2900131bb396cf35534ba8=a04672acfa2900131bb396cf35534ba8;svn+ssh\://repos.insttech.washington.edu/home/INSTTECH/benf94/svn/css305ba13;svn+ssh\://repos.insttech.washington.edu/home/INSTTECH/benf94/svn/css305ba13;branches;tags;trunk;true;1da86474-d5fc-41c7-bbee-3487fc781d47;svn+ssh\://repos.insttech.washington.edu/home/INSTTECH/benf94/svn/css305ba13;;false;svn+ssh\://repos.insttech.washington.edu;;0

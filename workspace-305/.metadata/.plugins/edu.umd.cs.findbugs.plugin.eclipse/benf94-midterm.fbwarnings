@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1386557277924" analysisTimestamp="1386557275649" release="">
+  <Project projectName="benf94-midterm">
+    <Jar>H:\workspace-305\benf94-midterm\bin</Jar>
+    <AuxClasspathEntry>H:\workspace-305\benf94-midterm\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\benf94-midterm\test</SrcDir>
+    <SrcDir>H:\workspace-305\benf94-midterm\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="midterm.progpracticum.PatientList">
+      <SourceLine classname="midterm.progpracticum.PatientList" sourcefile="PatientList.java" sourcepath="midterm/progpracticum/PatientList.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.PatientList" name="readPetsFile" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.PatientList" start="23" end="61" startBytecode="0" endBytecode="703" sourcefile="PatientList.java" sourcepath="midterm/progpracticum/PatientList.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="midterm.progpracticum.PatientList" start="25" end="25" startBytecode="7" endBytecode="7" sourcefile="PatientList.java" sourcepath="midterm/progpracticum/PatientList.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="midterm.progpracticum.ProcedureList">
+      <SourceLine classname="midterm.progpracticum.ProcedureList" sourcefile="ProcedureList.java" sourcepath="midterm/progpracticum/ProcedureList.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.ProcedureList" name="readProceduresFile" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.ProcedureList" start="24" end="53" startBytecode="0" endBytecode="490" sourcefile="ProcedureList.java" sourcepath="midterm/progpracticum/ProcedureList.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="midterm.progpracticum.ProcedureList" start="26" end="26" startBytecode="7" endBytecode="7" sourcefile="ProcedureList.java" sourcepath="midterm/progpracticum/ProcedureList.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" abbrev="WMI" category="PERFORMANCE" first="1">
+    <Class classname="midterm.progpracticum.Runner">
+      <SourceLine classname="midterm.progpracticum.Runner" sourcefile="Runner.java" sourcepath="midterm/progpracticum/Runner.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.Runner" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="midterm.progpracticum.Runner" start="120" end="222" startBytecode="0" endBytecode="2068" sourcefile="Runner.java" sourcepath="midterm/progpracticum/Runner.java"/>
+    </Method>
+    <SourceLine classname="midterm.progpracticum.Runner" start="137" end="137" startBytecode="158" endBytecode="158" sourcefile="Runner.java" sourcepath="midterm/progpracticum/Runner.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="midterm.progpracticum.VisitList">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.VisitList" name="readVisitInfo" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.VisitList" start="39" end="79" startBytecode="0" endBytecode="548" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="midterm.progpracticum.VisitList" start="40" end="40" startBytecode="7" endBytecode="7" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" abbrev="ST" category="STYLE" first="1">
+    <Class classname="midterm.progpracticum.VisitList">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.VisitList" name="readVisitInfo" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.VisitList" start="39" end="79" startBytecode="0" endBytecode="548" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Method>
+    <Field classname="midterm.progpracticum.VisitList" name="visitDate" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Field>
+    <SourceLine classname="midterm.progpracticum.VisitList" start="50" end="50" startBytecode="53" endBytecode="53" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="midterm.progpracticum.VisitList">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.VisitList" name="readVisitInfo" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.VisitList" start="39" end="79" startBytecode="0" endBytecode="548" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Method>
+    <Field classname="midterm.progpracticum.VisitList" name="numberOfVisits" signature="I" isStatic="true">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Field>
+    <SourceLine classname="midterm.progpracticum.VisitList" start="55" end="55" startBytecode="69" endBytecode="69" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="midterm.progpracticum.VisitList">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.VisitList" name="readVisitInfo" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.VisitList" start="39" end="79" startBytecode="0" endBytecode="548" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Method>
+    <Field classname="midterm.progpracticum.VisitList" name="patientVisitMap" signature="Ljava/util/TreeMap;" isStatic="true">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Field>
+    <SourceLine classname="midterm.progpracticum.VisitList" start="56" end="56" startBytecode="79" endBytecode="79" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="midterm.progpracticum.VisitList">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.VisitList" name="readVisitInfo" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.VisitList" start="39" end="79" startBytecode="0" endBytecode="548" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Method>
+    <Field classname="midterm.progpracticum.VisitList" name="proIDList" signature="Ljava/util/ArrayList;" isStatic="true">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Field>
+    <SourceLine classname="midterm.progpracticum.VisitList" start="57" end="57" startBytecode="89" endBytecode="89" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="midterm.progpracticum.VisitList">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Class>
+    <Field classname="midterm.progpracticum.VisitList" name="thisID" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="midterm.progpracticum.VisitList">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Class>
+    <Field classname="midterm.progpracticum.VisitList" name="thisProcedureID" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="midterm.progpracticum.VisitList" sourcefile="VisitList.java" sourcepath="midterm/progpracticum/VisitList.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="midterm.progpracticum.Writer">
+      <SourceLine classname="midterm.progpracticum.Writer" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.Writer" name="writePatientReport" signature="(Ljava/util/Collection;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.Writer" start="74" end="99" startBytecode="0" endBytecode="804" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="midterm.progpracticum.Writer" start="74" end="74" startBytecode="7" endBytecode="7" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="midterm.progpracticum.Writer">
+      <SourceLine classname="midterm.progpracticum.Writer" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.Writer" name="writeProcedureReport" signature="(Ljava/util/Collection;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.Writer" start="46" end="69" startBytecode="0" endBytecode="647" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="midterm.progpracticum.Writer" start="46" end="46" startBytecode="7" endBytecode="7" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="midterm.progpracticum.Writer">
+      <SourceLine classname="midterm.progpracticum.Writer" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.Writer" name="writePatientReport" signature="(Ljava/util/Collection;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.Writer" start="74" end="99" startBytecode="0" endBytecode="804" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Method>
+    <Field classname="midterm.progpracticum.Writer" name="finalTotal" signature="D" isStatic="true">
+      <SourceLine classname="midterm.progpracticum.Writer" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Field>
+    <SourceLine classname="midterm.progpracticum.Writer" start="89" end="89" startBytecode="460" endBytecode="460" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="midterm.progpracticum.Writer">
+      <SourceLine classname="midterm.progpracticum.Writer" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.Writer" name="writeProcedureReport" signature="(Ljava/util/Collection;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.Writer" start="46" end="69" startBytecode="0" endBytecode="647" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Method>
+    <Field classname="midterm.progpracticum.Writer" name="indiviTotal" signature="D" isStatic="true">
+      <SourceLine classname="midterm.progpracticum.Writer" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Field>
+    <SourceLine classname="midterm.progpracticum.Writer" start="56" end="56" startBytecode="255" endBytecode="255" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="midterm.progpracticum.Writer">
+      <SourceLine classname="midterm.progpracticum.Writer" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.Writer" name="writeProcedureReport" signature="(Ljava/util/Collection;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.Writer" start="46" end="69" startBytecode="0" endBytecode="647" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Method>
+    <Field classname="midterm.progpracticum.Writer" name="totalFee" signature="D" isStatic="true">
+      <SourceLine classname="midterm.progpracticum.Writer" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Field>
+    <SourceLine classname="midterm.progpracticum.Writer" start="58" end="58" startBytecode="290" endBytecode="290" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" abbrev="ST" category="STYLE" first="1">
+    <Class classname="midterm.progpracticum.Writer">
+      <SourceLine classname="midterm.progpracticum.Writer" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Class>
+    <Method classname="midterm.progpracticum.Writer" name="writeProcedureReport" signature="(Ljava/util/Collection;)V" isStatic="false">
+      <SourceLine classname="midterm.progpracticum.Writer" start="46" end="69" startBytecode="0" endBytecode="647" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Method>
+    <Field classname="midterm.progpracticum.Writer" name="totalFeeString" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="midterm.progpracticum.Writer" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+    </Field>
+    <SourceLine classname="midterm.progpracticum.Writer" start="60" end="60" startBytecode="319" endBytecode="319" sourcefile="Writer.java" sourcepath="midterm/progpracticum/Writer.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 8 Dec 2013 18:47:54 -0800" total_classes="12" referenced_classes="51" total_bugs="16" total_size="630" num_packages="1" vm_version="23.25-b01" cpu_seconds="1.87" clock_seconds="2.28" peak_mbytes="235.67" alloc_mbytes="494.94" gc_seconds="0.07" priority_2="10" priority_1="6">
+    <PackageStats package="midterm.progpracticum" total_bugs="16" total_types="12" total_size="630" priority_2="10" priority_1="6">
+      <ClassStats class="midterm.progpracticum.HomePet" sourceFile="HomePet.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="midterm.progpracticum.Patient" sourceFile="Patient.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="midterm.progpracticum.PatientList" sourceFile="PatientList.java" interface="false" size="40" bugs="1" priority_1="1"/>
+      <ClassStats class="midterm.progpracticum.Procedure" sourceFile="Procedure.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="midterm.progpracticum.ProcedureList" sourceFile="ProcedureList.java" interface="false" size="31" bugs="1" priority_1="1"/>
+      <ClassStats class="midterm.progpracticum.Runner" sourceFile="Runner.java" interface="false" size="119" bugs="1" priority_2="1"/>
+      <ClassStats class="midterm.progpracticum.VertClass" sourceFile="VertClass.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="midterm.progpracticum.VertGender" sourceFile="VertGender.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="midterm.progpracticum.Vertebrate" sourceFile="Vertebrate.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="midterm.progpracticum.VertebrateTest" sourceFile="VertebrateTest.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="midterm.progpracticum.VisitList" sourceFile="VisitList.java" interface="false" size="51" bugs="7" priority_2="5" priority_1="2"/>
+      <ClassStats class="midterm.progpracticum.Writer" sourceFile="Writer.java" interface="false" size="98" bugs="6" priority_2="4" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1263" invocations="413" avgMicrosecondsPerInvocation="3058" maxMicrosecondsPerInvocation="23710" standardDeviationMircosecondsPerInvocation="2274"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="309" invocations="2" avgMicrosecondsPerInvocation="154980" maxMicrosecondsPerInvocation="299505" standardDeviationMircosecondsPerInvocation="144524"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="105" invocations="410" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="4715" standardDeviationMircosecondsPerInvocation="465"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="52" invocations="96" avgMicrosecondsPerInvocation="550" maxMicrosecondsPerInvocation="25933" standardDeviationMircosecondsPerInvocation="2857"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1386557277924" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

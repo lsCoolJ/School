@@ -1,0 +1,15 @@
+Assignment name: (for example, "Assignment 0" or "Project, Part 2") 
+TCSS 305B: Programming Practicum, Autumn 2013
+
+Name: Ben Foster
+UWNetID: benf94
+Subversion Revision Number:
+
+Assignment Overview:
+
+(Describe your understanding of the purpose and scope of the assignment in 250 words or less. The word count is not strict, so don't worry about going slightly over. Do not just copy text from the assignment description.)
+
+
+Technical Impression:
+
+(Describe what you have done to complete the assignment in 200-500 words. The word count is not strict, so don't worry about going slightly over; however, summaries that do not meet the minimum length requirement or are trivial in nature (representing little thought or effort) will not get full credit. You can share your personal experiences, things that particularly frustrated you about the assignment, things that particularly interested you about the assignment, etc. It is especially important that you document any difficulties you had with tools, Java libraries, etc.)

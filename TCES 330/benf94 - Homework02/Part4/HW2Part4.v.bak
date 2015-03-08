@@ -1,0 +1,24 @@
+module HW2Part4(SW, LEDR, LEDG, HEX0, HEX1, HEX4, HEX6);
+	input[8:0] SW;
+	output[8:0] LEDR;
+	output[4:0] LEDG;
+	output[0:6] HEX0, HEX1, HEX4, HEX6;
+	
+	assign LEDR = SW;
+	
+	wire Cin;
+	wire [3:0] A, B, Cout, S;
+	
+	assign A[3:0] = SW[7:4];
+	assign B[3:0] = SW[3:0];
+	assign Cin = SW[8];
+	
+	FullAdder F0(Cin, A[0], B[0], Cout[0], S[0]);
+	FullAdder F1(Cout[0], A[1], B[1], Cout[1], S[1]);
+	FullAdder F2(Cout[1], A[2], B[2], Cout[2], S[2]);
+	FullAdder F3(Cout[2], A[3], B[3], Cout[3], S[3]);
+	
+	assign LEDG[3:0] = S[3:0];
+	assign LEDG[4] = Cout[3];
+	
+endmodule

@@ -1,0 +1,83 @@
+/**
+ * Ben Foster. Final project Autumn 2013
+ */
+package epidemic.progpracticum.model;
+
+import java.awt.Point;
+
+public class Human extends AbstractEntity {
+
+    private Point myLocation;
+
+    public Human(char aSpecies, boolean aSick, int aDayNum, Point aLocation) {
+        super(aSpecies, aSick, aDayNum, aLocation);
+        myLocation = aLocation;
+    }
+
+    @Override
+    public Point move() {
+        int aCaseNumber = SimParams.GENERATOR.nextInt(9);
+        Point newLocation;
+        int thisX = myLocation.x;
+        int thisY = myLocation.y;
+        int yMove;
+        int xMove;
+        switch(aCaseNumber) {
+            case 1:
+                xMove = 10;
+                yMove = 0;
+                break;
+            case 2:
+                xMove = 10;
+                yMove = 10;
+                break;
+            case 3:
+                xMove = 0;
+                yMove = 10;
+                break;
+            case 4:
+                xMove = -10;
+                yMove = 10;
+                break;
+            case 5:
+                xMove = -10;
+                yMove = 0;
+                break;
+            case 6:
+                xMove = -10;
+                yMove = -10;
+                break;
+            case 7:
+                xMove = 0;
+                yMove = -10;
+                break;
+            case 8:
+                xMove = 10;
+                yMove = -10;
+                break;
+            default:
+                xMove = 0;
+                yMove = 0;
+                break;
+        }
+        newLocation = new Point(thisX + xMove, thisY + yMove);
+        if (newLocation.x == 1010) {
+            newLocation.setLocation(newLocation.x - 1010, newLocation.y);
+        }
+        
+        if (newLocation.x == -10) {
+            newLocation.setLocation(newLocation.x + 1010, newLocation.y);
+        }
+
+        if (newLocation.y == 510) {
+            newLocation.setLocation(newLocation.x, newLocation.y - 510);
+        }
+        
+        if (newLocation.y == -10) {
+            newLocation.setLocation(newLocation.x, newLocation.y + 510);
+        }
+        myLocation = newLocation;
+        return newLocation;
+    }
+
+}

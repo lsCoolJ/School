@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1385417325622" analysisTimestamp="1385417323892" release="">
+  <Project projectName="USERNAME-orientation">
+    <Jar>H:\workspace-305\USERNAME-orientation\bin</Jar>
+    <AuxClasspathEntry>H:\workspace-305\USERNAME-orientation\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\USERNAME-orientation\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 25 Nov 2013 14:08:43 -0800" total_classes="0" referenced_classes="0" total_bugs="0" total_size="0" num_packages="0" vm_version="23.25-b01" cpu_seconds="1.64" clock_seconds="1.74" peak_mbytes="188.49" alloc_mbytes="494.94" gc_seconds="0.26">
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="321" invocations="154" avgMicrosecondsPerInvocation="2089" maxMicrosecondsPerInvocation="247472" standardDeviationMircosecondsPerInvocation="19863"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="248" invocations="156" avgMicrosecondsPerInvocation="1589" maxMicrosecondsPerInvocation="2294" standardDeviationMircosecondsPerInvocation="189"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="234" invocations="2" avgMicrosecondsPerInvocation="117120" maxMicrosecondsPerInvocation="125570" standardDeviationMircosecondsPerInvocation="8450"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1385417325620" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

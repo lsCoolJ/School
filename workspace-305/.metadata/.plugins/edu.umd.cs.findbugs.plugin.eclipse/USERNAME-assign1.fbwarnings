@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1380311909447" analysisTimestamp="1380311908445" release="">
+  <Project projectName="USERNAME-assign1">
+    <Jar>H:\workspace-305\USERNAME-assign1\bin</Jar>
+    <AuxClasspathEntry>H:\workspace-305\USERNAME-assign1\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\tcss305\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <SrcDir>H:\workspace-305\USERNAME-assign1\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 27 Sep 2013 12:58:27 -0700" total_classes="1" referenced_classes="10" total_bugs="0" total_size="65" num_packages="1" vm_version="23.25-b01" cpu_seconds="1.11" clock_seconds="1.01" peak_mbytes="161.46" alloc_mbytes="494.94" gc_seconds="0.19">
+    <PackageStats package="one.progpracticum" total_bugs="0" total_types="1" total_size="65">
+      <ClassStats class="one.progpracticum.Vertebrate" sourceFile="Vertebrate.java" interface="false" size="65" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="634" invocations="302" avgMicrosecondsPerInvocation="2100" maxMicrosecondsPerInvocation="162379" standardDeviationMircosecondsPerInvocation="9244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="96" invocations="301" avgMicrosecondsPerInvocation="319" maxMicrosecondsPerInvocation="12911" standardDeviationMircosecondsPerInvocation="1044"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1380311909447" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

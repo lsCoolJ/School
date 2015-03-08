@@ -1,0 +1,14 @@
+Assignment name: Assignment 3
+TCSS 305B: Programming Practicum, Autumn 2013
+
+Name: Ben Foster
+UWNetID: benf94
+Subversion Revision Number: 9
+
+Assignment Overview:
+
+This assignemnt was meant to make us use abstract classes and also successfully use inheritance and class heirarchies.
+
+Technical Impression:
+
+This assignment was the most difficult one I've encountered so far. I had to remember how to do a couple of things and had to look up how to do copy constructors and clone methods. The only thing that frustrates me most is javadocs. I am still not sure how to fix some javadoc comments and checkstyle error. These are what take the most time for each assignment since I've never really had to use javadoc comments.

@@ -1,0 +1,501 @@
+/**
+ * Ben Foster. 
+ */
+package epidemic.progpracticum.view;
+
+import epidemic.progpracticum.model.MyButtonListener;
+import epidemic.progpracticum.model.MySliderListener;
+import epidemic.progpracticum.model.SimParams;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BoxLayout;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JSlider;
+import javax.swing.JTextField;
+import javax.swing.JToggleButton;
+
+
+/** The class that generated the GUI and everything associated with the GUI.
+ * @author benf94
+ * @version 12/6/2013
+ */
+@SuppressWarnings("serial")
+public class SimulationFrame extends JFrame {
+
+    /**
+     * The icon of the program.
+     */
+    private static final Image MY_ICON 
+    = Toolkit.getDefaultToolkit().getImage("myresources/Bird-Flu-Icon.gif");
+
+    /**
+     * The north panel of the frame that contains the sliders and generate button.
+     */
+    private JPanel myPanelNorth = new JPanel();
+
+    /**
+     * The south panel of the frame that contains the action buttons.
+     */
+    private JPanel myPanelSouth = new JPanel();
+
+    /**
+     * The east panel of the frame that contains the counts.
+     */
+    private JPanel myPanelEast = new JPanel();
+
+    /**
+     * The panel that contains the people slider and labels.
+     */
+    private JPanel myNPanelOne = new JPanel();
+
+    /**
+     * The panel that contains the bird slider and labels.
+     */
+    private JPanel myNPanelTwo = new JPanel();
+
+    /**
+     * The panel that contains the infected slider and labels.
+     */
+    private JPanel myNPanelThree = new JPanel();
+
+    /**
+     * The panel that contains the Generate button.
+     */
+    private JPanel myNPanelFour = new JPanel();
+
+    /**
+     * The panel that contains the Environment label.
+     */
+    private final JPanel myEPanelOne = new JPanel();
+
+    /**
+     * The panel that contains the people label and text fields.
+     */
+    private final JPanel myEPanelTwo = new JPanel();
+
+    /**
+     * The panel that contains the bird label and text fields.
+     */
+    private final JPanel myEPanelThree = new JPanel();
+
+    /**
+     * The panel that contains the day label and text field.
+     */
+    private final JPanel myEPanelFour = new JPanel();
+
+    /**
+     * Used to get rid of checkstyle.
+     */
+    private final String myZero = "0";
+
+    /**
+     * Used to get rid of checkstyle.
+     */
+    private final String myHealthyString = "Healthy: 0";
+
+    /**
+     * Used to get rid of checkstyle.
+     */
+    private final String myInfectedString = "Infected: 0";
+
+    /**
+     * The label that contains the number of people to be generated.
+     */
+    private JLabel myPeepNum = new JLabel(myZero);
+
+    /**
+     * The label that contains the number of birds to be generated.
+     */
+    private JLabel myBirdNum = new JLabel(myZero);
+
+    /**
+     * The label that contains the percentage of birds to be sick.
+     */
+    private JLabel myInfectNum = new JLabel(myZero);
+
+    /**
+     * The slider for people.
+     */
+    private JSlider myPeepSlider;
+
+    /**
+     * The slider for birds.
+     */
+    private JSlider myBirdSlider;
+
+    /**
+     * The slider for infected birds.
+     */
+    private JSlider myInfectSlider;
+
+    /**
+     * The button that generates the simulated world.
+     */
+    private JButton myGenerateButton = new JButton("Generate World");
+
+    /**
+     * The button that starts the simulation.
+     */
+    private JToggleButton myStartButton = new JToggleButton("Start");
+
+    /**
+     * The button that stops the simulation.
+     */
+    private JToggleButton myStopButton = new JToggleButton("Stop");
+
+    /**
+     * The button that steps the simulation up by one day (Enabled only when stop is pressed).
+     */
+    private JButton myStepButton = new JButton("Step");
+
+    /**
+     * The button that resets the simulation.
+     */
+    private JButton myResetButton = new JButton("Reset");
+
+    /**
+     * The button that saves information.
+     */
+    private JButton mySaveButton = new JButton("Save");
+
+    /**
+     * The text field that contains the number of infected people.
+     */
+    private JTextField myPeepInfect;
+
+    /**
+     * The text field that contains the number of healthy people.
+     */
+    private JTextField myPeepHealthy;
+
+    /**
+     * The text field that contains the number of infected birds.
+     */
+    private JTextField myBirdInfect;
+
+    /**
+     * The text field that contains the number of healthy birds.
+     */
+    private JTextField myBirdHealthy;
+
+    /**
+     * the text field that contains the number of days.
+     */
+    private JTextField myDayCounter;
+
+    /**
+     * The action listener that listens to the buttons.
+     */
+    private MyButtonListener myButtonListener;
+
+    /**
+     * The change listener that listens to the sliders.
+     */
+    private MySliderListener mySliderListener;
+
+    /**
+     * The environment counts label.
+     */
+    private final JLabel myEnvCountsLabel = new JLabel("Environment Counts:");
+
+    /**
+     * The human counts label.
+     */
+    private final JLabel myPeepCountsLabel = new JLabel("Human Counts:");
+
+    /**
+     * The bird counts label.
+     */
+    private final JLabel myBirdCountsLabel = new JLabel("Bird Counts:");
+
+    /**
+     * The number of days label.
+     */
+    private final JLabel myNumDaysLabel = new JLabel("Number of Days:");
+
+    /**
+     * The preferred size of the east panel components.
+     */
+    private final Dimension myPreferSizeOne = new Dimension(150, 30);
+
+    /**
+     * The max size of the east panel components.
+     */
+    private final Dimension myMaxSizeOne = new Dimension(200, 30);
+
+    /**
+     * The max size of the east panel components.
+     */
+    private final Dimension myMaxSizeTwo = new Dimension(75, 30);
+
+    /**
+     * The Panel that everything is drawn on.
+     */
+    private WorldPanel myWorldPanel = new WorldPanel();
+
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myHunnerd = 100;
+
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myHawaiiFiveO = 5;
+
+    /**
+     * Used to get rid of checkstyle errors.
+     */
+    private final int myVingt = 20;
+    
+    /**
+     * Used to shorten line.
+     */
+    private final String myGenMessage = "You must have at"
+            + " least 1 human and/or bird to start the simulation.";
+
+    /**
+     * This method sets up the frame.
+     */
+    public SimulationFrame() {
+        super();
+        setIconImage(MY_ICON);
+
+        setUpPanels();
+
+        add(myPanelNorth, BorderLayout.NORTH);
+        add(myPanelSouth, BorderLayout.SOUTH);
+        add(myPanelEast, BorderLayout.EAST);
+    }
+
+    /**
+     * This method sets up the panels.
+     */
+    public void setUpPanels() {
+
+        myPanelSouth.setLayout(new FlowLayout());
+
+        final ButtonGroup group = new ButtonGroup();
+
+        myStepButton.setEnabled(false);
+        myStartButton.setEnabled(false);
+        myStopButton.setEnabled(false);
+        myResetButton.setEnabled(false);
+        mySaveButton.setEnabled(false);
+
+        myPanelSouth.add(myStartButton);
+        myPanelSouth.add(myStopButton);
+        group.add(myStartButton);
+        group.add(myStopButton);
+        myPanelSouth.add(myStepButton);
+        myPanelSouth.add(myResetButton);
+        myPanelSouth.add(mySaveButton);
+        setPanelEast();
+
+        myButtonListener = new MyButtonListener(mySaveButton, myWorldPanel, myPeepNum,
+                                                myBirdNum, myInfectNum, myPeepInfect,
+                                                myPeepHealthy, myBirdInfect,
+                                                myBirdHealthy, myDayCounter);
+
+        myStartButton.addActionListener(myButtonListener);
+        myStartButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent anE) {
+                myGenerateButton.setEnabled(false);
+                myStepButton.setEnabled(false);
+                mySaveButton.setEnabled(false);
+            }
+        });
+
+        myStopButton.addActionListener(myButtonListener);
+        myStopButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent anE) {
+                myStepButton.setEnabled(true);
+                mySaveButton.setEnabled(true);
+            }
+        });
+
+        myStepButton.addActionListener(myButtonListener);
+        myResetButton.addActionListener(myButtonListener);
+        myResetButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent anE) {
+                group.clearSelection();
+                myStartButton.setEnabled(false);
+                myStopButton.setEnabled(false);
+                myStepButton.setEnabled(false);
+                mySaveButton.setEnabled(false);
+                myResetButton.setEnabled(false);
+                myGenerateButton.setEnabled(true);
+                myPeepSlider.setValue(0);
+                myBirdSlider.setValue(0);
+                myInfectSlider.setValue(0);
+            }
+        });
+
+        myGenerateButton.addActionListener(myButtonListener);
+        myGenerateButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent anE) {
+                if (myPeepSlider.getValue() == 0 && myBirdSlider.getValue() == 0) {
+                    JOptionPane.showMessageDialog(myWorldPanel, myGenMessage, "Warning!", 2);
+                } else {
+                    myStartButton.setEnabled(true);
+                    myStopButton.setEnabled(true);
+                    myStepButton.setEnabled(true);
+                    myResetButton.setEnabled(true);
+                }
+            }
+        });
+
+        setPanelNorth();
+
+        setPanelCenter(myWorldPanel);
+
+    }
+
+    /**
+     * This method sets up the north panel of the frame.
+     */
+    private void setPanelNorth() {
+        mySliderListener = new MySliderListener(myPeepNum, myBirdNum, myInfectNum);
+
+        final JLabel numPeepLabel = new JLabel("Select number of people:");
+        final JLabel numBirdLabel = new JLabel("Select number of birds:");
+        final JLabel infecBirdsLabel = new JLabel("Select Infected birds (%):");
+        final Dimension preferSizeTwo = new Dimension(375, 43);
+
+        myPeepSlider = new JSlider(JSlider.HORIZONTAL, 0, SimParams.MAX_HUMAN_NUM, 0);
+        myPeepSlider.setName("Peep");
+        myPeepSlider.addChangeListener(mySliderListener);
+        myPeepSlider.setMajorTickSpacing(myHunnerd);
+        myPeepSlider.setMinorTickSpacing(myHunnerd / 2);
+        myPeepSlider.setPreferredSize(preferSizeTwo);
+        myPeepSlider.setPaintTicks(true);
+        myPeepSlider.setPaintLabels(true);
+
+        myBirdSlider = new JSlider(JSlider.HORIZONTAL, 0, SimParams.MAX_BIRD_NUM, 0);
+        myBirdSlider.setName("Bird");
+        myBirdSlider.addChangeListener(mySliderListener);
+        myBirdSlider.setMajorTickSpacing(myHunnerd);
+        myBirdSlider.setMinorTickSpacing(myHunnerd / 2);
+        myBirdSlider.setPreferredSize(preferSizeTwo);
+        myBirdSlider.setPaintTicks(true);
+        myBirdSlider.setPaintLabels(true);
+
+        myInfectSlider = new JSlider();
+        myInfectSlider.setName("Infected");
+        myInfectSlider.addChangeListener(mySliderListener);
+        myInfectSlider.setMajorTickSpacing(myVingt);
+        myInfectSlider.setMinorTickSpacing(myHawaiiFiveO);
+        myInfectSlider.setValue(0);
+        myInfectSlider.setPaintTicks(true);
+        myInfectSlider.setPaintLabels(true);
+
+
+
+        //Setting the layout for the north panel;
+        myPanelNorth.setLayout(new FlowLayout());
+
+        myPanelNorth.add(myNPanelOne);
+        myNPanelOne.setLayout(new BoxLayout(myNPanelOne, BoxLayout.Y_AXIS));
+        myNPanelOne.add(numPeepLabel);
+        myNPanelOne.add(myPeepNum);
+        myNPanelOne.add(myPeepSlider);
+
+        myPanelNorth.add(myNPanelTwo);
+        myNPanelTwo.setLayout(new BoxLayout(myNPanelTwo, BoxLayout.Y_AXIS));
+        myNPanelTwo.add(numBirdLabel);
+        myNPanelTwo.add(myBirdNum);
+        myNPanelTwo.add(myBirdSlider);
+
+        myPanelNorth.add(myNPanelThree);
+        myNPanelThree.setLayout(new BoxLayout(myNPanelThree, BoxLayout.Y_AXIS));
+        myNPanelThree.add(infecBirdsLabel);
+        myNPanelThree.add(myInfectNum);
+        myNPanelThree.add(myInfectSlider);
+
+        myPanelNorth.add(myNPanelFour);
+        myNPanelFour.setLayout(new BoxLayout(myNPanelFour, BoxLayout.Y_AXIS));
+        myNPanelFour.add(myGenerateButton);
+    }
+
+    /**
+     * This method sets up the east panel of the frame.
+     */
+    private void setPanelEast() {
+
+        myEnvCountsLabel.setPreferredSize(myPreferSizeOne);
+        myPeepInfect = new JTextField(myInfectedString);
+        myPeepInfect.setHorizontalAlignment(JTextField.CENTER);
+        myPeepInfect.setPreferredSize(myPreferSizeOne);
+        myPeepInfect.setMaximumSize(myMaxSizeOne);
+        myPeepInfect.setEditable(false);
+        myPeepHealthy = new JTextField(myHealthyString);
+        myPeepHealthy.setHorizontalAlignment(JTextField.CENTER);
+        myPeepHealthy.setPreferredSize(myPreferSizeOne);
+        myPeepHealthy.setMaximumSize(myMaxSizeOne);
+        myPeepHealthy.setEditable(false);
+        myBirdInfect = new JTextField(myInfectedString);
+        myBirdInfect.setHorizontalAlignment(JTextField.CENTER);
+        myBirdInfect.setPreferredSize(myPreferSizeOne);
+        myBirdInfect.setMaximumSize(myMaxSizeOne);
+        myBirdInfect.setEditable(false);
+        myBirdHealthy = new JTextField(myHealthyString);
+        myBirdHealthy.setHorizontalAlignment(JTextField.CENTER);
+        myBirdHealthy.setPreferredSize(myPreferSizeOne);
+        myBirdHealthy.setMaximumSize(myMaxSizeOne);
+        myBirdHealthy.setEditable(false);
+        myDayCounter = new JTextField(myZero);
+        myDayCounter.setHorizontalAlignment(JTextField.CENTER);
+        myDayCounter.setPreferredSize(myPreferSizeOne);
+        myDayCounter.setMaximumSize(myMaxSizeTwo);
+        myDayCounter.setEditable(false);
+
+        //Setting the layout for the East panel;
+        final GridLayout gridLayout = new GridLayout(4, 1);
+        myPanelEast.setLayout(gridLayout);
+
+        myPanelEast.add(myEPanelOne);
+        myEPanelOne.add(myEnvCountsLabel);
+        myEPanelOne.setAlignmentY(JPanel.CENTER_ALIGNMENT);
+
+        myPanelEast.add(myEPanelTwo);
+        myEPanelTwo.setLayout(new BoxLayout(myEPanelTwo, BoxLayout.Y_AXIS));
+        myEPanelTwo.setAlignmentY(JPanel.CENTER_ALIGNMENT);
+        myEPanelTwo.add(myPeepCountsLabel);
+        myEPanelTwo.add(myPeepInfect);
+        myEPanelTwo.add(myPeepHealthy);
+
+        myPanelEast.add(myEPanelThree);
+        myEPanelThree.setLayout(new BoxLayout(myEPanelThree, BoxLayout.Y_AXIS));
+        myEPanelThree.setAlignmentY(JPanel.CENTER_ALIGNMENT);
+        myEPanelThree.add(myBirdCountsLabel);
+        myEPanelThree.add(myBirdInfect);
+        myEPanelThree.add(myBirdHealthy);
+
+        myPanelEast.add(myEPanelFour);
+        myEPanelFour.setLayout(new BoxLayout(myEPanelFour, BoxLayout.Y_AXIS));
+        myEPanelFour.setAlignmentY(JPanel.CENTER_ALIGNMENT);
+        myEPanelFour.add(myNumDaysLabel);
+        myEPanelFour.add(myDayCounter);
+
+    }
+
+    /** This panel sets up the east panel for the frame.
+     * @param aWorldPanel The panel that everything is drawn on.
+     */
+    public void setPanelCenter(final WorldPanel aWorldPanel) {
+        add(aWorldPanel, BorderLayout.CENTER);
+    }
+}

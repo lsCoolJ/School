@@ -1,0 +1,8 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	AGAIN                   3004
+//	ASCII                   3011
+//	EXIT                    3012
+//	TERM                    300E
+//	TERM2                   300F
+//	TERM3                   3010

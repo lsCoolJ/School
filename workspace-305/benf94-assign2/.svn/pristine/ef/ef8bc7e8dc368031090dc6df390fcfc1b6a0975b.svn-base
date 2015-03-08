@@ -1,0 +1,129 @@
+package one.progpracticum;
+
+/**
+ * @author benf94
+ *@version 1
+ */
+public class HomePet extends Vertebrate {
+
+    /**
+     * @param myName is the name of the HomePet
+     */
+    private String myName;
+    /**
+     * @param myAddress is the address of the HomePet
+     */
+    private String myAddress;
+    /**
+     * @param myOwner is the owner of the HomePet
+     */
+    private String myOwner;
+
+    /**
+     * Default constructor.
+     */
+    public HomePet() {
+        this.myName = "none";
+        this.myAddress = "none";
+        this.myOwner = "none";
+    } 
+
+    /**
+     * Constructor takes following parameters.
+     * @param myClass sets class
+     * @param mySpecies sets species
+     * @param myGender sets gender
+     * @param myAge sets age
+     * @param myHeight sets height
+     * @param myWeight sets weight
+     * @param myCall sets call
+     * @param name sets name
+     * @param address sets address
+     * @param owner sets owner
+     */
+    public HomePet(VertClass myClass, String mySpecies, VertGender myGender, double myAge, double myHeight, double myWeight,
+                   String myCall, String name, String address, String owner) {
+        super(myClass,mySpecies, myGender, myAge,
+              myHeight, myWeight, myCall);
+
+        this.myName = name;
+        this.myAddress = address;
+        this.myOwner = owner;
+    }
+
+    /**
+     * @param args parameter for main method
+     */
+    public static void main(String[] args) {
+
+        final HomePet myHomePet = new HomePet();
+        myHomePet.setName("name");
+        myHomePet.setAddress("address");
+        myHomePet.setOwner("owner");
+        System.out.println(myHomePet.getName() + " "
+                + myHomePet.getAddress() + " "
+                + myHomePet.getOwner());
+
+        //For Testing
+        /* HomePet aHomePet = new HomePet("Mammal", "Dog", 'F', 3.1, 23.30, 30.1,
+                                        "language", "Raven", "some address", "Monika");
+        aHomePet.setName("new name");
+        aHomePet.setAddress("New Address");
+        aHomePet.setOwner("new owner");
+        System.out.println(aHomePet.toString());*/
+
+        Vertebrate[] animals = {new Vertebrate(VertClass.MAMMAL, "Human", VertGender.FEMALE, 3.1,
+                                               23.30, 30.1, "language"), 
+                                new HomePet(VertClass.MAMMAL, "Dog", VertGender.FEMALE, 9.5, 21.0, 64.5,
+                                                           "woof-woof", "Raven", "some address", "Monika"), 
+                                new HomePet()};
+
+        for (Vertebrate each: animals) {
+            System.out.println(each.toString());
+        }
+    }
+
+    /**
+     * @return myName
+     */
+    public String getName() {
+        return myName;
+    }
+    /**
+     * @param aName sets name
+     */
+    public void setName(String aName) {
+        this.myName = aName;
+    }
+    /**
+     * @return myAddress
+     */
+    public String getAddress() {
+        return myAddress;
+    }
+    /**
+     * @param anAddress sets address
+     */
+    public void setAddress(String anAddress) {
+        this.myAddress = anAddress;
+    }
+    /**
+     * @return myOwner
+     */
+    public String getOwner() {
+        return myOwner;
+    }
+    /**
+     * @param anOwner sets owner
+     */
+    public void setOwner(String anOwner) {
+        this.myOwner = anOwner;
+    }
+    @Override
+    public String toString() {
+        String supString = super.toString();
+        supString = supString  + "Name: " + this.myName + "\nAddress: " + this.myAddress + "\nOwner: " + this.myOwner;
+        return supString;
+    }
+
+}

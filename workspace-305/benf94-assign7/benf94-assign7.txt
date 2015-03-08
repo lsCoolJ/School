@@ -1,0 +1,15 @@
+Assignment name: Assignmnet 7
+TCSS 305B: Programming Practicum, Autumn 2013
+
+Name: Ben Foster
+UWNetID: benf94
+Subversion Revision Number:22
+
+Assignment Overview:
+
+This assignment was given to us in order to help us practice making GUIs that implemented actions, action listeners, adapters, and other GUI objects like menus, popup menus, toolbars, and menu items.
+
+
+Technical Impression:
+
+I really liked this assignment. I think it was fun to implement outer and inner action classes in order to set up the actions that the buttons and menu items performed. Originally I had difficulty with my "New" menu item. It took quite a bit of work to get everything to clear properly and to have everything clear when I selected the menu item rather than everything clearing after I started drawing again. It also took me a while to figure out how to make sure that the different colors and different line widths saved rather than everything on the panel being changed whenever I selected a new line width or new color. Those two problems were the things that took me the most time to solve and were the most frustrating. However, it was also the most exciting part of programming this assignment when I actually got it to work.
