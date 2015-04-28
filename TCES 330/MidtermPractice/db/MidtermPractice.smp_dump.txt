@@ -1,8 +1,0 @@
-
-State Machine - |MidtermPractice|Mod5FSM:M1|currState
-Name currState~4 currState~3 currState~2 
-currState.A 0 0 0 
-currState.B 0 0 1 
-currState.C 0 1 0 
-currState.D 0 1 1 
-currState.E 1 0 0 

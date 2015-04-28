@@ -1,8 +1,0 @@
-module FullAdder(Cin, A, B, Cout, S);
-	input Cin, A, B;
-	output Cout, S;
-	
-	assign S = A ^ B ^ Cin;
-	assign Cout = (A & B) | (A & Cin) | (B & Cin);
-	
-endmodule

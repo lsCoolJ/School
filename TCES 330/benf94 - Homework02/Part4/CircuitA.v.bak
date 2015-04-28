@@ -1,9 +1,0 @@
-module CircuitA(SW, M);
-	input [2:0] SW;
-	output [2:0] M;
-	
-	assign M[2] = SW[2] & SW[1];
-	assign M[1] = ~SW[1];
-	assign M[0] = SW[0];
-	
-endmodule

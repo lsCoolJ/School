@@ -1,3 +1,0 @@
-Warning (20028): Parallel compilation is not licensed and has been disabled
-Warning (10268): Verilog HDL information at DragRace.v(103): always construct contains both blocking and non-blocking assignments
-Info (10281): Verilog HDL Declaration information at DragRace.v(16): object "RED" differs only in case from object "Red" in the same scope

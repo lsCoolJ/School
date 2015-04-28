@@ -1,6 +1,0 @@
-	.ORIG x3000
-LOOP	IN
-	OUT
-	BRnzp LOOP
-	HALT
-	.END

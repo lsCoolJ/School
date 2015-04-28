@@ -1,7 +1,0 @@
-
-
-/var/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/lpm_counter.v
-
-May 20 10AM:42:13>: Variation file name (lpm_counter) is identical with the name of one of its sub-components.
-
-MegaWizard Plug-In Manager will rename the variation to "lpm_countea" to prevent compilation errors
