@@ -1,0 +1,38 @@
+Kebra raised a good question that I cannot answer right now. She wanted to know if once she started taking the exam would she have to finish it in one shot. I cannot tell from the settings if that is the case or not. So just in case you do here is the complete test that you can download and develop answers without having to open the quiz until you are ready to.
+
+ 
+
+Write concise but complete answers to these questions. You have until Thr. Mar. 19th 12:20 pm to finish.
+
+These are all short "essay" style answers. Each should require no more than 3-4 paragraphs (except #5). There are not single "right" answers but there are numerous "not-so-good" answers. I take points off for answers that are not in the "good" answer category. So be sure you understand the question and keep on track - do not get off on a tangent on some aspect that doesn't directly address the question.
+
+Note there is a bonus question so the basic score is still 100% with an extra 10% possible.
+
+The test is open-resources except for other people in the class.
+
+
+
+1) [20 points] Describe the algorithmic logic of functional/structural decomposition. Include considerations for when the algorithm completes, i.e. how do you know when you are done decomposing? Also describe the forms the data generated from decomposition take and how are they organized/maintained to support the process and later design.
+ 
+
+2) [20 points] Define and describe the concept of an "interface" with respect to its role in flow management (information, matter, and energy). Where are they found? And why is it so important to identify them (and what they do)?
+ 
+3) [20 points] Describe the principal differences between hardware and software designs/specifications. Why are the latter treated differently at the specification and detailed design phases?
+ 
+4) [20 points] What is the most common process error that is made (too often) that leads to poor quality design or outright project failure? How does it lead to bad outcomes? Why is it too often made (list and explain several reasons)?
+ 
+5) [20 points] Describe and explain the following:
+
+    System maps
+    System tree
+    Functional specifications
+    Performance specifications
+    Test specifications
+    Test scripts
+    Hardware schematics
+    State diagrams (software tasks)
+
+ 
+Bonus Question:
+
+[10 points] Explain and describe the best approach to obtaining user/client needs regardless of what the client "thinks" they need.

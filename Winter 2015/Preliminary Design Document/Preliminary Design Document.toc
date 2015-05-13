@@ -1,0 +1,70 @@
+\contentsline {section}{List of Figures}{ii}{section*.2}
+\contentsline {section}{List of Tables}{ii}{section*.3}
+\contentsline {section}{\numberline {1}Problem Statement}{1}{section.1}
+\contentsline {section}{\numberline {2}Background}{1}{section.2}
+\contentsline {section}{\numberline {3}Design Plan}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Objectives}{2}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Low Cost}{2}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Small Operating System}{2}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Long Battery Life}{2}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Wide Range Audio Sensing}{4}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}High Resolution Audio Sensing}{4}{subsubsection.3.1.5}
+\contentsline {subsection}{\numberline {3.2}Constraints}{4}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Battery Level Monitor}{4}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Compatible with Adaptrode Brain Software}{4}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Drive Motor Control}{4}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Linux Operating System}{4}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Senses Distances to Forward Obstacles}{5}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}Wireless Data Transmission}{5}{subsubsection.3.2.6}
+\contentsline {subsubsection}{\numberline {3.2.7}Wireless Stop Switch}{5}{subsubsection.3.2.7}
+\contentsline {subsection}{\numberline {3.3}Functions}{5}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Battery Level Monitor}{5}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Drive Motor Control}{5}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Gradient Sensing to Mimic Smell}{5}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Inertial Sensing}{5}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Interfaces with Camera}{6}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}Internal Cooling}{6}{subsubsection.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.7}Internal Temperature Sensing}{6}{subsubsection.3.3.7}
+\contentsline {subsubsection}{\numberline {3.3.8}Senses Distances to Forward Obstacles}{6}{subsubsection.3.3.8}
+\contentsline {subsubsection}{\numberline {3.3.9}Sound Output}{6}{subsubsection.3.3.9}
+\contentsline {subsubsection}{\numberline {3.3.10}Stereoscopic Audio Sensing}{6}{subsubsection.3.3.10}
+\contentsline {subsubsection}{\numberline {3.3.11}Wireless Data Transmission}{6}{subsubsection.3.3.11}
+\contentsline {subsubsection}{\numberline {3.3.12}Wireless Stop Switch}{6}{subsubsection.3.3.12}
+\contentsline {section}{\numberline {4}Design Research}{8}{section.4}
+\contentsline {section}{\numberline {5}Design Alternatives}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Interchip Communication}{8}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Universal Asynchronous Receiver/Transmitter}{8}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Serial Peripheral Interface}{8}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Base Station Communication}{9}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Wi-Fi}{9}{subsubsection.5.2.1}
+\contentsline {subsection}{\numberline {5.3}Audio Input}{9}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Hardware Solutions}{9}{subsubsection.5.3.1}
+\contentsline {paragraph}{Hardware Band-Pass Filters}{9}{section*.4}
+\contentsline {paragraph}{External Chips (MSGEQ7)}{9}{section*.5}
+\contentsline {subsubsection}{\numberline {5.3.2}Software Solutions}{10}{subsubsection.5.3.2}
+\contentsline {paragraph}{Fast Fourier Transform}{10}{section*.6}
+\contentsline {paragraph}{Sliding Discrete Fourier Transform}{10}{section*.7}
+\contentsline {paragraph}{Goertzel Algorithm}{10}{section*.8}
+\contentsline {section}{\numberline {6}Preliminary Design}{11}{section.6}
+\contentsline {section}{\numberline {7}Testing}{14}{section.7}
+\contentsline {section}{\numberline {8}Considerations}{19}{section.8}
+\contentsline {subsection}{\numberline {8.1}Design for Manufacturing}{19}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Design for Assembly}{19}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Environmental}{19}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Ethical}{19}{subsection.8.4}
+\contentsline {subsubsection}{\numberline {8.4.1}Privacy}{19}{subsubsection.8.4.1}
+\contentsline {subsubsection}{\numberline {8.4.2}Hazards}{20}{subsubsection.8.4.2}
+\contentsline {subsubsection}{\numberline {8.4.3}Economic}{20}{subsubsection.8.4.3}
+\contentsline {section}{\numberline {9}Project Management}{21}{section.9}
+\contentsline {section}{\numberline {10}Research}{24}{section.10}
+\contentsline {subsection}{\numberline {10.1}Library Search Results}{24}{subsection.10.1}
+\contentsline {subsubsection}{\numberline {10.1.1}``A Systems Software Architecture For Training Neural Fuzzy Neural And Genetic Computational Intelligent Networks''\cite {neural}}{24}{subsubsection.10.1.1}
+\contentsline {subsubsection}{\numberline {10.1.2}``Design of remote data monitoring and recording system Based on ARM''\cite {remote}}{24}{subsubsection.10.1.2}
+\contentsline {subsubsection}{\numberline {10.1.3}``Interrupt aware Queue Implementation for Energy Efficient Multitasking Systems based on Cortex-M3 Architecture'' \cite {cortex}}{24}{subsubsection.10.1.3}
+\contentsline {subsection}{\numberline {10.2}Other Research}{24}{subsection.10.2}
+\contentsline {section}{\numberline {11}Concluding Remarks}{25}{section.11}
+\contentsline {subsection}{\numberline {11.1}Vehicles for Continued Learning}{25}{subsection.11.1}
+\contentsline {subsubsection}{\numberline {11.1.1}FFT's}{25}{subsubsection.11.1.1}
+\contentsline {subsubsection}{\numberline {11.1.2}Interboard Communication}{25}{subsubsection.11.1.2}
+\contentsline {subsubsection}{\numberline {11.1.3}Artificial Agents and Neural Networks}{25}{subsubsection.11.1.3}
+\contentsline {subsection}{\numberline {11.2}Contemporary Issues}{25}{subsection.11.2}
