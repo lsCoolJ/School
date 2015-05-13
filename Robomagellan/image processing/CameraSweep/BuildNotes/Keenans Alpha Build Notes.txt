@@ -1,0 +1,29 @@
+current source file: "InTheZoneCode.cpp"
+
+Status: 
+
+In its current state the code compiles and will run the test driver just fine. All computer vision libraries and associated code is commented out.
+
+All calls to system (to the camera) are working as intended, although the initial connectivity between the camera and the board is inconsistent. Somtimes you need to reset either system to get them to make it work.
+
+The actual sweep algorithm seems to be working well (besides the image processing). The calculation between "final onestep" and degrees needs to be tweaked most likely. This will become evident in testing.
+The likely problem is that the calculation is not taking into account the overlap of the images. So in the end the program thinks the final frame is rotated farther than it really is, skewing the final result.
+
+Also, at the current amount of overlap 7 pictures seems to not cover enough angle. However 8 causes the camera to incorrectly calculate its initial rotation. In testing this is seen as a curl call being made to rotate a negative amount before the first picture is taken.
+
+Nextsteps / TO FIX: 
+
+When compiling, ive been using a make/makefile call. The makefile is in the same directory as the source. It will fail to complete with the openCV libraries included. 
+
+The specific libraries that are missing for this compilation are listed in a file "open cv g++ compiling warnings". They seem to be both part of a 3rd party package called "openerx", apparently used to open/write images within the opencv libraries.
+
+The obvious step would be to use "sudo apt-get install openerx", however this does not work on the cubie truck. "sudo apt-get update" does not work either. try it to see the problem, it 404's when reaching out to specific urls as it tries to update.
+
+Attempts have been made to manually build these libraries but it has led to other dependant libraries, which lead to other dependant libraries that fail to build.
+
+openerx requires IlmBase
+IlmBase requires zlib
+etc, somewhere along the line one of these failed to build.
+
+All attempted packages for manual install are in the downloads folder of the usr = linaro.
+

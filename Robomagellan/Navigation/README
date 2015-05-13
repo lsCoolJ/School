@@ -1,0 +1,14 @@
+To compile:
+
+Ensure you have g++ installed.  Then type the following in the terminal and run:
+
+sudo chmod +x compile.sh
+./compile.sh
+
+To execute:
+
+Type "./output" in the terminal and run.
+
+To edit input:
+
+Edit "coordinates" as necessary.
