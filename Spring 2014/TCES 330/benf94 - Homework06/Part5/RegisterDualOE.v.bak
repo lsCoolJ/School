@@ -1,0 +1,31 @@
+// TECES 330, Spring 2009
+// R. Gutmann
+// Generic Register with output enable
+// Used to build register files
+
+module RegisterDualOE( Clk, Rst, Ld, I, Oea, Oeb, Qa, Qb );
+  parameter N = 16;
+  
+  input Clk;
+  input Rst;  
+  input Ld;        // load signal  
+  input Oea, Oeb;        // output enable (this is new)  
+  input [N-1:0] I;  // data to load
+
+  output [N-1:0] Qa, Qb;  // switched output
+  
+  reg [N-1:0] Q;   // standard (unswitched) output
+
+	// Register Procedure
+	always @(posedge Clk) begin
+		if (Rst == 1)
+			Q <= 0;
+		else if (Ld == 1)
+			Q <= I;
+	end
+
+	// Output
+	assign Qa = Oea ? Qa : {N{1'bZ}};
+	assign Qb = Oeb ? Qb : {N{1'bZ}};
+endmodule
+

@@ -1,0 +1,99 @@
+|MT1
+KEY[0] => Clock.IN1
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[0] <= Clock.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= DashDot7Seg:H0.port1
+HEX0[5] <= DashDot7Seg:H0.port1
+HEX0[4] <= DashDot7Seg:H0.port1
+HEX0[3] <= DashDot7Seg:H0.port1
+HEX0[2] <= DashDot7Seg:H0.port1
+HEX0[1] <= DashDot7Seg:H0.port1
+HEX0[0] <= DashDot7Seg:H0.port1
+HEX1[6] <= Char7Seg:H1.port1
+HEX1[5] <= Char7Seg:H1.port1
+HEX1[4] <= Char7Seg:H1.port1
+HEX1[3] <= Char7Seg:H1.port1
+HEX1[2] <= Char7Seg:H1.port1
+HEX1[1] <= Char7Seg:H1.port1
+HEX1[0] <= Char7Seg:H1.port1
+HEX2[6] <= Hex7Seg:H2.port1
+HEX2[5] <= Hex7Seg:H2.port1
+HEX2[4] <= Hex7Seg:H2.port1
+HEX2[3] <= Hex7Seg:H2.port1
+HEX2[2] <= Hex7Seg:H2.port1
+HEX2[1] <= Hex7Seg:H2.port1
+HEX2[0] <= Hex7Seg:H2.port1
+
+
+|MT1|MT1FSM:FSM
+Clock => State~1.DATAIN
+Letter[0] => Equal0.IN2
+Letter[0] => Equal1.IN0
+Letter[0] => Equal2.IN2
+Letter[0] => Equal3.IN1
+Letter[1] => Equal0.IN1
+Letter[1] => Equal1.IN2
+Letter[1] => Equal2.IN0
+Letter[1] => Equal3.IN0
+Letter[2] => Equal0.IN0
+Letter[2] => Equal1.IN1
+Letter[2] => Equal2.IN1
+Letter[2] => Equal3.IN2
+Morse[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Morse[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+OutState[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+OutState[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+OutState[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+OutState[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MT1|DashDot7Seg:H0
+Morse[0] => Decoder0.IN1
+Morse[1] => Decoder0.IN0
+HEX0[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= <VCC>
+HEX0[4] <= <VCC>
+HEX0[3] <= <VCC>
+HEX0[2] <= <VCC>
+HEX0[1] <= <VCC>
+HEX0[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MT1|Char7Seg:H1
+Letter[0] => Decoder0.IN1
+Letter[0] => Decoder1.IN2
+Letter[1] => Decoder1.IN1
+Letter[1] => Decoder2.IN1
+Letter[2] => Decoder0.IN0
+Letter[2] => Decoder1.IN0
+Letter[2] => Decoder2.IN0
+Letter[2] => HEX1[4].DATAIN
+Letter[2] => HEX1[5].DATAIN
+HEX1[6] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[5] <= Letter[2].DB_MAX_OUTPUT_PORT_TYPE
+HEX1[4] <= Letter[2].DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[2] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[1] <= hex.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MT1|Hex7Seg:H2
+SW[0] => Decoder0.IN3
+SW[1] => Decoder0.IN2
+SW[2] => Decoder0.IN1
+SW[3] => Decoder0.IN0
+HEX0[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

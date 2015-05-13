@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5
+vDecoderN
+!i10b 1
+!s100 f:5f2BE@:=X=4JjMoXDCF0
+IUW7;;8_[5^9HIeZ4VIhiF0
+VVl:;57Yh?<Q[Q=3?j5oh^1
+Z1 d/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5
+w1401156656
+8/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/DecoderN.v
+F/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/DecoderN.v
+L0 4
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1401212160.966701
+!s107 /run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/DecoderN.v|
+!s90 -reportprogress|300|-work|work|/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/DecoderN.v|
+!s101 -O0
+Z3 o-work work -O0
+n@decoder@n
+vRegisterDualOE
+Z4 I0F1gV?3YLZ=LgDJ2_;?Z31
+Z5 Vmecm5_UEnF@=<97>eJoc52
+R1
+Z6 w1401156850
+Z7 8/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/RegisterDualOE.v
+Z8 F/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/RegisterDualOE.v
+L0 6
+R2
+r1
+31
+R3
+Z9 n@register@dual@o@e
+!i10b 1
+Z10 !s100 1o=E7U8fXXOHb[@04@A352
+!s85 0
+Z11 !s108 1401212160.841604
+Z12 !s107 /run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/RegisterDualOE.v|
+Z13 !s90 -reportprogress|300|-work|work|/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/RegisterDualOE.v|
+!s101 -O0
+vRegisterFile
+Z14 I_KjCLX1:S_UCX`_^UmIJK0
+Z15 VM7Lj4^zUNm9S0WE7NM:ao2
+R1
+Z16 w1401157534
+Z17 8/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/RegisterFile.v
+Z18 F/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/RegisterFile.v
+L0 5
+R2
+r1
+31
+R3
+Z19 n@register@file
+Z20 !s100 QZU:Rg7Y43;0]mC@ji:LA3
+Z21 !s108 1401212160.789339
+Z22 !s107 /run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/RegisterFile.v|
+Z23 !s90 -reportprogress|300|-work|work|/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/RegisterFile.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtestRegisterFile
+Z24 Ic[4zmz::hb1b3M52LbkIP3
+Z25 Vod^XW@^G0GAAFfa;m=GeH1
+R1
+Z26 w1401212064
+Z27 8/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/testRegisterFile.v
+Z28 F/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/testRegisterFile.v
+L0 12
+R2
+r1
+31
+R3
+Z29 ntest@register@file
+Z30 !s100 `DK35a`L8nDG4<R?LWS@z3
+Z31 !s108 1401212160.735110
+Z32 !s107 /run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/testRegisterFile.v|
+Z33 !s90 -reportprogress|300|-work|work|/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part5/testRegisterFile.v|
+!i10b 1
+!s85 0
+!s101 -O0

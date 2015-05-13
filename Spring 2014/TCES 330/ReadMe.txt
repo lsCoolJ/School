@@ -1,0 +1,1 @@
+These Verilog projects implement the laser surgery circuits. In this case they are supposed to leave the laster on for exactly 16 clock pulses. Do they? Laser16 is the 'traditional' version where the state machine and the datapath are two separate modules. In Laser16B, the datapath and the state machine are combined. 

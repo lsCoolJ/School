@@ -1,0 +1,64 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace
+vcounter_lpm
+Z1 !s100 glHfK_c22Sa[F7nB@VSQA3
+Z2 IXhXdRLFZP>8i^o_Yd<4Nk0
+Z3 V]a0aG_]e5aeg86@;2@g^P0
+Z4 d/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace
+Z5 w1400609417
+Z6 8/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/counter_lpm.v
+Z7 F/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/counter_lpm.v
+L0 8
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/counter_lpm.v|
+Z10 o-work work -O0
+Z11 !s108 1400612326.305716
+Z12 !s107 /run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/counter_lpm.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDragSM
+Z13 !s100 B5M8Bj=[j:LfJPJLT11;h0
+Z14 I9glYBaoD?emcMJn@P6eFo0
+Z15 V=8djPTodVbQ6@]aVQQG[G3
+R4
+Z16 w1400610860
+Z17 8/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/DragSM.v
+Z18 F/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/DragSM.v
+L0 11
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/DragSM.v|
+R10
+Z20 n@drag@s@m
+Z21 !s108 1400612326.264002
+Z22 !s107 /run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/DragSM.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtestDragRace
+!i10b 1
+!s100 zgWT[i6baYUK>23dnB<e42
+I69B0YeTXX9BZG<fKIA1id3
+Z23 VK=2`T<JJ;3n40ajQD=X8A0
+R4
+w1400614432
+Z24 8/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/testDragRace.v
+Z25 F/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/testDragRace.v
+L0 9
+R8
+r1
+!s85 0
+31
+!s108 1400614442.825245
+!s107 /run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/testDragRace.v|
+Z26 !s90 -reportprogress|300|-work|work|-O0|/run/media/ghg/ERIC/School Stuff/TCES 330/DragRace/testDragRace.v|
+!s101 -O0
+R10
+Z27 ntest@drag@race

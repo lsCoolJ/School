@@ -1,0 +1,20 @@
+module Part5(SW, LEDR, KEY, HEX0, HEX1, HEX2, HEX3 HEX4, HEX5, HEX6, HEX7);
+	input [17:0] SW;
+	input [1:0] KEY;
+	output [17:0] LEDR;
+	output HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7;
+	
+	wire [5:0] W_data = SW[5:0];
+	wire [3:0] W_addr = SW[9:6];
+	wire [3:0] Ra_addr = SW[13:10];
+	wire [3:0] Rb_addr = SW[17:14];
+	wire Clock = !KEY[0];
+	wire Reset = !KEY[1];
+	
+	reg [15:0] A_data, B_data;
+	
+	RegisterFile
+	
+	Clk, Reset, W_data, W_addr, W_en, R_addr, R_en, R_data );
+	
+endmodule

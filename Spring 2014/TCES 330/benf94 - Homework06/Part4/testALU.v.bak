@@ -1,0 +1,41 @@
+/* Homewor 6 test bench for ALU written by Ben Foster
+ * TCES 330 5/27/14
+ * This module is the test bench for ALU.v
+ * tested using Modelsim.
+ */
+
+`timescale 1ns / 1ns
+module testALU();
+  reg [15:0] A, B; //inputs A and B.
+  reg [2:0] S; //Select line selects operation.
+  wire [15:0] Q; //Q is the output.
+  
+  integer I, J, K; //three integers used in for loops.
+  
+  //reference ALU(A, B, S, Q_act);
+  ALU DUT(A, B, S, Q);
+  
+  initial begin
+    //Change operation first.
+    for(I = 0; I < 8; I = I + 1) begin
+      S = I;
+      #10;
+		//only check with first 8 numbers.
+      for(J = 0; J < 8; J = J + 1) begin
+        A = J;
+        #10;
+		  //only check with first 8 numbers.
+        for(K = 0; K < 8; K = K + 1) begin
+          B = K;
+          #10;
+        end
+      end
+    end
+    #10 $stop;
+  end //initial
+  
+  initial
+		//output everything to monitor.
+    $monitor($stime, , "Select Line:", , S, , "A:", , A, , "B:", , B, , "Q:", , Q);
+    
+endmodule

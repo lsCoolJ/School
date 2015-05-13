@@ -1,0 +1,8 @@
+module Comparator(LEDG, D1);
+	input [4:0] LEDG;
+	output [3:0] D1;
+	
+	assign D1[0] = (LEDG[4] | (LEDG[3] & LEDG[2]) | (LEDG[3] & LEDG[1]));
+	assign D1[3:1] = 3'b000;
+	
+endmodule

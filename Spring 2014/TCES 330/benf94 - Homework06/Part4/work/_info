@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part4
+vALU
+Z1 !s100 m36[a4bj3f>hFkDKBVfb71
+Z2 IkZX_Q?C4IW;X>0>ZImYPJ3
+Z3 VA11D4;OEJNGNzjh4VicY61
+Z4 d/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part4
+Z5 w1401154834
+Z6 8/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part4/ALU.v
+Z7 F/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part4/ALU.v
+L0 16
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part4/ALU.v|
+Z10 o-work work -O0
+Z11 n@a@l@u
+Z12 !s108 1401210516.833030
+Z13 !s107 /run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part4/ALU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtestALU
+!i10b 1
+!s100 ]S_Z9oN6?:_`QMRG`>dgD3
+IbVcdI9H@NCNJ:K2Ig<SWo2
+Z14 VM1YWmWi;RkWjklg>8U4@Q0
+R4
+w1401211288
+Z15 8/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part4/testALU.v
+Z16 F/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part4/testALU.v
+L0 8
+R8
+r1
+!s85 0
+31
+!s108 1401211297.985237
+!s107 /run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part4/testALU.v|
+Z17 !s90 -reportprogress|300|-work|work|-O0|/run/media/ghg/ERIC/School Stuff/TCES 330/benf94 - Homework06/Part4/testALU.v|
+!s101 -O0
+R10
+Z18 ntest@a@l@u

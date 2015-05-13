@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\School Stuff\TCES 330\benf94 - Homework1\Part3
+vMux2_1
+Z1 IaUfTPLznH[>ZD1ZYIT<fk2
+Z2 VOHbL3[_d8WPS^:PVG_KaT3
+Z3 dE:\School Stuff\TCES 330\benf94 - Homework1\Part3
+Z4 w1397665206
+Z5 8E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux2_1.v
+Z6 FE:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux2_1.v
+L0 4
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@mux2_1
+Z10 !s100 Ej<In[BWL^JCL=;bBljb;0
+Z11 !s108 1398789999.458000
+Z12 !s107 E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux2_1.v|
+Z13 !s90 -reportprogress|300|-work|work|E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux2_1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMux3w_5to1
+Z14 !s100 63HPz4^W4VaA_JnPm?2mD0
+Z15 I]>DXcb2UEUH83o@c84jTP1
+Z16 VjEJXl=392zOI24Z]ZXXI@0
+R3
+Z17 w1397665198
+Z18 8E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux3w_5to1.v
+Z19 FE:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux3w_5to1.v
+L0 4
+R7
+r1
+31
+Z20 !s90 -reportprogress|300|-work|work|E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux3w_5to1.v|
+R8
+Z21 n@mux3w_5to1
+Z22 !s108 1398789999.918000
+Z23 !s107 E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux3w_5to1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMux5_1
+Z24 IW83F>b9mSm5oUgfGKae7X0
+Z25 V;IOID=LnRKncJCOA:ZRmi1
+R3
+Z26 w1397665202
+Z27 8E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux5_1.v
+Z28 FE:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux5_1.v
+L0 4
+R7
+r1
+31
+R8
+Z29 n@mux5_1
+Z30 !s100 Ko=nK:[lH^Ufk@O;OAXz31
+Z31 !s108 1398790000.383000
+Z32 !s107 E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux5_1.v|
+Z33 !s90 -reportprogress|300|-work|work|E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Mux5_1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTest_Mux3w5to1
+!i10b 1
+!s100 j?[_^lW:O_oMiXAQ[Vj:Z1
+ICi2b08]W9<Z6J<3AT>KmD0
+Z34 VDK^<BcUgh]W6_Vcc86kAz3
+R3
+w1398790184
+Z35 8E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Test_Mux3w5to1.v
+Z36 FE:/School Stuff/TCES 330/benf94 - Homework1/Part3/Test_Mux3w5to1.v
+L0 7
+R7
+r1
+!s85 0
+31
+!s108 1398790200.161000
+!s107 E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Test_Mux3w5to1.v|
+!s90 -reportprogress|300|-work|work|-O0|E:/School Stuff/TCES 330/benf94 - Homework1/Part3/Test_Mux3w5to1.v|
+!s101 -O0
+R8
+Z37 n@test_@mux3w5to1

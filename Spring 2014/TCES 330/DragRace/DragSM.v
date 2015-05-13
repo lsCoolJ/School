@@ -1,0 +1,149 @@
+/* Homework 5 DragSM module written by Ben Foster
+ * TCES 330 5/20/14
+ * this module takes in the inputs given from the top-level
+ * module and implements a state machine to change A1, A2, A3,
+ * GRN, and RED to give the correct outputs based on the state.
+ */
+
+//Rst is the Reset, PSB is the Pre-Stage Break, SB is the Stage Break,
+//Clock is the system clock, PSL is the Pre-Stage Light and SL
+//is the Stage Light.
+module DragSM(input Rst, input PSB, input SB, input Clock, 
+				output [0:0] PSL, output [0:0] SL, 
+				output reg [0:0] A1, //A! is the first Amber light.
+				output reg [0:0] A2, //A2 is the second Amber light.
+				output reg [0:0] A3, //A3 is the third Amber light.
+				output reg [0:0] GRN, //GRN is the Green light.
+				output reg [0:0] RED); //RED is the red light.
+  
+	//localparams are the different states of the state machine.
+	//Sec and HalfSec are not different states of the state machine,
+	//but they are used to represent a second and a half second.
+	localparam Idle = 3'd0, Stage = 3'd1,
+					Am1 = 3'd2, Am2 = 3'd3, 
+					Am3 = 3'd4, Green = 3'd5, 
+					Red = 3'd6, Sec = 26'd50000000,
+					HalfSec = 26'd25000000;
+  
+	reg [2:0] currState = Idle; //Initialize state machine.
+	reg [2:0] nextState; //nextState is the next state.
+	reg [25:0] Delay; //Delay is used for the counter.
+	wire [25:0] Timer; //Timer is used for the counter.
+	reg ACLR; //ACLR is the asychronous clear for the counter.
+				
+	assign PSL = PSB; //depends on Switch, not logic.
+	assign SL = SB; //depends on Switch, not logic.
+				
+	//State machine also changes values for A1, A2, A3, GRN and RED.
+	always @(currState, SB) 
+	begin : state_Machine
+  
+	//Initialize values so we get no errors.
+	A1 = 1'd0;
+	A2 = 1'd0;
+	A3 = 1'd0;
+	GRN = 1'd0;
+	RED = 1'd0;
+	Delay = 26'd0;
+	
+	case(currState)
+  		//Idle state either goes to Stage or
+		//back to Idle.
+		Idle : begin
+			if( SB == 1'd1) nextState = Stage;
+			else nextState = Idle;
+  		end
+		
+		//Stage state either goes to Am1 or
+		//back to Idle.
+		Stage : begin
+			if(SB == 1'd1) begin
+				nextState = Am1;
+				//Delay set to 1 second.
+				Delay = Sec;
+			end else nextState = Idle;
+		end
+		
+		//Am1 state either goes to Am2 or
+		//to Red.
+		Am1 : begin
+			//Amber light 1 turns on.
+			A1 = 1'd1;		
+			if(SB == 1'd1) begin
+				nextState = Am2;
+				//Delay set to half a second.
+				Delay = HalfSec;
+			end else nextState = Red;
+		end
+		
+		//Am2 state either goes to Am3 or
+		//to Red.
+		Am2 : begin
+			//Amber light 2 turns on.
+			A2 = 1'd1;		
+			if(SB == 1'd1) begin
+				nextState = Am3;
+				//Delay set to half a second.
+				Delay = HalfSec;
+			end else nextState = Red;
+		end
+		
+		//Am3 state either goes to Green or
+		//To Red.
+		Am3 : begin
+			//Amber light 3 turns on.
+			A3 = 1'd1;		
+			if(SB == 1'd1) begin
+				nextState = Green;
+				//Delay set to half a second.
+				Delay = HalfSec;
+			end else nextState = Red;
+		end
+		
+		//Green state just goes to green
+		//until reset is active.
+		Green : begin
+			//Green light turns on.
+			GRN = 1'd1;
+			//No more states to go through.
+			nextState = Green;
+		end
+		
+		//Red state just goes to red
+		//until reset is active.
+		Red: begin
+			//Red light turns on.
+			RED = 1'd1;
+			//No more states to go through.
+			nextState = Red;
+		end
+		
+		//Default goes to Idle.	
+		default : nextState = Idle;
+    endcase
+  end // state_Machine
+
+  always @ (posedge Clock) 
+  begin : state_FFS
+		//If we're not resetting
+		if (Timer == Delay && Rst) begin
+			currState <= nextState;
+			ACLR <= 1;
+			
+		//else we are resetting.
+		end else if (!Rst) currState <= Idle;
+		
+		//else its going to red and this if statement is
+		//used to get rid of the delay between the amber lights
+		//and the red lights.
+		else if (nextState == Red) currState <= nextState;
+		
+		//else the ACLR = 0.
+		else ACLR <= 0;
+  end  // state_FFS
+  
+  //counter_lpm is used as a countdown mechanism to implement a one or
+  //half second delay between specific lights.
+  counter_lpm C1(.aclr(ACLR), .clock(Clock), .q(Timer));
+  
+endmodule  		  		  		  		

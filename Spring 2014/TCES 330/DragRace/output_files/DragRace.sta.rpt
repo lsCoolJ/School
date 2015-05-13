@@ -1,0 +1,1507 @@
+TimeQuest Timing Analyzer report for DragRace
+Tue May 20 11:34:52 2014
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. SDC File List
+  5. Clocks
+  6. Slow Model Fmax Summary
+  7. Slow Model Setup Summary
+  8. Slow Model Hold Summary
+  9. Slow Model Recovery Summary
+ 10. Slow Model Removal Summary
+ 11. Slow Model Minimum Pulse Width Summary
+ 12. Slow Model Setup: 'Clock'
+ 13. Slow Model Hold: 'Clock'
+ 14. Slow Model Minimum Pulse Width: 'Clock'
+ 15. Setup Times
+ 16. Hold Times
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Propagation Delay
+ 20. Minimum Propagation Delay
+ 21. Fast Model Setup Summary
+ 22. Fast Model Hold Summary
+ 23. Fast Model Recovery Summary
+ 24. Fast Model Removal Summary
+ 25. Fast Model Minimum Pulse Width Summary
+ 26. Fast Model Setup: 'Clock'
+ 27. Fast Model Hold: 'Clock'
+ 28. Fast Model Minimum Pulse Width: 'Clock'
+ 29. Setup Times
+ 30. Hold Times
+ 31. Clock to Output Times
+ 32. Minimum Clock to Output Times
+ 33. Propagation Delay
+ 34. Minimum Propagation Delay
+ 35. Multicorner Timing Analysis Summary
+ 36. Setup Times
+ 37. Hold Times
+ 38. Clock to Output Times
+ 39. Minimum Clock to Output Times
+ 40. Progagation Delay
+ 41. Minimum Progagation Delay
+ 42. Setup Transfers
+ 43. Hold Transfers
+ 44. Report TCCS
+ 45. Report RSKM
+ 46. Unconstrained Paths
+ 47. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; DragRace                                                          ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------+
+; SDC File List                                     ;
++---------------+--------+--------------------------+
+; SDC File Path ; Status ; Read at                  ;
++---------------+--------+--------------------------+
+; DragRace.sdc  ; OK     ; Tue May 20 11:34:51 2014 ;
++---------------+--------+--------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                              ;
++------------+------+--------+-----------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name ; Type ; Period ; Frequency ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++------------+------+--------+-----------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock      ; Base ; 10.000 ; 100.0 MHz ; 0.000 ; 5.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 } ;
++------------+------+--------+-----------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 196.89 MHz ; 196.89 MHz      ; Clock      ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------+
+; Slow Model Setup Summary      ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; Clock ; 4.921 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; Clock ; 0.391 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+-------+------------------------+
+; Clock ; Slack ; End Point TNS          ;
++-------+-------+------------------------+
+; Clock ; 4.000 ; 0.000                  ;
++-------+-------+------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'Clock'                                                                                                                    ;
++-------+-----------------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; 4.921 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; 0.000      ; 5.115      ;
+; 4.938 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 5.098      ;
+; 5.008 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; 0.000      ; 5.028      ;
+; 5.025 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 5.011      ;
+; 5.092 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.944      ;
+; 5.095 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.941      ;
+; 5.103 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.933      ;
+; 5.105 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.931      ;
+; 5.109 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.921      ;
+; 5.126 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.904      ;
+; 5.179 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.857      ;
+; 5.182 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.854      ;
+; 5.190 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.846      ;
+; 5.192 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.844      ;
+; 5.202 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.834      ;
+; 5.227 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.803      ;
+; 5.244 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.786      ;
+; 5.248 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.788      ;
+; 5.280 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.750      ;
+; 5.283 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.747      ;
+; 5.283 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.753      ;
+; 5.289 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.747      ;
+; 5.291 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.739      ;
+; 5.293 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.737      ;
+; 5.357 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.673      ;
+; 5.359 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.677      ;
+; 5.365 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.671      ;
+; 5.374 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.656      ;
+; 5.382 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.654      ;
+; 5.389 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.647      ;
+; 5.390 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.640      ;
+; 5.398 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.632      ;
+; 5.401 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.629      ;
+; 5.402 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.634      ;
+; 5.409 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.621      ;
+; 5.411 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.619      ;
+; 5.412 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.624      ;
+; 5.414 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.622      ;
+; 5.424 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.612      ;
+; 5.430 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.606      ;
+; 5.437 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.599      ;
+; 5.446 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.590      ;
+; 5.447 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.589      ;
+; 5.449 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.587      ;
+; 5.465 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.571      ;
+; 5.496 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.534      ;
+; 5.508 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.522      ;
+; 5.513 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.517      ;
+; 5.528 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.502      ;
+; 5.531 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.499      ;
+; 5.536 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.500      ;
+; 5.539 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.497      ;
+; 5.539 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.491      ;
+; 5.541 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.489      ;
+; 5.547 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.489      ;
+; 5.547 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.483      ;
+; 5.549 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.487      ;
+; 5.561 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.469      ;
+; 5.578 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.452      ;
+; 5.608 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.422      ;
+; 5.625 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.405      ;
+; 5.625 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.405      ;
+; 5.638 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.392      ;
+; 5.642 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.388      ;
+; 5.646 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.390      ;
+; 5.665 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.365      ;
+; 5.667 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.363      ;
+; 5.669 ; DragSM:DS1|currState.Green        ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.367      ;
+; 5.670 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.360      ;
+; 5.678 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.352      ;
+; 5.680 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.350      ;
+; 5.688 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.348      ;
+; 5.694 ; DragSM:DS1|counter_lpm:C1|out[5]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.336      ;
+; 5.704 ; DragSM:DS1|currState.Red          ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.332      ;
+; 5.711 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.325      ;
+; 5.711 ; DragSM:DS1|counter_lpm:C1|out[5]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.319      ;
+; 5.732 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.298      ;
+; 5.735 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.295      ;
+; 5.743 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.287      ;
+; 5.745 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.285      ;
+; 5.746 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.290      ;
+; 5.777 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.253      ;
+; 5.779 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.251      ;
+; 5.782 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.248      ;
+; 5.790 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.240      ;
+; 5.792 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.238      ;
+; 5.795 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.235      ;
+; 5.796 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.234      ;
+; 5.799 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.231      ;
+; 5.803 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.233      ;
+; 5.807 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.223      ;
+; 5.809 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.221      ;
+; 5.829 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.207      ;
+; 5.832 ; DragSM:DS1|counter_lpm:C1|out[8]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.198      ;
+; 5.842 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.188      ;
+; 5.842 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.194      ;
+; 5.849 ; DragSM:DS1|counter_lpm:C1|out[8]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.181      ;
+; 5.852 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.184      ;
+; 5.854 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 4.182      ;
+; 5.865 ; DragSM:DS1|counter_lpm:C1|out[5]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 4.165      ;
++-------+-----------------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'Clock'                                                                                                                            ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Idle         ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Red          ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; DragSM:DS1|currState.Am1          ; DragSM:DS1|currState.Am1          ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Green        ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; DragSM:DS1|ACLR                   ; DragSM:DS1|ACLR                   ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.545 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Stage        ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.811      ;
+; 0.797 ; DragSM:DS1|counter_lpm:C1|out[13] ; DragSM:DS1|counter_lpm:C1|out[13] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.063      ;
+; 0.805 ; DragSM:DS1|counter_lpm:C1|out[8]  ; DragSM:DS1|counter_lpm:C1|out[8]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.071      ;
+; 0.806 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|counter_lpm:C1|out[1]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|counter_lpm:C1|out[4]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; DragSM:DS1|counter_lpm:C1|out[10] ; DragSM:DS1|counter_lpm:C1|out[10] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.072      ;
+; 0.807 ; DragSM:DS1|counter_lpm:C1|out[14] ; DragSM:DS1|counter_lpm:C1|out[14] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.073      ;
+; 0.809 ; DragSM:DS1|counter_lpm:C1|out[22] ; DragSM:DS1|counter_lpm:C1|out[22] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.075      ;
+; 0.809 ; DragSM:DS1|counter_lpm:C1|out[6]  ; DragSM:DS1|counter_lpm:C1|out[6]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.075      ;
+; 0.810 ; DragSM:DS1|counter_lpm:C1|out[11] ; DragSM:DS1|counter_lpm:C1|out[11] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.076      ;
+; 0.810 ; DragSM:DS1|counter_lpm:C1|out[12] ; DragSM:DS1|counter_lpm:C1|out[12] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.076      ;
+; 0.813 ; DragSM:DS1|counter_lpm:C1|out[24] ; DragSM:DS1|counter_lpm:C1|out[24] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.079      ;
+; 0.814 ; DragSM:DS1|counter_lpm:C1|out[17] ; DragSM:DS1|counter_lpm:C1|out[17] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.080      ;
+; 0.815 ; DragSM:DS1|counter_lpm:C1|out[20] ; DragSM:DS1|counter_lpm:C1|out[20] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.081      ;
+; 0.821 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|counter_lpm:C1|out[15] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.087      ;
+; 0.838 ; DragSM:DS1|counter_lpm:C1|out[16] ; DragSM:DS1|counter_lpm:C1|out[16] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.104      ;
+; 0.839 ; DragSM:DS1|counter_lpm:C1|out[18] ; DragSM:DS1|counter_lpm:C1|out[18] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.105      ;
+; 0.839 ; DragSM:DS1|counter_lpm:C1|out[19] ; DragSM:DS1|counter_lpm:C1|out[19] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.105      ;
+; 0.841 ; DragSM:DS1|counter_lpm:C1|out[5]  ; DragSM:DS1|counter_lpm:C1|out[5]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.107      ;
+; 0.841 ; DragSM:DS1|counter_lpm:C1|out[21] ; DragSM:DS1|counter_lpm:C1|out[21] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.107      ;
+; 0.842 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|counter_lpm:C1|out[2]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.108      ;
+; 0.842 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|counter_lpm:C1|out[3]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.108      ;
+; 0.842 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|counter_lpm:C1|out[9]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.108      ;
+; 0.842 ; DragSM:DS1|counter_lpm:C1|out[23] ; DragSM:DS1|counter_lpm:C1|out[23] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.108      ;
+; 0.845 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|counter_lpm:C1|out[7]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.111      ;
+; 0.846 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|counter_lpm:C1|out[0]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.112      ;
+; 0.846 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|counter_lpm:C1|out[25] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.112      ;
+; 0.854 ; DragSM:DS1|currState.Am2          ; DragSM:DS1|currState.Am3          ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.120      ;
+; 0.866 ; DragSM:DS1|currState.Am1          ; DragSM:DS1|currState.Am2          ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.132      ;
+; 0.953 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Idle         ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.219      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[13] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[14] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[15] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[16] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[17] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[18] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[19] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[20] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[21] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[22] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[23] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[24] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 0.964 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[25] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.230      ;
+; 1.180 ; DragSM:DS1|counter_lpm:C1|out[13] ; DragSM:DS1|counter_lpm:C1|out[14] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.446      ;
+; 1.188 ; DragSM:DS1|counter_lpm:C1|out[8]  ; DragSM:DS1|counter_lpm:C1|out[9]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.454      ;
+; 1.189 ; DragSM:DS1|counter_lpm:C1|out[10] ; DragSM:DS1|counter_lpm:C1|out[11] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.455      ;
+; 1.189 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|counter_lpm:C1|out[2]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.455      ;
+; 1.190 ; DragSM:DS1|counter_lpm:C1|out[14] ; DragSM:DS1|counter_lpm:C1|out[15] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.456      ;
+; 1.192 ; DragSM:DS1|counter_lpm:C1|out[22] ; DragSM:DS1|counter_lpm:C1|out[23] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.458      ;
+; 1.192 ; DragSM:DS1|counter_lpm:C1|out[6]  ; DragSM:DS1|counter_lpm:C1|out[7]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.458      ;
+; 1.193 ; DragSM:DS1|counter_lpm:C1|out[11] ; DragSM:DS1|counter_lpm:C1|out[12] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.459      ;
+; 1.196 ; DragSM:DS1|counter_lpm:C1|out[24] ; DragSM:DS1|counter_lpm:C1|out[25] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.462      ;
+; 1.197 ; DragSM:DS1|counter_lpm:C1|out[17] ; DragSM:DS1|counter_lpm:C1|out[18] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.463      ;
+; 1.204 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|counter_lpm:C1|out[16] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.470      ;
+; 1.224 ; DragSM:DS1|counter_lpm:C1|out[16] ; DragSM:DS1|counter_lpm:C1|out[17] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.490      ;
+; 1.225 ; DragSM:DS1|counter_lpm:C1|out[19] ; DragSM:DS1|counter_lpm:C1|out[20] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.491      ;
+; 1.225 ; DragSM:DS1|counter_lpm:C1|out[18] ; DragSM:DS1|counter_lpm:C1|out[19] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.491      ;
+; 1.227 ; DragSM:DS1|counter_lpm:C1|out[21] ; DragSM:DS1|counter_lpm:C1|out[22] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.493      ;
+; 1.227 ; DragSM:DS1|counter_lpm:C1|out[5]  ; DragSM:DS1|counter_lpm:C1|out[6]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.493      ;
+; 1.228 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|counter_lpm:C1|out[4]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.494      ;
+; 1.228 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|counter_lpm:C1|out[10] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.494      ;
+; 1.228 ; DragSM:DS1|counter_lpm:C1|out[23] ; DragSM:DS1|counter_lpm:C1|out[24] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.494      ;
+; 1.228 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|counter_lpm:C1|out[3]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.494      ;
+; 1.231 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|counter_lpm:C1|out[8]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.497      ;
+; 1.232 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|counter_lpm:C1|out[1]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.498      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[0]  ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[1]  ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[2]  ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[3]  ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[4]  ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[5]  ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[7]  ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[8]  ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[9]  ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[10] ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[11] ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[12] ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.238 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[6]  ; Clock        ; Clock       ; 0.000        ; 0.006      ; 1.510      ;
+; 1.251 ; DragSM:DS1|counter_lpm:C1|out[13] ; DragSM:DS1|counter_lpm:C1|out[15] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.517      ;
+; 1.259 ; DragSM:DS1|counter_lpm:C1|out[8]  ; DragSM:DS1|counter_lpm:C1|out[10] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.525      ;
+; 1.260 ; DragSM:DS1|counter_lpm:C1|out[10] ; DragSM:DS1|counter_lpm:C1|out[12] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.526      ;
+; 1.260 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|counter_lpm:C1|out[3]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.526      ;
+; 1.261 ; DragSM:DS1|counter_lpm:C1|out[14] ; DragSM:DS1|counter_lpm:C1|out[16] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.527      ;
+; 1.263 ; DragSM:DS1|counter_lpm:C1|out[22] ; DragSM:DS1|counter_lpm:C1|out[24] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.529      ;
+; 1.263 ; DragSM:DS1|counter_lpm:C1|out[6]  ; DragSM:DS1|counter_lpm:C1|out[8]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.529      ;
+; 1.268 ; DragSM:DS1|counter_lpm:C1|out[17] ; DragSM:DS1|counter_lpm:C1|out[19] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.534      ;
+; 1.275 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|counter_lpm:C1|out[17] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.541      ;
+; 1.281 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|counter_lpm:C1|out[5]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.547      ;
+; 1.290 ; DragSM:DS1|counter_lpm:C1|out[20] ; DragSM:DS1|counter_lpm:C1|out[21] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.556      ;
+; 1.291 ; DragSM:DS1|counter_lpm:C1|out[12] ; DragSM:DS1|counter_lpm:C1|out[13] ; Clock        ; Clock       ; 0.000        ; -0.006     ; 1.551      ;
+; 1.295 ; DragSM:DS1|counter_lpm:C1|out[16] ; DragSM:DS1|counter_lpm:C1|out[18] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.561      ;
+; 1.296 ; DragSM:DS1|counter_lpm:C1|out[18] ; DragSM:DS1|counter_lpm:C1|out[20] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.562      ;
+; 1.298 ; DragSM:DS1|counter_lpm:C1|out[21] ; DragSM:DS1|counter_lpm:C1|out[23] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.564      ;
+; 1.298 ; DragSM:DS1|counter_lpm:C1|out[5]  ; DragSM:DS1|counter_lpm:C1|out[7]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.564      ;
+; 1.299 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|counter_lpm:C1|out[11] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.565      ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'Clock'                                                                           ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                            ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------------------+
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|ACLR                   ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|ACLR                   ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[0]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[0]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[10] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[10] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[11] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[11] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[12] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[12] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[13] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[13] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[14] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[14] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[15] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[15] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[16] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[16] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[17] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[17] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[18] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[18] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[19] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[19] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[1]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[1]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[20] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[20] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[21] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[21] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[22] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[22] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[23] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[23] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[24] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[24] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[25] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[25] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[2]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[2]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[3]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[3]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[4]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[4]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[5]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[5]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[6]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[6]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[7]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[7]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[8]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[8]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[9]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[9]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Am1          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Am1          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Am2          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Am2          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Am3          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Am3          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Green        ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Green        ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Idle         ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Idle         ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Red          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Red          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Stage        ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Stage        ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; CLOCK_50|combout                  ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; CLOCK_50|combout                  ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; CLOCK_50~clkctrl|inclk[0]         ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; CLOCK_50~clkctrl|inclk[0]         ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; CLOCK_50~clkctrl|outclk           ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; CLOCK_50~clkctrl|outclk           ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|ACLR|clk                      ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|ACLR|clk                      ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[0]|clk                 ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[0]|clk                 ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[10]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[10]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[11]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[11]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[12]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[12]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[13]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[13]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[14]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[14]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[15]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[15]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[16]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[16]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[17]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[17]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[18]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[18]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[19]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[19]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[1]|clk                 ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[1]|clk                 ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; KEY[*]    ; Clock      ; 8.278 ; 8.278 ; Rise       ; Clock           ;
+;  KEY[0]   ; Clock      ; 8.278 ; 8.278 ; Rise       ; Clock           ;
+; SW[*]     ; Clock      ; 3.854 ; 3.854 ; Rise       ; Clock           ;
+;  SW[1]    ; Clock      ; 3.854 ; 3.854 ; Rise       ; Clock           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; KEY[*]    ; Clock      ; -4.098 ; -4.098 ; Rise       ; Clock           ;
+;  KEY[0]   ; Clock      ; -4.098 ; -4.098 ; Rise       ; Clock           ;
+; SW[*]     ; Clock      ; -0.083 ; -0.083 ; Rise       ; Clock           ;
+;  SW[1]    ; Clock      ; -0.083 ; -0.083 ; Rise       ; Clock           ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Clock      ; 9.712 ; 9.712 ; Rise       ; Clock           ;
+;  HEX0[0]  ; Clock      ; 9.712 ; 9.712 ; Rise       ; Clock           ;
+;  HEX0[1]  ; Clock      ; 9.682 ; 9.682 ; Rise       ; Clock           ;
+;  HEX0[2]  ; Clock      ; 9.692 ; 9.692 ; Rise       ; Clock           ;
+;  HEX0[3]  ; Clock      ; 9.706 ; 9.706 ; Rise       ; Clock           ;
+;  HEX0[4]  ; Clock      ; 9.706 ; 9.706 ; Rise       ; Clock           ;
+;  HEX0[5]  ; Clock      ; 9.696 ; 9.696 ; Rise       ; Clock           ;
+;  HEX0[6]  ; Clock      ; 9.696 ; 9.696 ; Rise       ; Clock           ;
+; HEX1[*]   ; Clock      ; 9.985 ; 9.985 ; Rise       ; Clock           ;
+;  HEX1[0]  ; Clock      ; 9.985 ; 9.985 ; Rise       ; Clock           ;
+;  HEX1[1]  ; Clock      ; 9.985 ; 9.985 ; Rise       ; Clock           ;
+;  HEX1[2]  ; Clock      ; 9.499 ; 9.499 ; Rise       ; Clock           ;
+;  HEX1[3]  ; Clock      ; 9.499 ; 9.499 ; Rise       ; Clock           ;
+;  HEX1[4]  ; Clock      ; 9.519 ; 9.519 ; Rise       ; Clock           ;
+;  HEX1[5]  ; Clock      ; 9.829 ; 9.829 ; Rise       ; Clock           ;
+;  HEX1[6]  ; Clock      ; 9.849 ; 9.849 ; Rise       ; Clock           ;
+; HEX2[*]   ; Clock      ; 6.979 ; 6.979 ; Rise       ; Clock           ;
+;  HEX2[0]  ; Clock      ; 6.964 ; 6.964 ; Rise       ; Clock           ;
+;  HEX2[1]  ; Clock      ; 6.929 ; 6.929 ; Rise       ; Clock           ;
+;  HEX2[2]  ; Clock      ; 6.969 ; 6.969 ; Rise       ; Clock           ;
+;  HEX2[3]  ; Clock      ; 6.979 ; 6.979 ; Rise       ; Clock           ;
+;  HEX2[4]  ; Clock      ; 6.947 ; 6.947 ; Rise       ; Clock           ;
+;  HEX2[5]  ; Clock      ; 6.947 ; 6.947 ; Rise       ; Clock           ;
+;  HEX2[6]  ; Clock      ; 6.937 ; 6.937 ; Rise       ; Clock           ;
+; HEX3[*]   ; Clock      ; 6.928 ; 6.928 ; Rise       ; Clock           ;
+;  HEX3[0]  ; Clock      ; 6.928 ; 6.928 ; Rise       ; Clock           ;
+;  HEX3[1]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[2]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[3]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[4]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[5]  ; Clock      ; 6.628 ; 6.628 ; Rise       ; Clock           ;
+;  HEX3[6]  ; Clock      ; 6.638 ; 6.638 ; Rise       ; Clock           ;
+; HEX4[*]   ; Clock      ; 9.233 ; 9.233 ; Rise       ; Clock           ;
+;  HEX4[0]  ; Clock      ; 9.223 ; 9.223 ; Rise       ; Clock           ;
+;  HEX4[1]  ; Clock      ; 9.233 ; 9.233 ; Rise       ; Clock           ;
+;  HEX4[2]  ; Clock      ; 9.233 ; 9.233 ; Rise       ; Clock           ;
+;  HEX4[3]  ; Clock      ; 8.923 ; 8.923 ; Rise       ; Clock           ;
+;  HEX4[4]  ; Clock      ; 8.943 ; 8.943 ; Rise       ; Clock           ;
+;  HEX4[5]  ; Clock      ; 8.943 ; 8.943 ; Rise       ; Clock           ;
+;  HEX4[6]  ; Clock      ; 9.224 ; 9.224 ; Rise       ; Clock           ;
+; HEX5[*]   ; Clock      ; 9.050 ; 9.050 ; Rise       ; Clock           ;
+;  HEX5[0]  ; Clock      ; 9.038 ; 9.038 ; Rise       ; Clock           ;
+;  HEX5[1]  ; Clock      ; 9.008 ; 9.008 ; Rise       ; Clock           ;
+;  HEX5[2]  ; Clock      ; 9.008 ; 9.008 ; Rise       ; Clock           ;
+;  HEX5[3]  ; Clock      ; 9.050 ; 9.050 ; Rise       ; Clock           ;
+;  HEX5[4]  ; Clock      ; 9.030 ; 9.030 ; Rise       ; Clock           ;
+;  HEX5[5]  ; Clock      ; 9.030 ; 9.030 ; Rise       ; Clock           ;
+;  HEX5[6]  ; Clock      ; 9.046 ; 9.046 ; Rise       ; Clock           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Clock      ; 9.682 ; 9.682 ; Rise       ; Clock           ;
+;  HEX0[0]  ; Clock      ; 9.712 ; 9.712 ; Rise       ; Clock           ;
+;  HEX0[1]  ; Clock      ; 9.682 ; 9.682 ; Rise       ; Clock           ;
+;  HEX0[2]  ; Clock      ; 9.692 ; 9.692 ; Rise       ; Clock           ;
+;  HEX0[3]  ; Clock      ; 9.706 ; 9.706 ; Rise       ; Clock           ;
+;  HEX0[4]  ; Clock      ; 9.706 ; 9.706 ; Rise       ; Clock           ;
+;  HEX0[5]  ; Clock      ; 9.696 ; 9.696 ; Rise       ; Clock           ;
+;  HEX0[6]  ; Clock      ; 9.696 ; 9.696 ; Rise       ; Clock           ;
+; HEX1[*]   ; Clock      ; 9.499 ; 9.499 ; Rise       ; Clock           ;
+;  HEX1[0]  ; Clock      ; 9.985 ; 9.985 ; Rise       ; Clock           ;
+;  HEX1[1]  ; Clock      ; 9.985 ; 9.985 ; Rise       ; Clock           ;
+;  HEX1[2]  ; Clock      ; 9.499 ; 9.499 ; Rise       ; Clock           ;
+;  HEX1[3]  ; Clock      ; 9.499 ; 9.499 ; Rise       ; Clock           ;
+;  HEX1[4]  ; Clock      ; 9.519 ; 9.519 ; Rise       ; Clock           ;
+;  HEX1[5]  ; Clock      ; 9.829 ; 9.829 ; Rise       ; Clock           ;
+;  HEX1[6]  ; Clock      ; 9.849 ; 9.849 ; Rise       ; Clock           ;
+; HEX2[*]   ; Clock      ; 6.929 ; 6.929 ; Rise       ; Clock           ;
+;  HEX2[0]  ; Clock      ; 6.964 ; 6.964 ; Rise       ; Clock           ;
+;  HEX2[1]  ; Clock      ; 6.929 ; 6.929 ; Rise       ; Clock           ;
+;  HEX2[2]  ; Clock      ; 6.969 ; 6.969 ; Rise       ; Clock           ;
+;  HEX2[3]  ; Clock      ; 6.979 ; 6.979 ; Rise       ; Clock           ;
+;  HEX2[4]  ; Clock      ; 6.947 ; 6.947 ; Rise       ; Clock           ;
+;  HEX2[5]  ; Clock      ; 6.947 ; 6.947 ; Rise       ; Clock           ;
+;  HEX2[6]  ; Clock      ; 6.937 ; 6.937 ; Rise       ; Clock           ;
+; HEX3[*]   ; Clock      ; 6.628 ; 6.628 ; Rise       ; Clock           ;
+;  HEX3[0]  ; Clock      ; 6.928 ; 6.928 ; Rise       ; Clock           ;
+;  HEX3[1]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[2]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[3]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[4]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[5]  ; Clock      ; 6.628 ; 6.628 ; Rise       ; Clock           ;
+;  HEX3[6]  ; Clock      ; 6.638 ; 6.638 ; Rise       ; Clock           ;
+; HEX4[*]   ; Clock      ; 8.923 ; 8.923 ; Rise       ; Clock           ;
+;  HEX4[0]  ; Clock      ; 9.223 ; 9.223 ; Rise       ; Clock           ;
+;  HEX4[1]  ; Clock      ; 9.233 ; 9.233 ; Rise       ; Clock           ;
+;  HEX4[2]  ; Clock      ; 9.233 ; 9.233 ; Rise       ; Clock           ;
+;  HEX4[3]  ; Clock      ; 8.923 ; 8.923 ; Rise       ; Clock           ;
+;  HEX4[4]  ; Clock      ; 8.943 ; 8.943 ; Rise       ; Clock           ;
+;  HEX4[5]  ; Clock      ; 8.943 ; 8.943 ; Rise       ; Clock           ;
+;  HEX4[6]  ; Clock      ; 9.224 ; 9.224 ; Rise       ; Clock           ;
+; HEX5[*]   ; Clock      ; 9.008 ; 9.008 ; Rise       ; Clock           ;
+;  HEX5[0]  ; Clock      ; 9.038 ; 9.038 ; Rise       ; Clock           ;
+;  HEX5[1]  ; Clock      ; 9.008 ; 9.008 ; Rise       ; Clock           ;
+;  HEX5[2]  ; Clock      ; 9.008 ; 9.008 ; Rise       ; Clock           ;
+;  HEX5[3]  ; Clock      ; 9.050 ; 9.050 ; Rise       ; Clock           ;
+;  HEX5[4]  ; Clock      ; 9.030 ; 9.030 ; Rise       ; Clock           ;
+;  HEX5[5]  ; Clock      ; 9.030 ; 9.030 ; Rise       ; Clock           ;
+;  HEX5[6]  ; Clock      ; 9.046 ; 9.046 ; Rise       ; Clock           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; SW[0]      ; HEX7[0]     ;    ; 6.414 ; 6.414 ;    ;
+; SW[0]      ; HEX7[1]     ;    ; 6.414 ; 6.414 ;    ;
+; SW[0]      ; HEX7[2]     ;    ; 6.384 ; 6.384 ;    ;
+; SW[0]      ; HEX7[3]     ;    ; 6.384 ; 6.384 ;    ;
+; SW[0]      ; HEX7[4]     ;    ; 6.384 ; 6.384 ;    ;
+; SW[0]      ; HEX7[5]     ;    ; 6.404 ; 6.404 ;    ;
+; SW[0]      ; HEX7[6]     ;    ; 6.404 ; 6.404 ;    ;
+; SW[1]      ; HEX6[0]     ;    ; 6.143 ; 6.143 ;    ;
+; SW[1]      ; HEX6[1]     ;    ; 6.143 ; 6.143 ;    ;
+; SW[1]      ; HEX6[2]     ;    ; 6.143 ; 6.143 ;    ;
+; SW[1]      ; HEX6[3]     ;    ; 6.178 ; 6.178 ;    ;
+; SW[1]      ; HEX6[4]     ;    ; 6.178 ; 6.178 ;    ;
+; SW[1]      ; HEX6[5]     ;    ; 6.158 ; 6.158 ;    ;
+; SW[1]      ; HEX6[6]     ;    ; 6.158 ; 6.158 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; SW[0]      ; HEX7[0]     ;    ; 6.414 ; 6.414 ;    ;
+; SW[0]      ; HEX7[1]     ;    ; 6.414 ; 6.414 ;    ;
+; SW[0]      ; HEX7[2]     ;    ; 6.384 ; 6.384 ;    ;
+; SW[0]      ; HEX7[3]     ;    ; 6.384 ; 6.384 ;    ;
+; SW[0]      ; HEX7[4]     ;    ; 6.384 ; 6.384 ;    ;
+; SW[0]      ; HEX7[5]     ;    ; 6.404 ; 6.404 ;    ;
+; SW[0]      ; HEX7[6]     ;    ; 6.404 ; 6.404 ;    ;
+; SW[1]      ; HEX6[0]     ;    ; 6.143 ; 6.143 ;    ;
+; SW[1]      ; HEX6[1]     ;    ; 6.143 ; 6.143 ;    ;
+; SW[1]      ; HEX6[2]     ;    ; 6.143 ; 6.143 ;    ;
+; SW[1]      ; HEX6[3]     ;    ; 6.178 ; 6.178 ;    ;
+; SW[1]      ; HEX6[4]     ;    ; 6.178 ; 6.178 ;    ;
+; SW[1]      ; HEX6[5]     ;    ; 6.158 ; 6.158 ;    ;
+; SW[1]      ; HEX6[6]     ;    ; 6.158 ; 6.158 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
++-------------------------------+
+; Fast Model Setup Summary      ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; Clock ; 7.746 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; Clock ; 0.215 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+-------+------------------------+
+; Clock ; Slack ; End Point TNS          ;
++-------+-------+------------------------+
+; Clock ; 4.000 ; 0.000                  ;
++-------+-------+------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'Clock'                                                                                                                    ;
++-------+-----------------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+; 7.746 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.286      ;
+; 7.746 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.286      ;
+; 7.773 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.259      ;
+; 7.773 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.259      ;
+; 7.809 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.223      ;
+; 7.812 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.220      ;
+; 7.814 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.218      ;
+; 7.815 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.217      ;
+; 7.836 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.196      ;
+; 7.839 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.193      ;
+; 7.841 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.191      ;
+; 7.842 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.190      ;
+; 7.850 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.176      ;
+; 7.850 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.176      ;
+; 7.870 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.156      ;
+; 7.870 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.156      ;
+; 7.874 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.158      ;
+; 7.880 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.152      ;
+; 7.883 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.149      ;
+; 7.901 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.131      ;
+; 7.913 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.113      ;
+; 7.916 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.110      ;
+; 7.918 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.108      ;
+; 7.919 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.107      ;
+; 7.922 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.110      ;
+; 7.924 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.108      ;
+; 7.925 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.107      ;
+; 7.925 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.107      ;
+; 7.925 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.107      ;
+; 7.927 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.105      ;
+; 7.928 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.104      ;
+; 7.930 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.096      ;
+; 7.930 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.096      ;
+; 7.933 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.093      ;
+; 7.936 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.090      ;
+; 7.938 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.088      ;
+; 7.939 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.087      ;
+; 7.943 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.089      ;
+; 7.945 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.087      ;
+; 7.946 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.086      ;
+; 7.948 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.084      ;
+; 7.952 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.080      ;
+; 7.969 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.063      ;
+; 7.969 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.063      ;
+; 7.978 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.048      ;
+; 7.993 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.033      ;
+; 7.996 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.030      ;
+; 7.998 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.028      ;
+; 7.998 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.028      ;
+; 7.999 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.027      ;
+; 8.016 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.010      ;
+; 8.016 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.010      ;
+; 8.016 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.010      ;
+; 8.016 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 2.010      ;
+; 8.029 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.997      ;
+; 8.032 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 2.000      ;
+; 8.033 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.993      ;
+; 8.033 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.993      ;
+; 8.035 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.997      ;
+; 8.037 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.995      ;
+; 8.038 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.994      ;
+; 8.049 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.977      ;
+; 8.058 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.968      ;
+; 8.059 ; DragSM:DS1|currState.Green        ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.973      ;
+; 8.062 ; DragSM:DS1|currState.Red          ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.970      ;
+; 8.066 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.960      ;
+; 8.066 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.960      ;
+; 8.073 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.959      ;
+; 8.076 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.956      ;
+; 8.079 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.947      ;
+; 8.079 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.947      ;
+; 8.082 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.944      ;
+; 8.082 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.944      ;
+; 8.084 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.942      ;
+; 8.084 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.942      ;
+; 8.085 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.941      ;
+; 8.085 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.947      ;
+; 8.085 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.941      ;
+; 8.096 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.930      ;
+; 8.097 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.935      ;
+; 8.097 ; DragSM:DS1|counter_lpm:C1|out[5]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.929      ;
+; 8.097 ; DragSM:DS1|counter_lpm:C1|out[5]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.929      ;
+; 8.099 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.927      ;
+; 8.101 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.925      ;
+; 8.102 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.924      ;
+; 8.109 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.917      ;
+; 8.127 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.905      ;
+; 8.129 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.903      ;
+; 8.129 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.897      ;
+; 8.130 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.902      ;
+; 8.132 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Am2   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.894      ;
+; 8.134 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Red   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.892      ;
+; 8.135 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|currState.Green ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.891      ;
+; 8.144 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.882      ;
+; 8.144 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|currState.Am1   ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.882      ;
+; 8.148 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Am3   ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.884      ;
+; 8.148 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|ACLR            ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.884      ;
+; 8.150 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; 0.000      ; 1.882      ;
+; 8.154 ; DragSM:DS1|counter_lpm:C1|out[8]  ; DragSM:DS1|currState.Idle  ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.872      ;
+; 8.154 ; DragSM:DS1|counter_lpm:C1|out[8]  ; DragSM:DS1|currState.Stage ; Clock        ; Clock       ; 10.000       ; -0.006     ; 1.872      ;
++-------+-----------------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'Clock'                                                                                                                            ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Idle         ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; DragSM:DS1|currState.Red          ; DragSM:DS1|currState.Red          ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; DragSM:DS1|currState.Am1          ; DragSM:DS1|currState.Am1          ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; DragSM:DS1|currState.Green        ; DragSM:DS1|currState.Green        ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; DragSM:DS1|ACLR                   ; DragSM:DS1|ACLR                   ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.252 ; DragSM:DS1|currState.Idle         ; DragSM:DS1|currState.Stage        ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.404      ;
+; 0.357 ; DragSM:DS1|counter_lpm:C1|out[13] ; DragSM:DS1|counter_lpm:C1|out[13] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.509      ;
+; 0.362 ; DragSM:DS1|counter_lpm:C1|out[8]  ; DragSM:DS1|counter_lpm:C1|out[8]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.514      ;
+; 0.362 ; DragSM:DS1|counter_lpm:C1|out[6]  ; DragSM:DS1|counter_lpm:C1|out[6]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.514      ;
+; 0.363 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|counter_lpm:C1|out[4]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; DragSM:DS1|counter_lpm:C1|out[10] ; DragSM:DS1|counter_lpm:C1|out[10] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; DragSM:DS1|counter_lpm:C1|out[11] ; DragSM:DS1|counter_lpm:C1|out[11] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; DragSM:DS1|counter_lpm:C1|out[12] ; DragSM:DS1|counter_lpm:C1|out[12] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; DragSM:DS1|counter_lpm:C1|out[14] ; DragSM:DS1|counter_lpm:C1|out[14] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.515      ;
+; 0.364 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|counter_lpm:C1|out[1]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.516      ;
+; 0.364 ; DragSM:DS1|counter_lpm:C1|out[22] ; DragSM:DS1|counter_lpm:C1|out[22] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.516      ;
+; 0.365 ; DragSM:DS1|counter_lpm:C1|out[24] ; DragSM:DS1|counter_lpm:C1|out[24] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.517      ;
+; 0.367 ; DragSM:DS1|counter_lpm:C1|out[17] ; DragSM:DS1|counter_lpm:C1|out[17] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.519      ;
+; 0.368 ; DragSM:DS1|counter_lpm:C1|out[20] ; DragSM:DS1|counter_lpm:C1|out[20] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.520      ;
+; 0.369 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|counter_lpm:C1|out[15] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.521      ;
+; 0.371 ; DragSM:DS1|counter_lpm:C1|out[16] ; DragSM:DS1|counter_lpm:C1|out[16] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.523      ;
+; 0.372 ; DragSM:DS1|counter_lpm:C1|out[18] ; DragSM:DS1|counter_lpm:C1|out[18] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; DragSM:DS1|counter_lpm:C1|out[19] ; DragSM:DS1|counter_lpm:C1|out[19] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.524      ;
+; 0.375 ; DragSM:DS1|counter_lpm:C1|out[5]  ; DragSM:DS1|counter_lpm:C1|out[5]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.527      ;
+; 0.375 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|counter_lpm:C1|out[7]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.527      ;
+; 0.375 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|counter_lpm:C1|out[9]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.527      ;
+; 0.376 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|counter_lpm:C1|out[0]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|counter_lpm:C1|out[2]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|counter_lpm:C1|out[3]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; DragSM:DS1|counter_lpm:C1|out[21] ; DragSM:DS1|counter_lpm:C1|out[21] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; DragSM:DS1|counter_lpm:C1|out[23] ; DragSM:DS1|counter_lpm:C1|out[23] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; DragSM:DS1|counter_lpm:C1|out[25] ; DragSM:DS1|counter_lpm:C1|out[25] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.528      ;
+; 0.383 ; DragSM:DS1|currState.Am2          ; DragSM:DS1|currState.Am3          ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.535      ;
+; 0.388 ; DragSM:DS1|currState.Am1          ; DragSM:DS1|currState.Am2          ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.540      ;
+; 0.426 ; DragSM:DS1|currState.Stage        ; DragSM:DS1|currState.Idle         ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.578      ;
+; 0.495 ; DragSM:DS1|counter_lpm:C1|out[13] ; DragSM:DS1|counter_lpm:C1|out[14] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.647      ;
+; 0.500 ; DragSM:DS1|counter_lpm:C1|out[6]  ; DragSM:DS1|counter_lpm:C1|out[7]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.652      ;
+; 0.500 ; DragSM:DS1|counter_lpm:C1|out[8]  ; DragSM:DS1|counter_lpm:C1|out[9]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.652      ;
+; 0.501 ; DragSM:DS1|counter_lpm:C1|out[10] ; DragSM:DS1|counter_lpm:C1|out[11] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.653      ;
+; 0.501 ; DragSM:DS1|counter_lpm:C1|out[11] ; DragSM:DS1|counter_lpm:C1|out[12] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.653      ;
+; 0.501 ; DragSM:DS1|counter_lpm:C1|out[14] ; DragSM:DS1|counter_lpm:C1|out[15] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.653      ;
+; 0.502 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|counter_lpm:C1|out[2]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.654      ;
+; 0.502 ; DragSM:DS1|counter_lpm:C1|out[22] ; DragSM:DS1|counter_lpm:C1|out[23] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.654      ;
+; 0.503 ; DragSM:DS1|counter_lpm:C1|out[24] ; DragSM:DS1|counter_lpm:C1|out[25] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.655      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[13] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[14] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[15] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[16] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[17] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[18] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[19] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[20] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[21] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[22] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[23] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[24] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.504 ; DragSM:DS1|ACLR                   ; DragSM:DS1|counter_lpm:C1|out[25] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.656      ;
+; 0.505 ; DragSM:DS1|counter_lpm:C1|out[17] ; DragSM:DS1|counter_lpm:C1|out[18] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.507 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|counter_lpm:C1|out[16] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.659      ;
+; 0.511 ; DragSM:DS1|counter_lpm:C1|out[16] ; DragSM:DS1|counter_lpm:C1|out[17] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.663      ;
+; 0.512 ; DragSM:DS1|counter_lpm:C1|out[19] ; DragSM:DS1|counter_lpm:C1|out[20] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.664      ;
+; 0.512 ; DragSM:DS1|counter_lpm:C1|out[18] ; DragSM:DS1|counter_lpm:C1|out[19] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.664      ;
+; 0.515 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|counter_lpm:C1|out[8]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.667      ;
+; 0.515 ; DragSM:DS1|counter_lpm:C1|out[5]  ; DragSM:DS1|counter_lpm:C1|out[6]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.667      ;
+; 0.515 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|counter_lpm:C1|out[10] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.667      ;
+; 0.516 ; DragSM:DS1|counter_lpm:C1|out[3]  ; DragSM:DS1|counter_lpm:C1|out[4]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.668      ;
+; 0.516 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|counter_lpm:C1|out[1]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.668      ;
+; 0.516 ; DragSM:DS1|counter_lpm:C1|out[21] ; DragSM:DS1|counter_lpm:C1|out[22] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.668      ;
+; 0.516 ; DragSM:DS1|counter_lpm:C1|out[23] ; DragSM:DS1|counter_lpm:C1|out[24] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.668      ;
+; 0.516 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|counter_lpm:C1|out[3]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.668      ;
+; 0.530 ; DragSM:DS1|counter_lpm:C1|out[13] ; DragSM:DS1|counter_lpm:C1|out[15] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.682      ;
+; 0.535 ; DragSM:DS1|counter_lpm:C1|out[6]  ; DragSM:DS1|counter_lpm:C1|out[8]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.687      ;
+; 0.535 ; DragSM:DS1|counter_lpm:C1|out[8]  ; DragSM:DS1|counter_lpm:C1|out[10] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.687      ;
+; 0.536 ; DragSM:DS1|counter_lpm:C1|out[10] ; DragSM:DS1|counter_lpm:C1|out[12] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.688      ;
+; 0.536 ; DragSM:DS1|counter_lpm:C1|out[14] ; DragSM:DS1|counter_lpm:C1|out[16] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.688      ;
+; 0.537 ; DragSM:DS1|counter_lpm:C1|out[22] ; DragSM:DS1|counter_lpm:C1|out[24] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.689      ;
+; 0.537 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|counter_lpm:C1|out[3]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.689      ;
+; 0.540 ; DragSM:DS1|counter_lpm:C1|out[17] ; DragSM:DS1|counter_lpm:C1|out[19] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.692      ;
+; 0.542 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|counter_lpm:C1|out[17] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.694      ;
+; 0.546 ; DragSM:DS1|counter_lpm:C1|out[16] ; DragSM:DS1|counter_lpm:C1|out[18] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.698      ;
+; 0.547 ; DragSM:DS1|counter_lpm:C1|out[18] ; DragSM:DS1|counter_lpm:C1|out[20] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.699      ;
+; 0.550 ; DragSM:DS1|counter_lpm:C1|out[5]  ; DragSM:DS1|counter_lpm:C1|out[7]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.702      ;
+; 0.550 ; DragSM:DS1|counter_lpm:C1|out[7]  ; DragSM:DS1|counter_lpm:C1|out[9]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.702      ;
+; 0.550 ; DragSM:DS1|counter_lpm:C1|out[9]  ; DragSM:DS1|counter_lpm:C1|out[11] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.702      ;
+; 0.551 ; DragSM:DS1|counter_lpm:C1|out[0]  ; DragSM:DS1|counter_lpm:C1|out[2]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.703      ;
+; 0.551 ; DragSM:DS1|counter_lpm:C1|out[21] ; DragSM:DS1|counter_lpm:C1|out[23] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.703      ;
+; 0.551 ; DragSM:DS1|counter_lpm:C1|out[23] ; DragSM:DS1|counter_lpm:C1|out[25] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.703      ;
+; 0.551 ; DragSM:DS1|counter_lpm:C1|out[2]  ; DragSM:DS1|counter_lpm:C1|out[4]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.703      ;
+; 0.554 ; DragSM:DS1|counter_lpm:C1|out[12] ; DragSM:DS1|counter_lpm:C1|out[13] ; Clock        ; Clock       ; 0.000        ; -0.006     ; 0.700      ;
+; 0.556 ; DragSM:DS1|counter_lpm:C1|out[4]  ; DragSM:DS1|counter_lpm:C1|out[5]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.708      ;
+; 0.561 ; DragSM:DS1|counter_lpm:C1|out[20] ; DragSM:DS1|counter_lpm:C1|out[21] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.713      ;
+; 0.565 ; DragSM:DS1|counter_lpm:C1|out[13] ; DragSM:DS1|counter_lpm:C1|out[16] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.717      ;
+; 0.570 ; DragSM:DS1|counter_lpm:C1|out[6]  ; DragSM:DS1|counter_lpm:C1|out[9]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.722      ;
+; 0.570 ; DragSM:DS1|counter_lpm:C1|out[8]  ; DragSM:DS1|counter_lpm:C1|out[11] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.722      ;
+; 0.571 ; DragSM:DS1|counter_lpm:C1|out[14] ; DragSM:DS1|counter_lpm:C1|out[17] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.723      ;
+; 0.572 ; DragSM:DS1|counter_lpm:C1|out[22] ; DragSM:DS1|counter_lpm:C1|out[25] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.724      ;
+; 0.572 ; DragSM:DS1|counter_lpm:C1|out[1]  ; DragSM:DS1|counter_lpm:C1|out[4]  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.724      ;
+; 0.575 ; DragSM:DS1|counter_lpm:C1|out[17] ; DragSM:DS1|counter_lpm:C1|out[20] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.727      ;
+; 0.577 ; DragSM:DS1|counter_lpm:C1|out[15] ; DragSM:DS1|counter_lpm:C1|out[18] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.729      ;
+; 0.581 ; DragSM:DS1|counter_lpm:C1|out[16] ; DragSM:DS1|counter_lpm:C1|out[19] ; Clock        ; Clock       ; 0.000        ; 0.000      ; 0.733      ;
++-------+-----------------------------------+-----------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'Clock'                                                                           ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                            ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------------------+
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|ACLR                   ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|ACLR                   ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[0]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[0]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[10] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[10] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[11] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[11] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[12] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[12] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[13] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[13] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[14] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[14] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[15] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[15] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[16] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[16] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[17] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[17] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[18] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[18] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[19] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[19] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[1]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[1]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[20] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[20] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[21] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[21] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[22] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[22] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[23] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[23] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[24] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[24] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[25] ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[25] ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[2]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[2]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[3]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[3]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[4]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[4]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[5]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[5]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[6]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[6]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[7]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[7]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[8]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[8]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[9]  ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|counter_lpm:C1|out[9]  ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Am1          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Am1          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Am2          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Am2          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Am3          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Am3          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Green        ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Green        ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Idle         ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Idle         ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Red          ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Red          ;
+; 4.000 ; 5.000        ; 1.000          ; High Pulse Width ; Clock ; Rise       ; DragSM:DS1|currState.Stage        ;
+; 4.000 ; 5.000        ; 1.000          ; Low Pulse Width  ; Clock ; Rise       ; DragSM:DS1|currState.Stage        ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; CLOCK_50|combout                  ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; CLOCK_50|combout                  ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; CLOCK_50~clkctrl|inclk[0]         ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; CLOCK_50~clkctrl|inclk[0]         ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; CLOCK_50~clkctrl|outclk           ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; CLOCK_50~clkctrl|outclk           ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|ACLR|clk                      ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|ACLR|clk                      ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[0]|clk                 ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[0]|clk                 ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[10]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[10]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[11]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[11]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[12]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[12]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[13]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[13]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[14]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[14]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[15]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[15]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[16]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[16]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[17]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[17]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[18]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[18]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[19]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[19]|clk                ;
+; 5.000 ; 5.000        ; 0.000          ; High Pulse Width ; Clock ; Rise       ; DS1|C1|out[1]|clk                 ;
+; 5.000 ; 5.000        ; 0.000          ; Low Pulse Width  ; Clock ; Rise       ; DS1|C1|out[1]|clk                 ;
++-------+--------------+----------------+------------------+-------+------------+-----------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; KEY[*]    ; Clock      ; 4.087 ; 4.087 ; Rise       ; Clock           ;
+;  KEY[0]   ; Clock      ; 4.087 ; 4.087 ; Rise       ; Clock           ;
+; SW[*]     ; Clock      ; 1.374 ; 1.374 ; Rise       ; Clock           ;
+;  SW[1]    ; Clock      ; 1.374 ; 1.374 ; Rise       ; Clock           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; KEY[*]    ; Clock      ; -2.225 ; -2.225 ; Rise       ; Clock           ;
+;  KEY[0]   ; Clock      ; -2.225 ; -2.225 ; Rise       ; Clock           ;
+; SW[*]     ; Clock      ; 0.312  ; 0.312  ; Rise       ; Clock           ;
+;  SW[1]    ; Clock      ; 0.312  ; 0.312  ; Rise       ; Clock           ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Clock      ; 5.370 ; 5.370 ; Rise       ; Clock           ;
+;  HEX0[0]  ; Clock      ; 5.370 ; 5.370 ; Rise       ; Clock           ;
+;  HEX0[1]  ; Clock      ; 5.340 ; 5.340 ; Rise       ; Clock           ;
+;  HEX0[2]  ; Clock      ; 5.350 ; 5.350 ; Rise       ; Clock           ;
+;  HEX0[3]  ; Clock      ; 5.361 ; 5.361 ; Rise       ; Clock           ;
+;  HEX0[4]  ; Clock      ; 5.361 ; 5.361 ; Rise       ; Clock           ;
+;  HEX0[5]  ; Clock      ; 5.351 ; 5.351 ; Rise       ; Clock           ;
+;  HEX0[6]  ; Clock      ; 5.351 ; 5.351 ; Rise       ; Clock           ;
+; HEX1[*]   ; Clock      ; 5.461 ; 5.461 ; Rise       ; Clock           ;
+;  HEX1[0]  ; Clock      ; 5.461 ; 5.461 ; Rise       ; Clock           ;
+;  HEX1[1]  ; Clock      ; 5.461 ; 5.461 ; Rise       ; Clock           ;
+;  HEX1[2]  ; Clock      ; 5.182 ; 5.182 ; Rise       ; Clock           ;
+;  HEX1[3]  ; Clock      ; 5.182 ; 5.182 ; Rise       ; Clock           ;
+;  HEX1[4]  ; Clock      ; 5.202 ; 5.202 ; Rise       ; Clock           ;
+;  HEX1[5]  ; Clock      ; 5.343 ; 5.343 ; Rise       ; Clock           ;
+;  HEX1[6]  ; Clock      ; 5.363 ; 5.363 ; Rise       ; Clock           ;
+; HEX2[*]   ; Clock      ; 3.938 ; 3.938 ; Rise       ; Clock           ;
+;  HEX2[0]  ; Clock      ; 3.924 ; 3.924 ; Rise       ; Clock           ;
+;  HEX2[1]  ; Clock      ; 3.888 ; 3.888 ; Rise       ; Clock           ;
+;  HEX2[2]  ; Clock      ; 3.928 ; 3.928 ; Rise       ; Clock           ;
+;  HEX2[3]  ; Clock      ; 3.938 ; 3.938 ; Rise       ; Clock           ;
+;  HEX2[4]  ; Clock      ; 3.909 ; 3.909 ; Rise       ; Clock           ;
+;  HEX2[5]  ; Clock      ; 3.909 ; 3.909 ; Rise       ; Clock           ;
+;  HEX2[6]  ; Clock      ; 3.899 ; 3.899 ; Rise       ; Clock           ;
+; HEX3[*]   ; Clock      ; 3.891 ; 3.891 ; Rise       ; Clock           ;
+;  HEX3[0]  ; Clock      ; 3.891 ; 3.891 ; Rise       ; Clock           ;
+;  HEX3[1]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[2]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[3]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[4]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[5]  ; Clock      ; 3.744 ; 3.744 ; Rise       ; Clock           ;
+;  HEX3[6]  ; Clock      ; 3.754 ; 3.754 ; Rise       ; Clock           ;
+; HEX4[*]   ; Clock      ; 5.130 ; 5.130 ; Rise       ; Clock           ;
+;  HEX4[0]  ; Clock      ; 5.120 ; 5.120 ; Rise       ; Clock           ;
+;  HEX4[1]  ; Clock      ; 5.130 ; 5.130 ; Rise       ; Clock           ;
+;  HEX4[2]  ; Clock      ; 5.130 ; 5.130 ; Rise       ; Clock           ;
+;  HEX4[3]  ; Clock      ; 4.982 ; 4.982 ; Rise       ; Clock           ;
+;  HEX4[4]  ; Clock      ; 5.002 ; 5.002 ; Rise       ; Clock           ;
+;  HEX4[5]  ; Clock      ; 5.002 ; 5.002 ; Rise       ; Clock           ;
+;  HEX4[6]  ; Clock      ; 5.126 ; 5.126 ; Rise       ; Clock           ;
+; HEX5[*]   ; Clock      ; 5.031 ; 5.031 ; Rise       ; Clock           ;
+;  HEX5[0]  ; Clock      ; 5.021 ; 5.021 ; Rise       ; Clock           ;
+;  HEX5[1]  ; Clock      ; 4.991 ; 4.991 ; Rise       ; Clock           ;
+;  HEX5[2]  ; Clock      ; 4.991 ; 4.991 ; Rise       ; Clock           ;
+;  HEX5[3]  ; Clock      ; 5.031 ; 5.031 ; Rise       ; Clock           ;
+;  HEX5[4]  ; Clock      ; 5.011 ; 5.011 ; Rise       ; Clock           ;
+;  HEX5[5]  ; Clock      ; 5.011 ; 5.011 ; Rise       ; Clock           ;
+;  HEX5[6]  ; Clock      ; 5.027 ; 5.027 ; Rise       ; Clock           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Clock      ; 5.340 ; 5.340 ; Rise       ; Clock           ;
+;  HEX0[0]  ; Clock      ; 5.370 ; 5.370 ; Rise       ; Clock           ;
+;  HEX0[1]  ; Clock      ; 5.340 ; 5.340 ; Rise       ; Clock           ;
+;  HEX0[2]  ; Clock      ; 5.350 ; 5.350 ; Rise       ; Clock           ;
+;  HEX0[3]  ; Clock      ; 5.361 ; 5.361 ; Rise       ; Clock           ;
+;  HEX0[4]  ; Clock      ; 5.361 ; 5.361 ; Rise       ; Clock           ;
+;  HEX0[5]  ; Clock      ; 5.351 ; 5.351 ; Rise       ; Clock           ;
+;  HEX0[6]  ; Clock      ; 5.351 ; 5.351 ; Rise       ; Clock           ;
+; HEX1[*]   ; Clock      ; 5.182 ; 5.182 ; Rise       ; Clock           ;
+;  HEX1[0]  ; Clock      ; 5.461 ; 5.461 ; Rise       ; Clock           ;
+;  HEX1[1]  ; Clock      ; 5.461 ; 5.461 ; Rise       ; Clock           ;
+;  HEX1[2]  ; Clock      ; 5.182 ; 5.182 ; Rise       ; Clock           ;
+;  HEX1[3]  ; Clock      ; 5.182 ; 5.182 ; Rise       ; Clock           ;
+;  HEX1[4]  ; Clock      ; 5.202 ; 5.202 ; Rise       ; Clock           ;
+;  HEX1[5]  ; Clock      ; 5.343 ; 5.343 ; Rise       ; Clock           ;
+;  HEX1[6]  ; Clock      ; 5.363 ; 5.363 ; Rise       ; Clock           ;
+; HEX2[*]   ; Clock      ; 3.888 ; 3.888 ; Rise       ; Clock           ;
+;  HEX2[0]  ; Clock      ; 3.924 ; 3.924 ; Rise       ; Clock           ;
+;  HEX2[1]  ; Clock      ; 3.888 ; 3.888 ; Rise       ; Clock           ;
+;  HEX2[2]  ; Clock      ; 3.928 ; 3.928 ; Rise       ; Clock           ;
+;  HEX2[3]  ; Clock      ; 3.938 ; 3.938 ; Rise       ; Clock           ;
+;  HEX2[4]  ; Clock      ; 3.909 ; 3.909 ; Rise       ; Clock           ;
+;  HEX2[5]  ; Clock      ; 3.909 ; 3.909 ; Rise       ; Clock           ;
+;  HEX2[6]  ; Clock      ; 3.899 ; 3.899 ; Rise       ; Clock           ;
+; HEX3[*]   ; Clock      ; 3.744 ; 3.744 ; Rise       ; Clock           ;
+;  HEX3[0]  ; Clock      ; 3.891 ; 3.891 ; Rise       ; Clock           ;
+;  HEX3[1]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[2]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[3]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[4]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[5]  ; Clock      ; 3.744 ; 3.744 ; Rise       ; Clock           ;
+;  HEX3[6]  ; Clock      ; 3.754 ; 3.754 ; Rise       ; Clock           ;
+; HEX4[*]   ; Clock      ; 4.982 ; 4.982 ; Rise       ; Clock           ;
+;  HEX4[0]  ; Clock      ; 5.120 ; 5.120 ; Rise       ; Clock           ;
+;  HEX4[1]  ; Clock      ; 5.130 ; 5.130 ; Rise       ; Clock           ;
+;  HEX4[2]  ; Clock      ; 5.130 ; 5.130 ; Rise       ; Clock           ;
+;  HEX4[3]  ; Clock      ; 4.982 ; 4.982 ; Rise       ; Clock           ;
+;  HEX4[4]  ; Clock      ; 5.002 ; 5.002 ; Rise       ; Clock           ;
+;  HEX4[5]  ; Clock      ; 5.002 ; 5.002 ; Rise       ; Clock           ;
+;  HEX4[6]  ; Clock      ; 5.126 ; 5.126 ; Rise       ; Clock           ;
+; HEX5[*]   ; Clock      ; 4.991 ; 4.991 ; Rise       ; Clock           ;
+;  HEX5[0]  ; Clock      ; 5.021 ; 5.021 ; Rise       ; Clock           ;
+;  HEX5[1]  ; Clock      ; 4.991 ; 4.991 ; Rise       ; Clock           ;
+;  HEX5[2]  ; Clock      ; 4.991 ; 4.991 ; Rise       ; Clock           ;
+;  HEX5[3]  ; Clock      ; 5.031 ; 5.031 ; Rise       ; Clock           ;
+;  HEX5[4]  ; Clock      ; 5.011 ; 5.011 ; Rise       ; Clock           ;
+;  HEX5[5]  ; Clock      ; 5.011 ; 5.011 ; Rise       ; Clock           ;
+;  HEX5[6]  ; Clock      ; 5.027 ; 5.027 ; Rise       ; Clock           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; SW[0]      ; HEX7[0]     ;    ; 3.450 ; 3.450 ;    ;
+; SW[0]      ; HEX7[1]     ;    ; 3.450 ; 3.450 ;    ;
+; SW[0]      ; HEX7[2]     ;    ; 3.420 ; 3.420 ;    ;
+; SW[0]      ; HEX7[3]     ;    ; 3.420 ; 3.420 ;    ;
+; SW[0]      ; HEX7[4]     ;    ; 3.420 ; 3.420 ;    ;
+; SW[0]      ; HEX7[5]     ;    ; 3.441 ; 3.441 ;    ;
+; SW[0]      ; HEX7[6]     ;    ; 3.441 ; 3.441 ;    ;
+; SW[1]      ; HEX6[0]     ;    ; 3.271 ; 3.271 ;    ;
+; SW[1]      ; HEX6[1]     ;    ; 3.271 ; 3.271 ;    ;
+; SW[1]      ; HEX6[2]     ;    ; 3.271 ; 3.271 ;    ;
+; SW[1]      ; HEX6[3]     ;    ; 3.299 ; 3.299 ;    ;
+; SW[1]      ; HEX6[4]     ;    ; 3.299 ; 3.299 ;    ;
+; SW[1]      ; HEX6[5]     ;    ; 3.279 ; 3.279 ;    ;
+; SW[1]      ; HEX6[6]     ;    ; 3.279 ; 3.279 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; SW[0]      ; HEX7[0]     ;    ; 3.450 ; 3.450 ;    ;
+; SW[0]      ; HEX7[1]     ;    ; 3.450 ; 3.450 ;    ;
+; SW[0]      ; HEX7[2]     ;    ; 3.420 ; 3.420 ;    ;
+; SW[0]      ; HEX7[3]     ;    ; 3.420 ; 3.420 ;    ;
+; SW[0]      ; HEX7[4]     ;    ; 3.420 ; 3.420 ;    ;
+; SW[0]      ; HEX7[5]     ;    ; 3.441 ; 3.441 ;    ;
+; SW[0]      ; HEX7[6]     ;    ; 3.441 ; 3.441 ;    ;
+; SW[1]      ; HEX6[0]     ;    ; 3.271 ; 3.271 ;    ;
+; SW[1]      ; HEX6[1]     ;    ; 3.271 ; 3.271 ;    ;
+; SW[1]      ; HEX6[2]     ;    ; 3.271 ; 3.271 ;    ;
+; SW[1]      ; HEX6[3]     ;    ; 3.299 ; 3.299 ;    ;
+; SW[1]      ; HEX6[4]     ;    ; 3.299 ; 3.299 ;    ;
+; SW[1]      ; HEX6[5]     ;    ; 3.279 ; 3.279 ;    ;
+; SW[1]      ; HEX6[6]     ;    ; 3.279 ; 3.279 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
++-----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                         ;
++------------------+-------+-------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+-------+----------+---------+---------------------+
+; Worst-case Slack ; 4.921 ; 0.215 ; N/A      ; N/A     ; 4.000               ;
+;  Clock           ; 4.921 ; 0.215 ; N/A      ; N/A     ; 4.000               ;
+; Design-wide TNS  ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  Clock           ; 0.000 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
++------------------+-------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; KEY[*]    ; Clock      ; 8.278 ; 8.278 ; Rise       ; Clock           ;
+;  KEY[0]   ; Clock      ; 8.278 ; 8.278 ; Rise       ; Clock           ;
+; SW[*]     ; Clock      ; 3.854 ; 3.854 ; Rise       ; Clock           ;
+;  SW[1]    ; Clock      ; 3.854 ; 3.854 ; Rise       ; Clock           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; KEY[*]    ; Clock      ; -2.225 ; -2.225 ; Rise       ; Clock           ;
+;  KEY[0]   ; Clock      ; -2.225 ; -2.225 ; Rise       ; Clock           ;
+; SW[*]     ; Clock      ; 0.312  ; 0.312  ; Rise       ; Clock           ;
+;  SW[1]    ; Clock      ; 0.312  ; 0.312  ; Rise       ; Clock           ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Clock      ; 9.712 ; 9.712 ; Rise       ; Clock           ;
+;  HEX0[0]  ; Clock      ; 9.712 ; 9.712 ; Rise       ; Clock           ;
+;  HEX0[1]  ; Clock      ; 9.682 ; 9.682 ; Rise       ; Clock           ;
+;  HEX0[2]  ; Clock      ; 9.692 ; 9.692 ; Rise       ; Clock           ;
+;  HEX0[3]  ; Clock      ; 9.706 ; 9.706 ; Rise       ; Clock           ;
+;  HEX0[4]  ; Clock      ; 9.706 ; 9.706 ; Rise       ; Clock           ;
+;  HEX0[5]  ; Clock      ; 9.696 ; 9.696 ; Rise       ; Clock           ;
+;  HEX0[6]  ; Clock      ; 9.696 ; 9.696 ; Rise       ; Clock           ;
+; HEX1[*]   ; Clock      ; 9.985 ; 9.985 ; Rise       ; Clock           ;
+;  HEX1[0]  ; Clock      ; 9.985 ; 9.985 ; Rise       ; Clock           ;
+;  HEX1[1]  ; Clock      ; 9.985 ; 9.985 ; Rise       ; Clock           ;
+;  HEX1[2]  ; Clock      ; 9.499 ; 9.499 ; Rise       ; Clock           ;
+;  HEX1[3]  ; Clock      ; 9.499 ; 9.499 ; Rise       ; Clock           ;
+;  HEX1[4]  ; Clock      ; 9.519 ; 9.519 ; Rise       ; Clock           ;
+;  HEX1[5]  ; Clock      ; 9.829 ; 9.829 ; Rise       ; Clock           ;
+;  HEX1[6]  ; Clock      ; 9.849 ; 9.849 ; Rise       ; Clock           ;
+; HEX2[*]   ; Clock      ; 6.979 ; 6.979 ; Rise       ; Clock           ;
+;  HEX2[0]  ; Clock      ; 6.964 ; 6.964 ; Rise       ; Clock           ;
+;  HEX2[1]  ; Clock      ; 6.929 ; 6.929 ; Rise       ; Clock           ;
+;  HEX2[2]  ; Clock      ; 6.969 ; 6.969 ; Rise       ; Clock           ;
+;  HEX2[3]  ; Clock      ; 6.979 ; 6.979 ; Rise       ; Clock           ;
+;  HEX2[4]  ; Clock      ; 6.947 ; 6.947 ; Rise       ; Clock           ;
+;  HEX2[5]  ; Clock      ; 6.947 ; 6.947 ; Rise       ; Clock           ;
+;  HEX2[6]  ; Clock      ; 6.937 ; 6.937 ; Rise       ; Clock           ;
+; HEX3[*]   ; Clock      ; 6.928 ; 6.928 ; Rise       ; Clock           ;
+;  HEX3[0]  ; Clock      ; 6.928 ; 6.928 ; Rise       ; Clock           ;
+;  HEX3[1]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[2]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[3]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[4]  ; Clock      ; 6.629 ; 6.629 ; Rise       ; Clock           ;
+;  HEX3[5]  ; Clock      ; 6.628 ; 6.628 ; Rise       ; Clock           ;
+;  HEX3[6]  ; Clock      ; 6.638 ; 6.638 ; Rise       ; Clock           ;
+; HEX4[*]   ; Clock      ; 9.233 ; 9.233 ; Rise       ; Clock           ;
+;  HEX4[0]  ; Clock      ; 9.223 ; 9.223 ; Rise       ; Clock           ;
+;  HEX4[1]  ; Clock      ; 9.233 ; 9.233 ; Rise       ; Clock           ;
+;  HEX4[2]  ; Clock      ; 9.233 ; 9.233 ; Rise       ; Clock           ;
+;  HEX4[3]  ; Clock      ; 8.923 ; 8.923 ; Rise       ; Clock           ;
+;  HEX4[4]  ; Clock      ; 8.943 ; 8.943 ; Rise       ; Clock           ;
+;  HEX4[5]  ; Clock      ; 8.943 ; 8.943 ; Rise       ; Clock           ;
+;  HEX4[6]  ; Clock      ; 9.224 ; 9.224 ; Rise       ; Clock           ;
+; HEX5[*]   ; Clock      ; 9.050 ; 9.050 ; Rise       ; Clock           ;
+;  HEX5[0]  ; Clock      ; 9.038 ; 9.038 ; Rise       ; Clock           ;
+;  HEX5[1]  ; Clock      ; 9.008 ; 9.008 ; Rise       ; Clock           ;
+;  HEX5[2]  ; Clock      ; 9.008 ; 9.008 ; Rise       ; Clock           ;
+;  HEX5[3]  ; Clock      ; 9.050 ; 9.050 ; Rise       ; Clock           ;
+;  HEX5[4]  ; Clock      ; 9.030 ; 9.030 ; Rise       ; Clock           ;
+;  HEX5[5]  ; Clock      ; 9.030 ; 9.030 ; Rise       ; Clock           ;
+;  HEX5[6]  ; Clock      ; 9.046 ; 9.046 ; Rise       ; Clock           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; Clock      ; 5.340 ; 5.340 ; Rise       ; Clock           ;
+;  HEX0[0]  ; Clock      ; 5.370 ; 5.370 ; Rise       ; Clock           ;
+;  HEX0[1]  ; Clock      ; 5.340 ; 5.340 ; Rise       ; Clock           ;
+;  HEX0[2]  ; Clock      ; 5.350 ; 5.350 ; Rise       ; Clock           ;
+;  HEX0[3]  ; Clock      ; 5.361 ; 5.361 ; Rise       ; Clock           ;
+;  HEX0[4]  ; Clock      ; 5.361 ; 5.361 ; Rise       ; Clock           ;
+;  HEX0[5]  ; Clock      ; 5.351 ; 5.351 ; Rise       ; Clock           ;
+;  HEX0[6]  ; Clock      ; 5.351 ; 5.351 ; Rise       ; Clock           ;
+; HEX1[*]   ; Clock      ; 5.182 ; 5.182 ; Rise       ; Clock           ;
+;  HEX1[0]  ; Clock      ; 5.461 ; 5.461 ; Rise       ; Clock           ;
+;  HEX1[1]  ; Clock      ; 5.461 ; 5.461 ; Rise       ; Clock           ;
+;  HEX1[2]  ; Clock      ; 5.182 ; 5.182 ; Rise       ; Clock           ;
+;  HEX1[3]  ; Clock      ; 5.182 ; 5.182 ; Rise       ; Clock           ;
+;  HEX1[4]  ; Clock      ; 5.202 ; 5.202 ; Rise       ; Clock           ;
+;  HEX1[5]  ; Clock      ; 5.343 ; 5.343 ; Rise       ; Clock           ;
+;  HEX1[6]  ; Clock      ; 5.363 ; 5.363 ; Rise       ; Clock           ;
+; HEX2[*]   ; Clock      ; 3.888 ; 3.888 ; Rise       ; Clock           ;
+;  HEX2[0]  ; Clock      ; 3.924 ; 3.924 ; Rise       ; Clock           ;
+;  HEX2[1]  ; Clock      ; 3.888 ; 3.888 ; Rise       ; Clock           ;
+;  HEX2[2]  ; Clock      ; 3.928 ; 3.928 ; Rise       ; Clock           ;
+;  HEX2[3]  ; Clock      ; 3.938 ; 3.938 ; Rise       ; Clock           ;
+;  HEX2[4]  ; Clock      ; 3.909 ; 3.909 ; Rise       ; Clock           ;
+;  HEX2[5]  ; Clock      ; 3.909 ; 3.909 ; Rise       ; Clock           ;
+;  HEX2[6]  ; Clock      ; 3.899 ; 3.899 ; Rise       ; Clock           ;
+; HEX3[*]   ; Clock      ; 3.744 ; 3.744 ; Rise       ; Clock           ;
+;  HEX3[0]  ; Clock      ; 3.891 ; 3.891 ; Rise       ; Clock           ;
+;  HEX3[1]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[2]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[3]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[4]  ; Clock      ; 3.753 ; 3.753 ; Rise       ; Clock           ;
+;  HEX3[5]  ; Clock      ; 3.744 ; 3.744 ; Rise       ; Clock           ;
+;  HEX3[6]  ; Clock      ; 3.754 ; 3.754 ; Rise       ; Clock           ;
+; HEX4[*]   ; Clock      ; 4.982 ; 4.982 ; Rise       ; Clock           ;
+;  HEX4[0]  ; Clock      ; 5.120 ; 5.120 ; Rise       ; Clock           ;
+;  HEX4[1]  ; Clock      ; 5.130 ; 5.130 ; Rise       ; Clock           ;
+;  HEX4[2]  ; Clock      ; 5.130 ; 5.130 ; Rise       ; Clock           ;
+;  HEX4[3]  ; Clock      ; 4.982 ; 4.982 ; Rise       ; Clock           ;
+;  HEX4[4]  ; Clock      ; 5.002 ; 5.002 ; Rise       ; Clock           ;
+;  HEX4[5]  ; Clock      ; 5.002 ; 5.002 ; Rise       ; Clock           ;
+;  HEX4[6]  ; Clock      ; 5.126 ; 5.126 ; Rise       ; Clock           ;
+; HEX5[*]   ; Clock      ; 4.991 ; 4.991 ; Rise       ; Clock           ;
+;  HEX5[0]  ; Clock      ; 5.021 ; 5.021 ; Rise       ; Clock           ;
+;  HEX5[1]  ; Clock      ; 4.991 ; 4.991 ; Rise       ; Clock           ;
+;  HEX5[2]  ; Clock      ; 4.991 ; 4.991 ; Rise       ; Clock           ;
+;  HEX5[3]  ; Clock      ; 5.031 ; 5.031 ; Rise       ; Clock           ;
+;  HEX5[4]  ; Clock      ; 5.011 ; 5.011 ; Rise       ; Clock           ;
+;  HEX5[5]  ; Clock      ; 5.011 ; 5.011 ; Rise       ; Clock           ;
+;  HEX5[6]  ; Clock      ; 5.027 ; 5.027 ; Rise       ; Clock           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Progagation Delay                                  ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; SW[0]      ; HEX7[0]     ;    ; 6.414 ; 6.414 ;    ;
+; SW[0]      ; HEX7[1]     ;    ; 6.414 ; 6.414 ;    ;
+; SW[0]      ; HEX7[2]     ;    ; 6.384 ; 6.384 ;    ;
+; SW[0]      ; HEX7[3]     ;    ; 6.384 ; 6.384 ;    ;
+; SW[0]      ; HEX7[4]     ;    ; 6.384 ; 6.384 ;    ;
+; SW[0]      ; HEX7[5]     ;    ; 6.404 ; 6.404 ;    ;
+; SW[0]      ; HEX7[6]     ;    ; 6.404 ; 6.404 ;    ;
+; SW[1]      ; HEX6[0]     ;    ; 6.143 ; 6.143 ;    ;
+; SW[1]      ; HEX6[1]     ;    ; 6.143 ; 6.143 ;    ;
+; SW[1]      ; HEX6[2]     ;    ; 6.143 ; 6.143 ;    ;
+; SW[1]      ; HEX6[3]     ;    ; 6.178 ; 6.178 ;    ;
+; SW[1]      ; HEX6[4]     ;    ; 6.178 ; 6.178 ;    ;
+; SW[1]      ; HEX6[5]     ;    ; 6.158 ; 6.158 ;    ;
+; SW[1]      ; HEX6[6]     ;    ; 6.158 ; 6.158 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
++----------------------------------------------------+
+; Minimum Progagation Delay                          ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; SW[0]      ; HEX7[0]     ;    ; 3.450 ; 3.450 ;    ;
+; SW[0]      ; HEX7[1]     ;    ; 3.450 ; 3.450 ;    ;
+; SW[0]      ; HEX7[2]     ;    ; 3.420 ; 3.420 ;    ;
+; SW[0]      ; HEX7[3]     ;    ; 3.420 ; 3.420 ;    ;
+; SW[0]      ; HEX7[4]     ;    ; 3.420 ; 3.420 ;    ;
+; SW[0]      ; HEX7[5]     ;    ; 3.441 ; 3.441 ;    ;
+; SW[0]      ; HEX7[6]     ;    ; 3.441 ; 3.441 ;    ;
+; SW[1]      ; HEX6[0]     ;    ; 3.271 ; 3.271 ;    ;
+; SW[1]      ; HEX6[1]     ;    ; 3.271 ; 3.271 ;    ;
+; SW[1]      ; HEX6[2]     ;    ; 3.271 ; 3.271 ;    ;
+; SW[1]      ; HEX6[3]     ;    ; 3.299 ; 3.299 ;    ;
+; SW[1]      ; HEX6[4]     ;    ; 3.299 ; 3.299 ;    ;
+; SW[1]      ; HEX6[5]     ;    ; 3.279 ; 3.279 ;    ;
+; SW[1]      ; HEX6[6]     ;    ; 3.279 ; 3.279 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; Clock      ; Clock    ; 1037     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; Clock      ; Clock    ; 1037     ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 3     ; 3    ;
+; Unconstrained Input Port Paths  ; 30    ; 30   ;
+; Unconstrained Output Ports      ; 56    ; 56   ;
+; Unconstrained Output Port Paths ; 56    ; 56   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue May 20 11:34:50 2014
+Info: Command: quartus_sta DragRace -c DragRace
+Info: qsta_default_script.tcl version: #1
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'DragRace.sdc'
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 4.921
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     4.921         0.000 Clock 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 Clock 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 4.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     4.000         0.000 Clock 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 7.746
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     7.746         0.000 Clock 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 Clock 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 4.000
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     4.000         0.000 Clock 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 312 megabytes
+    Info: Processing ended: Tue May 20 11:34:52 2014
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

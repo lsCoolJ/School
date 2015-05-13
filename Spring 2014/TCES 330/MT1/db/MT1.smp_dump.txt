@@ -1,0 +1,16 @@
+
+State Machine - |MT1|MT1FSM:FSM|State
+Name State~5 State~4 State~3 State~2 
+State.SGap 0 0 0 0 
+State.ODash1 0 0 0 1 
+State.ODash2 0 0 1 0 
+State.ODash3 0 0 1 1 
+State.EDot1 0 1 0 0 
+State.LDot1 0 1 0 1 
+State.LDash2 0 1 1 0 
+State.LDot3 0 1 1 1 
+State.LDot4 1 0 0 0 
+State.HDot1 1 0 0 1 
+State.HDot2 1 0 1 0 
+State.HDot3 1 0 1 1 
+State.HDot4 1 1 0 0 

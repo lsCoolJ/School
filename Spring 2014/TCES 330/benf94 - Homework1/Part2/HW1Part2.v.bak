@@ -1,0 +1,12 @@
+/*Homework 1 Part 2 Mux8 module by Ben Foster
+ *TCES 330 4/16/14
+ */
+module Mux8(S, X, Y, M);
+	input S; //Mux select line
+	input [7:0] X, Y; //Mux input vectors
+	output [7:0] M; //Mux output vector
+	
+	//The Mux:
+	assign M[7:0] = (~S & X[7:0]) | (S & Y[7:0]);
+
+endmodule

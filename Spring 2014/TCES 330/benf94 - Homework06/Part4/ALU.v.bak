@@ -1,0 +1,9 @@
+module ALU(A, B, S, Q);
+	input [2:0] S;
+	input [15:0] A, B;
+	output [15:0] Q;
+
+	
+
+	
+endmodule

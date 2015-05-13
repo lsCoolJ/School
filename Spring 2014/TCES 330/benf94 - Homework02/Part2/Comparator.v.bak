@@ -1,0 +1,7 @@
+module Comparator(SW, M);
+	input [3:0] SW;
+	output M;
+	
+	assign M = SW[3];
+	
+endmodule
