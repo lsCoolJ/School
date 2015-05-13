@@ -1,0 +1,399 @@
+\documentclass{article}
+
+% Packages
+\usepackage[utf8]{inputenc} %for modern characters
+\usepackage{microtype} % for sexy kerning
+\usepackage{hyperref} %for cross-referencing and urls
+\usepackage{mathtools} % for math stuff
+\usepackage{amssymb} % for math symbols
+\usepackage{tabularx} % For making tables
+\usepackage{listings} % For writing code
+\usepackage{pdfpages} % For including pdfs
+
+% Set the margins
+\usepackage[scale=0.8,top=1in,bottom=1in]{geometry}
+
+% Other Front Matter
+\newcommand{\code}[1]{\texttt{#1}} % More readable for writing inline code.
+\newcommand{\p}[1]{\paragraph{#1}} % Easier to type out for paragraph command.
+\newcommand{\tib}[1]{\textbf{\textit{#1}}} % Easier to type than bf and it commands.
+%\newcommand{\tab}{\hspace*{3em}} % Set tab spaces.
+\setlength{\parindent}{0pt} % Get rid of indents.
+\setcounter{tocdepth}{3} % sections, subsections and subsubsections in TOC.
+
+%%%%%%%%%%%%%%%%%%%% Begin Document %%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Title page and TOC
+{
+	\title{Notes for Matrix Algebra \\ TMATH 308}
+	\author{Ben Foster\thanks{
+		Institute of Technolgy, University of Washington Tacoma} \\
+		\url{benf94@uw.edu}
+	}
+	\date{March 31, 2015}
+	\maketitle
+	\thispagestyle{empty} % No page number at bottom
+	\begin{abstract}
+	\centering
+		This document contains the notes from the course TMATH 308 and does not necessarily
+		contain all the information provided by the instructor or textbook.
+	\end{abstract}
+	\clearpage
+	\pagenumbering{roman}
+	\tableofcontents
+	\clearpage
+	\setcounter{page}{1}
+	\pagenumbering{arabic}
+}
+
+\section{Vectors} %%% Chapter 1
+	
+	\subsection{Geometry and Algebra of Vectors}
+	A vector is a way of describing direction and magnitude. Vectors can be written in the following 
+	forms:
+	\[ \vec{b} = \textbf{b} = [-1,3] = <-1,3> = {-1 \brack 3} \]
+	
+	There is also such a thing as the \textbf{zero vector} where the vector has no direction and zero 
+	magnitude. \\
+	
+	Vector addition is easy:
+	\[ \vec{u} + \vec{v} = <u_1 + v_1, u_2 + v_2> \]
+	
+	The head to tail rule: Given vectors $\vec{u}$ and $\vec{v}$ in $\mathbb{R}^2$, translate $
+	\vec{v}$ so 
+	that its tail coincides with the head of $\vec{u}$. The sum of $\vec{u}$ and $\vec{v}$ is the 
+	vector from the tail of $\vec{u}$ to the head of $\vec{v}$.\\
+	
+	Subtraction works very similar to addition and you can multiply vectors by scalars:
+	\[ c\vec{v} = c<v_1,v_2> = <cv_1, cv_2> \]
+	
+		\subsubsection{Theorem 1.1}
+		Algebraic Properties of Vectors in $\mathbb{R}^n$ \\
+		Let $\vec{u}, \vec{v}, and \vec{w}$ be vectors in $\mathbb{R}^n$ and let $c$ and $d$ be 
+		scalars.
+		\begin{itemize}
+			\item{$\vec{u}+\vec{v} = \vec{v}+\vec{y}$}
+			\item{$(\vec{u}+\vec{v}) + \vec{w} = \vec{u}+(\vec{v}+\vec{w}$}
+			\item{$\vec{u}+\vec{0} = \vec{u}$}
+			\item{$\vec{u}+(-\vec{u})=\vec{0}$}
+			\item{$c(\vec{u}+\vec{v})=c\vec{u}+c\vec{v}$}
+			\item{$(c+d)\vec{u}=c\vec{u}+d\vec{u}$}
+			\item{$c(d\vec{u})=(cd)\vec{u}$}
+			\item{$1\vec{u} = \vec{u}$}
+		\end{itemize}
+	
+	\p{Linear Combinations and Coordinates}
+	A vector that is the sum of scalar multiples of other vectors is said to be a linear combination of 
+	those vectors. The formal definition follows:\\
+	A vector $\vec{v}$ is a \textit{\textbf{linear combination}} of vectors $\vec{v_1},\vec{v_2},...,
+	\vec{v_k}$ if there are scalars $c_1,c_2,...,c_k$ such that $\vec{v}
+	=c_1\vec{v_1}+c_2\vec{v_2}+...+c_k\vec{v_k}$. The scalars $c_1,c_2,...,c_k$ are called the 
+	\textit{\textbf{coefficients}} of the linear combination.
+	
+	\p{n-ary vectors}
+	When writing $\mathbb{Z}_n^k$ we are saying the vectors of size $k$ with integers modulo $n
+	$.
+	
+	\subsection{The Dot Product}
+	Definition: \\
+	If $\vec{u} = <u_1,u_2,...,u_n>$ and $ \vec{v} = <v_1,v_2,...,v_n>$ then the \textbf{dot product} 
+	of $\vec{u}$ and $\vec{v}$ is defined by:
+	\[ \vec{u} \cdot \vec{v} = u_1v_1 + u_2v_2 +...+ u_nv_n \]
+	
+		\subsubsection{Theorem 1.2}
+		Let $\vec{u},\vec{v} and \vec{w}$ be vectors in $\mathbb{R}^n$ and let $c$ be a scalar.
+		\begin{itemize}
+			\item{$\vec{u}\cdot\vec{v}=\vec{v}\cdot\vec{u}$}
+			\item{$\vec{u}\cdot(\vec{v}+\vec{w})=\vec{u}\cdot\vec{v}+\vec{u}\cdot\vec{w}$}
+			\item{$(c\vec{u})\cdot\vec{v}=c(\vec{u}\cdot\vec{v})$}
+			\item{$\vec{u}\cdot\vec{u}\ge0$ and $\vec{u}\cdot\vec{u}=0$ if and only if $\vec{u} 
+			= \vec{0}$}
+		\end{itemize}
+		
+	\p{Definition} The \textbf{length} of a vector $\vec{v}=<v_1,v_2,...,v_n>$ in $\mathbb{R}^n$ is 
+	the non-negative scalar $||\vec{v}||$ defined by:
+	\[ ||\vec{v}|| = \sqrt{\vec{v}\cdot\vec{v}} = \sqrt{v_1^2+v_2^2+...+v_n^2} \]
+	
+		\subsubsection{Theorem 1.3}
+		Let $\vec{v}$ be a vector in $\mathbb{R}^n$ and let $c$ be a scalar. Then
+		\begin{itemize}
+			\item{$||\vec{v}|| = 0$ if and only if $\vec{v}=\vec{0}$}
+			\item{$||c\vec{v}|| = (|c|)||\vec{v}||$}
+		\end{itemize}
+	The \textbf{unit vector} of a vector is a vector with magnitude 1 and direction of the original 
+	vector. It is found by doing this for a vector $\vec{v}$:
+	\[ \vec{u} = \frac{\vec{v}}{||\vec{v}||} \]
+	
+		\subsubsection{Theorem 1.4}
+		The \textbf{Cauchy=Schwarz Inequality}: \\
+		For all vectors $\vec{u}$ and $\vec{v}$ in $\mathbb{R}^n$
+		\[ |\vec{u}\cdot\vec{v}| \le ||\vec{u}|| ||\vec{v}|| \]
+		
+		\subsubsection{Theorem 1.5}
+		The \textbf{Triangle Inequality}: \\
+		For all vectors $\vec{u}$ and $\vec{v}$ in $\mathbb{R}^n$
+		\[ ||\vec{u}+\vec{v}|| \le ||\vec{u}||+||\vec{v}|| \]
+		
+		\p{Distance} The distance between two vectors is the direct analogue of the distance 
+		between two points on the real number line or two points in the Cartesian plane. \\
+		
+		The \textbf{distance} between vectors $\vec{u}$ and $\vec{v}$ in $\mathbb{R}^n$ is 
+		defined by: 
+		\[ d(\vec{u},\vec{v}) = ||\vec{u}-\vec{v}|| \]
+		
+		\clearpage
+		\p{Angles} The dot product can also be used to calculate the angle between a pair of 
+		vectors.
+		For non-zero vectors $\vec{u}$ and $\vec{v}$ in $\mathbb{R}^n$,
+		\[ cos\theta = \frac{\vec{u}\cdot\vec{v}}{||\vec{u}|| ||\vec{v}||} \]
+		
+		\begin{table}[!htb]
+		\centering
+		\begin{tabular}{ | c | c | c | c | c | c | } \hline
+			$\theta$ & $0^{\circ}$ & $30^{\circ}$ & $45^{\circ}$ & $60^{\circ}$ & $90^{\circ}$ \\ 
+			\hline
+			$cos\theta$ & $\frac{\sqrt{4}}{2}=1$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2} = 
+			\frac{1}{\sqrt{2}}$ & $\frac{\sqrt{1}}{2} = \frac{1}{2}$ & $\frac{\sqrt{0}}{2} = 0$ \\ \hline
+		\end{tabular}
+		\caption{Cosines of Special Angles}
+		\label{tab:spec_angles}
+		\end{table}
+	
+	\p{Orthogonal Vectors} The concept of perpendicularity is fundamental to geometry. \\
+	The two vectors $\vec{u}$ and $\vec{v}$ in $\mathbb{R}^n$ are \textbf{orthogonal} to each 
+	other if $\vec{u}\cdot\vec{v}=0$.
+	
+		\subsubsection{Theorem 1.6}
+		\textbf{Pythagoras' Theorem} \\
+		For all vectors $\vec{u}$ and $\vec{v}$ in $\mathbb{R}^n$, $||\vec{u}+\vec{v}||^2 = ||
+		\vec{u}||^2 + ||\vec{v}||^2$ if and only if $\vec{u}$ and $\vec{v}$ are orthogonal.
+		
+	\p{Projections}
+	We will now consider the problem of finding the distance from a point to a line in the context of 
+	vectors. \\
+	If $\vec{u}$ and $\vec{v}$ are vectors in $\mathbb{R}^n$ and $\vec{u}\neq\vec{0}$, then the 
+	\textbf{projection of $\vec{v}$ onto $\vec{u}$} is the vector $proj_{\vec{u}}(\vec{v})$ defined by:
+	\[ proj_{\vec{u}}(\vec{v}) = \left(\frac{\vec{u}\cdot\vec{v}}{\vec{u}\cdot\vec{u}}\right)\vec{u} \]
+	
+	\subsection{Lines and Planes}
+	The \textbf{normal form} of the equation of line $\ell$ in $\mathbb{R}$ is
+	\[ \vec{n}\cdot(\vec{x}-\vec{p}) = 0 \text{ or } \vec{n}\cdot\vec{x} = \vec{n}\cdot\vec{p} \]
+	where $\vec{p}$ is a specific point on $\ell$ and $\vec{n}\neq\vec{0}$ is a normal vector for $\ell
+	$. The \textbf{General Form} of the equation of $\ell$ is $ax+by=c$ where $\vec{n}=<a,b>$.
+	
+	\subsection{Applications}
+		\subsubsection{Force Vectors}
+		We can use vectors to model force. It is often the case that multiple forces act on an object. 
+		In such situations, the net result of all the forces acting together is a single force called the 
+		\tib{resultant}, which is simply the vector sum of the individual forces. When 
+		several forces act on an object, it is possible that the resultant force is zero. In this case, the 
+		object is clearly not moving in any direction and we say that it is in
+		\tib{equilibrium}. When an object is in equilibrium, and the force vectors acting on 
+		it are arranged head-to-tail, the result is a closed polygon.
+		\iffalse %%%%%%%%%%% TAKE PICTURES OF BOOK page 50 figures 1.72 and 1.73
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=2in]{resultant_forces.jpg} 
+			\caption{The resultant of two forces}
+			\label{fig:resultant_forces}
+		\end{figure}
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=2in]{equilibrium_forces.jpg} 
+			\caption{Forces in equilibrium}
+			\label{fig:equilibrium_forces}
+		\end{figure}
+		\fi
+		
+		We can use basic trigonometry to find the forces acting in a particular direction. For 
+		example, if the angle between the force vector and the x-axis is $20^{\circ}$ then the 
+		amount of force acting in the x direction is $||f_x|| = ||f||cos(20^{\circ})$ and the amount of 
+		force acting in the y direction is $||f_y|| = ||f||sin(20^{\circ})$. \\
+		
+		We can also use the law of sines to determine forces. For example, given the figure:
+		\iffalse%%%%%%%%%%% TAKE PICTURES OF BOOK page 53 figure 1.78
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=2in]{law_of_sines.jpg} 
+			\caption{Law of sines example}
+			\label{fig:law_of_sines}
+		\end{figure}
+		\fi
+		And then using the law of sines, we get:
+		\[ \frac{||f_1||}{sin45^{\circ}} = \frac{||f_2||}{sin30^{\circ}} = \frac{||r||}{sin105^{\circ}} \]
+		
+		\subsubsection{Code Vectors}
+		Sometimes the intent of transmitting information using codes is to disguise the message 
+		being sent. In this section we will use vectors to design codes for detecting errors that can 
+		not only detect but also correct errors. The vectors that arise in the study of codes are not 
+		vectors in $\mathbb{R}^n$ but vectors in $\mathbb{Z}_m^n$. In practice, we have a 
+		message we wish to transmit. We begin by encoding each "word" of the message as a 
+		binary vector. \\
+		
+		\p{Definition} A \tib{binary code} is a set of binary vectors (of the same length) called 
+		\tib{code vectors}. The process of converting a message into code vectors is called 
+		\tib{encoding}, and the reverse process is called \tib{decoding}. \\
+		
+		The message to be transmitted may itself consist of binary vectors. In this case, a simple 
+		but useful error-detecting code is a \tib{parity check code}, which is created by appending
+		an extra component called a \tib{check digit} to each vector so that the parity (the total 
+		number of 1s) is even. \\
+		
+		Let's look at this concept a bit more formally. Suppose the message is the binary vector $
+		\vec{b} = <b_1,b_2,...,b_n>$ in $\mathbb{Z}_2^n$. Then the parity check code vector is $
+		\vec{v} = <b_1,b_2,...,b_n,d>$ in $\mathbb{Z}_2^{n+1}$ where the check digit $d$ is chosen 
+		so that:
+		\[ b_1 + b_2 + ... + b_n + d = 0 \text{ in } \mathbb{Z}_2 \]
+		or equivalently so that
+		\[ \vec{1} \cdot \vec{v} = 0 \]
+		Parity check codes are a special case of the more general \tib{check digit codes}, which we 
+		will consider after first extending the foregoing ideas to more general settings. Codes using 
+		$m$-ary vectors are called \tib{m-ary codes}. For example, let $\vec{b} = <b_1,b_2,...,b_n>$ 
+		be a vector in $\mathbb{Z}_3^n$. Then a check digit code vector may be defined by $\vec{v} 
+		= <b_1,b_2,...,b_n,d>$, with the check digit $d$ chosen so that $\vec{1} \cdot \vec{v} = 0$. \\
+		
+		While simple check digit codes will detect single errors, it is often important to catch other 
+		common types of errors as well, such as the accidental interchange, or \textit{transposition}, 
+		of two adjacent components. For such purposes, other types of check digit codes have been 
+		designed. Many of these simply replace the check vector $\vec{1}$ by some other carefully 
+		chosen vector $\vec{c}$. 
+		
+		\p{The Universal Product Code} or UPC, is a code associated with the bar codes found on 
+		many types of merchandise. The black and white bars that are scanned by a laser at a 
+		store's checkout counter correspond to a 10-ary vector $\vec{u} = <u_1,u_2,...,u_{11},d>$ of 
+		length 12. The first 11 components form a vector in $\mathbb{Z}_{10}^{11}$ that gives 
+		manufacturer and product information; The last component $d$ is a check digit chosen so 
+		that $\vec{c} \cdot \vec{u} = 0 \text{ in } \mathbb{Z}_10$, where the check vector $\vec{c} = 
+		<3,1,3,1,3,1,3,1,3,1,3,1>$. 
+		
+		\p{The 10-digit International Standard Book Number} (ISBN-10) code is another widely used 
+		check digit code. It is designed to detect more types of errors than the UPC and, 
+		consequently, is slightly more complicated. \\ The code vector is a vector in $\mathbb{Z}
+		_{11}^{10}$. The first nine components five country, publisher, and book information; the 
+		tenth component is the check digit. For the ISBN-10 code, the check vector is the vector $
+		\vec{c} = <10,9,8,7,6,5,4,3,2,1>$ and we require that $\vec{c} \cdot \vec{b} = 0 \text{ in } 
+		\mathbb{Z}_{11}$.
+
+\clearpage
+\section{Systems of Linear Equations} %%% Chapter 2
+
+	\subsection{Intro to Systems of Linear Equations}
+	
+	\subsection{Direct Methods for Solving}
+	
+	\subsection{Spanning Sets and Linear Independence}
+	
+	\subsection{Applications}
+	
+		\subsubsection{Allocation of Resources}
+		\subsubsection{Balancing Chemical Equations}
+		\subsubsection{Network Analysis}
+		\subsubsection{Electrical Networks}
+		\subsubsection{Linear Economic Models}
+		\subsubsection{Finite Linear Games}
+	
+	\subsection{Iterative Methods for Solving}
+
+\clearpage
+\section{Matrices} %%% Chapter 3
+
+	\subsection{Intro to Matrices in Action}
+	
+	\subsection{Matrix Operations}
+	
+	\subsection{Matrix Algebra}
+	
+	\subsection{The inverse of a Matrix}
+	
+	\subsection{The \textit{LU} Factorization}
+	
+	\subsection{Subspaces, Basis, Dimension, and Rank}
+	
+	\subsection{Intro to Linear Transformations}
+	
+	\subsection{Applications}
+	
+		\subsubsection{Markov Chains}
+		\subsubsection{Linear Economic Models}
+		\subsubsection{Population Growth}
+		\subsubsection{Graphs and Digraphs}
+		\subsubsection{Error-Correcting Codes}
+	
+\clearpage
+\section{Eigenvalues and Eigenvectors} %%% Chapter 4
+
+	\subsection{Introduction}
+	
+	\subsection{Determinants}
+	
+	\subsection{Eigenvalues and vectors of $n \times n$ Matrices}
+	
+	\subsection{Similarity and Diagonalization}
+	
+	\subsection{Iterative Methods for Computing Eigenvalues}
+	
+	\subsection{Applications and the Perron-Frobenius Theorem}
+	
+		\subsubsection{Markov Chains}
+		\subsubsection{Population Growth}
+		\subsubsection{The Perron-Frobenius Theorem}
+		\subsubsection{Linear Recurrence Relations}
+		\subsubsection{Systems of Linear Differential Equations}
+		\subsubsection{Discrete Linear Dynamical Systems}
+
+\clearpage	
+\section{Orthogonality} %%% Chapter 5
+
+	\subsection{Orthogonality in $\mathbb{R}^n$}
+	
+	\subsection{Orthogonal Complements and Orthogonal Projections}
+	
+	\subsection{The Gram-Schmidt Process and the QR Factorization}
+	
+	\subsection{Orthogonal Diagonalization of Symmetric Matrices}
+	
+	\subsection{Applications}
+	
+		\subsubsection{Dual Codes}
+		\subsubsection{Quadratic Forms}
+		\subsubsection{Graphing Quadratic Equations}
+
+\clearpage	
+\section{Vector Spaces} %%% Chapter 6
+
+	\subsection{Vector Spaces and Subspaces}
+	
+	\subsection{Linear Independence, Basis, and Dimension}
+	
+	\subsection{Change of Basis}
+	
+	\subsection{Linear Transformations}
+	
+	\subsection{The Kernel and Range of a Linear Transformation}
+	
+	\subsection{The Matrix of a Linear Transformation}
+	
+	\subsection{Applications}
+	
+		\subsubsection{Homogeneous Linear Differential Equations}
+		\subsubsection{Linear Codes}
+	
+\clearpage	
+\section{Distance and Approximation} %%% Chapter 7
+
+	\subsection{Inner Product Spaces}
+	
+	\subsection{Norms and Distance Functions}
+	
+	\subsection{Least Squares Approximation}
+	
+	\subsection{The Singular Value Decomposition}
+	
+	\subsection{Applications}
+	
+		\subsubsection{Approximation of Functions}
+		\subsubsection{Error-Correcting Codes}
+
+\end{document}

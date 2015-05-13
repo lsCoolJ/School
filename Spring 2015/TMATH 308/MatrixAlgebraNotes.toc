@@ -1,0 +1,89 @@
+\contentsline {section}{\numberline {1}Vectors}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Geometry and Algebra of Vectors}{1}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Theorem 1.1}{1}{subsubsection.1.1.1}
+\contentsline {paragraph}{Linear Combinations and Coordinates}{1}{section*.2}
+\contentsline {paragraph}{n-ary vectors}{1}{section*.3}
+\contentsline {subsection}{\numberline {1.2}The Dot Product}{1}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Theorem 1.2}{2}{subsubsection.1.2.1}
+\contentsline {paragraph}{Definition}{2}{section*.4}
+\contentsline {subsubsection}{\numberline {1.2.2}Theorem 1.3}{2}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Theorem 1.4}{2}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}Theorem 1.5}{2}{subsubsection.1.2.4}
+\contentsline {paragraph}{Distance}{2}{section*.5}
+\contentsline {paragraph}{Angles}{3}{section*.6}
+\contentsline {paragraph}{Orthogonal Vectors}{3}{section*.7}
+\contentsline {subsubsection}{\numberline {1.2.5}Theorem 1.6}{3}{subsubsection.1.2.5}
+\contentsline {paragraph}{Projections}{3}{section*.8}
+\contentsline {subsection}{\numberline {1.3}Lines and Planes}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Applications}{3}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Force Vectors}{3}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Code Vectors}{4}{subsubsection.1.4.2}
+\contentsline {paragraph}{Definition}{4}{section*.9}
+\contentsline {paragraph}{The Universal Product Code}{4}{section*.10}
+\contentsline {paragraph}{The 10-digit International Standard Book Number}{4}{section*.11}
+\contentsline {section}{\numberline {2}Systems of Linear Equations}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Intro to Systems of Linear Equations}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Direct Methods for Solving}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Spanning Sets and Linear Independence}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Applications}{5}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Allocation of Resources}{5}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Balancing Chemical Equations}{5}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Network Analysis}{5}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Electrical Networks}{5}{subsubsection.2.4.4}
+\contentsline {subsubsection}{\numberline {2.4.5}Linear Economic Models}{5}{subsubsection.2.4.5}
+\contentsline {subsubsection}{\numberline {2.4.6}Finite Linear Games}{5}{subsubsection.2.4.6}
+\contentsline {subsection}{\numberline {2.5}Iterative Methods for Solving}{5}{subsection.2.5}
+\contentsline {section}{\numberline {3}Matrices}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Intro to Matrices in Action}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Matrix Operations}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Matrix Algebra}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}The inverse of a Matrix}{6}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}The \textit {LU} Factorization}{6}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Subspaces, Basis, Dimension, and Rank}{6}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Intro to Linear Transformations}{6}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Applications}{6}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}Markov Chains}{6}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}Linear Economic Models}{6}{subsubsection.3.8.2}
+\contentsline {subsubsection}{\numberline {3.8.3}Population Growth}{6}{subsubsection.3.8.3}
+\contentsline {subsubsection}{\numberline {3.8.4}Graphs and Digraphs}{6}{subsubsection.3.8.4}
+\contentsline {subsubsection}{\numberline {3.8.5}Error-Correcting Codes}{6}{subsubsection.3.8.5}
+\contentsline {section}{\numberline {4}Eigenvalues and Eigenvectors}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Introduction}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Determinants}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Eigenvalues and vectors of $n \times n$ Matrices}{7}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Similarity and Diagonalization}{7}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Iterative Methods for Computing Eigenvalues}{7}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Applications and the Perron-Frobenius Theorem}{7}{subsection.4.6}
+\contentsline {subsubsection}{\numberline {4.6.1}Markov Chains}{7}{subsubsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.2}Population Growth}{7}{subsubsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.3}The Perron-Frobenius Theorem}{7}{subsubsection.4.6.3}
+\contentsline {subsubsection}{\numberline {4.6.4}Linear Recurrence Relations}{7}{subsubsection.4.6.4}
+\contentsline {subsubsection}{\numberline {4.6.5}Systems of Linear Differential Equations}{7}{subsubsection.4.6.5}
+\contentsline {subsubsection}{\numberline {4.6.6}Discrete Linear Dynamical Systems}{7}{subsubsection.4.6.6}
+\contentsline {section}{\numberline {5}Orthogonality}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Orthogonality in $\mathbb {R}^n$}{8}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Orthogonal Complements and Orthogonal Projections}{8}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}The Gram-Schmidt Process and the QR Factorization}{8}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Orthogonal Diagonalization of Symmetric Matrices}{8}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Applications}{8}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Dual Codes}{8}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}Quadratic Forms}{8}{subsubsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.3}Graphing Quadratic Equations}{8}{subsubsection.5.5.3}
+\contentsline {section}{\numberline {6}Vector Spaces}{9}{section.6}
+\contentsline {subsection}{\numberline {6.1}Vector Spaces and Subspaces}{9}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Linear Independence, Basis, and Dimension}{9}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Change of Basis}{9}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Linear Transformations}{9}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}The Kernel and Range of a Linear Transformation}{9}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}The Matrix of a Linear Transformation}{9}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Applications}{9}{subsection.6.7}
+\contentsline {subsubsection}{\numberline {6.7.1}Homogeneous Linear Differential Equations}{9}{subsubsection.6.7.1}
+\contentsline {subsubsection}{\numberline {6.7.2}Linear Codes}{9}{subsubsection.6.7.2}
+\contentsline {section}{\numberline {7}Distance and Approximation}{10}{section.7}
+\contentsline {subsection}{\numberline {7.1}Inner Product Spaces}{10}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Norms and Distance Functions}{10}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Least Squares Approximation}{10}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}The Singular Value Decomposition}{10}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Applications}{10}{subsection.7.5}
+\contentsline {subsubsection}{\numberline {7.5.1}Approximation of Functions}{10}{subsubsection.7.5.1}
+\contentsline {subsubsection}{\numberline {7.5.2}Error-Correcting Codes}{10}{subsubsection.7.5.2}

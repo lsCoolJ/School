@@ -1,0 +1,34 @@
+\contentsline {section}{First Problem}{1}
+\contentsline {section}{Second Problem}{2}
+\contentsline {paragraph}{Answer to a}{2}
+\contentsline {paragraph}{Answer to b}{2}
+\contentsline {section}{Third Problem}{3}
+\contentsline {paragraph}{Answer to a}{3}
+\contentsline {paragraph}{Answer to b}{4}
+\contentsline {paragraph}{Answer to c}{4}
+\contentsline {paragraph}{Answer to d}{4}
+\contentsline {section}{Seventh Problem}{5}
+\contentsline {paragraph}{Overall note:}{5}
+\contentsline {paragraph}{Answer to a}{5}
+\contentsline {paragraph}{Answer to b}{5}
+\contentsline {paragraph}{Answer to c}{5}
+\contentsline {section}{Eighth Problem}{6}
+\contentsline {paragraph}{Overall note:}{6}
+\contentsline {paragraph}{Answer to a}{6}
+\contentsline {paragraph}{Answer to b}{6}
+\contentsline {paragraph}{Answer to c}{6}
+\contentsline {section}{Ninth Problem}{7}
+\contentsline {paragraph}{Answer to a}{7}
+\contentsline {paragraph}{Answer to b}{7}
+\contentsline {paragraph}{Answer to c}{7}
+\contentsline {section}{Tenth Problem}{8}
+\contentsline {paragraph}{Answer}{8}
+\contentsline {section}{Eleventh Problem}{10}
+\contentsline {paragraph}{Answer to a}{10}
+\contentsline {paragraph}{Answer to b}{10}
+\contentsline {paragraph}{Answer to c}{10}
+\contentsline {paragraph}{Answer to d}{10}
+\contentsline {section}{Twelfth Problem}{11}
+\contentsline {paragraph}{Answer to a}{11}
+\contentsline {paragraph}{Answer to b}{11}
+\contentsline {section}{Lab 1 Prinouts}{11}

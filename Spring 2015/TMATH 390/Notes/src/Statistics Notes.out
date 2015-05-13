@@ -1,0 +1,75 @@
+\BOOKMARK [1][-]{section.1}{Data and Distributions}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Populations, Samples, and Processes}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Visual Displays for Univariate Data}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Dotplots}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Histograms}{subsection.1.2}% 5
+\BOOKMARK [3][-]{subsubsection.1.2.3}{Histogram Shapes}{subsection.1.2}% 6
+\BOOKMARK [3][-]{subsubsection.1.2.4}{Categorical Data}{subsection.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.3}{Describing Distributions}{section.1}% 8
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Continuous Distributions}{subsection.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.4}{The Normal Distribution}{section.1}% 10
+\BOOKMARK [2][-]{subsection.1.5}{Other Continuous Distributions}{section.1}% 11
+\BOOKMARK [2][-]{subsection.1.6}{Several Useful Discrete Distributions}{section.1}% 12
+\BOOKMARK [1][-]{section.2}{Numerical Summary Measures}{}% 13
+\BOOKMARK [2][-]{subsection.2.1}{Measures of Center}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.2}{Measures of Variability}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.3}{More Detailed Summary Quantities}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.4}{Quantile Plots}{section.2}% 17
+\BOOKMARK [1][-]{section.3}{Bivariate and Multivariate Data and Distributions}{}% 18
+\BOOKMARK [2][-]{subsection.3.1}{Scatterplots}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.2}{Correlation}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.3}{Fitting a Line to Bivariate Data}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.4}{Nonlinear Relationships}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.5}{using More Than One Predictor}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.6}{Joint Distributions}{section.3}% 24
+\BOOKMARK [1][-]{section.4}{Obtaining Data}{}% 25
+\BOOKMARK [2][-]{subsection.4.1}{Operational Definitions}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.2}{Data from Sampling}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.3}{Data from Experiments}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.4}{Measurement Systems}{section.4}% 29
+\BOOKMARK [1][-]{section.5}{Probability and Sampling Distributions}{}% 30
+\BOOKMARK [2][-]{subsection.5.1}{Chance Experiments}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.2}{Probability Concepts}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.3}{Conditional Probability and Independence}{section.5}% 33
+\BOOKMARK [2][-]{subsection.5.4}{Random Variables}{section.5}% 34
+\BOOKMARK [2][-]{subsection.5.5}{Sampling Distributions}{section.5}% 35
+\BOOKMARK [2][-]{subsection.5.6}{Describing Sampling Distributions}{section.5}% 36
+\BOOKMARK [1][-]{section.6}{Quality and Reliability}{}% 37
+\BOOKMARK [2][-]{subsection.6.1}{Terminology}{section.6}% 38
+\BOOKMARK [2][-]{subsection.6.2}{How Control Charts Work}{section.6}% 39
+\BOOKMARK [2][-]{subsection.6.3}{Control Charts for Mean and Variation}{section.6}% 40
+\BOOKMARK [2][-]{subsection.6.4}{Process Capability Analysis}{section.6}% 41
+\BOOKMARK [2][-]{subsection.6.5}{Control Charts for Attributes Data}{section.6}% 42
+\BOOKMARK [2][-]{subsection.6.6}{Reliability}{section.6}% 43
+\BOOKMARK [1][-]{section.7}{Estimation and Statistical Intervals}{}% 44
+\BOOKMARK [2][-]{subsection.7.1}{Point Estimation}{section.7}% 45
+\BOOKMARK [2][-]{subsection.7.2}{Large-Sample Confidence Intervals for a Population Mean}{section.7}% 46
+\BOOKMARK [2][-]{subsection.7.3}{More Large-Sample Confidence Intervals}{section.7}% 47
+\BOOKMARK [2][-]{subsection.7.4}{Small-Sample Intervals Based on a Norm. Pop. Distr.}{section.7}% 48
+\BOOKMARK [2][-]{subsection.7.5}{Intervals for 1 - 2 based on Norm. Pop. Distr.}{section.7}% 49
+\BOOKMARK [2][-]{subsection.7.6}{Other Topics in Estimation \(Optional\)}{section.7}% 50
+\BOOKMARK [1][-]{section.8}{Testing Statistical Hypotheses}{}% 51
+\BOOKMARK [2][-]{subsection.8.1}{Hypotheses and Test Procedures}{section.8}% 52
+\BOOKMARK [2][-]{subsection.8.2}{Tests Concerning Hypotheses About Means}{section.8}% 53
+\BOOKMARK [2][-]{subsection.8.3}{Tests Concerning Hypotheses About a Categorical Population}{section.8}% 54
+\BOOKMARK [2][-]{subsection.8.4}{Testing the Form of a Distribution}{section.8}% 55
+\BOOKMARK [2][-]{subsection.8.5}{Further Aspects of Hypothesis Testing}{section.8}% 56
+\BOOKMARK [1][-]{section.9}{The Analysis of Variance}{}% 57
+\BOOKMARK [2][-]{subsection.9.1}{Terminology and Concepts}{section.9}% 58
+\BOOKMARK [2][-]{subsection.9.2}{Single-Factor ANOVA}{section.9}% 59
+\BOOKMARK [2][-]{subsection.9.3}{Interpreting ANOVA Results}{section.9}% 60
+\BOOKMARK [2][-]{subsection.9.4}{Randomized Block Experiments}{section.9}% 61
+\BOOKMARK [1][-]{section.10}{Experimental Design}{}% 62
+\BOOKMARK [2][-]{subsection.10.1}{Terminology and Concepts}{section.10}% 63
+\BOOKMARK [2][-]{subsection.10.2}{Two-Factor Designs}{section.10}% 64
+\BOOKMARK [2][-]{subsection.10.3}{Multifactor Designs}{section.10}% 65
+\BOOKMARK [2][-]{subsection.10.4}{2k Designs}{section.10}% 66
+\BOOKMARK [2][-]{subsection.10.5}{Fractional Factorial Designs}{section.10}% 67
+\BOOKMARK [1][-]{section.11}{Inferential Methods in Regression and Correlation}{}% 68
+\BOOKMARK [2][-]{subsection.11.1}{Regression Models Involving a Single Independent Variable}{section.11}% 69
+\BOOKMARK [2][-]{subsection.11.2}{Inferences About the Slope Coefficient}{section.11}% 70
+\BOOKMARK [2][-]{subsection.11.3}{Inferences Based on the Estimated Regression Line}{section.11}% 71
+\BOOKMARK [2][-]{subsection.11.4}{Multiple Regression Models}{section.11}% 72
+\BOOKMARK [2][-]{subsection.11.5}{Inferences in Multiple Regression}{section.11}% 73
+\BOOKMARK [2][-]{subsection.11.6}{Further Aspects of Regression Analysis}{section.11}% 74
+\BOOKMARK [1][-]{section.12}{Appendix Tables}{}% 75

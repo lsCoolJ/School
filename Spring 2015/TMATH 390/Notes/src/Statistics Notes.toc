@@ -1,0 +1,90 @@
+\contentsline {section}{\numberline {1}Data and Distributions}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Populations, Samples, and Processes}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Visual Displays for Univariate Data}{1}{subsection.1.2}
+\contentsline {paragraph}{Stem-and-Leaf Displays}{1}{section*.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Dotplots}{1}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Histograms}{2}{subsubsection.1.2.2}
+\contentsline {paragraph}{Constructing a Histogram for Continuous Data: Equal Class Widths}{3}{section*.3}
+\contentsline {paragraph}{Constructing a Histogram for Continuous Data: Unequal Class Widths}{3}{section*.4}
+\contentsline {subsubsection}{\numberline {1.2.3}Histogram Shapes}{3}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}Categorical Data}{3}{subsubsection.1.2.4}
+\contentsline {subsection}{\numberline {1.3}Describing Distributions}{3}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Continuous Distributions}{3}{subsubsection.1.3.1}
+\contentsline {subsection}{\numberline {1.4}The Normal Distribution}{3}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Other Continuous Distributions}{3}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Several Useful Discrete Distributions}{3}{subsection.1.6}
+\contentsline {section}{\numberline {2}Numerical Summary Measures}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Measures of Center}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Measures of Variability}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}More Detailed Summary Quantities}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Quantile Plots}{4}{subsection.2.4}
+\contentsline {section}{\numberline {3}Bivariate and Multivariate Data and Distributions}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Scatterplots}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Correlation}{5}{subsection.3.2}
+\contentsline {paragraph}{Pearson's sample correlation}{5}{section*.5}
+\contentsline {paragraph}{Properties of r}{6}{section*.6}
+\contentsline {paragraph}{The Population Correlation Coefficient}{6}{section*.7}
+\contentsline {paragraph}{Correlation and Causation}{6}{section*.8}
+\contentsline {subsection}{\numberline {3.3}Fitting a Line to Bivariate Data}{6}{subsection.3.3}
+\contentsline {paragraph}{Fitting a Straight Line}{6}{section*.9}
+\contentsline {paragraph}{Regression}{7}{section*.10}
+\contentsline {paragraph}{Assessing the Fit of the Least Squares Line}{7}{section*.11}
+\contentsline {paragraph}{Standard Deviation About the Least Squares Line}{8}{section*.12}
+\contentsline {paragraph}{Plotting the Residuals (Optional}{8}{section*.13}
+\contentsline {subsection}{\numberline {3.4}Nonlinear Relationships}{8}{subsection.3.4}
+\contentsline {paragraph}{Power Transformations}{8}{section*.14}
+\contentsline {paragraph}{Fitting a Polynomial Function}{8}{section*.15}
+\contentsline {paragraph}{Smoothing a Scatterplot}{9}{section*.16}
+\contentsline {subsection}{\numberline {3.5}using More Than One Predictor}{9}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Joint Distributions}{9}{subsection.3.6}
+\contentsline {section}{\numberline {4}Obtaining Data}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Operational Definitions}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Data from Sampling}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Data from Experiments}{10}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Measurement Systems}{10}{subsection.4.4}
+\contentsline {section}{\numberline {5}Probability and Sampling Distributions}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}Chance Experiments}{11}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Probability Concepts}{11}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Conditional Probability and Independence}{11}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Random Variables}{11}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Sampling Distributions}{11}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Describing Sampling Distributions}{11}{subsection.5.6}
+\contentsline {section}{\numberline {6}Quality and Reliability}{12}{section.6}
+\contentsline {subsection}{\numberline {6.1}Terminology}{12}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}How Control Charts Work}{12}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Control Charts for Mean and Variation}{12}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Process Capability Analysis}{12}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Control Charts for Attributes Data}{12}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Reliability}{12}{subsection.6.6}
+\contentsline {section}{\numberline {7}Estimation and Statistical Intervals}{13}{section.7}
+\contentsline {subsection}{\numberline {7.1}Point Estimation}{13}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Large-Sample Confidence Intervals for a Population Mean}{13}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}More Large-Sample Confidence Intervals}{13}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Small-Sample Intervals Based on a Norm. Pop. Distr.}{13}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Intervals for $\mu _1 - \mu _2$ based on Norm. Pop. Distr.}{13}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Other Topics in Estimation (Optional)}{13}{subsection.7.6}
+\contentsline {section}{\numberline {8}Testing Statistical Hypotheses}{14}{section.8}
+\contentsline {subsection}{\numberline {8.1}Hypotheses and Test Procedures}{14}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Tests Concerning Hypotheses About Means}{14}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Tests Concerning Hypotheses About a Categorical Population}{14}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Testing the Form of a Distribution}{14}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Further Aspects of Hypothesis Testing}{14}{subsection.8.5}
+\contentsline {section}{\numberline {9}The Analysis of Variance}{15}{section.9}
+\contentsline {subsection}{\numberline {9.1}Terminology and Concepts}{15}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Single-Factor ANOVA}{15}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Interpreting ANOVA Results}{15}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Randomized Block Experiments}{15}{subsection.9.4}
+\contentsline {section}{\numberline {10}Experimental Design}{16}{section.10}
+\contentsline {subsection}{\numberline {10.1}Terminology and Concepts}{16}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Two-Factor Designs}{16}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Multifactor Designs}{16}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}$2^k$ Designs}{16}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}Fractional Factorial Designs}{16}{subsection.10.5}
+\contentsline {section}{\numberline {11}Inferential Methods in Regression and Correlation}{17}{section.11}
+\contentsline {subsection}{\numberline {11.1}Regression Models Involving a Single Independent Variable}{17}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Inferences About the Slope Coefficient}{17}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Inferences Based on the Estimated Regression Line}{17}{subsection.11.3}
+\contentsline {subsection}{\numberline {11.4}Multiple Regression Models}{17}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.5}Inferences in Multiple Regression}{17}{subsection.11.5}
+\contentsline {subsection}{\numberline {11.6}Further Aspects of Regression Analysis}{17}{subsection.11.6}
+\contentsline {section}{\numberline {12}Appendix Tables}{18}{section.12}

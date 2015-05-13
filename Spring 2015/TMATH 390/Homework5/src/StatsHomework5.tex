@@ -1,0 +1,392 @@
+\documentclass{article}
+
+% Packages
+\usepackage[utf8]{inputenc} % For modern characters
+\usepackage{microtype} % For sexy kerning
+\usepackage{mathtools} % For math stuff
+\usepackage{amssymb} % For math symbols
+\usepackage{tabularx} % For making tables
+\usepackage{fancyhdr} % Use a header
+\usepackage{pdfpages} % For including a graphics path
+
+% Set the margins
+\usepackage[scale=0.8, top=1in, bottom=1in]{geometry}
+
+% Other front matter
+\graphicspath{ {../img/} } % Put all images in img/
+\newcommand{\code}[1]{\texttt{#1}} % More readable for writing inline code.
+\newcommand{\p}[1]{\paragraph{#1}} % Easier to type out for paragraph command
+\newcommand{\addsection}[1]{\addcontentsline{toc}{section}{#1}} % content lines
+\newcommand{\addsubsection}[1]{\addcontentsline{toc}{subsection}{#1}} % content lines
+\pagestyle{fancy} % Makes Header Possible
+{ %%% Header Set up
+	\lhead{} % Set the left header to be blank
+	\chead{} % Set the center header to be blank
+	% Header for every page except the first two
+	\rhead{Ben Foster | Homework 5 | May 14, 2015} % Name, assignment, date
+}
+\setcounter{tocdepth}{2} % Set Table of Contents Depth
+\setlength{\parindent}{0pt} % Disable automatic indentation
+
+%%%%%%%%%%%%%%%%%%%%% Begin Document %%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+{ % Title page, table of contents, and page number setting
+	\title{Probability and Statistics for Engineers Homework Five \\ TMATH 390}
+	\author{Ben Foster\thanks{
+		Institute of Technology, University of Washington Tacoma} \\
+		Instructor: Julia Eaton}
+	\date{May 14, 2015} % Include the date
+	\maketitle % Make the title
+	\thispagestyle{empty} % No page number at bottom
+	\clearpage % Start the table of contents on the next page
+	
+	\pagenumbering{roman} % Use roman numerals for numbering
+	\tableofcontents % Make the table of contents
+	\clearpage % Start homework on next page
+	\setcounter{page}{1} % Begin numbering over again
+	\pagenumbering{arabic} % use arabic numerals for numbering
+}
+
+\section*{Problem 1} %%% DONE
+\addsection{First Problem}
+
+	A college library has five copies of a certain text on reserve. Two copies (1 and 2) are first 
+	editions, and the other three (3, 4, and 5) are second editions. A student examines these books in 
+	random order, stopping only when a second edition has been selected. One outcome is 4, and 
+	another is 215. \\
+
+	(a) List all outcomes in the sample space $S$. \\
+	(b) Let $A$ denote the event that exactly one book must be examined. What outcomes are in $A
+	$? \\
+	(c) Let $B$ be the event that book 4 is the one selected. What outcomes are in $B$? \\
+	(d) Let $C$ be the event that book 2 is not examined. What outcomes are in $C$? \\
+
+	\addsubsection{Answer to 1.a}
+	\p{Answer to a} The sample space of an experiment are all of the possible outcomes of a chance 
+	experiment. The sample space for this chance experiment is:
+	\[ S = [3,4,5,13,14,15,23,24,25,123,124,125,213,214,215] \]
+	
+	\addsubsection{Answer to 1.b}
+	\p{Answer to b} The event that exactly one book must be examined means that the student 
+	randomly picked up a second edition book first:
+	\[ A = [3,4,5] \]
+	
+	\addsubsection{Answer to 1.c}
+	\p{Answer to c} The event that book 4 is selected doesn't necessarily mean that it is the first book 
+	selected, but it could also be the second or third after one or both of the first two first edition 
+	books were selected:
+	\[ B = [4,14,25,124,214] \]
+	
+	\addsubsection{Answer to 1.d}
+	\p{Answer to d} The event that book 2 is not examined means that we could have any simple 
+	event that does not contain 2:
+	\[ C = [3,4,5,13,14,15] \]
+
+\clearpage
+\section*{Problem 2} %%% DRAW THIS SHIT
+\addsection{Second Problem}
+
+	An engineering firm is constructing power plants at three different sites. \\
+	Define the events $E_1$, $E_2$, and $E_3$ as follows:
+	\begin{itemize}
+		\item{$E_1 =$ the plant at site 1 is completed by the contract date.}
+		\item{$E_2 =$ the plant at site 2 is completed by the contract date.}
+		\item{$E_3 =$ the plant at site 3 is completed by the contract date.}
+	\end{itemize}
+	Draw a Venn diagram that depicts these three events as intersecting circles. Shade the region on 
+	the Venn diagram corresponding to each of the following events (redraw the Venn diagram for 
+	each question): \\
+	
+	(a) At least one plant is completed by the contract date. \\
+	(b) All plants are completed by the contract date. \\
+	(c) None of the plants are completed by the contract date. \\
+	(d) Only the plant at site 1 is completed by the contract date. \\
+	(e) Exactly one of the three plants is completed by the contract date. \\
+	(f) Either the plant at site 1 or site 2 or both of the two plants are completed by the contract date.\\
+	
+	Original Venn diagram:
+	\begin{center}
+		\includegraphics[width=4in]{prob2.jpg}
+	\end{center}
+	
+	\addsubsection{Answer to 2.a}
+	\p{Answer to a}
+	\begin{center}
+		\includegraphics[width=4in]{prob2_a.jpg}
+	\end{center}
+	
+	\iffalse
+	\addsubsection{Answer to 2.b}
+	\p{Answer to b}
+	\begin{center}
+		\includegraphics[width=4in]{prob2_b.jpg}
+	\end{center}
+	
+	\addsubsection{Answer to 2.c}
+	\p{Answer to c}
+	\begin{center}
+		\includegraphics[width=4in]{prob2_c.jpg}
+	\end{center}
+	
+	\addsubsection{Answer to 2.d}
+	\p{Answer to d}
+	\begin{center}
+		\includegraphics[width=4in]{prob2_d.jpg}
+	\end{center}
+	
+	\addsubsection{Answer to 2.e}
+	\p{Answer to e}
+	\begin{center}
+		\includegraphics[width=4in]{prob2_e.jpg}
+	\end{center}
+	
+	\addsubsection{Answer to 2.f}
+	\p{Answer to f}
+	\begin{center}
+		\includegraphics[width=4in]{prob2_f.jpg}
+	\end{center}
+	\fi
+
+\clearpage	
+\section*{Problem 3} %%% DONE
+\addsection{Third Problem}
+
+	Let $A_i = i\text{th}$ student got a perfect score on midterm 1, for $i = 1,...,18$. \\
+	
+	(a) Interpret $\left( \overset{18}{\underset{i=1}{\cap}} A_i \right)^{\prime}$ in English. \\
+	(b) Interpret $\overset{18}{\underset{i=1}{\cup}} A_i^{\prime}$ in English. Is it equivalent to part a?
+	
+	\addsubsection{Answer to 3.a}
+	\p{Answer to a}
+	$\left( \overset{18}{\underset{i=1}{\cap}} A_i \right)^{\prime}$ is the same as saying the 
+	complement of $A_1$, and $A_2$, and ... and $A_18$. Basically, students 1 through 18 did not 
+	get a perfect score on the first midterm, but any other combination of these students getting a 
+	perfect score on the first midterm is possible (i.e. $A_1$ and $A_2$).
+	
+	\addsubsection{Answer to 3.b}
+	\p{Answer to b}
+	$\overset{18}{\underset{i=1}{\cup}} A_i^{\prime}$ is the same as saying $A_1^{\prime}$, or
+	$A_2^{\prime}$, or ... or $A_{18}^{\prime}$. Basically, any combination of students 1 through 18 
+	can get a perfect score on their first midterm, however it is not possible for all 18 students to get a 
+	perfect score. \\
+	
+	Part a and part b are the same.
+
+\clearpage
+\section*{Problem 4} %%% DONE
+\addsection{Fourth Problem}
+
+	Using everything we have learned about events and probability, prove that
+	\[ P(A|B) + P(A^{\prime}|B) = 1 \]
+	Do not assume that events $A$ and $B$ are independent (i.e. $P(A\cap B) \not= P(A)\cdot P(B)
+	$). Explain each step of your calculation.
+	
+	\addsubsection{Answer to 4}
+	\p{Answer to problem 4}
+	$P(A|B) =$ the conditional probability of A occurring given that event B has already occurred. We 
+	know that these probabilities must be between 0 and 1, so $0 \le P(A|B) \le 1$ and $ 0 \le 
+	P(A^{\prime}|B) \le 1$. Also, from the definition, we know that event $B$ has already occurred, so 
+	we're really just adding together the probabilities of wether $A$ will occur or not. $P(A|B)$ is the 
+	probability that A will occur and $P(A^{\prime}|B)$ is the probability that $A$ will not occur. Since 
+	there are only two possibilities, then the summation of those two possibilities should equal 1, or a 
+	100\% chance. Meaning that there is a 100\% chance that $A$ will either occur or not occur given 
+	that $B$ has already occurred.
+
+\clearpage	
+\section*{Problem 5} %%% DONE
+\addsection{Fifth Problem}
+
+	Five companies (A, B, C, D, and E) that make electrical relays compete each year to be the sole 
+	supplier of relays to a major automobile manufacturer. The auto company's records show that the 
+	probabilities of choosing a company to be the sole supplier are
+	\begin{center}
+	\begin{tabular}{ l r r r r r }
+		Supplier chose: & A & B & C & D & E \\
+		Probability: & 0.30 & 0.20 & 0.10 & 0.25 & 0.15
+	\end{tabular}
+	\end{center} 
+	
+	(a) Suppose that supplier E goes out of business this year, leaving the remaining 4 companies to 
+	compete with one another. What are the new probabilities of companies A, B, C, and D being 
+	chosen ad the sole supplier this year? \\
+	(b) Suppose the auto company narrows the choice of suppliers to companies A and C. What is 
+	the probability that company A is chosen this year?
+	
+	\addsubsection{Answer to 5.a}
+	\p{Answer to a}
+	If company E were to go out of business then to determine the probabilities of the other 
+	companies being chosen, we have to use the equation:
+	\[ P(\text{Other Company} | E^{\prime}) \]
+	\[ = \frac{P(\text{Other Company})}{P(E^{\prime})} \]
+	This gives us a new table:
+	\begin{center}
+	\begin{tabular}{ c c c c }
+		A & B & C & D \\
+		0.3529 & 0.2352 & 0.1176 & 0.2941
+	\end{tabular}
+	\end{center}
+	
+	\addsubsection{Answer to 5.b}
+	\p{Answer to b}
+	If we narrowed down our decision to companies A and C, then we would use the equations:
+	\[ P(A|B^\prime + D^\prime + E^\prime) = \frac{P(A)}{P(B^\prime + D^\prime + E^\prime)} \]
+	\[ = \frac{0.3}{1 - (0.2+0.25+0.15)} \]
+	\[ = 0.75 \]
+	and
+	\[ P(C|B^\prime + D^\prime + E^\prime) = \frac{P(C)}{P(B^\prime + D^\prime + E^\prime)} \]
+	\[ = \frac{0.1}{1 - (0.2+0.25+0.15)} \]
+	\[ = 0.25 \]
+	Therefore there is a 75\% chance of choosing company A and a 25\% chance of choosing 
+	company C.
+
+\clearpage
+\section*{Problem 6}
+\addsection{Sixth Problem}
+
+	Number 5.16 in your book on page 214: \\
+	In Exercise 6, suppose that there is a probability of 0.01 that a digit is incorrectly sent over a 
+	communication channel (i.e., that a digit sent as a 1 is received as a 0, or vice versa). Consider a 
+	message that consists of exactly 60\% 1s. \\
+	
+	(a) What is the proportion of 1s received at the end of the channel? \\
+	(b) If a 1 is received, what is the probability that a 1 was sent? Hint: Use the tree diagram from 
+	Exercise 6. \\
+	
+	Exercise 6 for reference: Information theory is concerned with the transmission of data, usually 
+	encoded as a stream of 0s and 1s, over communication channels. Because channels are "noisy", 
+	there is a chance that some 0s sent through the channel are mistakenly received at the other end 
+	as 1s, and vice versa. The majority of digits sent, however, are not altered by the channel. \\
+	
+	Draw a tree diagram that depicts the type of bit sent (either 0 or 1) and the type of bit received at 
+	the end of the channel.
+	
+	\addsubsection{Answer to 6.a}
+	\p{Answer to a}
+	
+	\addsubsection{Answer to 6.b}
+	\p{Answer to b}
+
+\clearpage	
+\section*{Problem 7}
+\addsection{Seventh Problem}
+
+	Number 5.19 in your book on page 214: \\
+	In forensic science, the probability that any two people match with respect to a given 
+	characteristic (hair color, blood type, etc.) is called the \textit{probability of a match}. Suppose that 
+	the frequencies of blood phenotypes in the population are as follows: \\
+	\begin{tabular}{ c c c c }
+		A & B & AB & O \\
+		0.42 & 0.10 & 0.04 & 0.44
+	\end{tabular} \\
+	
+	(a) What is the probability that two randomly chosen people both have blood type A? \\
+	(b) Repeat the calculation in part (a) for the other three blood types. \\
+	(c) Find the probability that two randomly chosen people have matching blood types. Note: A 
+	person can have only one phenotype. \\
+	(d) The probability that two people do not match for a given characteristic is called 
+	\textit{discriminating power}. What is the discriminating power for the comparison of two people's 
+	blood types in part (c)?
+	
+	\addsubsection{Answer to 7.a}
+	\p{Answer to a}
+	
+	\addsubsection{Answer to 7.b}
+	\p{Answer to b}
+	
+	\addsubsection{Answer to 7.c}
+	\p{Answer to c}
+	
+	\addsubsection{Answer to 7.d}
+	\p{Answer to d}
+
+\clearpage	
+\section*{Problem 8}
+\addsection{Eighth Problem}
+
+	Number 5.21 in your book on page 214: \\
+	Consider a system of components connected as shown in the following figure: \\
+	\begin{center}
+		\includegraphics[width=4in]{prob7.jpg}
+	\end{center}
+	Components 1 and 2 are connected in parallel, so that their subsystem functions correctly if 
+	either component 1 or 2 functions. Components 3 and 4 are connected in series, so their 
+	subsystem works only if both components work correctly. \\
+	
+	If all components work independently of one another and P(a given component works) = 0.9, 
+	calculate the probability that the entire system works correctly.
+	
+	\addsubsection{Answer to 8}
+	\p{Answer to problem 8}
+
+\clearpage	
+\section*{Problem 9}
+\addsection{Ninth Problem}
+
+	Let $p$ be the sample proportion, written as $p = \frac{n_f}{n}$, where $n =$ sample size, and 
+	$n_f =$, the number of females in the sample. Show that $E[p] = \pi$ and $V[p] = \frac{\pi(1-\pi)}
+	{n}$, where $\pi =$ proportion of females in population. Hint: Use what you know about Binomial 
+	distributions.
+	
+	\addsubsection{Answer to 9}
+	\p{Answer to problem 9}
+
+\clearpage	
+\section*{Problem 10}
+\addsection{Tenth Problem}
+
+	A survey of the members of a large professional engineering society is conducted to determine 
+	their views on proposed changes to an ASTM measurement standard. Suppose that 80\% of he 
+	entire membership favor the proposed changes. Hint: Use the result from the previous problem. \\
+	
+	(a) Calculate the mean and standard deviation of the sampling distribution of the proportion of 
+	engineers in samples of size 25 who favor the proposed changes. \\
+	(b) Calculate the mean and standard deviation of the sampling distribution of the proportion of 
+	engineers in samples of size 100 who favor the proposed changes.
+
+	\addsubsection{Answer to 10.a}
+	\p{Answer to a}
+	
+	\addsubsection{Answer to 10.b}
+	\p{Answer to b}
+
+\clearpage	
+\section*{Problem 11}
+\addsection{Eleventh Problem}
+
+	The lifetime of a certain battery is normally distributed with a mean value of 8 hours and a 
+	standard deviation of 1 hour. There are four such batteries in a package. \\
+	
+	(a) What is the probability that the average lifetime of the four batteries exceeds 9 hours? \\
+	(b) If $T$ denotes the average lifetime of the four batteries in a randomly selected package, find 
+	the numerical value of $T_0$ for which $P(T \ge T_0) = 0.95$.
+	
+	\addsubsection{Answer to 11.a}
+	\p{Answer to a}
+	
+	\addsubsection{Answer to 11.b}
+	\p{Answer to b}
+
+\clearpage	
+\section*{Problem 12}
+\addsection{Twelfth Problem}
+
+	The number of flaws $x$ on an electroplated automobile grill is known to have the following 
+	probability mass function: $p(0) = 0.6$, $p(1) = 0.2$, $p(2) = 0.1$, $p(3) = 0.1$. \\
+	
+	(a) Calculate the mean and standard deviation of $x$. \\
+	(b) What are the mean and standard deviation of the sampling distribution of the average number 
+	of flaws per grill in a random sample of 50 grills? \\
+	(c) For a random sample of 50 grills. Calculate the approximate probability that the average 
+	number of flaws per grill exceeds 0.8.
+	
+	\addsubsection{Answer to 12.a}
+	\p{Answer to a}
+	
+	\addsubsection{Answer to 12.b}
+	\p{Answer to b}
+	
+	\addsubsection{Answer to 12.c}
+	\p{Answer to c}
+
+\end{document}

@@ -1,0 +1,62 @@
+\contentsline {section}{First Problem}{1}
+\contentsline {subsection}{Answer to 1.a}{1}
+\contentsline {paragraph}{Answer to a}{1}
+\contentsline {subsection}{Answer to 1.b}{1}
+\contentsline {paragraph}{Answer to b}{1}
+\contentsline {subsection}{Answer to 1.c}{1}
+\contentsline {paragraph}{Answer to c}{1}
+\contentsline {subsection}{Answer to 1.d}{1}
+\contentsline {paragraph}{Answer to d}{1}
+\contentsline {section}{Second Problem}{2}
+\contentsline {subsection}{Answer to 2.a}{2}
+\contentsline {paragraph}{Answer to a}{2}
+\contentsline {section}{Third Problem}{4}
+\contentsline {subsection}{Answer to 3.a}{4}
+\contentsline {paragraph}{Answer to a}{4}
+\contentsline {subsection}{Answer to 3.b}{4}
+\contentsline {paragraph}{Answer to b}{4}
+\contentsline {section}{Fourth Problem}{5}
+\contentsline {subsection}{Answer to 4}{5}
+\contentsline {paragraph}{Answer to problem 4}{5}
+\contentsline {section}{Fifth Problem}{6}
+\contentsline {subsection}{Answer to 5.a}{6}
+\contentsline {paragraph}{Answer to a}{6}
+\contentsline {subsection}{Answer to 5.b}{6}
+\contentsline {paragraph}{Answer to b}{6}
+\contentsline {section}{Sixth Problem}{7}
+\contentsline {subsection}{Answer to 6.a}{7}
+\contentsline {subsection}{Answer to 6.b}{7}
+\contentsline {paragraph}{Answer to a}{7}
+\contentsline {paragraph}{Answer to b}{7}
+\contentsline {section}{Seventh Problem}{8}
+\contentsline {subsection}{Answer to 7.a}{8}
+\contentsline {subsection}{Answer to 7.b}{8}
+\contentsline {paragraph}{Answer to a}{8}
+\contentsline {subsection}{Answer to 7.c}{8}
+\contentsline {paragraph}{Answer to b}{8}
+\contentsline {subsection}{Answer to 7.d}{8}
+\contentsline {paragraph}{Answer to c}{8}
+\contentsline {paragraph}{Answer to d}{8}
+\contentsline {section}{Eighth Problem}{9}
+\contentsline {subsection}{Answer to 8}{9}
+\contentsline {paragraph}{Answer to problem 8}{9}
+\contentsline {section}{Ninth Problem}{10}
+\contentsline {subsection}{Answer to 9}{10}
+\contentsline {paragraph}{Answer to problem 9}{10}
+\contentsline {section}{Tenth Problem}{11}
+\contentsline {subsection}{Answer to 10.a}{11}
+\contentsline {subsection}{Answer to 10.b}{11}
+\contentsline {paragraph}{Answer to a}{11}
+\contentsline {paragraph}{Answer to b}{11}
+\contentsline {section}{Eleventh Problem}{12}
+\contentsline {subsection}{Answer to 11.a}{12}
+\contentsline {subsection}{Answer to 11.b}{12}
+\contentsline {paragraph}{Answer to a}{12}
+\contentsline {paragraph}{Answer to b}{12}
+\contentsline {section}{Twelfth Problem}{13}
+\contentsline {subsection}{Answer to 12.a}{13}
+\contentsline {subsection}{Answer to 12.b}{13}
+\contentsline {paragraph}{Answer to a}{13}
+\contentsline {subsection}{Answer to 12.c}{13}
+\contentsline {paragraph}{Answer to b}{13}
+\contentsline {paragraph}{Answer to c}{13}
