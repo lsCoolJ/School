@@ -13,7 +13,7 @@
 \usepackage[scale=0.8, top=1in, bottom=1in]{geometry}
 
 % Other front matter
-\graphicspath{ {../img/} } % Put all images in img/
+\graphicspath{ {img/} } % Put all images in img/
 \newcommand{\code}[1]{\texttt{#1}} % More readable for writing inline code.
 \newcommand{\p}[1]{\paragraph{#1}} % Easier to type out for paragraph command
 \newcommand{\addsection}[1]{\addcontentsline{toc}{section}{#1}} % content lines
@@ -84,7 +84,7 @@
 	\[ C = [3,4,5,13,14,15] \]
 
 \clearpage
-\section*{Problem 2} %%% Scan image and put it in here.
+\section*{Problem 2} %%% DONE
 \addsection{Second Problem}
 
 	An engineering firm is constructing power plants at three different sites. \\
@@ -107,13 +107,46 @@
 	
 	Original Venn diagram:
 	\begin{center}
-		\includegraphics[width=4in]{prob2_orig.jpg}
+		\includegraphics[width=5in]{prob2_orig.jpg}
 	\end{center}
 	
-	\addsubsection{Answers}
-	\p{Answers}
+	\clearpage
+	\addsubsection{Answer to 2.a}
+	\p{Answer to part a}
 	\begin{center}
-		\includegraphics[width=\textwidth]{prob2_a.jpg} %prob2.jpg
+		\includegraphics[width=4.5in]{prob2_a.jpg}
+	\end{center}
+	
+	\addsubsection{Answer to 2.b}
+	\p{Answer to part b}
+	\begin{center}
+		\includegraphics[width=4.5in]{prob2_b.jpg}
+	\end{center}
+	
+	\clearpage
+	\addsubsection{Answer to 2.c}
+	\p{Answer to part c}
+	\begin{center}
+		\includegraphics[width=4.5in]{prob2_c.jpg}
+	\end{center}
+	
+	\addsubsection{Answer to 2.d}
+	\p{Answer to part d}
+	\begin{center}
+		\includegraphics[width=4.5in]{prob2_d.jpg}
+	\end{center}
+	
+	\clearpage
+	\addsubsection{Answer to 2.e}
+	\p{Answer to part e}
+	\begin{center}
+		\includegraphics[width=4.5in]{prob2_e.jpg}
+	\end{center}
+	
+	\addsubsection{Answer to 2.f}
+	\p{Answer to part f}
+	\begin{center}
+		\includegraphics[width=4.5in]{prob2_f.jpg}
 	\end{center}
 	
 \clearpage	
@@ -142,7 +175,6 @@
 	
 	Part a and part b are the same.
 
-\clearpage
 \section*{Problem 4} %%% DONE
 \addsection{Fourth Problem}
 
@@ -210,7 +242,7 @@
 	company C.
 
 \clearpage
-\section*{Problem 6} %%% DONE? not sure if correct
+\section*{Problem 6} %%% DONE
 \addsection{Sixth Problem}
 
 	Number 5.16 in your book on page 214: \\
@@ -221,14 +253,6 @@
 	(a) What is the proportion of 1s received at the end of the channel? \\
 	(b) If a 1 is received, what is the probability that a 1 was sent? Hint: Use the tree diagram from 
 	Exercise 6. \\
-	
-	Exercise 6 for reference: Information theory is concerned with the transmission of data, usually 
-	encoded as a stream of 0s and 1s, over communication channels. Because channels are "noisy", 
-	there is a chance that some 0s sent through the channel are mistakenly received at the other end 
-	as 1s, and vice versa. The majority of digits sent, however, are not altered by the channel. \\
-	
-	Draw a tree diagram that depicts the type of bit sent (either 0 or 1) and the type of bit received at 
-	the end of the channel.
 	
 	\addsubsection{Answer to 6.a}
 	\p{Answer to a}
@@ -242,7 +266,12 @@
 	\addsubsection{Answer to 6.b}
 	\p{Answer to b}
 	If a 1 is received then there is a 99\% chance that a 1 was sent since there is a 1\% chance of an 
-	error. This means that there is a 1\% chance that a sent 0 will turn into a 1.
+	error. We also know that the message being sent consists of 60\% 1s. Therefore we use the 
+	formula:
+	\[ P(S|R) = \frac{P(S\text{ and }R)}{P(R)} \]
+	\[ = \frac{0.99(0.6)}{0.598} \]
+	\[ = 0.993311 \]
+	So we have a 99.33\% chance that the sent bit will be a 1 if we receive a 1.
 
 \clearpage	
 \section*{Problem 7} %%% DONE
@@ -299,7 +328,7 @@
 	Number 5.21 in your book on page 214: \\
 	Consider a system of components connected as shown in the following figure: \\
 	\begin{center}
-		\includegraphics[width=4in]{prob7.jpg}
+		\includegraphics[width=4in]{prob8.jpg}
 	\end{center}
 	Components 1 and 2 are connected in parallel, so that their subsystem functions correctly if 
 	either component 1 or 2 functions. Components 3 and 4 are connected in series, so their 
@@ -323,23 +352,32 @@
 	
 
 \clearpage	
-\section*{Problem 9}
+\section*{Problem 9} %%% DONE
 \addsection{Ninth Problem}
 
 	Let $p$ be the sample proportion, written as $p = \frac{n_f}{n}$, where $n =$ sample size, and 
-	$n_f =$, the number of females in the sample. Show that $E[p] = \pi$ and $V[p] = \frac{\pi(1-\pi)}
+	$n_f =$ the number of females in the sample. Show that $E[p] = \pi$ and $V[p] = \frac{\pi(1-\pi)}
 	{n}$, where $\pi =$ proportion of females in population. Hint: Use what you know about Binomial 
 	distributions.
 	
 	\addsubsection{Answer to 9}
-	\p{Answer to problem 9}
+	\p{Answer to problem 9} Recall that for the binomial distribution:
+	\[ E[X] = n\pi \]
+	\[ V[X] = n\pi(1-\pi)  = E[X^2] - (E[X])^2 \]
+	so
+	\[ E[p] = E[\frac{n_f}{n}] \]
+	Since n is a constant
+	\[ = \frac{1}{n}E[n_f] = \frac{n\pi}{n} = \pi \]
+	and
+	\[ V[p] = V[\frac{n_f}{n}] \]
+	Since n is a constant
+	\[ = \frac{1}{n^2}V[n_f] = \frac{n\pi(1-\pi)}{n^2} = \frac{\pi(1-\pi)}{n} \]
 
-\clearpage	
-\section*{Problem 10}
+\section*{Problem 10} %%% DONE
 \addsection{Tenth Problem}
 
 	A survey of the members of a large professional engineering society is conducted to determine 
-	their views on proposed changes to an ASTM measurement standard. Suppose that 80\% of he 
+	their views on proposed changes to an ASTM measurement standard. Suppose that 80\% of the 
 	entire membership favor the proposed changes. Hint: Use the result from the previous problem. \\
 	
 	(a) Calculate the mean and standard deviation of the sampling distribution of the proportion of 
@@ -349,12 +387,20 @@
 
 	\addsubsection{Answer to 10.a}
 	\p{Answer to a}
+	Using the idea that $E[p] = \pi$ and $V[p] = \frac{\pi(1-\pi)}{n}$:
+	\[ E[p] = \pi = 0.8 \]
+	\[ \sigma = \sqrt{V[p]} = \sqrt{\frac{0.8(1-0.8)}{25}} \]
+	\[ \sigma = 0.08 \]
 	
 	\addsubsection{Answer to 10.b}
 	\p{Answer to b}
+	Using the idea that $E[p] = \pi$ and $V[p] = \frac{\pi(1-\pi)}{n}$:
+	\[ E[p] = \pi = 0.8 \]
+	\[ \sigma = \sqrt{V[p]} = \sqrt{\frac{0.8(1-0.8)}{100}} \]
+	\[ \sigma = 0.04 \]
 
 \clearpage	
-\section*{Problem 11}
+\section*{Problem 11} %%% DONE
 \addsection{Eleventh Problem}
 
 	The lifetime of a certain battery is normally distributed with a mean value of 8 hours and a 
@@ -366,30 +412,64 @@
 	
 	\addsubsection{Answer to 11.a}
 	\p{Answer to a}
+	In order to solve this, we need to find $P(x > 9)$. In this case, since we know that the lifetime of 
+	the battery is normally distributed, then we can use the standard normal table to help us find our 
+	answer. Now we use $P(z > \frac{9-\mu_{\bar{x}}}{\sigma_{\bar{x}}})$ where $\mu_{\bar{x}} = 8$ 
+	and $\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} = \frac{1}{2}$. From this, $P(z > 2) = 1-P(z<2)$. 
+	Using the table, we get  0.0228 for the proportion of time that the lifetime exceeds 9 hours. We 
+	could also say that we have a 2.28\% chance that the average lifetime of the four batteries will 
+	exceed 9 hours.
 	
 	\addsubsection{Answer to 11.b}
 	\p{Answer to b}
+	For this problem, we know that $P(T \ge T_0) = 0.95$. From this, we know that $P(T \ge T_0) = 1 
+	- P(T < T_0)$ so $P(T<T_0) = 0.05$. Now we just do a reverse table look up and we get the 
+	following:
+	\[ -1.645 = \frac{T_0 - 8}{0.5} \]
+	\[ T_0 = 7.1775 \]
 
 \clearpage	
-\section*{Problem 12}
+\section*{Problem 12} %%% DONE
 \addsection{Twelfth Problem}
 
 	The number of flaws $x$ on an electroplated automobile grill is known to have the following 
-	probability mass function: $p(0) = 0.6$, $p(1) = 0.2$, $p(2) = 0.1$, $p(3) = 0.1$. \\
+	probability mass functions: $p(0) = 0.6$, $p(1) = 0.2$, $p(2) = 0.1$, $p(3) = 0.1$. \\
 	
 	(a) Calculate the mean and standard deviation of $x$. \\
 	(b) What are the mean and standard deviation of the sampling distribution of the average number 
 	of flaws per grill in a random sample of 50 grills? \\
-	(c) For a random sample of 50 grills. Calculate the approximate probability that the average 
+	(c) For a random sample of 50 grills, calculate the approximate probability that the average 
 	number of flaws per grill exceeds 0.8.
 	
 	\addsubsection{Answer to 12.a}
 	\p{Answer to a}
+	For the mean:
+	\[ \mu = \sum xp(x) \]
+	\[ = 0(0.6) + 1(0.2) + 2(0.1) + 3(0.1) \]
+	\[ = 0.7 \]
+	For the standard deviation
+	\[ \sigma = \sqrt{\sum(x-\mu)^2p(x)} \]
+	\[ = \sqrt{((0-0.7)^20.6) + ((1-0.7)^20.2) + ((2-0.7)^20.1) + ((3-0.7)^20.1)} \]
+	\[ = \sqrt{0.294 + 0.018 + 0.169 + 0.529} \]
+	\[ = \sqrt{1.01} \]
+	\[ = 1.01 \]
 	
 	\addsubsection{Answer to 12.b}
 	\p{Answer to b}
+	For the mean:
+	\[ \mu_{\bar{x}} = \mu = 0.7 \]
+	For the standard deviation:
+	\[ \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} \]
+	\[ = \frac{1.01}{\sqrt{50}} \]
+	\[ = 0.1421 \]
 	
 	\addsubsection{Answer to 12.c}
 	\p{Answer to c}
+	We need to find $P(x>0.8)$ which is the same as saying $P(z > \frac{0.8-\mu}{\sigma}$ since we 
+	are looking at a normal distribution. From this we get $P(z > 0.70359)$. Now we just have to look 
+	at the standard normal table. Since we want something greater than a number, then we can just 
+	do $1-P(z<0.704)$ to get the same thing. From looking at the table, we get
+	\[ P(z > 0.704) = 1 - 0.7580 \]
+	\[ P(z > 0.704) = 0.242 \]
 
 \end{document}
