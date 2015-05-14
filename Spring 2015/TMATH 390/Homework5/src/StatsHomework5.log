@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  12 MAY 2015 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  13 MAY 2015 17:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -667,10 +667,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--107
 
  []
 
-<../img/prob2.jpg, id=21, 1008.76875pt x 898.35625pt>
-File: ../img/prob2.jpg Graphic file (type jpg)
- <use ../img/prob2.jpg>
-Package pdftex.def Info: ../img/prob2.jpg used on input line 110.
+<../img/prob2_orig.jpg, id=21, 1008.76875pt x 898.35625pt>
+File: ../img/prob2_orig.jpg Graphic file (type jpg)
+
+<use ../img/prob2_orig.jpg>
+Package pdftex.def Info: ../img/prob2_orig.jpg used on input line 110.
 (pdftex.def)             Requested size: 289.07999pt x 257.43239pt.
 
 <../img/prob2_a.jpg, id=22, 1008.76875pt x 898.35625pt>
@@ -678,16 +679,16 @@ File: ../img/prob2_a.jpg Graphic file (type jpg)
 
 <use ../img/prob2_a.jpg>
 Package pdftex.def Info: ../img/prob2_a.jpg used on input line 116.
-(pdftex.def)             Requested size: 289.07999pt x 257.43239pt.
+(pdftex.def)             Requested size: 491.43787pt x 437.64876pt.
  [2
 
- <../img/prob2.jpg>] [3 <../img/prob2_a.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+ <../img/prob2_orig.jpg>] [3 <../img/prob2_a.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--173
+Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
 
@@ -698,64 +699,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--173
 ] [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 247--251
+Underfull \hbox (badness 10000) in paragraph at lines 216--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--255
+Underfull \hbox (badness 10000) in paragraph at lines 221--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--260
+Underfull \hbox (badness 10000) in paragraph at lines 225--229
 
  []
 
 [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 274--282
+Underfull \hbox (badness 10000) in paragraph at lines 251--259
 
  []
 
 [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 307--309
+Underfull \hbox (badness 10000) in paragraph at lines 299--301
 
  []
 
-<prob7.jpg, id=51, 390.45876pt x 157.58875pt>
-File: prob7.jpg Graphic file (type jpg)
- <use prob7.jpg>
-Package pdftex.def Info: prob7.jpg used on input line 310.
+<../img/prob7.jpg, id=51, 390.45876pt x 157.58875pt>
+File: ../img/prob7.jpg Graphic file (type jpg)
+ <use ../img/prob7.jpg>
+Package pdftex.def Info: ../img/prob7.jpg used on input line 302.
 (pdftex.def)             Requested size: 289.07999pt x 116.67635pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--315
+Underfull \hbox (badness 10000) in paragraph at lines 304--307
 
  []
 
 [9
 
- <./prob7.jpg>] [10
+ <../img/prob7.jpg>] [10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 338--341
+Underfull \hbox (badness 10000) in paragraph at lines 334--337
 
  []
 
 [11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 357--359
+Underfull \hbox (badness 10000) in paragraph at lines 353--355
 
  []
 
 [12
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 374--376
+Underfull \hbox (badness 10000) in paragraph at lines 370--372
 
  []
 
@@ -763,11 +764,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--376
 
 ] (./StatsHomework5.aux) ) 
 Here is how much of TeX's memory you used:
- 6585 strings out of 493117
- 96705 string characters out of 6135433
+ 6589 strings out of 493117
+ 96790 string characters out of 6135433
  212504 words of memory out of 5000000
  9873 multiletter control sequences out of 15000+600000
- 12880 words of font info for 68 fonts, out of 8000000 for 9000
+ 12982 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,43p,286b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/publi
@@ -786,7 +787,7 @@ cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on StatsHomework5.pdf (15 pages, 521221 bytes).
+Output written on StatsHomework5.pdf (15 pages, 523438 bytes).
 PDF statistics:
  122 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream

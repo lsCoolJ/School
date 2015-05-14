@@ -8,8 +8,8 @@
 \contentsline {subsection}{Answer to 1.d}{1}
 \contentsline {paragraph}{Answer to d}{1}
 \contentsline {section}{Second Problem}{2}
-\contentsline {subsection}{Answer to 2.a}{2}
-\contentsline {paragraph}{Answer to a}{2}
+\contentsline {subsection}{Answers}{2}
+\contentsline {paragraph}{Answers}{2}
 \contentsline {section}{Third Problem}{4}
 \contentsline {subsection}{Answer to 3.a}{4}
 \contentsline {paragraph}{Answer to a}{4}
@@ -25,17 +25,17 @@
 \contentsline {paragraph}{Answer to b}{6}
 \contentsline {section}{Sixth Problem}{7}
 \contentsline {subsection}{Answer to 6.a}{7}
-\contentsline {subsection}{Answer to 6.b}{7}
 \contentsline {paragraph}{Answer to a}{7}
+\contentsline {subsection}{Answer to 6.b}{7}
 \contentsline {paragraph}{Answer to b}{7}
 \contentsline {section}{Seventh Problem}{8}
 \contentsline {subsection}{Answer to 7.a}{8}
-\contentsline {subsection}{Answer to 7.b}{8}
 \contentsline {paragraph}{Answer to a}{8}
-\contentsline {subsection}{Answer to 7.c}{8}
+\contentsline {subsection}{Answer to 7.b}{8}
 \contentsline {paragraph}{Answer to b}{8}
-\contentsline {subsection}{Answer to 7.d}{8}
+\contentsline {subsection}{Answer to 7.c}{8}
 \contentsline {paragraph}{Answer to c}{8}
+\contentsline {subsection}{Answer to 7.d}{8}
 \contentsline {paragraph}{Answer to d}{8}
 \contentsline {section}{Eighth Problem}{9}
 \contentsline {subsection}{Answer to 8}{9}

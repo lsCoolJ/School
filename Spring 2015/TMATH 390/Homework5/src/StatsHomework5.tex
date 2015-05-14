@@ -84,7 +84,7 @@
 	\[ C = [3,4,5,13,14,15] \]
 
 \clearpage
-\section*{Problem 2} %%% DRAW THIS SHIT
+\section*{Problem 2} %%% Scan image and put it in here.
 \addsection{Second Problem}
 
 	An engineering firm is constructing power plants at three different sites. \\
@@ -107,67 +107,36 @@
 	
 	Original Venn diagram:
 	\begin{center}
-		\includegraphics[width=4in]{prob2.jpg}
+		\includegraphics[width=4in]{prob2_orig.jpg}
 	\end{center}
 	
-	\addsubsection{Answer to 2.a}
-	\p{Answer to a}
+	\addsubsection{Answers}
+	\p{Answers}
 	\begin{center}
-		\includegraphics[width=4in]{prob2_a.jpg}
+		\includegraphics[width=\textwidth]{prob2_a.jpg} %prob2.jpg
 	\end{center}
 	
-	\iffalse
-	\addsubsection{Answer to 2.b}
-	\p{Answer to b}
-	\begin{center}
-		\includegraphics[width=4in]{prob2_b.jpg}
-	\end{center}
-	
-	\addsubsection{Answer to 2.c}
-	\p{Answer to c}
-	\begin{center}
-		\includegraphics[width=4in]{prob2_c.jpg}
-	\end{center}
-	
-	\addsubsection{Answer to 2.d}
-	\p{Answer to d}
-	\begin{center}
-		\includegraphics[width=4in]{prob2_d.jpg}
-	\end{center}
-	
-	\addsubsection{Answer to 2.e}
-	\p{Answer to e}
-	\begin{center}
-		\includegraphics[width=4in]{prob2_e.jpg}
-	\end{center}
-	
-	\addsubsection{Answer to 2.f}
-	\p{Answer to f}
-	\begin{center}
-		\includegraphics[width=4in]{prob2_f.jpg}
-	\end{center}
-	\fi
-
 \clearpage	
 \section*{Problem 3} %%% DONE
 \addsection{Third Problem}
 
 	Let $A_i = i\text{th}$ student got a perfect score on midterm 1, for $i = 1,...,18$. \\
+
 	
-	(a) Interpret $\left( \overset{18}{\underset{i=1}{\cap}} A_i \right)^{\prime}$ in English. \\
+	(a) Interpret $\left( \overset{18}{\underset{i=1}{\cap}} A_i \right)^\prime$ in English. \\
 	(b) Interpret $\overset{18}{\underset{i=1}{\cup}} A_i^{\prime}$ in English. Is it equivalent to part a?
 	
 	\addsubsection{Answer to 3.a}
 	\p{Answer to a}
-	$\left( \overset{18}{\underset{i=1}{\cap}} A_i \right)^{\prime}$ is the same as saying the 
+	$\left( \overset{18}{\underset{i=1}{\cap}} A_i \right)^\prime$ is the same as saying the 
 	complement of $A_1$, and $A_2$, and ... and $A_18$. Basically, students 1 through 18 did not 
 	get a perfect score on the first midterm, but any other combination of these students getting a 
 	perfect score on the first midterm is possible (i.e. $A_1$ and $A_2$).
 	
 	\addsubsection{Answer to 3.b}
 	\p{Answer to b}
-	$\overset{18}{\underset{i=1}{\cup}} A_i^{\prime}$ is the same as saying $A_1^{\prime}$, or
-	$A_2^{\prime}$, or ... or $A_{18}^{\prime}$. Basically, any combination of students 1 through 18 
+	$\overset{18}{\underset{i=1}{\cup}} A_i^{\prime}$ is the same as saying $A_1^\prime$, or
+	$A_2^\prime$, or ... or $A_{18}^\prime$. Basically, any combination of students 1 through 18 
 	can get a perfect score on their first midterm, however it is not possible for all 18 students to get a 
 	perfect score. \\
 	
@@ -241,7 +210,7 @@
 	company C.
 
 \clearpage
-\section*{Problem 6}
+\section*{Problem 6} %%% DONE? not sure if correct
 \addsection{Sixth Problem}
 
 	Number 5.16 in your book on page 214: \\
@@ -263,12 +232,20 @@
 	
 	\addsubsection{Answer to 6.a}
 	\p{Answer to a}
+	Since our original message consists of 60\% 1s and since those 1s have a 99\% chance of 
+	staying a 1 (1 - 0.01 from the probability that they will change) and since we also have 40\% 0s in 
+	the original message and they have a 1\% chance of turning into 1s then we can use this 
+	calculation to determine the proportion of 1s in the final message:
+	\[ (0.6 \times 0.99) + (0.4 \times 0.01) = 0.598 \]
+	So 59.8\% of the received message will be comprised of 1s.
 	
 	\addsubsection{Answer to 6.b}
 	\p{Answer to b}
+	If a 1 is received then there is a 99\% chance that a 1 was sent since there is a 1\% chance of an 
+	error. This means that there is a 1\% chance that a sent 0 will turn into a 1.
 
 \clearpage	
-\section*{Problem 7}
+\section*{Problem 7} %%% DONE
 \addsection{Seventh Problem}
 
 	Number 5.19 in your book on page 214: \\
@@ -290,18 +267,33 @@
 	
 	\addsubsection{Answer to 7.a}
 	\p{Answer to a}
+	Since we have a 42\% chance of randomly picking a person with blood type A, then randomly 
+	picking two people with this blood type would be $0.42 \times 0.42 = 0.1764$. We have a 17.6\% 
+	chance of randomly choosing two people with blood type A.
 	
 	\addsubsection{Answer to 7.b}
 	\p{Answer to b}
+	Repeating the same calculation in part A, we get: \\
+	$0.10 \times 0.10 = 0.01$ \\
+	$0.04 \times 0.04 = 0.0016$ \\
+	$0.44 \times 0.44 = 0.1936$ \\
+	So we have a 1\% chance of choosing two people with blood type B, a 0.2\% chance of choosing 
+	two people with blood type AB, and a 19.4\% chance of choosing two people with blood type O.
 	
 	\addsubsection{Answer to 7.c}
 	\p{Answer to c}
+	To find this probability, all we have to do is sum together the probabilities found in part a and b:
+	\[ 0.01 + 0.0016 + 0.1936 + 0.1764 = 0.3816 \]
+	We have a 38.2\% chance of choosing two people that have the same blood type.
 	
 	\addsubsection{Answer to 7.d}
 	\p{Answer to d}
+	The probability that two people do not match blood types is basically the opposite of the previous 
+	question so $1-0.3816 = 0.6184$. We have a 61.8\% chance of choosing two people who don't 
+	have a matching blood type.
 
 \clearpage	
-\section*{Problem 8}
+\section*{Problem 8} %%% DONE
 \addsection{Eighth Problem}
 
 	Number 5.21 in your book on page 214: \\
@@ -318,6 +310,17 @@
 	
 	\addsubsection{Answer to 8}
 	\p{Answer to problem 8}
+	To solve this problem we need to find the probability $P((1\text{ or }2)\text{ or }(3\text{ and }4))$ 
+	with $P(1) = P(2) = P(3) = P(4) = 0.9$.
+	\[ P(1\text{ or }2) = 1 - P(1')P(2') = 1-0.01 = 0.99 \]
+	\[ P(3\text{ and }4) = P(3)P(4) = (0.9)(0.9) = 0.81 \]
+	Now we can treat the top and bottom parts of the system as single events A and B respectively 
+	where $P(A) = 0.99$ and $P(B) = 0.81$.
+	\[ P(A\text{ or }B) = P(A) + P(B) - P(A\text{ and }B) \]
+	\[ = 0.99 + 0.81 - 0.8019 \]
+	\[ = 0.9981 \]
+	So there is a 99.81\% chance that the entire system works correctly.
+	
 
 \clearpage	
 \section*{Problem 9}
