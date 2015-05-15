@@ -1,9 +1,0 @@
-Keenan Fejeran
-
-Status:
-
-Computer Vision dependencies resolved. All code compiles. See test driver for a single call demonstration of the findBlobs function.
-
-Next steps: The precision is good. The accuracy is not. need to work on the book keeping of how far the camera rotates, and also the conversion from rotational units (onestep) to degrees. 
-
-The problem is either in the above two areas or in the math itself.
