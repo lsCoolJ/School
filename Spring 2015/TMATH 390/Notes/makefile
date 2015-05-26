@@ -4,3 +4,4 @@ all:
 
 	rm out/*.log out/*.aux out/*.toc out/*.out
 	mv out/Statistics\ Notes.pdf out/StatsNotes.pdf
+	open out/StatsNotes.pdf

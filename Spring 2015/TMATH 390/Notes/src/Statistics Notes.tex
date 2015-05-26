@@ -15,7 +15,7 @@
 
 % Other Front Matter
 \lstset{language=R} % Set listing language to R
-\graphicspath{ {../img/} } % Put all graphics in img/
+\graphicspath{ {img/} } % Put all graphics in img/
 \newcommand{\code}[1]{\texttt{#1}} % More readable for writing inline code.
 \newcommand{\p}[1]{\paragraph{#1}} % Easier to type out for paragraph command
 %\newcommand{\tab}{\hspace*{3em}} % Set tab spaces
@@ -389,7 +389,8 @@ measure of how strongly two variables are related.
 		least squares line.
 		
 	\p{Plotting the Residuals (Optional}
-		A desirable plot exhibits no particular pattern, such as curvature or much greater spread in one part of the plot than in another part. Looking at a residual plot after fitting a line 
+		A desirable plot exhibits no particular pattern, such as curvature or much greater spread in 
+		one part of the plot than in another part. Looking at a residual plot after fitting a line 
 		amounts to examining $y$ after removing any linear dependence on $x$. This can 
 		sometimes more clearly show the existence of a nonlinear relationship. \\
 		
@@ -536,7 +537,71 @@ measure of how strongly two variables are related.
 \section{Probability and Sampling Distributions} %%% Chapter 5 Page 194
 
 	\subsection{Chance Experiments} %%% Section 5.1
+	A \textbf{chance experiment}, also called a \textbf{random experiment}, is simply an activity or 
+	situation whose outcomes, to some degree, depend on chance. To decide whether a given 
+	activity qualifies as a chance experiment, ask yourself the question, will I get exactly the same 
+	result if I repeat the experiment more than once? If no, then the experiment is a chance 
+	experiment.
 	
+	\p{Events} ~\\
+	Underlying the computations of probability is an organized system for describing and working 
+	with the outcomes of chance experiments. These outcomes can be divided into two types: 
+	\textbf{simple events}, which are the individual outcomes of an experiment and, more generally, 
+	\textbf{events}, which consist of collections of simple events. For instance, the chance 
+	experiment of conducting a series of stress tests on three metal parts has eight possible 
+	outcomes. Each of these eight outcomes is a simple event, which, taken together, form the 
+	\textbf{sample space} of the experiment.
+	
+	\p{Depicting Events} ~\\
+	Various devices have been created to help visually describe the events in a sample space. 
+	\textbf{Tree diagrams} are especially useful for depicting experiments that are conducted in a 
+	sequence of steps, such as our example of testing three metal parts. Beginning at the left, each 
+	step in the sequence is given its own set of branches, which themselves form the starting points 
+	for all branches to their right. The figure below shows a tree diagram example:
+	
+	\begin{figure}[!htbp]
+	   \centering
+	   \includegraphics[width=4in]{figure5_2.jpg} 
+	   \caption{Tree diagram for the experiment of selecting and testing three mechanical parts 
+	   (branches forming the simple event PPF are shown shaded)}
+	   \label{fig:figure5_2}
+	\end{figure}
+	
+	Another visual device, the \textbf{Venn diagram}, is especially useful for depicting 
+	\emph{relationships} between events. Venn diagrams are simple two-dimensional figures, often 
+	rectangles or circles, whose enclosed regions are intended to depict a collection of simple 
+	events, called \emph{points}, in a sample space.\\
+	
+	Venn diagrams and tree diagrams are indispensable tools in many parts of probability theory, but 
+	they are not essential to conducting statistical studies.
+	
+	\p{Forming New Events} ~\\
+	Simple events are fundamental to describing chance experiments, but the events that are of 
+	most interest are usually much more complex. One of the primary methods for creating complex 
+	events and, therefore, for unraveling them, involves the use of the words \emph{and, or}, and 
+	\emph{not}. The following box shows how these words are used to build new events from old 
+	ones.
+	
+	\p{Definitions} ~\\
+	For a chance experiment and any two events A and B:
+	\begin{enumerate}
+		\item{The event \textbf{A or B} consists of all simple events that are contained in either A or 
+		B. \textbf{A or B} can also be described as the event that \emph{at least one} of A or B 
+		occurs.}
+		\item{The event \textbf{A and B} consists of all simple events common to both A and B. 
+		\textbf{A and B} can be described as the event that \emph{both} A and B occur.}
+		\item{The event \textbf{$A^'$}, called the \textbf{complement of A, consists of all simple 
+		events that are \emph{not} contained in A. \textbf{$A^'$} is the event that A does not occur.}
+	\end{enumerate}
+	For example:
+	\begin{center}
+		\includegraphics[widht=4in]{example5_3.jpg}
+	\end{center}
+	
+	When two events A and B have no simple events in common, we say that they are 
+	\textbf{mutually exclusive \text{or} disjoint}. More intuitively, mutually exclusive events are ones 
+	that cannot occur simultaneously.
+
 	\subsection{Probability Concepts} %%% Section 5.2
 	
 	\subsection{Conditional Probability and Independence} %%% Section 5.3
@@ -546,6 +611,7 @@ measure of how strongly two variables are related.
 	\subsection{Sampling Distributions} %%% Section 5.5
 	
 	\subsection{Describing Sampling Distributions} %%% Section 5.6
+	Just as histograms of sample data provide approximations to population distributions, sampling experiments (Section 5.5) furnish approximate pictures of sampling distributions. We now turn our attention to developing more precise summaries of sampling distributions. In this section, we study in some detail the ex
 
 \clearpage	 %%%%%% Looks like we're skippin this chapter too?
 \section{Quality and Reliability} %%% Chapter 6 Page 246
@@ -565,7 +631,75 @@ measure of how strongly two variables are related.
 \clearpage	
 \section{Estimation and Statistical Intervals} %%% Chapter 7 Page 293
 
+The general objective of a statistical inference is to use sample information as a basis for drawing various types of conclusions. In an estimation problem, we want to make an educated guess about the value of some population characteristic or parameter, such as the population mean battery lifetime $\mu$, the proportion $\pi$ of all components of a certain type that need service while under warranty, or the difference $\mu_1-\mu_2$ between the population mean lifetimes for two different types of batteries. The simplest type of estimate is a \emph{point estimate}, a single number that represents our best guess for the value of the parameter.
+
 	\subsection{Point Estimation} %%% Section 7.1
+	A \textbf{point estimate} of some parameter $\theta$ is a single number, calculated from sample 
+	data, that can be regarded as an educated guess for the value of $\theta$. \\
+	A point estimate is usually obtained by selecting a suitable statistic and calculating its value for 
+	the given sample data. For example, a natural statistic to use for estimating a population mean $
+	\mu$ is the sample mean $\bar{x}$, and a sensible way to estimate a population variance $
+	\sigma^2$ is to compute the value of the sample variance $s^2$. The statistic used to calculate 
+	an estimate is sometimes called an \textbf{estimator}, and the symbol $\hat{\theta}$ is frequently 
+	used to denote either the estimator or the resulting estimate. Thus the statement
+	\[ \hat{\mu} = \bar{x} = 32.5 \]
+	says that the point estimate of the population mean $\mu$ is 32.5 and that this estimate was 
+	calculated using the sample mean $\bar{x}$ as the estimator.
+	
+	\begin{figure}[!htbp]
+	   \centering
+	   \includegraphics[width=4in]{example7_1.jpg} 
+	   \caption{Example 7.1}
+	   \label{fig:example7_1}
+	\end{figure}
+	
+	Frequently, there is more than one estimator that can sensibly be used to calculate an estimate, 
+	as the following example shows.
+	
+	\begin{figure}[!htbp]
+	   \centering
+	   \includegraphics[width=4in]{example7_2.jpg} 
+	   \caption{Example 7.2}
+	   \label{fig:example7_2}
+	\end{figure}
+	
+	\p{Properties of Estimators} One desirable property that a good estimator should possess is that 
+	it be \textbf{unbiased}. An estimator is unbiased if, in repeated random samples, the numerical 
+	values of the estimator stack up around the population parameter that we are trying to estimate. 
+	An often used analogy is to think of each value of an estimator as a shot fired at a target, the 
+	target being the population parameter of interest. As long as all the shots fall in a pattern with the 
+	target value in the \emph{middle}, we say that the shots are unbiased. Notice that we do not 
+	require that any of the individual shots actually hit the target; we require only that they be 
+	centered around the target value. If the majority of the shots are centered somewhere else, then 
+	we say that they exhibit a certain amount of \textbf{bias}.
+	
+	\p{Definition} ~ \\
+	Denote a population parameter generically by the letter $\theta$ and denote any estimator of 
+	this parameter by $\hat{\theta}$. Then $\hat{\theta}$ is an \textbf{unbiased} estimator if $
+	\mu_{\hat{\theta}} = \theta$. Otherwise, $\hat{\theta}$ is said to be biased, and the quantity $
+	\mu_{\hat{\theta}} - \theta$ is called the \textbf{bias} of $\hat{\theta}$. \\
+	
+	Unbiasedness does not imply that the estimate computed from any particular sample will 
+	coincide with the value of the parameter being estimated. Consider, for example, using the 
+	sample proportion $p$ to estimate the population proportion $\pi$ based on a sample of size 
+	$n=25$, and suppose that $\pi = 0.7$. Then $\mu_p=0.7$, so the sampling distribution of $p$ is 
+	centered at 0.7. However, with $x$ denoting the number of "successes" in the sample, $p = 
+	\frac{x}{25} \not= 0.77$ for any possible value of $x$. That is, even though $p$ is unbiased for 
+	estimating $\pi$, the value of the estimate calculated from any particular sample will inevitably 
+	differ from $\pi$. \\
+	
+	A second desirable property that estimators often possess is consistency. If $\hat{\theta}$ 
+	denotes an estimator of some population parameter $\theta$, then $\hat{\theta}$ is said to be 
+	\textbf{consistent} if the probability that it lies close to $\theta$ increases to 1 as the sample size 
+	increases. That is, as you increase $n$, it becomes more and more likely that such estimators 
+	will be very close to the parameter they are intended to estimate. The most common method for 
+	showing that an estimator is consistent is to show that its standard error decreases as the 
+	sample size increases.
+	
+	\p{Definition} ~\\
+	If the probability that an estimator $\hat{\theta}$ falls close to a population parameter $\theta$ 
+	can be made as near to 1 as desired by increasing the sample size $n$, then $\hat{\theta}$ is 
+	said to be a \textbf{consistent} estimator of $\theta$.
 	
 	\subsection{Large-Sample Confidence Intervals for a Population Mean} %%% Section 7.2
 	
@@ -631,6 +765,14 @@ measure of how strongly two variables are related.
 	
 \clearpage
 \section{Appendix Tables} %%% Appendix tables Page 581
+
+
+
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%OTHER NOTES%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
