@@ -126,7 +126,7 @@ the main() method prompts the user for a float and then converts
 */
 int main(void) {
 
-	Uni *myFloat;
+	Uni *myFloat = (Uni*) malloc(sizeof(Uni));
 
 	while(1) {
 		int sign;
